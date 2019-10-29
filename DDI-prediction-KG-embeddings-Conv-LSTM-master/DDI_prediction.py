@@ -4,12 +4,31 @@ from sklearn import ensemble
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 import ml
+import keras
+from keras.models import Model
 from keras.regularizers import L1L2
+import numpy as np
+
+ddi_list = 'full_DDI.txt'
+vectors = 'RDF2Vec_sg_300_5_5_15_2_500_d5_uniform.txt'
+df = pd.read_csv('Data by Amin/50chosenFromDS1pairs.csv')
+train_x = df.values[:45,4:]
+train_y = df.values[:45,3]
 
 reg = L1L2(l1 = 0.01, l2 = 0.01)
-model = ml.Conv_LSTM(num_classes = 2, timesteps = 8, reg = reg)
+optimizer = keras.optimizers.RMSprop(lr=0.01, rho=0.9, epsilon=None, decay=0.001)
+
+# a stopping function should the validation loss stop improving
+# earlystop = EarlyStopping(monitor='val_loss', patience=10, verbose=0, mode='auto')
+train_x = np.reshape(train_x,(45,600,1))
+shape = train_x
+# print(shape)
+model = ml.Conv_LSTM(num_classes = 2, timesteps = 8, reg = reg, shape = shape)
+model.compile(loss='categorical_crossentropy', metrics=['accuracy'], optimizer=optimizer)
 model.summary()
-convLSTM = ml.model_train(model, number_epoch = 20)
+history1 = model.fit(train_x, train_y, validation_split=0.1, batch_size=45, epochs=20)
+
+# convLSTM = ml.model_train(model, number_epoch = 20, train_x=train_x, train_y=train_y)
 
 KNN = KNeighborsClassifier(n_neighbors = 3)
 NB = GaussianNB()
@@ -34,8 +53,7 @@ def ddiDataGenerator(clfs, ddi_list, vectors):
     
     return pairs, classes, embedding_df
 
-ddi_list = 'full_DDI.txt'
-vectors = 'RDF2Vec_sg_300_5_5_15_2_500_d5_uniform.txt'
+
 
 pairs, classes, embedding_df = ddiDataGenerator(clfs, ddi_list, vectors)
 
