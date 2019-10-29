@@ -1,40 +1,40 @@
-import csv
-import numpy as np
-import sys
-import pandas as pd
-import itertools
-import math
+# import csv
+# import numpy as np
+# import sys
+# import pandas as pd
+# import itertools
+# import math
 import time
-
-from sklearn import svm, linear_model, neighbors
-from sklearn import tree, ensemble
-from sklearn import metrics
-from sklearn.naive_bayes import GaussianNB
+#
+# from sklearn import svm, linear_model, neighbors
+# from sklearn import tree, ensemble
+# from sklearn import metrics
+# from sklearn.naive_bayes import GaussianNB
 
 from sklearn.model_selection import StratifiedKFold
 
-import networkx as nx
+# import networkx as nx
 import random
 import numbers
-import os
-import pandas as pd
-import numpy as np
-import sys
-from time import time
-
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-from sklearn import metrics
-
-from keras.models import Sequential
+# import os
+# import pandas as pd
+# import numpy as np
+# import sys
+# from time import time
+#
+# from sklearn.preprocessing import LabelEncoder
+# from sklearn.model_selection import train_test_split
+# from sklearn import metrics
+#
+# from keras.models import Sequential
 from keras.layers import LSTM, Dense, Dropout, Activation, Flatten, BatchNormalization
-from keras.layers import TimeDistributed
+# from keras.layers import TimeDistributed
 from keras.callbacks import TensorBoard
-from keras.optimizers import RMSprop
-from keras.regularizers import l2
-from keras.callbacks import EarlyStopping
-from sklearn.metrics import precision_recall_fscore_support, roc_auc_score
-from keras.utils import np_utils
+# from keras.optimizers import RMSprop
+# from keras.regularizers import l2
+# from keras.callbacks import EarlyStopping
+# from sklearn.metrics import precision_recall_fscore_support, roc_auc_score
+# from keras.utils import np_utils
 
 from keras import backend as K
 K.set_image_dim_ordering('tf')
@@ -88,8 +88,8 @@ from keras.layers.embeddings import Embedding
 
 from keras.layers import Input, Dense, LSTM, MaxPooling1D, Conv1D, RepeatVector
 from keras.models import Model
-from data_util import *
-from autoencoder import *
+# from data_util import *
+# from autoencoder import *
 
 import pandas
 import seaborn as sns
