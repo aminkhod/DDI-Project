@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56d88512-cb69-414d-b260-60d0443b939e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.ipynb_checkpoints/exercise1 (2)-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../.ipynb_checkpoints/exercise1 (2)-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DDI-prediction-KG-embeddings-Conv-LSTM-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DDI-prediction-KG-embeddings-Conv-LSTM-master.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Untitled6.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise1 (2).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise1 (2).ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="56d88512-cb69-414d-b260-60d0443b939e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +28,17 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-293978295">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ml.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DDI_prediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="255">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -64,7 +65,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
@@ -127,13 +128,9 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -141,6 +138,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -161,8 +162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DDI_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="255">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
