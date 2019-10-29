@@ -1,36 +1,10 @@
-import csv
-import numpy as np
-import sys
 import pandas as pd
-import itertools
-import math
-import time
-from sklearn import svm, linear_model, neighbors
-from sklearn import tree, ensemble
-from sklearn import metrics
+from sklearn import svm, linear_model
+from sklearn import ensemble
 from sklearn.naive_bayes import GaussianNB
-import networkx as nx
-import random
-import numbers
-from sklearn.model_selection import StratifiedKFold
 from sklearn.neighbors import KNeighborsClassifier
 import ml
-#
-# import findspark
-# findspark.init("/home/spark-2.3.1-bin-hadoop2.7/")
-#
-# from pyspark import SparkConf, SparkContext
-#
-# if False:
-#     sc.stop()
-#
-# config = SparkConf()
-# config.setMaster("local[8]")
-# config.set("spark.executor.memory", "56g")
-# config.set('spark.driver.memory', '30g')
-# config.set("spark.memory.offHeap.enabled",True)
-# config.set("spark.memory.offHeap.size","64g")
-# sc = SparkContext(conf = config)
+from keras.regularizers import L1L2
 
 reg = L1L2(l1 = 0.01, l2 = 0.01)
 model = ml.Conv_LSTM(num_classes = 2, timesteps = 8, reg = reg)
@@ -71,7 +45,7 @@ n_fold = 5
 n_run = 10
 n_proportion = 1
 
-scoreDF = ml.kfoldCV(sc, pairs, classes, embedding_df, clfs, n_run, n_fold, n_proportion, n_seed)
+scoreDF = ml.kfoldCV(1, pairs, classes, embedding_df, clfs, n_run, n_fold, n_proportion, n_seed)
 
 scoreDF.groupby(['method','run']).mean().groupby('method').mean()
 scoreDF.to_csv('Results.txt',sep = '\t', index = False)
