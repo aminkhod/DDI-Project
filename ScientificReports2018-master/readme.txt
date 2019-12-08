@@ -1,1 +1,0 @@
-DDI_data_SR.mat	-- DDI adjacent matrix and three similarity matrices.
