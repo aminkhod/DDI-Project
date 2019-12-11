@@ -11,7 +11,7 @@ from scipy.sparse.csgraph import minimum_spanning_tree
 
 
 def load_data_from_file(dataset, folder):
-    with open(os.path.join(folder, dataset+"_admat_dgc.txt"), "r") as inf:
+    with open(os.path.join(folder, dataset+".csv"), "r") as inf:
         inf.readline()
         int_array = [line.strip("\n").split()[1:] for line in inf]
     inf.close()

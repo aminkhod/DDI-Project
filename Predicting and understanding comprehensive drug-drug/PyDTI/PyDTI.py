@@ -156,7 +156,7 @@ def main(argv):
     thread3 = myThread(3, method, "ic", data_dir, output_dir, cvs, sp_arg, model_settings, predict_num, seeds,
                         seedsOptPar, args)
 
-    thread4 = myThread(4, method, "nr", data_dir, output_dir, cvs, sp_arg, model_settings, predict_num, seeds,
+    thread4 = myThread(4, method, "DDI_binary", data_dir, output_dir, cvs, sp_arg, model_settings, predict_num, seeds,
                         seedsOptPar, args)
 
     # thread1.start()
@@ -179,8 +179,8 @@ def main(argv):
 
 def thear(method, dataset, data_dir, output_dir, cvs, sp_arg, model_settings, predict_num, seeds, seedsOptPar,
           args):
-    intMat, drugMat, targetMat = load_data_from_file( dataset, os.path.join(data_dir, 'datasets'))
-    drug_names, target_names = get_drugs_targets_names(dataset, os.path.join(data_dir, 'datasets'))
+    intMat, drugMat, targetMat = load_data_from_file( dataset, data_dir)
+    drug_names, target_names = get_drugs_targets_names(dataset,data_dir)
 
     invert = 0
     if (method == 'inv_brdti')  :
