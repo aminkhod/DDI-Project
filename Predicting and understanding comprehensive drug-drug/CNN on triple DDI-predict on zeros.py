@@ -258,7 +258,7 @@ adam = optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999)
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) ## Minist
 
 ### Load the model's saved weights.
-model.load_weights('cnn42702(1and-1).h5')
+model.load_weights('cnn42702(1and-1)10_epoch.h5')
 
 
 # In[11]:
