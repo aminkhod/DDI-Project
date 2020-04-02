@@ -10,18 +10,18 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-import confusion_matrix_pretty_print
-from confusion_matrix_pretty_print import plot_confusion_matrix_from_data
+# import confusion_matrix_pretty_print
+# from confusion_matrix_pretty_print import plot_confusion_matrix_from_data
 
-from sklearn.metrics import confusion_matrix,classification_report,precision_score, auc, precision_recall_curve, roc_curve
+# from sklearn.metrics import confusion_matrix,classification_report,precision_score,auc,precision_recall_curve,roc_curve
 
-import keras
+# import keras
 from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, Flatten, Softmax, Dropout
 from keras import optimizers
-from keras import metrics as kmetr
-from keras.utils import plot_model
+# from keras import metrics as kmetr
+# from keras.utils import plot_model
 
 
 # In[2]:
@@ -43,75 +43,36 @@ from keras.utils import plot_model
 # data.to_csv('triple_cosineSNF(-1and1).csv',index=False)
 
 
-# In[ ]:
-
-
-# dataTrain = pd.read_csv('../../triple42702.csv')
-dataTest = pd.read_csv('../../triple_cosineSNF(zeros).csv')
-
-# print(dataTest.shape,dataTrain.shape)
-
-
-# In[ ]:
-
-
-# dataTest.head()
-
-
-# In[3]:
-
-
-# # X_train = dataTrain.values[:,3:]
-# # y_train = dataTrain.values[:,2].astype(int)
-# # del dataTrain
-# X_test = dataTest.values[:,3:]
-# y_test = dataTest.values[:,2].astype(int)
-
-
 # In[4]:
 
 
-# trainNum = len(X_train)
+# dataTrain = pd.read_csv('../../triple42702.csv')
+# dataTest = pd.read_csv('../../tripleTest.csv')
+# dataTest = pd.read_csv('../../triple_cosineSNF(zeros).csv')
+
+# print(dataTest.shape,dataTrain.shape)
 
 
 # In[5]:
 
 
-# # X_train = dataTrain.values[:,3:]
-# # y_train = dataTrain.values[:,2].astype(int)
-# # del dataTrain
-# X_test = dataTest.values[:,3:]
-# y_test = dataTest.values[:,2].astype(int)
-
-# testNum = len(X_test)
+# dataTest.head()
 
 
 # In[6]:
 
 
-16*71
+# X_train = dataTrain.values[:,3:]
+# y_train = dataTrain.values[:,2].astype(int)
+# del dataTrain
+# # X_test = dataTest.values[:,3:]
+# # y_test = dataTest.values[:,2].astype(int)
 
 
 # In[7]:
 
 
-# # X_train = dataTrain.values[:,3:]
-# # y_train = dataTrain.values[:,2].astype(int)
-# # del dataTrain
-# X_test = dataTest.values[:,3:]
-# y_test = dataTest.values[:,2].astype(int)
-
-# testNum = len(X_test)
-
-# #reshape data to fit model
-# # X_train = X_train.reshape(trainNum,16,71,1)
-# X_test = X_test.reshape(testNum,16,71,1)
-
-
-# In[10]:
-
-
-# X_train.shape
+# trainNum = len(X_train)
 
 
 # In[8]:
@@ -125,54 +86,11 @@ dataTest = pd.read_csv('../../triple_cosineSNF(zeros).csv')
 
 # testNum = len(X_test)
 
-# #reshape data to fit model
-# # X_train = X_train.reshape(trainNum,16,71,1)
-# X_test = X_test.reshape(testNum,16,71,1)
-
-# # y_train = y_train + 1
-# y_test  = y_test + 1
-# # y_train = y_train / 2
-# y_test  = y_test / 2
-# # print(y_train[0], y_test[0])
-
-
-# In[12]:
-
-
-# y_train
-
 
 # In[9]:
 
 
-# # X_train = dataTrain.values[:,3:]
-# # y_train = dataTrain.values[:,2].astype(int)
-# # del dataTrain
-# X_test = dataTest.values[:,3:]
-# y_test = dataTest.values[:,2].astype(int)
-
-# testNum = len(X_test)
-
-# #reshape data to fit model
-# # X_train = X_train.reshape(trainNum,16,71,1)
-# X_test = X_test.reshape(testNum,16,71,1)
-
-# # y_train = y_train + 1
-# y_test  = y_test + 1
-# # y_train = y_train / 2
-# y_test  = y_test / 2
-# # print(y_train[0], y_test[0])
-
-# #one-hot encode target column
-# # y_train = to_categorical(y_train)
-# y_test = to_categorical(y_test)
-# # y_test[0]
-
-
-# In[14]:
-
-
-# y_train
+16*71
 
 
 # In[10]:
@@ -190,6 +108,56 @@ dataTest = pd.read_csv('../../triple_cosineSNF(zeros).csv')
 # # X_train = X_train.reshape(trainNum,16,71,1)
 # X_test = X_test.reshape(testNum,16,71,1)
 
+
+# In[11]:
+
+
+# X_train.shape
+
+
+# In[12]:
+
+
+# # X_train = dataTrain.values[:,3:]
+# # y_train = dataTrain.values[:,2].astype(int)
+# # del dataTrain
+# X_test = dataTest.values[:,3:]
+# y_test = dataTest.values[:,2].astype(int)
+
+# testNum = len(X_test)
+
+# #reshape data to fit model
+# # X_train = X_train.reshape(trainNum,16,71,1)
+# X_test = X_test.reshape(testNum,16,71,1)
+
+# # y_train = y_train + 1
+# y_test  = y_test + 1
+# # y_train = y_train / 2
+# y_test  = y_test / 2
+# # print(y_train[0], y_test[0])
+
+
+# In[13]:
+
+
+# y_train
+
+
+# In[14]:
+
+
+# # X_train = dataTrain.values[:,3:]
+# # y_train = dataTrain.values[:,2].astype(int)
+# # del dataTrain
+# X_test = dataTest.values[:,3:]
+# y_test = dataTest.values[:,2].astype(int)
+
+# testNum = len(X_test)
+
+# #reshape data to fit model
+# # X_train = X_train.reshape(trainNum,16,71,1)
+# X_test = X_test.reshape(testNum,16,71,1)
+
 # # y_train = y_train + 1
 # y_test  = y_test + 1
 # # y_train = y_train / 2
@@ -202,29 +170,41 @@ dataTest = pd.read_csv('../../triple_cosineSNF(zeros).csv')
 # # y_test[0]
 
 
-# #create model
-# model = Sequential()
-# #add model layers
-# # kernel_initializer='uniform',
-# # kernel_initializer='uniform',
-# # kernel_initializer='uniform',
-# # kernel_initializer='uniform',
-# model.add(Conv2D(128, kernel_size=4, activation='relu', input_shape=(16,71,1)))
-# # model.add(Conv2D(64, kernel_size=2, activation='relu'))
-
-# model.add(Conv2D(32, kernel_size=4, activation='relu'))
-# # model.add(Conv2D(16, kernel_size=2, activation='relu'))
-# model.add(Conv2D(8, kernel_size=4, activation='relu'))
-# model.add(Flatten())
-# model.add(Dense( 1024, activation='relu'))
-# model.add(Dropout(0.3))
-# model.add(Dense( 64, activation='relu'))
-# model.add(Dense( 2, activation='relu'))
-# model.add(Softmax(128))
-# model.summary()
+# In[15]:
 
 
-# In[ ]:
+# y_train
+
+
+# In[16]:
+
+
+# X_train = dataTrain.values[:,3:]
+# y_train = dataTrain.values[:,2].astype(int)
+# del dataTrain
+# trainNum = len(X_train)
+# X_test = dataTest.values[:,3:]
+# y_test = dataTest.values[:,2].astype(int)
+
+# testNum = len(X_test)
+
+# #reshape data to fit model
+# X_train = X_train.reshape(trainNum,16,71,1)
+# X_test = X_test.reshape(testNum,16,71,1)
+
+# y_train = y_train + 1
+# y_test  = y_test + 1
+# y_train = y_train / 2
+# y_test  = y_test / 2
+# print(y_train[0], y_test[0])
+
+# #one-hot encode target column
+# y_train = to_categorical(y_train)
+# y_test = to_categorical(y_test)
+# y_test[0]
+
+
+# In[17]:
 
 
 
@@ -243,11 +223,11 @@ model.add(Conv2D(32, kernel_size=4, activation='relu'))
 # model.add(Conv2D(16, kernel_size=2, activation='relu'))
 model.add(Conv2D(8, kernel_size=4, activation='relu'))
 model.add(Flatten())
-model.add(Dense( 1024, activation='relu'))
-model.add(Dropout(0.3))
 model.add(Dense( 64, activation='relu'))
-model.add(Dense( 2, activation='relu'))
-model.add(Softmax(128))
+model.add(Dropout(0.2))
+model.add(Dense( 16, activation='relu'))
+model.add(Dense( 2, activation='sigmoid'))
+# model.add(Softmax(128))
 model.summary()
 
 #compile model using accuracy to measure model performance
@@ -258,96 +238,32 @@ adam = optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999)
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) ## Minist
 
 ### Load the model's saved weights.
-model.load_weights('cnn42702(1and-1)10_epoch.h5')
+model.load_weights('Weight/cnn42702(1and-1)_without softmax.h5')
 
 
-# In[11]:
-
-
-# # X_train = dataTrain.values[:,3:]
-# # y_train = dataTrain.values[:,2].astype(int)
-# # del dataTrain
-# X_test = dataTest.values[:,3:]
-# y_test = dataTest.values[:,2].astype(int)
-
-# testNum = len(X_test)
-
-# #reshape data to fit model
-# # X_train = X_train.reshape(trainNum,16,71,1)
-# X_test = X_test.reshape(testNum,16,71,1)
-
-# # y_train = y_train + 1
-# y_test  = y_test + 1
-# # y_train = y_train / 2
-# y_test  = y_test / 2
-# # print(y_train[0], y_test[0])
-
-# #one-hot encode target column
-# # y_train = to_categorical(y_train)
-# y_test = to_categorical(y_test)
-# # y_test[0]
-
-
-# In[17]:
+# In[18]:
 
 
 #### plotting model
 # plot_model(model,show_shapes = True, to_file='model.png')
 
 
-# In[12]:
-
-
-
-
-# #create model
-# model = Sequential()
-# #add model layers
-# # kernel_initializer='uniform',
-# # kernel_initializer='uniform',
-# # kernel_initializer='uniform',
-# # kernel_initializer='uniform',
-# model.add(Conv2D(128, kernel_size=4, activation='relu', input_shape=(16,71,1)))
-# # model.add(Conv2D(64, kernel_size=2, activation='relu'))
-
-# model.add(Conv2D(32, kernel_size=4, activation='relu'))
-# # model.add(Conv2D(16, kernel_size=2, activation='relu'))
-# model.add(Conv2D(8, kernel_size=4, activation='relu'))
-# model.add(Flatten())
-# model.add(Dense( 1024, activation='relu'))
-# model.add(Dropout(0.3))
-# model.add(Dense( 64, activation='relu'))
-# model.add(Dense( 2, activation='relu'))
-# model.add(Softmax(128))
-# model.summary()
-
-# #compile model using accuracy to measure model performance
-
-
-# adam = optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999)
-# # model.compile(loss='hinge', optimizer=adam, metrics=[kmetr.categorical_accuracy])
-# model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) ## Minist
-
-# ### Load the model's saved weights.
-# model.load_weights('cnn42702(1and-1).h5')
-
-
-# In[13]:
+# In[19]:
 
 
 # #### train the model
-# # model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=15)
-# model.fit(X_train, y_train, epochs=15)
+# model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=10)
+# # model.fit(X_train, y_train, epochs=10)
 
 
-# In[27]:
+# In[20]:
 
 
 # ### Saveing the Model
-# model.save_weights('cnn42702(1and-1).h5')
+# model.save_weights('Weight/cnn42702(1and-1)_without softmax.h5')
 
 
-# In[14]:
+# In[21]:
 
 
 # # X_train = dataTrain.values[:,3:]
@@ -379,7 +295,7 @@ model.load_weights('cnn42702(1and-1)10_epoch.h5')
 # predit
 
 
-# In[15]:
+# In[22]:
 
 
 # #actual results for first 4 images in test set
@@ -405,13 +321,13 @@ model.load_weights('cnn42702(1and-1)10_epoch.h5')
 # model.history.history['val_acc']
 
 
-# In[16]:
+# In[25]:
 
 
 
 # # Plot training & validation accuracy values
-# plt.plot(list(range(1,16)),model.history.history['acc'])
-# # plt.plot(list(range(1,6)),model.history.history['val_acc'])
+# plt.plot(list(range(1,11)),model.history.history['acc'])
+# plt.plot(list(range(1,11)),model.history.history['val_acc'])
 # plt.title('Model accuracy')
 # plt.ylabel('Accuracy')
 # plt.xlabel('Epoch')
@@ -419,8 +335,8 @@ model.load_weights('cnn42702(1and-1)10_epoch.h5')
 # plt.show()
 
 # # Plot training & validation loss values
-# plt.plot(list(range(1,16)),model.history.history['loss'])
-# # plt.plot(list(range(1,6)),model.history.history['val_loss'])
+# plt.plot(list(range(1,11)),model.history.history['loss'])
+# plt.plot(list(range(1,11)),model.history.history['val_loss'])
 # plt.title('Model loss')
 # plt.ylabel('Loss')
 # plt.xlabel('Epoch')
@@ -428,14 +344,14 @@ model.load_weights('cnn42702(1and-1)10_epoch.h5')
 # plt.show()
 
 
-# In[17]:
+# In[26]:
 
 
 # # predit
 # predit[:,0].shape 
 
 
-# In[ ]:
+# In[27]:
 
 
 # predicts = []
@@ -446,7 +362,26 @@ model.load_weights('cnn42702(1and-1)10_epoch.h5')
 #         predicts.append(1)
 
 
-# In[58]:
+# In[28]:
+
+
+# predicts = []
+# e = d = z = 0
+
+# for a,b in predit:
+#     if a >=0.6:
+#         predicts.append(0)
+#         d += 1
+#     elif b>=0.6:
+#         predicts.append(2)
+#         e += 1
+#     else:
+#         predicts.append(1)
+#         z += 1
+# print('degrassive', d, 'enhancive', e, 'zeros', z)
+
+
+# In[32]:
 
 
 predicts = []
@@ -458,14 +393,14 @@ for i in range(0,279354,46559):
     # X_train = dataTrain.values[:,3:]
     # y_train = dataTrain.values[:,2].astype(int)
     # del dataTrain
-    X_test = dataTest.values[i:j,3:]
+    X_test = pd.read_csv('../../triple_cosineSNF(zeros).csv').values[i:j, 3:]
 #     y_test = dataTest.values[i:j,2].astype(int)
 
     testNum = len(X_test)
 
     #reshape data to fit model
     # X_train = X_train.reshape(trainNum,16,71,1)
-    X_test = X_test.reshape(testNum,16,71,1)
+    X_test = X_test.reshape(testNum, 16, 71, 1)
 
     # y_train = y_train + 1
 #     y_test  = y_test + 1
@@ -481,30 +416,39 @@ for i in range(0,279354,46559):
 
     #predict first 4 images in the test set
     predit = model.predict(X_test)
-    pd.DataFrame(predit).to_csv('predict_' + str(k) + '.csv', index=False)
+    X_test = []
+    
+    pd.DataFrame(predit).to_csv('predict_' + str(k) + '_without softmax.csv', index=False)
 #     predit
     k += 1
+    f = 0
     for a,b in predit:
         if a >=0.6:
             predicts.append(0)
             d += 1
+            f += 1
         elif b>=0.6:
             predicts.append(2)
             e += 1
+            f += 1
         else:
             predicts.append(1)
             z += 1
-            zeroIndexes.append(i)
-print('degrassive', d, 'enhancive', e, 'zeros', z)
+            zeroIndexes.append(i + f)
+            f += 1
+#     predit = []
+    print('degrassive', d, 'enhancive', e, 'zeros', z)
+    pd.DataFrame(zeroIndexes).to_csv('zero indexes_' + str(k-1) +'_without softmax.csv', index=False)
+    zeroIndexes = []
 
 
 # In[ ]:
 
 
-pd.DataFrame(zeroIndexes).to_csv('zero indexes.csv', index=False)
+# pd.DataFrame(zeroIndexes).to_csv('zero indexes_without softmax.csv', index=False)
 
 
-# In[23]:
+# In[ ]:
 
 
 
@@ -524,31 +468,34 @@ pd.DataFrame(zeroIndexes).to_csv('zero indexes.csv', index=False)
 # plot_confusion_matrix_from_data(list((dataTest.values[:,2]+1)), list(predicts))
 
 
-# In[24]:
+# In[ ]:
 
 
-pd.DataFrame(predit)
+# print(pd.DataFrame(predit))
 
 
-# In[25]:
+# In[ ]:
 
 
 pd.DataFrame(predit).plot.density()
+plt.show()
 
 
-# In[26]:
+# In[ ]:
 
 
 pd.DataFrame(predit).iloc[:,0].plot.density()
+plt.show()
 
 
-# In[27]:
+# In[ ]:
 
 
 pd.DataFrame(predit).iloc[:,1].plot.density()
+plt.show()
 
 
-# In[30]:
+# In[ ]:
 
 
 fig, ax = plt.subplots()
@@ -571,9 +518,10 @@ sns.distplot(pd.DataFrame(predit).iloc[:,1], hist=True, kde=False,
 plt.title('frequency Histogram of Drugs')
 plt.xlabel('Enhancive drugs Probability')
 plt.ylabel('frequency distribution')
+plt.show()
 
 
-# In[31]:
+# In[ ]:
 
 
 
@@ -597,9 +545,10 @@ sns.distplot(pd.DataFrame(predit).iloc[:,0], hist=True, kde=False,
 plt.title('frequency Histogram of Drugs')
 plt.xlabel('Degressive drugs Probability')
 plt.ylabel('frequency distribution')
+plt.show()
 
 
-# In[32]:
+# In[ ]:
 
 
 
@@ -626,9 +575,10 @@ sns.distplot(pd.DataFrame(predit).iloc[:,0], hist=True, kde=False,
 plt.title('frequency Histogram of Drugs')
 plt.xlabel('both of Degressive and Enhancive drugs Probability')
 plt.ylabel('frequency distribution')
+plt.show()
 
 
-# In[55]:
+# In[ ]:
 
 
 279354/2/3
