@@ -226,7 +226,7 @@ model.add(Flatten())
 model.add(Dense( 64, activation='relu'))
 model.add(Dropout(0.2))
 model.add(Dense( 16, activation='relu'))
-model.add(Dense( 2, activation='sigmoid'))
+model.add(Dense( 3, activation='sigmoid'))
 # model.add(Softmax(128))
 model.summary()
 
@@ -238,7 +238,7 @@ adam = optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999)
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) ## Minist
 
 ### Load the model's saved weights.
-model.load_weights('Weight/cnn42702(1and-1)_without softmax.h5')
+model.load_weights('model with zeros_20epoch.h5')
 
 
 # In[18]:
@@ -498,6 +498,13 @@ plt.show()
 # In[ ]:
 
 
+pd.DataFrame(predit).iloc[:,2].plot.density()
+plt.show()
+
+
+# In[ ]:
+
+
 fig, ax = plt.subplots()
 fig.set_size_inches(16, 8)
 
@@ -515,7 +522,7 @@ sns.distplot(pd.DataFrame(predit).iloc[:,1], hist=True, kde=False,
 #              hist_kws={'edgecolor':'black'},
 #              kde_kws={'linewidth': 4})
 # Add labels
-plt.title('frequency Histogram of Drugs')
+plt.title('frequency Histogram of Zero Drugs')
 plt.xlabel('Enhancive drugs Probability')
 plt.ylabel('frequency distribution')
 plt.show()
@@ -542,7 +549,7 @@ sns.distplot(pd.DataFrame(predit).iloc[:,0], hist=True, kde=False,
 #              hist_kws={'edgecolor':'black'},
 #              kde_kws={'linewidth': 4})
 # Add labels
-plt.title('frequency Histogram of Drugs')
+plt.title('frequency Histogram of Degrassive Drugs')
 plt.xlabel('Degressive drugs Probability')
 plt.ylabel('frequency distribution')
 plt.show()
@@ -560,12 +567,42 @@ fig.set_size_inches(16,8)
 #          bins = int(200))
 
 # seaborn histogram
+
+sns.distplot(pd.DataFrame(predit).iloc[:,2], hist=True, kde=False, 
+             bins=int(100), color = 'red',
+             hist_kws={'edgecolor':'black'})
+# sns.distplot(pd.DataFrame(predit).iloc[:,0], hist=True, kde=True, 
+#              bins=int(200), color = 'darkblue', 
+#              hist_kws={'edgecolor':'black'},
+#              kde_kws={'linewidth': 4})
+# Add labels
+plt.title('frequency Histogram of encreasive Drugs')
+plt.xlabel('Degressive drugs Probability')
+plt.ylabel('frequency distribution')
+plt.show()
+
+
+# In[3]:
+
+
+
+fig, ax = plt.subplots()
+fig.set_size_inches(16,8)
+
+# matplotlib histogram
+# plt.hist(pd.DataFrame(predit).iloc[:,1], color = 'blue', edgecolor = 'black',
+#          bins = int(200))
+
+# seaborn histogram
 sns.distplot(pd.DataFrame(predit).iloc[:,1], hist=True, kde=False, 
              bins=int(100), color = 'blue',
              hist_kws={'edgecolor':'black'})
 
 sns.distplot(pd.DataFrame(predit).iloc[:,0], hist=True, kde=False, 
              bins=int(100), color = 'red',
+             hist_kws={'edgecolor':'black'})
+sns.distplot(pd.DataFrame(predit).iloc[:,2], hist=True, kde=False, 
+             bins=int(100), color = 'green',
              hist_kws={'edgecolor':'black'})
 # sns.distplot(pd.DataFrame(predit).iloc[:,0], hist=True, kde=True, 
 #              bins=int(200), color = 'darkblue', 
