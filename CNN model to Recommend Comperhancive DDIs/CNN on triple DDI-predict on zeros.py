@@ -204,7 +204,7 @@ from keras import optimizers
 # y_test[0]
 
 
-# In[17]:
+# In[18]:
 
 
 
@@ -238,7 +238,7 @@ adam = optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999)
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) ## Minist
 
 ### Load the model's saved weights.
-model.load_weights('model with zeros_20epoch.h5')
+model.load_weights('Weight/model with zeros_20epoch.h5')
 
 
 # In[18]:
@@ -387,6 +387,8 @@ model.load_weights('model with zeros_20epoch.h5')
 predicts = []
 e = d = z = 0
 zeroIndexes = []
+DegIndexes = []
+EnhIndexes = []
 k = 0
 for i in range(0,279354,46559):
     j = i + 46559
@@ -422,14 +424,18 @@ for i in range(0,279354,46559):
 #     predit
     k += 1
     f = 0
-    for a,b in predit:
-        if a >=0.6:
+    for a,b,c in predit:
+        if a >=0.95:
             predicts.append(0)
             d += 1
+            DegIndexes.append(i + f)
             f += 1
-        elif b>=0.6:
+            
+
+        elif c>=0.95:
             predicts.append(2)
             e += 1
+            EnhIndexes.append(i + f)
             f += 1
         else:
             predicts.append(1)
@@ -438,7 +444,13 @@ for i in range(0,279354,46559):
             f += 1
 #     predit = []
     print('degrassive', d, 'enhancive', e, 'zeros', z)
-    pd.DataFrame(zeroIndexes).to_csv('zero indexes_' + str(k-1) +'_without softmax.csv', index=False)
+    pd.DataFrame(EnhIndexes).to_csv('enhansive indexes_' + str(k-1) +'predict triple for bio evidance.csv', index=False)
+    EnhIndexes = []
+    
+    pd.DataFrame(DegIndexes).to_csv('Degrassive indexes_' + str(k-1) +'predict triple for bio evidance.csv', index=False)
+    DegIndexes = []
+    
+    pd.DataFrame(zeroIndexes).to_csv('zero indexes_' + str(k-1) +'predict triple for bio evidance.csv', index=False)
     zeroIndexes = []
 
 
@@ -576,7 +588,7 @@ sns.distplot(pd.DataFrame(predit).iloc[:,2], hist=True, kde=False,
 #              hist_kws={'edgecolor':'black'},
 #              kde_kws={'linewidth': 4})
 # Add labels
-plt.title('frequency Histogram of encreasive Drugs')
+plt.title('frequency Histogram of Enhansive Drugs')
 plt.xlabel('Degressive drugs Probability')
 plt.ylabel('frequency distribution')
 plt.show()
@@ -618,7 +630,7 @@ plt.show()
 # In[ ]:
 
 
-279354/2/3
+# 279354/2/3
 
 
 # In[ ]:
