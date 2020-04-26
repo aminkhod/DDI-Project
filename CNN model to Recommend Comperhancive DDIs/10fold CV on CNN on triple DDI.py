@@ -22,7 +22,7 @@ from keras.layers import Dense, Conv2D, Flatten, Softmax, Dropout
 # In[2]:
 
 
-tripleData = pd.read_csv('../../triple42702.csv')
+tripleData = pd.read_csv('triple42702.csv')
 fold = 10 
 interval = int(42702/fold)
 auprList = []
