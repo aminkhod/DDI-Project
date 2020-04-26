@@ -238,7 +238,7 @@ adam = optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999)
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) ## Minist
 
 ### Load the model's saved weights.
-model.load_weights('Weight/model with zeros_20epoch.h5')
+model.load_weights('Weight/model with zeros_all data_11.h5')
 
 
 # In[18]:
@@ -420,7 +420,7 @@ for i in range(0,279354,46559):
     predit = model.predict(X_test)
     X_test = []
     
-    pd.DataFrame(predit).to_csv('predict_' + str(k) + '_without softmax.csv', index=False)
+    pd.DataFrame(predit).to_csv('Predict on zero for bio evidance/predict_' + str(k) + 'allTrain_without softmax.csv', index=False)
 #     predit
     k += 1
     f = 0
@@ -444,13 +444,13 @@ for i in range(0,279354,46559):
             f += 1
 #     predit = []
     print('degrassive', d, 'enhancive', e, 'zeros', z)
-    pd.DataFrame(EnhIndexes).to_csv('enhansive indexes_' + str(k-1) +'predict triple for bio evidance.csv', index=False)
+    pd.DataFrame(EnhIndexes).to_csv('Predict on zero for bio evidance/enhansive indexes_' + str(k-1) +'predict triple for bio evidance.csv', index=False)
     EnhIndexes = []
     
-    pd.DataFrame(DegIndexes).to_csv('Degrassive indexes_' + str(k-1) +'predict triple for bio evidance.csv', index=False)
+    pd.DataFrame(DegIndexes).to_csv('Predict on zero for bio evidance/Degrassive indexes_' + str(k-1) +'predict triple for bio evidance.csv', index=False)
     DegIndexes = []
     
-    pd.DataFrame(zeroIndexes).to_csv('zero indexes_' + str(k-1) +'predict triple for bio evidance.csv', index=False)
+    pd.DataFrame(zeroIndexes).to_csv('Predict on zero for bio evidance/zero indexes_' + str(k-1) +'predict triple for bio evidance.csv', index=False)
     zeroIndexes = []
 
 
