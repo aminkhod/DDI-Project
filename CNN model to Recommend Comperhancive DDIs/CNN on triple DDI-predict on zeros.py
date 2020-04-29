@@ -54,7 +54,7 @@ adam = optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999)
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) ## Minist
 
 ### Load the model's saved weights.
-model.load_weights('cnn42702(1and-1)_5_epoch.h5')
+model.load_weights('cnn42702(1and-1)_dense64to32_dense16to8_Dropout0.2to0.4_addingDropout0.4_3 epoch.h5')
 
 
 
@@ -95,7 +95,7 @@ for i in range(0,279354,46559):
     predit = model.predict(X_test)
     X_test = []
     
-    pd.DataFrame(predit).to_csv('predict_epoch5_' + str(k) + '_42702.csv', index=False)
+    pd.DataFrame(predit).to_csv('predict_epoch3_' + str(k) + '_42702.csv', index=False)
 #     predit
     k += 1
     f = 0
