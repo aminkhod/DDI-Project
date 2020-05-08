@@ -42,7 +42,7 @@ model.add(Flatten())
 model.add(Dense( 64, activation='relu'))
 model.add(Dropout(0.2))
 model.add(Dense( 16, activation='relu'))
-model.add(Dense( 2, activation='sigmoid'))
+model.add(Dense( 3, activation='sigmoid'))
 # model.add(Softmax(128))
 model.summary()
 
@@ -54,7 +54,7 @@ adam = optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999)
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) ## Minist
 
 ### Load the model's saved weights.
-model.load_weights('cnn42702(1and-1)_dense64to32_dense16to8_Dropout0.2to0.4_addingDropout0.4_3 epoch.h5')
+model.load_weights('Weight\model with zeros_all data_10.h5')
 
 
 
@@ -99,7 +99,7 @@ for i in range(0,279354,46559):
 #     predit
     k += 1
     f = 0
-    for a,c in predit:
+    for a,b,c in predit:
         if a >=0.95:
             predicts.append(0)
             d += 1
