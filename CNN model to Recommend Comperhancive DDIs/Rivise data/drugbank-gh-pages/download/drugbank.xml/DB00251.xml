@@ -1,0 +1,977 @@
+
+<drug type="small molecule" created="2005-06-13" updated="2013-09-16">
+  <drugbank-id primary="true">DB00251</drugbank-id>
+  <drugbank-id>APRD00659</drugbank-id>
+  <name>Terconazole</name>
+  <description>Terconazole is an anti-fungal medication, primarily used to treat vaginal fungal infections. [Wikipedia]</description>
+  <cas-number>67915-31-5</cas-number>
+  <groups>
+    <group>approved</group>
+  </groups>
+  <general-references format="textile"/>
+  <synthesis-reference/>
+  <indication>For the treatment of candidiasis (a yeast-like fungal infection) of the vulva and vagina.</indication>
+  <pharmacodynamics>Terconazole is a triazole antifungal agent available for intravaginal use. It is structurally related to imidazole-derivative antifungal agents, although terconazole and other triazoles have 3 nitrogens in the azole ring. By inhibiting the 14-alpha-demethylase (lanosterol 14-alpha-demethylase), Terconazole inhibits ergosterol synthesis. Depletion of ergosterol in fungal membrane disrupts the structure and many functions of fungal membrane leading to inhibition of fungal growth.</pharmacodynamics>
+  <mechanism-of-action>Terconazole may exert its antifungal activity by disrupting normal fungal cell membrane permeability. Terconazole and other triazole antifungal agents inhibit cytochrome P450 14-alpha-demethylase in susceptible fungi, which leads to the accumulation of lanosterol and other methylated sterols and a decrease in ergosterol concentration. Depletion of ergosterol in the membrane disrupts the structure and function of the fungal cell leading to a decrease or inhibition of fungal growth.</mechanism-of-action>
+  <toxicity>The oral LD&lt;sub&gt;50&lt;/sub&gt; values were found to be 1741 and 849 mg/kg for the male and female in rat.</toxicity>
+  <metabolism>Systemically absorbed drug appears to be rapidly and extensively metabolized. Terconazole primarily undergoes oxidatative N- and O-dealkylation, dioxolane ring cleavage, and conjugation.</metabolism>
+  <absorption>Following intravaginal administration of terconazole in humans, absorption ranged from 5-8% in three hysterectomized subjects and 12-16% in two non-hysterectomized subjects with tubal ligations</absorption>
+  <half-life>6.9 hours (range 4.0-11.3)</half-life>
+  <protein-binding>94.9%</protein-binding>
+  <route-of-elimination>Following oral (30 mg) administration of 14C-labelled terconazole, excretion of radioactivity was both by renal (32-56%) and fecal (47-52%) routes.</route-of-elimination>
+  <volume-of-distribution/>
+  <clearance/>
+  <classification>
+    <description>This compound belongs to the phenylpiperazines. These are compounds containing a phenylpiperazine skeleton, which consists of a piperazine bound to a phenyl group.</description>
+    <direct-parent>Phenylpiperazines</direct-parent>
+    <kingdom>Organic Compounds</kingdom>
+    <superclass>Heterocyclic Compounds</superclass>
+    <class>Piperazines</class>
+    <subclass>Phenylpiperazines</subclass>
+    <alternative-parent>Dichlorobenzenes</alternative-parent>
+    <alternative-parent>Phenol Ethers</alternative-parent>
+    <alternative-parent>Alkyl Aryl Ethers</alternative-parent>
+    <alternative-parent>Aryl Chlorides</alternative-parent>
+    <alternative-parent>Diazinanes</alternative-parent>
+    <alternative-parent>Triazoles</alternative-parent>
+    <alternative-parent>1,3-Dioxolanes</alternative-parent>
+    <alternative-parent>Tertiary Amines</alternative-parent>
+    <alternative-parent>Polyamines</alternative-parent>
+    <alternative-parent>Dialkyl Ethers</alternative-parent>
+    <alternative-parent>Acetals</alternative-parent>
+    <alternative-parent>Organochlorides</alternative-parent>
+    <substituent>1,3-dichlorobenzene</substituent>
+    <substituent>phenol ether</substituent>
+    <substituent>alkyl aryl ether</substituent>
+    <substituent>chlorobenzene</substituent>
+    <substituent>aryl chloride</substituent>
+    <substituent>aryl halide</substituent>
+    <substituent>benzene</substituent>
+    <substituent>1,4-diazinane</substituent>
+    <substituent>azole</substituent>
+    <substituent>meta-dioxolane</substituent>
+    <substituent>1,2,4-triazole</substituent>
+    <substituent>tertiary amine</substituent>
+    <substituent>acetal</substituent>
+    <substituent>dialkyl ether</substituent>
+    <substituent>polyamine</substituent>
+    <substituent>ether</substituent>
+    <substituent>amine</substituent>
+    <substituent>organohalogen</substituent>
+    <substituent>organonitrogen compound</substituent>
+    <substituent>organochloride</substituent>
+  </classification>
+  <salts/>
+  <synonyms>
+    <synonym language="" coder="">Terazol 3</synonym>
+  </synonyms>
+  <products>
+    <product>
+      <name>Terazol 7</name>
+      <ndc-id>0062-5350_c884b618-0de0-11e0-98a8-3a04dfd72085</ndc-id>
+      <ndc-product-code>0062-5350</ndc-product-code>
+      <started-marketing-on>1988-06-27</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>4 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019579</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terazol 3</name>
+      <ndc-id>0062-5351_c884b618-0de0-11e0-98a8-3a04dfd72085</ndc-id>
+      <ndc-product-code>0062-5351</ndc-product-code>
+      <started-marketing-on>1988-06-27</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>suppository</dosage-form>
+      <strength>80 mg</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019641</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terazol 3</name>
+      <ndc-id>0062-5356_c884b618-0de0-11e0-98a8-3a04dfd72085</ndc-id>
+      <ndc-product-code>0062-5356</ndc-product-code>
+      <started-marketing-on>1991-02-21</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>8 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019964</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>0168-0346_65980ec1-f21c-4083-84cc-4b9c2617ed5a</ndc-id>
+      <ndc-product-code>0168-0346</ndc-product-code>
+      <started-marketing-on>2005-02-18</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>4 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>ANDA076712</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole Vaginal Cream 0.8%</name>
+      <ndc-id>0168-0347_c0111708-86f4-4ba0-bbe3-aad538c9c313</ndc-id>
+      <ndc-product-code>0168-0347</ndc-product-code>
+      <started-marketing-on>2004-10-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>8 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA021735</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Zazole</name>
+      <ndc-id>0462-0346_424093cd-d1df-4c1d-ab48-e4305214a65e</ndc-id>
+      <ndc-product-code>0462-0346</ndc-product-code>
+      <started-marketing-on>2005-02-18</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>4 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>ANDA076712</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Zazole</name>
+      <ndc-id>0462-0347_f06b64ca-9308-41b5-b164-508e4c94191b</ndc-id>
+      <ndc-product-code>0462-0347</ndc-product-code>
+      <started-marketing-on>2009-10-02</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>8 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA021735</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Zazole</name>
+      <ndc-id>0462-0348_cfbfbc98-a8e5-42fa-b83f-85719d109aa4</ndc-id>
+      <ndc-product-code>0462-0348</ndc-product-code>
+      <started-marketing-on>2006-07-12</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>suppository</dosage-form>
+      <strength>80 mg</strength>
+      <route>vaginal</route>
+      <fda-application-number>ANDA076850</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>0591-3196_f0617705-38d2-460b-a329-e916ca655e33</ndc-id>
+      <ndc-product-code>0591-3196</ndc-product-code>
+      <started-marketing-on>2004-04-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>4 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019579</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>0591-3197_f0617705-38d2-460b-a329-e916ca655e33</ndc-id>
+      <ndc-product-code>0591-3197</ndc-product-code>
+      <started-marketing-on>2004-04-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>8 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019964</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>21695-844_5527cd23-567b-4019-8e5c-f71ee7ed2689</ndc-id>
+      <ndc-product-code>21695-844</ndc-product-code>
+      <started-marketing-on>2005-01-19</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>4 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>ANDA076043</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>21695-933_472e7b07-83fc-4857-9cc0-50e6aa03f10d</ndc-id>
+      <ndc-product-code>21695-933</ndc-product-code>
+      <started-marketing-on>2004-04-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>8 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019964</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>45802-717_0e68edfe-972b-4763-8549-6e40120ca53b</ndc-id>
+      <ndc-product-code>45802-717</ndc-product-code>
+      <started-marketing-on>2006-08-28</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>suppository</dosage-form>
+      <strength>80 mg</strength>
+      <route>vaginal</route>
+      <fda-application-number>ANDA077149</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terazol 3</name>
+      <ndc-id>50458-531_7325732c-8475-4ed2-8189-4b9e2353be63</ndc-id>
+      <ndc-product-code>50458-531</ndc-product-code>
+      <started-marketing-on>1988-05-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>suppository</dosage-form>
+      <strength>80 mg</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019641</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terazol 7</name>
+      <ndc-id>50458-535_7325732c-8475-4ed2-8189-4b9e2353be63</ndc-id>
+      <ndc-product-code>50458-535</ndc-product-code>
+      <started-marketing-on>1987-12-31</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>4 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019579</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terazol 3</name>
+      <ndc-id>50458-536_7325732c-8475-4ed2-8189-4b9e2353be63</ndc-id>
+      <ndc-product-code>50458-536</ndc-product-code>
+      <started-marketing-on>1991-02-21</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>8 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019964</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>51672-1302_6433c4a3-250d-4615-9d62-b08a3c62b924</ndc-id>
+      <ndc-product-code>51672-1302</ndc-product-code>
+      <started-marketing-on>2004-04-06</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>8 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>ANDA075953</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>51672-1304_9e19014b-b467-4045-88dd-96134272fa02</ndc-id>
+      <ndc-product-code>51672-1304</ndc-product-code>
+      <started-marketing-on>2005-01-19</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>4 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>ANDA076043</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>51672-1330_d4c3cb7a-21be-4d8e-a20c-90018539260b</ndc-id>
+      <ndc-product-code>51672-1330</ndc-product-code>
+      <started-marketing-on>2007-03-09</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>suppository</dosage-form>
+      <strength>80 mg</strength>
+      <route>vaginal</route>
+      <fda-application-number>ANDA077553</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>52959-811_efdfe922-d360-43bc-b65c-245178658b4a</ndc-id>
+      <ndc-product-code>52959-811</ndc-product-code>
+      <started-marketing-on>2004-04-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>4 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019579</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terazol 3</name>
+      <ndc-id>54569-3195_8a850bff-faac-4938-8c90-af6692b5b225</ndc-id>
+      <ndc-product-code>54569-3195</ndc-product-code>
+      <started-marketing-on>1991-02-21</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>8 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019964</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>54868-5183_3f8e1db1-b2e1-4b1f-a1a9-863715d303a2</ndc-id>
+      <ndc-product-code>54868-5183</ndc-product-code>
+      <started-marketing-on>2004-11-18</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>8 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>ANDA075953</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>54868-6160_8d38d308-d218-4f4e-b7bf-e29acb3a8c56</ndc-id>
+      <ndc-product-code>54868-6160</ndc-product-code>
+      <started-marketing-on>2010-08-24</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>4 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>ANDA076712</fda-application-number>
+      <generic>true</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+    <product>
+      <name>Terconazole</name>
+      <ndc-id>55045-3259_bce76198-3fdc-482e-8c03-31fd4e134aeb</ndc-id>
+      <ndc-product-code>55045-3259</ndc-product-code>
+      <started-marketing-on>2004-04-01</started-marketing-on>
+      <ended-marketing-on/>
+      <dosage-form>cream</dosage-form>
+      <strength>8 mg/g</strength>
+      <route>vaginal</route>
+      <fda-application-number>NDA019964</fda-application-number>
+      <generic>false</generic>
+      <over-the-counter>false</over-the-counter>
+      <approved>true</approved>
+      <country>US</country>
+      <source>FDA NDC</source>
+    </product>
+  </products>
+  <international-brands>
+    <international-brand company="">Terazol</international-brand>
+  </international-brands>
+  <mixtures/>
+  <packagers>
+    <packager>
+      <name>A-S Medication Solutions LLC</name>
+      <url>http://orders.a-smeds.com</url>
+    </packager>
+    <packager>
+      <name>Dept Health Central Pharmacy</name>
+      <url/>
+    </packager>
+    <packager>
+      <name>Dispensing Solutions</name>
+      <url>http://www.drxdispensing.com</url>
+    </packager>
+    <packager>
+      <name>Diversified Healthcare Services Inc.</name>
+      <url>http://www.dhscorp.com</url>
+    </packager>
+    <packager>
+      <name>E. Fougera and Co.</name>
+      <url>http://www.fougera.com</url>
+    </packager>
+    <packager>
+      <name>Lake Erie Medical and Surgical Supply</name>
+      <url/>
+    </packager>
+    <packager>
+      <name>Nycomed Inc.</name>
+      <url>http://www.nycomed.com</url>
+    </packager>
+    <packager>
+      <name>Ortho Mcneil Janssen Pharmaceutical Inc.</name>
+      <url>http://www.ortho-mcneil.com</url>
+    </packager>
+    <packager>
+      <name>Ortho-McNeil-Janssen Pharmaceuticals Inc.</name>
+      <url>http://www.ortho-mcneil.com</url>
+    </packager>
+    <packager>
+      <name>Perrigo Co.</name>
+      <url>http://www.perrigo.com</url>
+    </packager>
+    <packager>
+      <name>Pharmaderm</name>
+      <url>http://www.pharmaderm.com</url>
+    </packager>
+    <packager>
+      <name>Pharmedix</name>
+      <url>http://www.pharmedixrx.com</url>
+    </packager>
+    <packager>
+      <name>Physicians Total Care Inc.</name>
+      <url>http://www.physicianstotalcare.com</url>
+    </packager>
+    <packager>
+      <name>Rebel Distributors Corp.</name>
+      <url>http://www.rebelrx.com</url>
+    </packager>
+    <packager>
+      <name>Stat Rx Usa</name>
+      <url>http://statrxusa.exporterus.com</url>
+    </packager>
+    <packager>
+      <name>Taro Pharmaceuticals USA</name>
+      <url>http://www.tarousa.com</url>
+    </packager>
+    <packager>
+      <name>Watson Pharmaceuticals</name>
+      <url>http://www.watson.com</url>
+    </packager>
+  </packagers>
+  <manufacturers>
+    <manufacturer generic="false">Ortho mcneil janssen pharmaceuticals inc</manufacturer>
+    <manufacturer generic="true">Altana inc</manufacturer>
+    <manufacturer generic="true">Nycomed us inc</manufacturer>
+    <manufacturer generic="true">Taro pharmaceuticals usa inc</manufacturer>
+    <manufacturer generic="false">Ortho mcneil janssen pharmaceutical inc</manufacturer>
+    <manufacturer generic="true">Perrigo new york inc</manufacturer>
+  </manufacturers>
+  <prices>
+    <price>
+      <description>Terazol 7 cream</description>
+      <cost currency="USD">1.17</cost>
+      <unit>g</unit>
+    </price>
+    <price>
+      <description>Terconazole 0.8% cream</description>
+      <cost currency="USD">2.35</cost>
+      <unit>g</unit>
+    </price>
+    <price>
+      <description>Zazole 0.8% vaginal cream</description>
+      <cost currency="USD">2.54</cost>
+      <unit>g</unit>
+    </price>
+    <price>
+      <description>Terazol 3 cream</description>
+      <cost currency="USD">2.64</cost>
+      <unit>g</unit>
+    </price>
+    <price>
+      <description>Terconazole 0.4% Cream 45 gm Tube</description>
+      <cost currency="USD">42.57</cost>
+      <unit>tube</unit>
+    </price>
+    <price>
+      <description>Terconazole 0.8% Cream 20 gm Tube</description>
+      <cost currency="USD">42.57</cost>
+      <unit>tube</unit>
+    </price>
+    <price>
+      <description>Terconazole 3 80 mg Suppository Box</description>
+      <cost currency="USD">50.9</cost>
+      <unit>box</unit>
+    </price>
+    <price>
+      <description>Terazol 3 3 80 mg Suppository Box</description>
+      <cost currency="USD">53.99</cost>
+      <unit>box</unit>
+    </price>
+    <price>
+      <description>Terazol 7 0.4% Cream 45 gm Tube</description>
+      <cost currency="USD">54.0</cost>
+      <unit>tube</unit>
+    </price>
+    <price>
+      <description>Terazol 3 0.8% Cream 20 gm Tube</description>
+      <cost currency="USD">55.99</cost>
+      <unit>tube</unit>
+    </price>
+    <price>
+      <description>Terconazole 0.4% cream</description>
+      <cost currency="USD">0.96</cost>
+      <unit>g</unit>
+    </price>
+  </prices>
+  <categories>
+    <category>
+      <category>Antifungal Agents</category>
+      <mesh-id/>
+    </category>
+  </categories>
+  <affected-organisms>
+    <affected-organism>Fungi</affected-organism>
+  </affected-organisms>
+  <dosages>
+    <dosage>
+      <form>Cream</form>
+      <route>vaginal</route>
+      <strength>4 mg/g</strength>
+    </dosage>
+    <dosage>
+      <form>Cream</form>
+      <route>vaginal</route>
+      <strength>8 mg/g</strength>
+    </dosage>
+    <dosage>
+      <form>Suppository</form>
+      <route>vaginal</route>
+      <strength>80 mg</strength>
+    </dosage>
+  </dosages>
+  <atc-codes>
+    <atc-code code="G01AG02">
+      <level code="G">GENITO URINARY SYSTEM AND SEX HORMONES</level>
+      <level code="G01">GYNECOLOGICAL ANTIINFECTIVES AND ANTISEPTICS</level>
+      <level code="G01A">ANTIINFECTIVES AND ANTISEPTICS, EXCL. COMBINATIONS WITH CORTICOSTEROIDS</level>
+      <level code="G01AG">Triazole derivatives</level>
+    </atc-code>
+  </atc-codes>
+  <ahfs-codes>
+    <ahfs-code>84:04.08.08</ahfs-code>
+  </ahfs-codes>
+  <patents/>
+  <food-interactions/>
+  <drug-interactions/>
+  <calculated-properties>
+    <property>
+      <kind>logP</kind>
+      <value>4.58</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logS</kind>
+      <value>-4.7</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>Water Solubility</kind>
+      <value>1.16e-02 g/l</value>
+      <source>ALOGPS</source>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>5.37</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>IUPAC Name</kind>
+      <value>1-(4-{[(2R,4S)-2-(2,4-dichlorophenyl)-2-(1H-1,2,4-triazol-1-ylmethyl)-1,3-dioxolan-4-yl]methoxy}phenyl)-4-(propan-2-yl)piperazine</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Traditional IUPAC Name</kind>
+      <value>terconazole</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Weight</kind>
+      <value>532.462</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Monoisotopic Weight</kind>
+      <value>531.180395297</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>SMILES</kind>
+      <value>CC(C)N1CCN(CC1)C1=CC=C(OC[C@H]2CO[C@@](CN3C=NC=N3)(O2)C2=C(Cl)C=C(Cl)C=C2)C=C1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Molecular Formula</kind>
+      <value>C26H31Cl2N5O3</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChI</kind>
+      <value>InChI=1S/C26H31Cl2N5O3/c1-19(2)31-9-11-32(12-10-31)21-4-6-22(7-5-21)34-14-23-15-35-26(36-23,16-33-18-29-17-30-33)24-8-3-20(27)13-25(24)28/h3-8,13,17-19,23H,9-12,14-16H2,1-2H3/t23-,26-/m0/s1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>InChIKey</kind>
+      <value>InChIKey=BLSQLHNBWJLIBQ-OZXSUGGESA-N</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polar Surface Area (PSA)</kind>
+      <value>64.88</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Refractivity</kind>
+      <value>153.19</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Polarizability</kind>
+      <value>56.15</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Rotatable Bond Count</kind>
+      <value>8</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Acceptor Count</kind>
+      <value>7</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>H Bond Donor Count</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>pKa (strongest basic)</kind>
+      <value>8.41</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Physiological Charge</kind>
+      <value>1</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Number of Rings</kind>
+      <value>5</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>Bioavailability</kind>
+      <value>0</value>
+      <source>ChemAxon</source>
+    </property>
+    <property>
+      <kind>MDDR-Like Rule</kind>
+      <value>true</value>
+      <source>ChemAxon</source>
+    </property>
+  </calculated-properties>
+  <experimental-properties>
+    <property>
+      <kind>Melting Point</kind>
+      <value>126.3 °C</value>
+      <source/>
+    </property>
+    <property>
+      <kind>logP</kind>
+      <value>4.5</value>
+      <source/>
+    </property>
+  </experimental-properties>
+  <external-identifiers>
+    <external-identifier>
+      <resource>PubChem Compound</resource>
+      <identifier>441383</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PubChem Substance</resource>
+      <identifier>46505257</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Compound</resource>
+      <identifier>C08080</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>KEGG Drug</resource>
+      <identifier>D00888</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>ChemSpider</resource>
+      <identifier>390122</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>National Drug Code Directory</resource>
+      <identifier>0168-0347-20</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>PharmGKB</resource>
+      <identifier>PA164768834</identifier>
+    </external-identifier>
+    <external-identifier>
+      <resource>Wikipedia</resource>
+      <identifier>Terconazole</identifier>
+    </external-identifier>
+  </external-identifiers>
+  <external-links>
+    <external-link>
+      <resource>RxList</resource>
+      <url>http://www.rxlist.com/cgi/generic/tercon.htm</url>
+    </external-link>
+    <external-link>
+      <resource>PDRhealth</resource>
+      <url>http://www.pdrhealth.com/drug_info/rxdrugprofiles/drugs/ter1436.shtml</url>
+    </external-link>
+    <external-link>
+      <resource>Drugs.com</resource>
+      <url>http://www.drugs.com/cdi/terconazole-cream.html</url>
+    </external-link>
+  </external-links>
+  <pathways/>
+  <reactions/>
+  <snp-effects/>
+  <snp-adverse-drug-reactions/>
+  <targets>
+    <target position="1">
+      <id>BE0000233</id>
+      <name>Lanosterol 14-alpha demethylase</name>
+      <organism>Yeast</organism>
+      <actions>
+        <action>antagonist</action>
+      </actions>
+      <references format="textile"># Vanden Bossche H, Marichal P: Mode of action of anti-Candida drugs: focus on terconazole and other ergosterol biosynthesis inhibitors. Am J Obstet Gynecol. 1991 Oct;165(4 Pt 2):1193-9. "Pubmed":http://www.ncbi.nlm.nih.gov/pubmed/1951574&#13;
+# Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE: The Protein Data Bank. Nucleic Acids Res. 2000 Jan 1;28(1):235-42. "Pubmed":http://www.ncbi.nlm.nih.gov/pubmed/10592235&#13;
+# Cauwenbergh G, Vanden Bossche H: Terconazole. Pharmacology of a new antimycotic agent. J Reprod Med. 1989 Aug;34(8 Suppl):588-92. "Pubmed":http://www.ncbi.nlm.nih.gov/pubmed/2677363</references>
+      <known-action>yes</known-action>
+      <polypeptide id="P10613" source="Swiss-Prot">
+    <name>Lanosterol 14-alpha demethylase</name>
+    <general-function>Secondary metabolites biosynthesis, transport and catabolism</general-function>
+    <specific-function>Catalyzes C14-demethylation of lanosterol which is critical for ergosterol biosynthesis. It transforms lanosterol into 4,4'-dimethyl cholesta-8,14,24-triene-3-beta-ol</specific-function>
+    <gene-name>ERG11</gene-name>
+    <locus/>
+    <cellular-location/>
+    <transmembrane-regions>15-37; 50-69</transmembrane-regions>
+    <signal-regions/>
+    <theoretical-pi>7.19</theoretical-pi>
+    <molecular-weight>60676.0</molecular-weight>
+    <chromosome-location/>
+    <organism ncbi-taxonomy-id="237561">Yeast</organism>
+    <external-identifiers>
+      <external-identifier>
+        <resource>GenBank Gene Database</resource>
+        <identifier>X13296</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>GenBank Protein Database</resource>
+        <identifier>578119</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>UniProtKB</resource>
+        <identifier>P10613</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>UniProt Accession</resource>
+        <identifier>CP51_CANAL</identifier>
+      </external-identifier>
+    </external-identifiers>
+    <synonyms>
+      <synonym>CYPLI</synonym>
+      <synonym>EC 1.14.13.70</synonym>
+      <synonym>Lanosterol 14-alpha demethylase</synonym>
+      <synonym>P450-14DM</synonym>
+      <synonym>P450-LIA1</synonym>
+      <synonym>Sterol 14- alpha demethylase</synonym>
+    </synonyms>
+    <amino-acid-sequence format="FASTA">&gt;Cytochrome P450 51
+MAIVETVIDGINYFLSLSVTQQISILLGVPFVYNLVWQYLYSLRKDRAPLVFYWIPWFGS
+AASYGQQPYEFFESCRQKYGDVFSFMLLGKIMTVYLGPKGHEFVFNAKLSDVSAEDAYKH
+LTTPVFGKGVIYDCPNSRLMEQKKFAKFALTTDSFKRYVPKIREEILNYFVTDESFKLKE
+KTHGVANVMKTQPEITIFTASRSLFGDEMRRIFDRSFAQLYSDLDKGFTPINFVFPNLPL
+PHYWRRDAAQKKISATYMKEIKSRRERGDIDPNRDLIDSLLIHSTYKDGVKMTDQEIANL
+LIGILMGGQHTSASTSAWFLLHLGEKPHLQDVIYQEVVELLKEKGGDLNDLTYEDLQKLP
+SVNNTIKETLRMHMPLHSIFRKVTNPLRIPETNYIVPKGHYVLVSPGYAHTSERYFDNPE
+DFDPTRWDTAAAKANSVSFNSSDEVDYGFGKVSKGVSSPYLPFGGGRHRCIGEQFAYVQL
+GTILTTFVYNLRWTIDGYKVPDPDYSSMVVLPTEPAEIIWEKRETCMF</amino-acid-sequence>
+    <gene-sequence format="FASTA">&gt;1587 bp
+ATGGCTATTGTTGAAACTGTCATTGATGGCATTAATTATTTTTTGTCCCTTAGTGTTACA
+CAACAGATCAGTATATTATTAGGGGTTCCATTTGTTTACAACTTAGTATGGCAATATTTA
+TATTCATTAAGAAAAGATAGAGCTCCATTAGTGTTTTATTGGATTCCTTGGTTTGGTTCT
+GCAGCTTCATATGGTCAACAACCTTATGAATTTTTCGAATCATGTCGTCAAAAGTATGGT
+GATGTATTTTCATTTATGTTATTAGGGAAAATTATGACGGTTTATTTAGGTCCAAAAGGT
+CATGAATTTGTTTTTAATGCTAAATTATCTGATGTTTCTGCTGAAGATGCTTATAAACAT
+TTAACTACTCCAGTTTTCGGTAAAGGGGTTATTTATGATTGTCCAAATTCCAGATTAATG
+GAACAAAAAAAATTTGCTAAATTTGCTTTGACTACTGATTCATTTAAAAGATATGTTCCT
+AAGATTAGAGAAGAAATTTTGAATTATTTTGTTACTGATGAAAGTTTCAAATTGAAAGAA
+AAAACTCATGGGGTTGCCAATGTTATGAAAACTCAACCAGAAATTACTATTTTCACTGCT
+TCAAGATCTTTATTTGGTGATGAAATGAGAAGAATTTTTGACCGTTCATTTGCTCAACTA
+TATTCTGATTTAGATAAAGGTTTTACCCCTATTAATTTTGTTTTCCCTAATTTACCTTTA
+CCTCATTATTGGAGACGTGATGCTGCTCAAAAGAAAATCTCTGCTACTTATATGAAAGAA
+ATTAAACTGAGAAGAGAACGTGGTGATATTGATCCAAATCGTGATTTAATTGATTCCTTA
+TTGATTCATTCAACTTATAAAGATGGTGTGAAAATGACTGATCAAGAAATTGCTAATCTT
+TTAATTGGTATTCTTATGGGTGGTCAACATACTTCTGCTTCTACTTCTGCTTGGTTCTTG
+TTACATTTAGGTGAAAAACCTCATTTACAAGATGTTATTTATCAAGAAGTTGTTGAATTA
+TTGAAAGAAAAAGGTGGTGATTTGAATGATTTGACTTATGAAGATTTACAAAAATTACCA
+TCAGTCAATAACACTATTAAGGAAACTCTCAGAATGCATATGCCATTACATTCTATTTTT
+AGAAAAGTTACTAACCCATTAAGAATCCCTGAAACCAATTATATTGTTCCAAAAGGTCAT
+TATGTTTTAGTTTCTCCAGGTTATGCTCATACTAGTGAAAGATATTTTGATAACCCTGAA
+GATTTTGATCCAACTAGATGGGATACTGCTGCTGCCAAAGCTAATTCTGTTTCATTTAAC
+TCTTCTGATGAAGTTGATTATGGGTTTGGGAAAGTTTCTAAAGGGGTTTCTTCACCTTAT
+TTACCATTTGGTGGTGGTAGACATAGATGTATTGGGGAACAATTTGCTTATGTTCAATTA
+GGAACCATTTTAACTACTTTTGTTTATAATTTAAGATGGACTATTGATGGTTATAAAGTG
+CCTGACCCTGATTATAGTTCAATGGTGGTTTTACCTACTGAACCAGCAGAAATCATTTGG
+GAAAAAAGAGAAACTTGTATGTTTTAA</gene-sequence>
+    <pfams>
+      <pfam>
+        <identifier>PF00067</identifier>
+        <name>p450</name>
+      </pfam>
+    </pfams>
+    <go-classifiers>
+      <go-classifier>
+        <category>function</category>
+        <description>oxidoreductase activity</description>
+      </go-classifier>
+      <go-classifier>
+        <category>function</category>
+        <description>ion binding</description>
+      </go-classifier>
+      <go-classifier>
+        <category>function</category>
+        <description>cation binding</description>
+      </go-classifier>
+      <go-classifier>
+        <category>function</category>
+        <description>transition metal ion binding</description>
+      </go-classifier>
+      <go-classifier>
+        <category>function</category>
+        <description>iron ion binding</description>
+      </go-classifier>
+      <go-classifier>
+        <category>function</category>
+        <description>binding</description>
+      </go-classifier>
+      <go-classifier>
+        <category>function</category>
+        <description>tetrapyrrole binding</description>
+      </go-classifier>
+      <go-classifier>
+        <category>function</category>
+        <description>catalytic activity</description>
+      </go-classifier>
+      <go-classifier>
+        <category>function</category>
+        <description>heme binding</description>
+      </go-classifier>
+      <go-classifier>
+        <category>function</category>
+        <description>monooxygenase activity</description>
+      </go-classifier>
+      <go-classifier>
+        <category>process</category>
+        <description>cellular metabolism</description>
+      </go-classifier>
+      <go-classifier>
+        <category>process</category>
+        <description>generation of precursor metabolites and energy</description>
+      </go-classifier>
+      <go-classifier>
+        <category>process</category>
+        <description>electron transport</description>
+      </go-classifier>
+      <go-classifier>
+        <category>process</category>
+        <description>physiological process</description>
+      </go-classifier>
+      <go-classifier>
+        <category>process</category>
+        <description>metabolism</description>
+      </go-classifier>
+    </go-classifiers>
+  </polypeptide>
+    </target>
+  </targets>
+  <enzymes/>
+  <carriers/>
+  <transporters/>
+</drug>
