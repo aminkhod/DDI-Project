@@ -1,0 +1,17 @@
+DB01351AmobarbitalFolic acid decreases the effect of anticonvulsant, amobarbital
+DB01352AprobarbitalFolic acid decreases the effect of anticonvulsant, aprobarbital
+DB00237ButabarbitalFolic acid decreases the effect of anticonvulsant, butabarbital
+DB00241ButalbitalFolic acid decreases the effect of anticonvulsant, butalbital
+DB01353ButethalFolic acid decreases the effect of anticonvulsant, butethal
+DB01341Dihydroquinidine barbiturateFolic acid decreases the effect of anticonvulsant, dihydroquinidine barbiturate
+DB00754EthotoinFolic acid decreases the levels of hydantoinDB01320FosphenytoinFolic acid decreases the levels of hydantoinDB01354HeptabarbitalFolic acid decreases the effect of anticonvulsant, heptabarbital
+DB01355HexobarbitalFolic acid decreases the effect of anticonvulsant, hexobarbital
+DB00532MephenytoinFolic acid decreases the levels of hydantoinDB00474MethohexitalFolic acid decreases the effect of anticonvulsant, methohexital
+DB00849MethylphenobarbitalFolic acid decreases the effect of anticonvulsant, methylphenobarbital
+DB00312PentobarbitalFolic acid decreases the effect of anticonvulsant, pentobarbital
+DB01174PhenobarbitalFolic acid decreases the effect of anticonvulsant, phenobarbital
+DB00252PhenytoinFolic acid may decrease the levels of phenytoin
+DB00794PrimidoneFolic acid decreases the effect of anticonvulsant, primidone
+DB01346Quinidine barbiturateFolic acid decreases the effect of anticonvulsant, quinidine barbiturate
+DB00418SecobarbitalFolic acid decreases the effect of anticonvulsant, secobarbital
+DB00306TalbutalFolic acid decreases the effect of anticonvulsant, talbutal
