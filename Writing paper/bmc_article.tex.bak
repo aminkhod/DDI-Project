@@ -1,0 +1,451 @@
+%% ‎BioMed_Central_Tex_Template_v1.06‎
+%%                                      %
+%  ‎bmc_article.tex            ver‎: ‎1.06‎ %
+%                                       %
+
+%%IMPORTANT: ‎do not delete the first line of this template‎
+‎%%It must be present to enable the BMC Submission system to‎
+‎%%recognise this template!!‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  ‎LaTeX template for BioMed Central‎  %%
+%%     ‎journal article submissions‎     %%
+%%                                     %%
+%%          ‎<8 June 2020>‎              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% ‎For instructions on how to fill out this Tex template‎           %%
+%% ‎document please refer to Readme.html and the instructions for‎   %%
+%% ‎authors page on the biomed central website‎                      %%
+%% ‎https://www.biomedcentral.com/getpublished‎                      %%
+%%                                                                 %%
+%% ‎Please do not use \input{...} to include other tex files‎.       %%
+%% ‎Submit your LaTeX manuscript as one‎ .‎tex document‎.              %%
+%%                                                                 %%
+%% ‎All additional figures and files should be attached‎             %%
+%% ‎separately and not embedded in the \TeX\ document itself‎.       %%
+%%                                                                 %%
+%% ‎BioMed Central currently use the MikTex distribution of‎         %%
+%% ‎TeX for Windows) of TeX and LaTeX‎.  ‎This is available from‎      %%
+%% ‎https://miktex.org‎/                                             %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% ‎additional documentclass options‎:
+%  ‎[doublespacing]‎
+%  ‎[linenumbers]‎   - ‎put the line numbers on margins‎
+
+%%% ‎loading packages‎, ‎author definitions‎
+
+‎%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below‎
+‎\documentclass{bmcart}‎
+
+%%% ‎Load packages‎
+‎\usepackage{amsthm,amsmath}‎
+‎%\RequirePackage[numbers]{natbib}‎
+‎%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography‎
+‎%\RequirePackage{hyperref}‎
+‎\usepackage[utf8]{inputenc} %unicode support‎
+‎%\usepackage[applemac]{inputenc} %applemac support if unicode package fails‎
+‎%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  ‎If you wish to display your graphics for‎   %%
+%%  ‎your own use using includegraphic or‎       %%
+%%  ‎includegraphics‎, ‎then comment out the‎      %%
+%%  ‎following two lines of code‎.               %%
+%%  ‎NB‎: ‎These line *must* be included when‎     %%
+%%  ‎submitting to BMC‎.                         %%
+%%  ‎All figure files must be submitted as‎      %%
+%%  ‎separate graphics through the BMC‎          %%
+%%  ‎submission process‎, ‎not included in the‎    %%
+%%  ‎submitted article‎.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+‎\def\includegraphic{}‎
+‎\def\includegraphics{}‎
+
+%%% ‎Put your definitions there‎:
+‎\startlocaldefs‎
+‎\endlocaldefs‎
+
+%%% ‎Begin‎ ...
+‎\begin{document}‎
+
+%%% ‎Start of article front matter‎
+‎\begin{frontmatter}‎
+
+‎\begin{fmbox}‎
+‎\dochead{Research}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% ‎Enter the title of your article here‎     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+‎\title{Predicting Comperhensive Drug - Drug Interaction via Similarity Network Fusion and Convolutional Neural Networks}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% ‎Enter the authors here‎                   %%
+%%                                          %%
+%% ‎Specify information‎, ‎if available‎,       %%
+%% ‎in the form‎:                             %%
+%%   ‎<key>={<id1>,<id2>}‎                    %%
+%%   ‎<key>=‎                                 %%
+%% ‎Comment or delete the keys which are‎     %%
+%% ‎not used‎. ‎Repeat \author command as much‎ %%
+%% ‎as required‎.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+‎\author[‎
+  ‎addressref={aff1}‎,                   % ‎id's of addresses‎, ‎e.g‎. ‎{aff1,aff2}‎
+  ‎corref={aff1}‎,                       % ‎id of corresponding address‎, ‎if any‎
+% ‎noteref={n1}‎,                        % ‎id's of article notes‎, ‎if any‎
+  ‎email={jane.e.doe@cambridge.co.uk}   % email address‎
+‎]{\inits{J.E.}\fnm{Jane E.} \snm{Doe}}‎
+‎\author[‎
+  ‎addressref={aff1,aff2}‎,
+  ‎email={john.RS.Smith@cambridge.co.uk}‎
+‎]{\inits{J.R.S.}\fnm{John R.S.} \snm{Smith}}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% ‎Enter the authors' addresses here‎        %%
+%%                                          %%
+%% ‎Repeat \address commands as much as‎      %%
+%% ‎required‎.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+‎\address[id=aff1]{%                           % unique id‎
+  ‎\orgdiv{Department of Science}‎,             % ‎department‎, ‎if any‎
+  ‎\orgname{University of Cambridge}‎,          % ‎university‎, ‎etc‎
+  ‎\city{London}‎,                              % ‎city‎
+  ‎\cny{UK}                                    % country‎
+}
+‎\address[id=aff2]{%‎
+  ‎\orgdiv{Institute of Biology}‎,
+  ‎\orgname{National University of Sciences}‎,
+  %\street{},
+  ‎%\postcode{}‎
+  ‎\city{Kiel}‎,
+  ‎\cny{Germany}‎
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% ‎Enter short notes here‎                   %%
+%%                                          %%
+%% ‎Short notes will be after addresses‎      %%
+%% ‎on first page‎.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+‎%\begin{artnotes}‎
+‎%%\note{Sample of title note}     % note to the article‎
+‎%\note[id=n1]{Equal contributor} % note‎, ‎connected to author‎
+‎%\end{artnotes}‎
+
+‎\end{fmbox}% comment this for two column layout‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                           %%
+%% ‎The Abstract begins here‎                  %%
+%%                                           %%
+%% ‎Please refer to the Instructions for‎      %%
+%% ‎authors on https://www.biomedcentral.com‎/ %%
+%% ‎and include the section headings‎          %%
+%% ‎accordingly for your article type‎.        %%
+%%                                           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+‎\begin{abstractbox}‎
+
+‎\begin{abstract} % abstract‎
+‎\parttitle{Background:} %if any‎
+Drug-drug interactions (DDIs) always cause unexpected and even adverse drug reactions. It is important to identify DDIs before drugs are used in the market.However, preclinical identification of DDIs requires much money and time. Computational approaches have exhibited their abilities to predict potential DDIs on a large scale by utilizing premarket drug properties. Nevertheless, most of them only predict whether or not one drug interacts with another, but neglect their enhancive (positive) and depressive (negative) changes of pharmacological effects. Moreover, these comprehensive DDIs do not occur at random, and derived from the structural features of the graph of DDIs. Revealing such a relationship is very important, because it is able to help understand how DDIs occur. Both the prediction of comprehensive DDIs and the discovery of structural relationship among them play an important guidance when making a co-prescription.
+
+‎\parttitle{Results:} %if any‎
+In this work, treating a set of comprehensive DDIs as a signed network, we design a novel model (SNF-CNN) for the prediction of enhancive and degressive DDIs based on similarity network fusion and convolutional neural networks. SNF-CNN achieves the depressive DDI prediction ($AUC=0/9747 \pm 0/0033 $ and $AUPR=0/9666 \pm 0/0045 $), enhancive DDI prediction ($AUC=0/9686 \pm 0/0028$ and $AUPR=0/8221 \pm 0/0184$) and the Unknown DDI prediction ($AUC=0/9714 \pm 0/0040$ and $AUPR=0/9480 \pm 0/0083$). Compared with two state-of-the-art approaches, SNF-CNN shows it superiority.
+‎
+\parttitle{Conclusions:} %if any
+This new approach is not only able to predict comprehensive DDI, but also predicts conventional DDI.
+‎\end{abstract}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% ‎The keywords begin here‎                  %%
+%%                                          %%
+%% ‎Put each keyword in separate \kwd{}‎.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+‎\begin{keyword}‎ 
+‎\kwd{Drug-Drug Interaction}‎
+‎\kwd{Drug Similarity}‎
+‎\kwd{Drug Similarity Integration}‎‎
+\kwd{Feature Selection}‎
+\kwd{Recommender System}
+‎\end{keyword}‎
+
+% ‎MSC classifications codes‎, ‎if any‎
+‎%\begin{keyword}[class=AMS]‎
+‎%\kwd[Primary‎ ]{}
+‎%\kwd{}‎
+‎%\kwd[; secondary‎ ]{}
+‎%\end{keyword}‎
+
+‎\end{abstractbox}‎
+%
+‎%\end{fmbox}% uncomment this for two column layout‎
+
+‎\end{frontmatter}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                            %%
+%% ‎The Main Body begins here‎                  %%
+%%                                            %%
+%% ‎Please refer to the instructions for‎       %%
+%% ‎authors on‎:                                %%
+%% ‎https://www.biomedcentral.com/getpublished‎ %%
+%% ‎and include the section headings‎           %%
+%% ‎accordingly for your article type‎.         %%
+%%                                            %%
+%% ‎See the Results and Discussion section‎     %%
+%% ‎for details on how to create sub-sections‎  %%
+%%                                            %%
+%% ‎use \cite{...} to cite references‎          %%
+%%  ‎\cite{koon} and‎                           %%
+%%  ‎\cite{oreg,khar,zvai,xjon,schn,pond}‎      %%
+%%                                            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% ‎start of article main body‎
+% ‎<put your article body there>‎
+
+%%%%%%%%%%%%%%%%
+%% ‎Background‎ %%
+%%
+‎\section*{Background}‎
+‎When two or more drugs are taken together, the effects or behaviors of drugs are unexpectedly influenced by each other‎
+\cite{Wienkers2005}. ‎
+This kind of influence is termed as Drug-Drug interaction (DDI), which would reduce drug efficacy, increase unexpected toxicity, or induce other adverse drug reactions between the co-prescribed drugs. As the number of approved drugs increase, the number of drug-unidentified DDIs is rapidly increasing, such that among approved small molecular drugs in Drug Bank, on average 15 out of every 100  drug pairs on average drugs have DDIs‎
+\cite{Law2014}. ‎
+They would put patients who are treated with multiple drugs in an unsafe situation‎
+\cite{Leape1995, Businaro2013,Karbownik2017,Mulroy2017}.
+Understanding DDIs is also the first step in drug combinations, which becomes one of the most promising solutions for the treatment of multifactorial complex diseases‎
+‎\cite{Zhao2011}.‎
+Consequently, there is an urgent need for screening and analysis of DDIs prior to clinical co-medications administered. However, traditional approaches for DDI identifications (e.g. testing Cytochrome P450‎
+\cite{Veith2009}‎
+or transporter-associated interactions‎
+\cite{Huang2007}‎
+) face challenges, such as high costs, long duration, and animal welfare considerations
+\ cite {Zhang2015}‎
+, the very limited number of participants in the trial, and the great number of drug combinations under screening in clinical trials. As a result, only a small few of DDIs have been identified during drug development production (usually in the clinical trial phase), Some of them have been reported after drugs approved, and many have been found in post-marketing surveillance.‎
+‎
+Computational approaches are a promising alternative to the discovery of potential DDIs on a large scale, and they have been gained attention from academy and industry recently‎
+\cite{Wiśniowska2016, Zhou2016}.‎
+Data mining-based computational approaches have been developed to detect DDIs from various sources‎‎
+\cite{Zhang2015}‎
+, such as scientific literature‎
+\cite{Bui2014, Zhang2016}‎
+, electronic medical records‎
+\cite{Duke2012}‎
+, and the Adverse Event Reporting System of FDA (http://www.fda.gov). These approaches rely on post-market clinical evidence, so they cannot provide alerts of potential DDIs before clinical medications are administered. In contrast, machine learning-based computational approaches (e.g. Naïve Similarity-Based Approach‎
+\cite{Vilar2014}‎
+, Network Recommendation-Based‎‎
+\cite{Zhang2015}
+, Classification-Based‎
+‎\cite{Cheng2014}
+) are able to provide such alerts by utilizing pre-marketed or post-marketed drug attributes, such as drug features or similarities‎
+\cite{Li2016}.
+‎These methods use different drug features to predict DDIs, such as chemical structures‎‎
+\cite{Vilar2014}‎
+, targets‎
+\cite{luo2014}
+, hierarchical classification codes‎
+‎\cite{Cheng2014}
+, and side effects‎
+\cite{Zhang2015, Shi2017}.
+‎‎
+Most of these existing machine learning approaches are designed to predict typical two-class, which only indicates how likely a pair of drugs is a DDI. However, two interacting drugs may change their own pharmacological behaviors or effects (e.g. increasing or decreasing serum concentration) in vivo. For example, the serum concentration of Flunisolide (DrugBank Id: DB00180) decreases when it is taken with Mitotane (DrugBank Id: DB00648), whereas its serum concentration increases when taken with Roxithromycin (DrugBank Id: DB00778). for short, the first case is degressive DDI and the second case is enhancive DDIs, which contains drug changes in terms of pharmacological effects.It is more important to know exactly whether the interaction increases or decreases the pharmaceutical behaviors of the drug, especially when making optimal patient care, establishing drug dosage, designing prophylactic drug therapy, or finding the resistance to therapy with a drug‎
+\cite{Koch1981}.
+
+On the other hand, the occurrence of both enhancive and degressive DDIs is not random, but most current approaches have not yet exploited this structural property and have been developed only for conventional two-classes DDIs. Furthermore, revealing such a structural relationship is very important, because it is able to help understand how DDIs occur, is one of the most important steps for the treatment of complex diseases, and guides physicians in preparing safer prescriptions to high-order drug interaction.‎
+
+‎\section*{Section title}‎
+‎Text for this section\ldots‎
+‎\subsection*{Sub-heading for section}‎
+‎Text for this sub-heading\ldots‎
+‎\subsubsection*{Sub-sub heading for section}‎
+‎Text for this sub-sub-heading\ldots‎
+‎\paragraph*{Sub-sub-sub heading for section}‎
+‎Text for this sub-sub-sub-heading\ldots‎
+
+‎In this section we examine the growth rate of the mean of $Z_0$‎, ‎$Z_1$ and $Z_2$‎. ‎In‎
+‎addition‎, ‎we examine a common modeling assumption and note the‎
+‎importance of considering the tails of the extinction time $T_x$ in‎
+‎studies of escape dynamics‎.
+‎We will first consider the expected resistant population at $vT_x$ for‎
+‎some $v>0$‎, ‎(and temporarily assume $\alpha=0$)‎
+%
+‎\[‎
+‎E \bigl[Z_1(vT_x) \bigr]=‎
+‎\int_0^{v\wedge‎
+‎1}Z_0(uT_x)‎
+‎\exp (\lambda_1)\,du‎ .
+‎\]‎
+%
+‎If we assume that sensitive cells follow a deterministic decay‎
+‎$Z_0(t)=xe^{\lambda_0 t}$ and approximate their extinction time as‎
+‎$T_x\approx-\frac{1}{\lambda_0}\log x$‎, ‎then we can heuristically‎
+‎estimate the expected value as‎
+%
+‎\begin{equation}\label{eqexpmuts}‎
+‎\begin{aligned}[b]‎
+‎&      E\bigl[Z_1(vT_x)\bigr]\\‎
+‎&\quad      = \frac{\mu}{r}\log x‎
+‎\int_0^{v\wedge1}x^{1-u}x^{({\lambda_1}/{r})(v-u)}\,du‎ .
+‎\end{aligned}‎
+‎\end{equation}‎
+%
+‎Thus we observe that this expected value is finite for all $v>0$ (also see \cite{koon,xjon,marg,schn,koha,issnic})‎.
+
+
+‎\section*{Appendix}‎
+‎Text for this section\ldots‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% ‎Backmatter begins here‎                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+‎\begin{backmatter}‎
+
+‎\section*{Acknowledgements}%% if any‎
+‎Text for this section\ldots‎
+
+‎\section*{Funding}%% if any‎
+‎Text for this section\ldots‎
+
+‎\section*{Abbreviations}%% if any‎
+‎Text for this section\ldots‎
+
+‎\section*{Availability of data and materials}%% if any‎
+‎Text for this section\ldots‎
+
+‎\section*{Ethics approval and consent to participate}%% if any‎
+‎Text for this section\ldots‎
+
+‎\section*{Competing interests}‎
+‎The authors declare that they have no competing interests‎.
+
+‎\section*{Consent for publication}%% if any‎
+‎Text for this section\ldots‎
+
+‎\section*{Authors' contributions}‎
+‎Text for this section \ldots‎
+
+‎\section*{Authors' information}%% if any‎
+‎Text for this section\ldots‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  ‎The Bibliography‎                       %%
+%%                                                         %%
+%%  ‎Bmc_mathpys.bst  will be used to‎                       %%
+%%  ‎create a‎ .‎BBL file for submission‎.                     %%
+%%  ‎After submission of the‎ .‎TEX file‎,                     %%
+%%  ‎you will be prompted to submit your‎ .‎BBL file‎.         %%
+%%                                                         %%
+%%                                                         %%
+%%  ‎Note that the displayed Bibliography will not‎          %%
+%%  ‎necessarily be rendered by Latex exactly as specified‎  %%
+%%  ‎in the online Instructions for Authors‎.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ‎if your bibliography is in bibtex format‎, ‎use those commands‎:
+‎\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys‎, ‎vancouver‎, ‎spbasic)‎.
+‎\bibliography{bmc_article}      % Bibliography file (usually '*.bib'‎ )
+% ‎for author-year bibliography (bmc-mathphys or spbasic)‎
+% ‎a) write to bib file (bmc-mathphys only)‎
+% ‎@settings{label‎, ‎options="nameyear"}‎
+% ‎b) uncomment next line‎
+‎%\nocite{label}‎
+
+% ‎or include bibliography directly‎:
+% ‎\begin{thebibliography}‎
+% ‎\bibitem{b1}‎
+% ‎\end{thebibliography}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% ‎Figures‎                       %%
+%%                               %%
+%% ‎NB‎: ‎this is for captions and‎  %%
+%% ‎Titles‎. ‎All graphics must be‎  %%
+%% ‎submitted separately and NOT‎  %%
+%% ‎included in the Tex document‎  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% ‎Do not use \listoffigures as most will included as separate files‎
+
+‎\section*{Figures}‎
+  ‎\begin{figure}[h!]‎
+  ‎\caption{Sample figure title}‎
+‎\end{figure}‎
+
+‎\begin{figure}[h!]‎
+  ‎\caption{Sample figure title}‎
+‎\end{figure}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% ‎Tables‎                        %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% ‎Use of \listoftables is discouraged‎.
+%%
+‎\section*{Tables}‎
+‎\begin{table}[h!]‎
+‎\caption{Sample table title‎. ‎This is where the description of the table should go}‎
+  ‎\begin{tabular}{cccc}‎
+    ‎\hline‎
+    ‎& B1  &B2   & B3\\ \hline‎
+    ‎A1 & 0.1 & 0.2 & 0.3\\‎
+    ‎A2 &‎ ... ‎&‎ ..  ‎&‎ .‎\\‎
+    ‎A3 &‎ ..  ‎&‎ .   ‎&‎ .‎\\ \hline‎
+  ‎\end{tabular}‎
+‎\end{table}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% ‎Additional Files‎              %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+‎\section*{Additional Files}‎
+  ‎\subsection*{Additional file 1‎ --- ‎Sample additional file title}‎
+    ‎Additional file descriptions text (including details of how to‎
+    ‎view the file‎, ‎if it is in a non-standard format or the file extension)‎.  ‎This might‎
+    ‎refer to a multi-page table or a figure‎.
+
+  ‎\subsection*{Additional file 2‎ --- ‎Sample additional file title}‎
+    ‎Additional file descriptions text‎.
+
+‎\end{backmatter}‎
+‎\end{document}‎

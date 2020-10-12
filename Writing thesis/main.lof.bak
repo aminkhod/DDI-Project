@@ -1,0 +1,50 @@
+‎\addvspace {10\p@‎ }
+‎\contentsline {figure}{\numberline {1‏.‏1}{\ignorespaces‎ نمای کلی سلول انسان و اندامک‌های آن}}{2}{figure.1.1}
+‎\contentsline {figure}{\numberline {1‏.‏2}{\ignorespaces‎ تقسیم هسته سلول}}{4}{figure.1.2}
+‎\contentsline {figure}{\numberline {1‏.‏3}{\ignorespaces‎ توالی اسید آمینه‌ی پروتئین پریون انسان}}{5}{figure.1.3}
+‎\addvspace {10\p@‎ }
+‎\contentsline {figure}{\numberline {2‏.‏1}{\ignorespaces ‎‎
+‎روند پیش بینی برهم‌کنش دارو-هدف با اروش‌های شیمیایی-ژنتیکی ‎
+}}{14}{figure.2.1}‎
+‎\contentsline {figure}{\numberline {2‏.‏2}{\ignorespaces  ‎‎
+‎شبکه دوبخشی برهم‌کنش دارو-هدف‎
+}}{23}{figure.2.2}‎
+‎\contentsline {figure}{\numberline {2‏.‏3}{\ignorespaces‎‎
+ شرح تصویری فاکتورگیری ماتریسی‎
+}}{26}{figure.2.3}‎
+‎\contentsline {figure}{\numberline {2‏.‏4}{\ignorespaces ‎‎
+‎نمایش حداقلی از الگوریتم‎
+ ‎KBMF2K‎
+ }}{27}{figure.2.4}‎
+‎\contentsline {figure}{\numberline {2‏.‏5}{\ignorespaces ‎‎
+‎نحوه ایجاد مدل‌های پیش بینی مبتنی بر ویژگی‎
+}}{33}{figure.2.5}‎
+‎\contentsline {figure}{\numberline {2‏.‏6}{\ignorespaces ‎‎
+‎شمای کلی فرایند توصیه در سامانه‌های توصیه‌گر‎
+}}{39}{figure.2.6}
+‎\contentsline {figure}{\numberline {2‏.‏7}{\ignorespaces‎ تقسیم بندی سامانه‌های توصیه‌گر ‎}}{40}{figure.2.7}‎
+‎\contentsline {figure}{\numberline {2‏.‏8}{\ignorespaces‎ نمای کلی از روش‌های فیلترینگ همکارانه ‎}}{40}{figure.2.8}‎
+‎\contentsline {figure}{\numberline {2‏.‏9}{\ignorespaces‎ نمای کلی از روش‌های فیلترینگ مبتنی بر محتوا}}{42}{figure.2.9}
+‎\addvspace {10\p@‎ }
+‎\contentsline {figure}{\numberline {3‏.‏1}{\ignorespaces‎ چهار سناریوی پیش بینی دارو-هدف برای جفت }}{45}{figure.3.1}‎
+‎\contentsline {figure}{\numberline {3‏.‏2}{\ignorespaces‎ تنظیمات متفاوت اعتبارسنج متقابل}}{48}{figure.3.2}‎
+‎\contentsline {figure}{\numberline {3‏.‏3}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S1‎ برای داده‌ی ‎NR}}{52}{figure.3.3}‎
+‎\contentsline {figure}{\numberline {3‏.‏4}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S2‎ برای داده‌ی ‎NR}}{52}{figure.3.4}‎
+‎\contentsline {figure}{\numberline {3‏.‏5}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S3‎ برای داده‌ی ‎NR}}{53}{figure.3.5}‎
+‎\contentsline {figure}{\numberline {3‏.‏6}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S4‎ برای داده‌ی ‎NR}}{54}{figure.3.6}‎
+‎\contentsline {figure}{\numberline {3‏.‏7}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S1‎ برای داده‌ی ‎GPCR}}{55}{figure.3.7}‎
+‎\contentsline {figure}{\numberline {3‏.‏8}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S2‎ برای داده‌ی‎GPCR}}{55}{figure.3.8}‎
+‎\contentsline {figure}{\numberline {3‏.‏9}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S3‎ برای داده‌ی ‎GPCR}}{56}{figure.3.9}‎
+‎\contentsline {figure}{\numberline {3‏.‏10}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S4‎ برای داده‌ی ‎GPCR}}{56}{figure.3.10}‎
+‎\contentsline {figure}{\numberline {3‏.‏11}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S1‎ برای داده‌ی ‎IC}}{57}{figure.3.11}‎
+‎\contentsline {figure}{\numberline {3‏.‏12}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S2‎ برای داده‌ی ‎IC}}{57}{figure.3.12}‎
+‎\contentsline {figure}{\numberline {3‏.‏13}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S3‎ برای داده‌ی ‎IC}}{58}{figure.3.13}‎
+‎\contentsline {figure}{\numberline {3‏.‏14}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S3‎ برای داده‌ی ‎NR}}{58}{figure.3.14}‎
+‎\contentsline {figure}{\numberline {3‏.‏15}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S4‎ برای داده‌ی ‎IC}}{59}{figure.3.15}‎
+‎\contentsline {figure}{\numberline {3‏.‏16}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S1‎ برای داده‌ی ‎E}}{59}{figure.3.16}‎
+‎\contentsline {figure}{\numberline {3‏.‏17}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S2‎ برای داده‌ی ‎E}}{60}{figure.3.17}‎
+‎\contentsline {figure}{\numberline {3‏.‏18}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S3‎ برای داده‌ی ‎E}}{60}{figure.3.18}‎
+‎\contentsline {figure}{\numberline {3‏.‏19}{\ignorespaces‎ نتایج ‎AUPR‎ و ‎AUC‎ برای سناریوی ‎S4‎ برای داده‌ی ‎E}}{61}{figure.3.19}‎
+‎\contentsline {figure}{\numberline {3‏.‏20}{\ignorespaces‎ قالب پیاده‌سازی ارائه‌شده برای الگوریتم‌های جدید}}{62}{figure.3.20}
+‎\addvspace {10\p@‎ }
+‎\contentsline {figure}{\numberline {4‏.‏1}{\ignorespaces‎ تجسم شبکه ‎NR DTI‎‎}}{68}{figure.4.1}‎

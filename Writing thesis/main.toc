@@ -1,0 +1,71 @@
+\contentsline {chapter}{پیشگفتار}{آ}{Item.3}
+\contentsline {chapter}{فهرست تصاویر}{چ}{chapter*.3}
+\contentsline {chapter}{فهرست جداول}{خ}{chapter*.4}
+\contentsline {chapter}{\numberline {1}مقدمه}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}دارو}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}داروشناسی}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}برهم‌کنش فارماکوکینتیک}{2}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}برهم‌کنش فارماکوداینامیک}{3}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}پایگاه داده‌های دارو }{4}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}DrugBank}{4}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}KEGG}{5}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}TWOSIDES}{6}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}FAERS}{7}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}SIDER}{7}{subsection.1.3.5}
+\contentsline {subsection}{\numberline {1.3.6}OFFSIDES}{7}{subsection.1.3.6}
+\contentsline {subsection}{\numberline {1.3.7}PubChem}{8}{subsection.1.3.7}
+\contentsline {section}{\numberline {1.4}ویژگی‌های داروها}{8}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}ساختار شیمیایی}{9}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}عوارض‌جانبی}{9}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}آنزیم‌}{10}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}منتقل کننده‌}{10}{subsection.1.4.4}
+\contentsline {subsection}{\numberline {1.4.5}پروتیئن هدف}{11}{subsection.1.4.5}
+\contentsline {subsection}{\numberline {1.4.6}نشانگان}{11}{subsection.1.4.6}
+\contentsline {subsection}{\numberline {1.4.7}برهم‌کنش غذا - دارو}{11}{subsection.1.4.7}
+\contentsline {subsection}{\numberline {1.4.8}ویژگی های سه بعدی }{11}{subsection.1.4.8}
+\contentsline {section}{\numberline {1.5}تعریف مسئله}{11}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}برچسب برهم‌کنش‌ها}{12}{subsection.1.5.1}
+\contentsline {section}{\numberline {1.6}ساختار پایان‌نامه}{12}{section.1.6}
+\contentsline {chapter}{\numberline {2}بررسی تاریخچه‌، مفاهیم اولیه و الگوریتم‌های پیش‌بینی برهم‌کنش دارو-دارو}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}پیشینه تحقیق}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}آماده‌سازی داده}{17}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}محاسبه‌ی شباهت‌های دارویی }{17}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}ترکیب شباهت‌های شبکه‌ای }{18}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}سامانه‌های توصیه‌گر}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}فیلترینگ همکارانه}{23}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}فیلترینگ مبتنی بر محتوا}{25}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}فیلترینگ مبتنی بر دانش}{25}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}روش‌های ترکیبی}{26}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}یادگیری عمیق}{26}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}شبکه‌های عصبی کانولوشن}{27}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}ماشین بولتزمن محدود شده}{29}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}خودرمزنگار}{30}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}کدگذاری تنک}{31}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}الگوریتم‌های پیشین در مسئله‌ی پیش‌بینی سه‌کلاسه برهم‌کنش دارو - دارو}{32}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}چارچوب یکپارچه مبتنی بر تجزیه ماتریس سه‌کلاسه}{33}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2} پیش بینی برهم‌کنش دارو-دارو بر اساس تجزیه ماتریس غیرمنفی}{35}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}تنظیم متعادل تجزیه ماتریس نیمه غیر منفی}{37}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3} پیش‌بینی برهم‌کنش دارو-داروی با رویکرد سیتم توصیه‌گر یادگیری عمیق }{41}{chapter.3}
+\contentsline {section}{\numberline {3.1}داده‌ها و ویژگی‌ها}{41}{section.3.1}
+\contentsline {section}{\numberline {3.2}مدل‌سازی مسئله }{42}{section.3.2}
+\contentsline {section}{\numberline {3.3} آماده‌سازی داده }{43}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1} محاسبه‌ی ماتریس شباهت دارویی}{43}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2} ادغام ماتریس‌های شباهت دارویی}{44}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}تشکیل ماتریس ورودی}{44}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4} طراحی سیستم توصیه‌گر }{44}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}روند انتخاب و آموزش مدل روی برهم‌کنش‌های شناخته‌شده}{45}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}روند اعتبارسنجی جهت انتخاب مدل }{45}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}ارائه‌ی مدل انتخابی (شبکه عصبی کانولوشن) }{46}{subsubsection.3.4.1.2}
+\contentsline {subsection}{\numberline {3.4.2}تشخیص جفت داروهای بدون برهم‌کنش احتمالی}{49}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}آموزش مدل روی برهم‌کنش‌های شناخته‌شده و ناشناخته}{50}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}روند اعتبارسنجی نتایج مدل پیش‌بینی برهم‌کنش داروها}{51}{subsubsection.3.4.3.1}
+\contentsline {subsubsection}{\numberline {3.4.3.2}مدل نهایی پیش‌بینی برهم‌کنش داروها}{51}{subsubsection.3.4.3.2}
+\contentsline {chapter}{\numberline {4}بررسی نتایج و نتیجه‌گیری‌}{55}{chapter.4}
+\contentsline {section}{\numberline {4.1} روش جامع اعتبارسنجی متقابل k برابری }{55}{section.4.1}
+\contentsline {section}{\numberline {4.2}معرفی معیارهای سنجش}{57}{section.4.2}
+\contentsline {section}{\numberline {4.3}مقایسه‌ی نتایج}{59}{section.4.3}
+\contentsline {section}{\numberline {4.4}نتیجه‌گیری و جمع‌بندی}{61}{section.4.4}
+\contentsline {chapter}{\numberline {5} کار‌های آینده و مسائل باز}{63}{chapter.5}
+\contentsline {chapter}{واژه‌نامه فارسی به انگلیسی}{65}{chapter.5}
+\contentsline {chapter}{واژه‌نامه انگلیسی به فارسی}{71}{chapter*.5}
+\contentsline {chapter}{مراجع}{77}{chapter*.7}

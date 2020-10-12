@@ -1,0 +1,40 @@
+% !TeX root=main.tex
+% در این فایل، عنوان پایان‌نامه، مشخصات خود و چکیده پایان‌نامه را به انگلیسی، وارد کنید.
+% توجه داشته باشید که جدول حاوی مشخصات پایان‌نامه/رساله، به طور خودکار، رسم می‌شود.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\baselineskip=.6cm
+\begin{latin}
+\latinuniversity{Shahid Beheshti University}
+\latinfaculty{Faculty of Mathematical Sciences}
+\latindegree{M. Sc. }
+%group:
+\latinsubject{Department of Computer Science}
+\latinfield{Scientific Calculations}
+\latintitle{Drug-Drug Interaction Prediction by Recommender System Approach }
+\firstlatinsupervisor{Prof. Changiz Eslahchi}
+%\secondlatinsupervisor{Second Supervisor}
+%\firstlatinadvisor{Dr. Ali Katanforoush}
+%\secondlatinadvisor{Second Advisor}
+\latinname{Bahareh}
+\latinsurname{Levian}
+\latinthesisdate{2020}
+\latinkeywords{Drug-Drug Interaction, Drug Similarity, Drug Similarity Integration, Feature Selection, Recommender System }
+\en-abstract{
+\noindent
+Drug-drug interactions (DDIs) always cause unexpected and even adverse drug reactions. It is important to identify DDIs before drugs are used in the market.However, preclinical identification of DDIs requires much money and time. Computational approaches have exhibited their abilities to predict potential DDIs on a large scale by utilizing premarket drug properties. Nevertheless, most of them only predict whether or not one drug interacts with another, but neglect their enhancive (positive) and depressive (negative) changes of pharmacological effects. Moreover, these comprehensive DDIs do not occur at random, and derived from the structural features of the graph of DDIs. Revealing such a relationship is very important, because it is able to help understand how DDIs occur. Both the prediction of comprehensive DDIs and the discovery of structural relationship among them play an important guidance when making a co-prescription.
+\newline
+In this work, treating a set of comprehensive DDIs as a signed network, we design a novel model (SNF-CNN) for the prediction of enhancive and degressive DDIs based on similarity network fusion and convolutional neural networks. SNF-CNN achieves the depressive DDI prediction ($AUC=0/9747 \pm 0/0033 $ and $AUPR=0/9666 \pm 0/0045 $), enhancive DDI prediction ($AUC=0/9686 \pm 0/0028$ and $AUPR=0/8221 \pm 0/0184$) and the Unknown DDI prediction ($AUC=0/9714 \pm 0/0040$ and $AUPR=0/9480 \pm 0/0083$). Compared with two state-of-the-art approaches, SNF-CNN shows it superiority. Finally, this new approach is not only able to predict comprehensive DDI, but also predicts conventional DDI.
+\newline
+%\textbf{Availability:} Our codes is available at \href{https://github.com/aminkhod/M.Sc-final-project }{(github)}\\
+%\newline
+\textbf{Contact:} \href{ch-eslahchi@sbu.ac.i }{Dr. Changiz Eslahchi}\\
+\newline
+The main refrences of the thesis are:
+	\begin{enumerate}
+		\item Shi J-Y, Huang H, Li J-X, Lei P, Zhang Y-N, Dong K, Yiu S-M (2018) TMFUF: a triple matrix factorization-based unified framework for predicting comprehensive drug–drug interactions of new drugs. BMC Bioinform 19(S14):411.
+		\item Yu H, Mao K-T, Shi J-Y, Huang H, Chen Z, Dong K, Yiu S-M.Predicting and understanding comprehensive drug–drug interactions via seminonnegative matrix factorization.BMC Syst Biol2018;12:14.	
+		\item Shi J. Mao K.Yu H. et al.Detecting drug communities and predicting comprehensive drug–drug interactions via balance regularized semi-nonnegative matrix factorization.J Cheminform2019;11: 28.
+	\end{enumerate}
+}
+\latinvtitle
+\end{latin}

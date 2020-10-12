@@ -1,0 +1,3630 @@
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/W32TeX) (preloaded format=xelatex 2020.2.11)  6 SEP 2020 19:57
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./dicfa2en.tex
+(./dicfa2en.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+! Undefined control sequence.
+l.3 \chapter
+            *{واژه‌نامه فارسی به انگلیسی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \chapter*
+             {واژه‌نامه فارسی به انگلیسی}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ژ in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ی in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--5
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \noindent
+             
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.7 \englishgloss
+                 {Drug Fingerprint}{اثر انگشت دارو}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ث in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+! Undefined control sequence.
+l.8 \englishgloss
+                 {Biological Understanding}{ادراک بیولوژیکی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ژ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.9 \englishgloss
+                 {Bias}{اریب}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ب in font nullfont!
+! Undefined control sequence.
+l.10 \englishgloss
+                  {Potential}{احتمالی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ح in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.11 \englishgloss
+                  {Case-Based Reasonong}{استدلال نمونه ‌محور}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ح in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ر in font nullfont!
+! Undefined control sequence.
+l.12 \englishgloss
+                  {Cross Validation}{اعتبارسنجی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.13 \englishgloss
+                  {Enhancive}{افزاینده}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ه in font nullfont!
+! Undefined control sequence.
+l.14 \englishgloss
+                  {Genetic Algorithm}{الگوریتم‌ ژنتیک}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no G in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ژ in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+! Undefined control sequence.
+l.15 \englishgloss
+                  {Drug  Transporter}{انتقال‌ دهنده‌ دارو}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+! Undefined control sequence.
+l.16 \englishgloss
+                  {Atrioventricular Blocking}{انسداد دهلیزی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.17 \englishgloss
+                  {Glaucoma}{آب‌سیاه}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no G in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no آ in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ه in font nullfont!
+! Undefined control sequence.
+l.18 \englishgloss
+                  {Drug Enzyme}{آنزیم‌ دارو}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no آ in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+! Undefined control sequence.
+l.19 \englishgloss
+                  {Back Propagation}{بازگشت به عقب}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no ب in font nullfont!
+! Undefined control sequence.
+l.20 \englishgloss
+                  {Distributed Representation}{بازنمود توزیع‌�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ه in font nullfont!
+! Undefined control sequence.
+l.21 \englishgloss
+                  {Potential}{بالقوه}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ه in font nullfont!
+! Undefined control sequence.
+l.22 \englishgloss
+                  {Logistic Regression}{برازش بخت}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ت in font nullfont!
+! Undefined control sequence.
+l.23 \englishgloss
+                  {Feature Vector}{بردار ویژگی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ژ in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.24 \englishgloss
+                  {Food - Drug Interaction}{برهم‌کنش غذا - دا�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no غ in font nullfont!
+Missing character: There is no ذ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+! Undefined control sequence.
+l.25 \englishgloss
+                  {Over Fiting}{بیش‌برازش}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ش in font nullfont!
+! Undefined control sequence.
+l.26 \englishgloss
+                  {Collaborative Refinement}{پالایش مشارکتی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.27 \englishgloss
+                  {Web Database}{پایگاه داده واقع بر گست�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ب in font nullfont!
+! Undefined control sequence.
+l.28 \englishgloss
+                  {Python}{پایتون}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ن in font nullfont!
+! Undefined control sequence.
+l.29 \englishgloss
+                  {Drug Binding Protein}{پروتئین‌ مرتبط به �...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ئ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ط in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+! Undefined control sequence.
+l.30 \englishgloss
+                  {Loss Function}{تابع خطا}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ط in font nullfont!
+Missing character: There is no ا in font nullfont!
+! Undefined control sequence.
+l.31 \englishgloss
+                  {Activation Function}{تابع فعال‌ساز}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+! Undefined control sequence.
+l.33 \englishgloss
+                  {Similarity Network Fusion}{ترکیب شباهت‌های...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.34 \englishgloss
+                  {Visual Recognition}{تشخیص تصویر}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no V in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+! Undefined control sequence.
+l.35 \englishgloss
+                  {Speech Recognition}{تشخیص صدا}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+! Undefined control sequence.
+l.36 \englishgloss
+                  {Synergnism}{تشدید‌کنندگی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.37 \englishgloss
+                  {Random}{تصادفی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.38 \englishgloss
+                  {Structural Balance}{ تعادل ساختاری}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.39 \englishgloss
+                  {Generalization}{تعمیم‌پذیری‌}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no G in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ذ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+! Undefined control sequence.
+l.40 \englishgloss
+                  {Feed Forward}{تغذیه رو به جلو}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no غ in font nullfont!
+Missing character: There is no ذ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no و in font nullfont!
+! Undefined control sequence.
+l.41 \englishgloss
+                  {Invariance}{تغییرناپذیری}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no غ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ذ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.42 \englishgloss
+                  {Fully Connected}{تماما متصل}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ل in font nullfont!
+! Undefined control sequence.
+l.43 \englishgloss
+                  {Theoretical Justification}{توجیه نظری}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ظ in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.44 \englishgloss
+                  {Distribution}{توزیع}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ع in font nullfont!
+! Undefined control sequence.
+l.45 \englishgloss
+                  {Absorption}{جذب}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ذ in font nullfont!
+Missing character: There is no ب in font nullfont!
+! Undefined control sequence.
+l.46 \englishgloss
+                  {Random Forest}{جنگل تصادفی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.47 \englishgloss
+                  {Off - Label}{خارج از برچسب}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no چ in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ب in font nullfont!
+! Undefined control sequence.
+l.48 \englishgloss
+                  {Reconstruction Error}{خطای نوسازی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ط in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.49 \englishgloss
+                  {Autoencoder}{خودرمزنگار}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+! Undefined control sequence.
+l.50 \englishgloss
+                  {Clustering}{خوشه بندی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.51 \englishgloss
+                  {Over-Complete}{خیلی کامل}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ل in font nullfont!
+! Undefined control sequence.
+l.52 \englishgloss
+                  {Drug}{دارو}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+! Undefined control sequence.
+l.53 \englishgloss
+                  {Drug-Target}{دارو-هدف}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ف in font nullfont!
+! Undefined control sequence.
+l.54 \englishgloss
+                  {Pharmacy}{داروسازی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.55 \englishgloss
+                  {Pharmacology}{داروشناسی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.56 \englishgloss
+                  {Medical Pharmacology}{داروشناسی پزشکی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.57 \englishgloss
+                  {New Drug}{داروی جدید}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no د in font nullfont!
+! Undefined control sequence.
+l.58 \englishgloss
+                  {Skin Rash}{دانه‌های ریز پوستی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.59 \englishgloss
+                  {Design Tree}{درخت تصمیم}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no م in font nullfont!
+! Undefined control sequence.
+l.60 \englishgloss
+                  {Classifier}{دسته‌بند}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no د in font nullfont!
+! Undefined control sequence.
+l.61 \englishgloss
+                  {Elimination}{دفع}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ع in font nullfont!
+! Undefined control sequence.
+l.62 \englishgloss
+                  {Precision}{دقت}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no ت in font nullfont!
+! Undefined control sequence.
+l.63 \englishgloss
+                  {Diazepam}{دیازپام}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no م in font nullfont!
+! Undefined control sequence.
+l.64 \englishgloss
+                  {Antagonism}{رقابت‌کنندگی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.65 \englishgloss
+                  {Partial Least Square Regression}{رگرسیون کمتر�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ئ in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.66 \englishgloss
+                  {Encoder}{رمزگذار}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ذ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+! Undefined control sequence.
+l.67 \englishgloss
+                  {Encode}{رمزگذاری کردن}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ذ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ن in font nullfont!
+! Undefined control sequence.
+l.68 \englishgloss
+                  {Decoder}{رمزگشا}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ا in font nullfont!
+! Undefined control sequence.
+l.69 \englishgloss
+                  {k-Fold Cross Validation (K-CV)}{روش جامع اعتب�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no k in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.70 \englishgloss
+                  {Hybrid Approaches}{روش‌های ترکیبی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no H in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.71 \englishgloss
+                  {Naïve Similarity-Based Approach}{رویکرد مبتنی...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no N in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no ï in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no و in font nullfont!
+! Undefined control sequence.
+l.72 \englishgloss
+                  {Classification-Based}{رویکرد مبتنی بر طبق...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ط in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.73 \englishgloss
+                  {Network Recommendation-Based}{رویکرد مبتنی ب�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ر in font nullfont!
+! Undefined control sequence.
+l.74 \englishgloss
+                  {Real-timeTraining}{زمان واقعی آموزش}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no آ in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ش in font nullfont!
+! Undefined control sequence.
+l.75 \englishgloss
+                  {Real-time Prediction}{زمان واقعی پیش‌بینی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.76 \englishgloss
+                  {Chemical Structure}{ساختار شیمیایی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.77 \englishgloss
+                  {Food and Drug Adminstration(FDA)}{سازمان مواد �...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no غ in font nullfont!
+Missing character: There is no ذ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.78 \englishgloss
+                  {Recommender System}{سامانه‌ توصیه‌گر}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ر in font nullfont!
+! Undefined control sequence.
+l.79 \englishgloss
+                  {Similarity}{شباهت}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ت in font nullfont!
+! Undefined control sequence.
+l.80 \englishgloss
+                  {Jacard Similarity}{شباهت جاکارد}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no J in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no د in font nullfont!
+! Undefined control sequence.
+l.81 \englishgloss
+                  {Cosine Similarity}{شباهت کوسینوس}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no س in font nullfont!
+! Undefined control sequence.
+l.82 \englishgloss
+                  {Gaussian Similarity}{شباهت گوسین}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no G in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ن in font nullfont!
+! Undefined control sequence.
+l.83 \englishgloss
+                  {Artificial Neural Network}{شبکه‌ عصبی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.84 \englishgloss
+                  {Convolutional Neural Network(CNN)}{شبکه‌ عصبی �...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ن in font nullfont!
+! Undefined control sequence.
+l.85 \englishgloss
+                  {Multilayer Perceptron}{ شبکه‌ی‌پرسپترون ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no چ in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ه in font nullfont!
+! Undefined control sequence.
+l.86 \englishgloss
+                  {Long Short-Term Memory(LSTM)}{شبکه‌ی حافظه ط...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ح in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ظ in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ط in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ت in font nullfont!
+! Undefined control sequence.
+l.87 \englishgloss
+                  {Generative Stochastic Neural Network}{شبکه‌ی عص�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no G in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.89 \englishgloss
+                  {Cold Start}{شروع سرد}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no د in font nullfont!
+! Undefined control sequence.
+l.90 \englishgloss
+                  {Accuracy}{صحت}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ص in font nullfont!
+Missing character: There is no ح in font nullfont!
+Missing character: There is no ت in font nullfont!
+! Undefined control sequence.
+l.91 \englishgloss
+                  {Side Effect}{عوارض جانبی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ض in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.92 \englishgloss
+                  {Label Side Effect}{عوارض جانبی برچسب‌د�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ض in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no چ in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+! Undefined control sequence.
+l.93 \englishgloss
+                  {Off-Label Side Effect}{عوارض جانبی خارج ا�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ع in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ض in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ب in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no چ in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ب in font nullfont!
+! Undefined control sequence.
+l.94 \englishgloss
+                  {Pharmacodynamic}{فارماکودینامیک}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+! Undefined control sequence.
+l.95 \englishgloss
+                  {Pharmacokinetic}{فارماکوکینتیک}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ک in font nullfont!
+! Undefined control sequence.
+l.96 \englishgloss
+                  {Fuzzy}{فازی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.97 \englishgloss
+                  {Matrix Factorization}{فاکتور‌گیری ماتریس}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no س in font nullfont!
+! Undefined control sequence.
+l.98 \englishgloss
+                  {None Negative Matrix Factorization}{فاکتورگیری ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no غ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.99 \englishgloss
+                  {Semi- None Negative Matrix Factorization}{فاکتورگ�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no غ in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.100 \englishgloss
+                   {Hyperparameter}{فراپارامتر}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no H in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no پ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ر in font nullfont!
+! Undefined control sequence.
+l.101 \englishgloss
+                   {Recall}{فراخوانی}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no خ in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.102 \englishgloss
+                   {Collaborative Filtering}{فیلترینگ همکارانه}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ف in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no گ in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no م in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ه in font nullfont!
+! Undefined control sequence.
+l.103 \englishgloss
+                   {Chain Rule}{قائده زنجیره‌ای}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ئ in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ز in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no ج in font nullfont!
+Missing character: There is no ی in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ‌ in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ی in font nullfont!
+! Undefined control sequence.
+l.104 \englishgloss
+                   {Robust}{قدرت و استحکام}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ق in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ر in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no س in font nullfont!
+Missing character: There is no ت in font nullfont!
+Missing character: There is no ح in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no م in font nullfont!
+! Undefined control sequence.
+l.106 \englishgloss
+                   {Convolution}{کانولوشن}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ل in font nullfont!
+Missing character: There is no و in font nullfont!
+Missing character: There is no ش in font nullfont!
+Missing character: There is no ن in font nullfont!
+! Undefined control sequence.
+l.107 \englishgloss
+                   {Degressive}{کاهنده}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ک in font nullfont!
+Missing character: There is no ا in font nullfont!
+Missing character: There is no ه in font nullfont!
+Missing character: There is no ن in font nullfont!
+Missing character: There is no د in font nullfont!
+Missing character: There is no ه in font nullfont!
+! Undefined control sequence.
+l.108 \englishgloss
+                   {Sparse Coding}{کد نویسی پراکنده}
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 4 strings out of 493706
+ 48 string characters out of 6148913
+ 54323 words of memory out of 5000000
+ 3446 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 5i,0n,4p,105b,17s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+No pages of output.

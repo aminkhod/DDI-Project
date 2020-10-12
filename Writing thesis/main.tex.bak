@@ -1,0 +1,92 @@
+% ‎!TeX document-id = {9eeaf096-b86b-405c-b31a-d16fbac0cfde}‎
+% دستور اول به خاطر این است که در تک‌ورکز فایل به صورت خودکار با زیلاتک پردازش شود.
+% از سایر دستورات نیز برای اجرای خودکار استفاده می‌کنیم
+% ‎!TEX TS-program = XeLaTeX‎
+% ‎Commands for running this example‎:
+% ‎xelatex main‎
+% ‎bibtex8‎ -‎W‎ -‎c cp1256fa main‎
+% ‎xelatex main‎
+% ‎xelatex main‎
+% ‎End of Commands‎
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%برای شروع به فایل ‎help.pdf‎ رجوع کنید ‎2‎
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+‎\documentclass[a4paper,11pt,msc]{SBU}‎
+‎\input{commands}‎
+‎\begin{document}‎
+‎	\frontmatter‎
+‎	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%‎
+	%صفحه‌ی بسم الله
+‎	\thispagestyle{empty}‎
+‎	%\centerline{{\includegraphics[width=9 cm]{besm}}}‎
+‎	\begin{figure}‎
+	‎	\centering‎
+	‎	\includegraphics[width=\linewidth]{besm}‎
+‎	\end{figure}‎
+‎	\vfill‎
+‏‎	%‎ ایجاد صفحه‌ای سفید
+‎	\clearpage‎
+‎	\newpage‎
+‎	\thispagestyle{empty}‎
+	
+	~~~
+‎	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%‎
+‎	\clearpage‎
+	
+‎	\pagenumbering{adadi}‎
+‎	\input{fa_title}‎
+‎	\include{preface}‎‎
+
+‎	\clearpage{\pagestyle{empty}\cleardoublepage}‎
+	%برای توضیح دستور بالا به راهنمای بسته‌ی ‎fancyhdr‎ مراجعه شود
+‎	\tableofcontents‎
+‎	\clearpage{\pagestyle{empty}\cleardoublepage}‎
+‎	\listoffigures‎
+‎	\clearpage{\pagestyle{empty}\cleardoublepage}‎
+‎	\listoftables‎
+‎	\clearpage{\pagestyle{empty}\cleardoublepage}‎
+‎	\mainmatter‎
+‎	%\include{introduction}‎
+‎	%\clearpage{\pagestyle{empty}\cleardoublepage}‎
+‎	%\baselineskip=0.85cm‎
+‎	\include{chapter1}‎
+‎	\clearpage{\pagestyle{empty}\cleardoublepage}‎
+‎	\include{chapter2}‎
+‎	\clearpage{\pagestyle{empty}\cleardoublepage}‎
+‎	\include{chapter3}‎
+‎	\clearpage{\pagestyle{empty}\cleardoublepage}‎
+‎	\include{chapter4}‎
+‎	%\include{conclusion}‎
+‎	\clearpage{\pagestyle{empty}\cleardoublepage}‎
+‎	\backmatter‎
+‎	{\small‎
+	‎	{\baselineskip=.80cm‎
+	‎		\include{dicfa2en}‎
+	‎		\clearpage{\pagestyle{empty}\cleardoublepage}‎
+	‎		\include{dicen2fa}}‎
+	‎	\clearpage{\pagestyle{empty}\cleardoublepage}‎
+	‎	%{\baselineskip=.6cm‎
+	‎	%\phantomsection‎
+		%\addcontentsline{toc}{chapter}{نمایه}
+	‎	%\printindex}‎
+		%\addcontentsline{toc}{chapter}{مراجع}
+	‎	%\include{en_title}‎
+	‎	\bibliographystyle{unsrt-fa}‎
+	‎	\bibliography{Refer}‎
+	‎	%\clearpage{\pagestyle{empty}\cleardoublepage}‎
+	‎	%\printbibliography‎
+	‎	%\phantomsec7tion‎
+		
+	‎	%\bibliographystyle{chicago-fa}‎
+	‎	%\bibliography{MyReferences}‎
+		
+		%\addcontentsline{toc}{chapter}{مراجع}
+	‎	%\bibliographystyle{chicago-fa}‎
+	‎	%\bibliography{MyReferences}‎
+		
+	‎	%\include{references}‎
+		
+	‎	%\clearpage{\pagestyle{empty}\cleardoublepage}‎
+	‎	\input{en_title}‎
+	‎	\label{LastPage}‎
+‎	\end{document}con‎.

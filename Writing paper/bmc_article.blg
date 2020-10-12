@@ -1,0 +1,74 @@
+This is 8-bit Big BibTeX version 0.99d
+Implementation:  Microsoft(R) C/C++ for Win32
+Release version: 3.71 (04 mar 2019)
+
+The 8-bit codepage and sorting file: cp1256fa.csf
+The top-level auxiliary file: bmc_article.aux
+I couldn't open database file bmc_article.bib.bib
+---line 41 of file bmc_article.aux
+ : \bibdata{bmc_article.bib
+ :                         }
+I'm skipping whatever remains of this command
+The style file: bmc-mathphys.bst
+I found no database files---while reading file bmc_article.aux
+Reallocated glb_str_ptr (elt_size=4) to 10 items from 0.
+Reallocated global_strs (elt_size=1001) to 10 items from 0.
+Reallocated glb_str_end (elt_size=4) to 10 items from 0.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=1001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--I didn't find a database entry for "wienkers2005predicting"
+Warning--I didn't find a database entry for "Law2014"
+Warning--I didn't find a database entry for "Leape1995"
+Warning--I didn't find a database entry for "Businaro2013"
+Warning--I didn't find a database entry for "Karbownik2017"
+Warning--I didn't find a database entry for "Mulroy2017"
+Warning--I didn't find a database entry for "Zhao2011"
+Warning--I didn't find a database entry for "Veith2009"
+Warning--I didn't find a database entry for "Huang2007"
+Warning--I didn't find a database entry for "Wisniowska2016"
+Warning--I didn't find a database entry for "Zhou2016"
+Warning--I didn't find a database entry for "Zhang2015"
+Warning--I didn't find a database entry for "Bui2014"
+Warning--I didn't find a database entry for "Zhang2016"
+Warning--I didn't find a database entry for "Duke2012"
+Warning--I didn't find a database entry for "Vilar2014"
+Warning--I didn't find a database entry for "Cheng2014"
+Warning--I didn't find a database entry for "Li2016"
+Warning--I didn't find a database entry for "luo2014"
+Warning--I didn't find a database entry for "Shi2017"
+Warning--I didn't find a database entry for "Koch1981"
+Warning--I didn't find a database entry for "koon"
+Warning--I didn't find a database entry for "xjon"
+Warning--I didn't find a database entry for "marg"
+Warning--I didn't find a database entry for "schn"
+Warning--I didn't find a database entry for "koha"
+Warning--I didn't find a database entry for "issnic"
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+
+Here's how much of BibTeX's memory you used:
+ Cites:                 0 out of 750
+ Fields:              806 out of 5000
+ Hash table:        29427 out of 30000
+ Strings:            1165 out of 30000
+ Free string pool:   9441 out of 65000
+ Wizard functions:   7128 out of 9000
+(There were 2 error messages)

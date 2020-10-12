@@ -1,0 +1,89 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/W32TeX)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: preface.aux
+A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: chapter4.aux
+A level-1 auxiliary file: dicfa2en.aux
+A level-1 auxiliary file: dicen2fa.aux
+The style file: unsrt-fa.bst
+Database file #1: Refer.bib
+You're missing a field name---line 7 of file Refer.bib
+ :  year = {2002}, 
+ :                 % I looked it up
+I'm skipping whatever remains of this entry
+Repeated entry---line 257 of file Refer.bib
+ : @article{binder2014compartments
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 349 of file Refer.bib
+ : @article{shen2007hum
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 435 of file Refer.bib
+ : @article{szklarczyk2014string
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 455 of file Refer.bib
+ : @article{altschul1997gapped
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "chen2016wbsmda"
+-- unsrt-fa.bst version 0.9 (2015/05/09) 
+-- This is a BibTeX style for XePersian: http://www.parsilatex.com
+Name 1 in "Bruce Alberts, Alexander Johnson, Julian Lewis, Martin Raff, Keith Roberts, and Peter Walter." has a comma at the end for entry Alberts2002
+while executing---line 1216 of file unsrt-fa.bst
+Too many commas in name 1 of "Bruce Alberts, Alexander Johnson, Julian Lewis, Martin Raff, Keith Roberts, and Peter Walter." for entry Alberts2002
+while executing---line 1216 of file unsrt-fa.bst
+Too many commas in name 1 of "Bruce Alberts, Alexander Johnson, Julian Lewis, Martin Raff, Keith Roberts, and Peter Walter." for entry Alberts2002
+while executing---line 1216 of file unsrt-fa.bst
+Warning--empty publisher in Alberts2002
+Warning--empty journal in Alberts98
+Warning--empty journal in hall1999feature
+Warning--empty journal in fayyad1993multi
+
+Done.
+You've used 52 entries,
+            2198 wiz_defined-function locations,
+            879 strings with 15654 characters,
+and the built_in function-call counts, 14690 in all, are:
+= -- 1202
+> -- 750
+< -- 3
++ -- 269
+- -- 217
+* -- 1164
+:= -- 2232
+add.period$ -- 156
+call.type$ -- 52
+change.case$ -- 50
+chr.to.int$ -- 0
+cite$ -- 56
+duplicate$ -- 499
+empty$ -- 1251
+format.name$ -- 217
+if$ -- 3268
+int.to.chr$ -- 0
+int.to.str$ -- 52
+missing$ -- 211
+newline$ -- 473
+num.names$ -- 52
+pop$ -- 97
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 213
+stack$ -- 0
+substring$ -- 1198
+swap$ -- 82
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 4
+type$ -- 0
+warning$ -- 4
+while$ -- 139
+width$ -- 54
+write$ -- 721
+(There were 8 error messages)

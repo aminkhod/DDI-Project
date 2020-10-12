@@ -1,0 +1,138 @@
+\addcontentsline{toc}{chapter}{واژه‌نامه فارسی به انگلیسی}
+‎\thispagestyle{empty}‎
+\chapter*{واژه‌نامه فارسی به انگلیسی}
+\markboth{واژه‌نامه فارسی به انگلیسی}{واژه‌نامه فارسی به انگلیسی}
+
+‎\noindent‎
+‎\englishgloss{Nucleus}{هسته}‎
+‎\englishgloss{Cytoplasm}{سیتوپلاسم}‎
+‎\englishgloss{Mitochondrion}{میتوکندری}‎
+‎\englishgloss{Membrane}{غشاء}‎
+‎\englishgloss{Golgi apparatus}{دستگاه گلژی}
+‎\englishgloss{Lysosome}{لیزوزوم}‎
+‎\englishgloss{Cytoskeleton}{سیتواسکلتون}‎
+‎\englishgloss{Endocytosis}{آندوسیتوز}‎
+‎\englishgloss{Exocytosis}{اگزوسیتوز}‎
+‎\englishgloss{Cytosol}{سیتوزول}‎
+‎\englishgloss{Metabolit}{متابولیت}‎
+‎\englishgloss{Vesicle}{وزیکول}‎
+‎\englishgloss{Amino acid composition}{ترکیب اسیدهای آمینه}
+‎\englishgloss{Terminal Signaling Peptides}{پیام پپتیدی نهایی}
+‎\englishgloss{Functional domain}{دامنه عملکردی}
+‎\englishgloss{Covariant discriminant}{توابع متمایز کننده}
+‎\englishgloss{Support vector machine}{‎ ماشین بردار پشتیبان}
+‎\englishgloss{Web Database}{پایگاه داده واقع بر گستره شبکه وب }
+‎\englishgloss{First-best backward search}{جستجوی رو به عقب اولین ‎‐بهترین}‎
+‎\englishgloss{Weka machine}{ماشین وکا}
+‎\englishgloss{Naïve bayes}{نائیو بیز}
+‎\englishgloss{Bayesian Network}{شبکه بیزی}
+‎\englishgloss{Unknown}{نامشخص}‎
+‎\englishgloss{Database}{Database}‎
+‎\englishgloss{Recommender system}{سامانه توصیه گر}
+‎\englishgloss{Similarity}{شباهت}‎
+‎\englishgloss{Potential}{احتمالی}‎
+\englishgloss{Clustering}{خوشه بندی}
+‎\englishgloss{Centrosome}{سنتروزوم}‎
+‎\englishgloss{Endoplasmic reticulum}{شبکه آندوپلاسمی}
+‎\englishgloss{Endosome}{اندوزوم}‎
+\englishgloss{Exteracellular}{خارج سلولی}
+‎\englishgloss{Peroxisome}{پروکسیزوم}‎
+‎\englishgloss{Gene Ontology}{هستی شناسی ژن}
+‎\englishgloss{Gene products}{محصولات ژن}
+‎\englishgloss{Biological process}{فرایند زیستی }
+‎\englishgloss{Cellular component}{جزء سلولی}
+‎\englishgloss{Molecular function}{عملکرد مولکولی}
+‎\englishgloss{Directed Acycled Graph (DAG)}{گراف جهت دار بدون دور}
+‎\englishgloss{Genomic Context}{‎ بافت زنومی}
+‎\englishgloss{High-throughput Experiments}{آزمایش با بازده بالا}
+\englishgloss{Co-expression}{هم بیانی}
+‎\englishgloss{Previous Knowledge }{دانش پیشین }
+‎\englishgloss{Organism}{ارگانیسم}‎
+‎\englishgloss{Fusion}{امتزاج}‎
+‎\englishgloss{Neighborhood}{همسایگی}‎
+\englishgloss{Co-occurence}{وقوع همزمان}
+‎\englishgloss{Homology}{همولوژی}‎
+‎\englishgloss{Orthology}{ارتولوژی}‎
+‎\englishgloss{Mutual information}{اطلاعات متقابل}
+‎\englishgloss{Profile}{پروفایل}‎
+‎\englishgloss{Position weight matrix}{ماتریس وزن موقعیت خاص}
+‎\englishgloss{Motif}{الگو}‎
+‎\englishgloss{Alignment}{همترازی}‎
+‎\englishgloss{Affine gap penalty}{جریمه پرش نسبی}
+\englishgloss{hard-coded}{مستقیم کد شده}
+‎\englishgloss{Tapestry}{تپستری}‎
+‎\englishgloss{Collaborative Filtering}{فیلترینگ همکارانه}
+\englishgloss{User-based}{مبتنی بر کابر}
+\englishgloss{Item-based}{مبتنی بر آیتم}
+‎\englishgloss{Matrix Factorization}{فاکتور گیری ماتریس}
+\englishgloss{Content-based}{مبتنی بر محتوا}
+\englishgloss{Knowledge-based}{مبتنی بر دانش}
+\englishgloss{Constrain-based}{مبتنی بر محدودیت}
+\englishgloss{Case-based}{مبتنی بر مورد}
+‎\englishgloss{Similarity measure}{معیار شباهت}
+‎\englishgloss{Hybrid approaches}{روش های ترکیبی}
+‎\englishgloss{Training set}{مجموعه یادگیری}
+‎\englishgloss{Latent vector}{بردار نهان}
+‎\englishgloss{Logistic function}{تابع لجستیک}
+‎\englishgloss{Bias}{اریبی}‎
+\englishgloss{Maximize}{بیشینه کردن}
+‎\englishgloss{Frobenius norm}{نرم فروبنیوسی}
+‎\englishgloss{Nearest neighbors}{نزدیک ترین همسایه ها}
+‎\englishgloss{Latent space}{فضای نهان}
+‎\englishgloss{trace}{اثر}‎
+‎\englishgloss{Gradient descent}{گرادیان کاهشی}
+‎\englishgloss{Partial gradient}{مشتق جزئی}
+‎\englishgloss{Hadamard product}{ضرب هادامارد}
+‎\englishgloss{Recall}{فراخوانی}‎
+‎\englishgloss{Precision}{صحت}‎
+‎\englishgloss{F-measure}{شاخص-F}‎
+
+
+‎%\begin{comment}‎
+‎%\LTRfootnote{Bessel differential equation}‎
+% مرتبه صفر، معادله دسته لین -امدن 
+‎%\LTRfootnote{Lane-Emden type equation}‎
+%دسته اول، معادله ریکاتی 
+‎%\LTRfootnote{Riccati equation‎ }
+%غیر خطی، معادله مومنتوم 
+‎%\LTRfootnote{momentum equation}‎
+
+ %معادله کسری آبل
+‎%\LTRfootnote{Abel equation}‎
+
+
+%خطای  مجذور میانگین ریشه 
+‎%$(RMS)$‎
+‎%\LTRfootnote{root mean square}‎
+‎%\end{comment}‎
+
+
+
+
+
+
+
+
+
+
+
+
+
+%ماتریس قطری‎\hfill\lr{Diagonal matrix}\\‎
+%مایع چسبناک‎\hfill\lr{Viscous fluid}\\‎
+%معادلات اشتورم-- لیوویل‎\hfill\lr{Sturm-Liouville equations}\\‎
+%معادله بلاسیوس‎\hfill\lr{Blasius equation}\\‎
+%معادله فالکنر-- اسکن‎\hfill\lr{Falkner-Skan equation}\\‎
+‏‎%میکرودوران\hfill\lr{Microrotation}\\‎
+%وزن‌های مربع‌سازی‎\hfill\lr{Quadrature weights}\\‎
+%ولترا ‎\hfill\lr{ٰVolterra}\\‎
+%همگرایی یکنواخت‎\hfill\lr{Uniform convrgence}\\‎
+%هم‌مکانی متعام‎\hfill\lr{Orthogonal collocation}\\‎
+%عدد اشمیت‎\hfill\lr{Schmidt number}\\‎
+%عدد رینولدز‎\hfill\lr{Reynolds number}\\‎
+%روش گرام-- اشمیت‎\hfill\lr{Gram-Schmidt method}\\‎
+%روش درونی‎\hfill\lr{Interior method}\\‎
+%روش آمیخته‎\hfill\lr{Mixed method}\\‎
+%تنش برشی‎\hfill\lr{Shearing stress}\\‎
+%توابع اشتورو‎\hfill\lr{Sturve functions}\\‎
+%توابع  وبر‎\hfill\lr{}\\‎

@@ -1,0 +1,71 @@
+\BOOKMARK [0][-]{Item.3}{پیشگفتار}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{فهرست تصاویر}{}% 2
+\BOOKMARK [0][-]{chapter*.4}{فهرست جداول}{}% 3
+\BOOKMARK [0][-]{chapter.1}{مقدمه}{}% 4
+\BOOKMARK [1][-]{section.1.1}{دارو}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{داروشناسی}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.2.1}{برهم‌کنش فارماکوکینتیک}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.2}{برهم‌کنش فارماکوداینامیک}{section.1.2}% 8
+\BOOKMARK [1][-]{section.1.3}{پایگاه داده‌های دارو }{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.3.1}{DrugBank}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.2}{KEGG}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.3}{TWOSIDES}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.4}{FAERS}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.5}{SIDER}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.6}{OFFSIDES}{section.1.3}% 15
+\BOOKMARK [2][-]{subsection.1.3.7}{PubChem}{section.1.3}% 16
+\BOOKMARK [1][-]{section.1.4}{ویژگی‌های داروها}{chapter.1}% 17
+\BOOKMARK [2][-]{subsection.1.4.1}{ساختار شیمیایی}{section.1.4}% 18
+\BOOKMARK [2][-]{subsection.1.4.2}{عوارض‌جانبی}{section.1.4}% 19
+\BOOKMARK [2][-]{subsection.1.4.3}{آنزیم‌}{section.1.4}% 20
+\BOOKMARK [2][-]{subsection.1.4.4}{منتقل کننده‌}{section.1.4}% 21
+\BOOKMARK [2][-]{subsection.1.4.5}{پروتیئن هدف}{section.1.4}% 22
+\BOOKMARK [2][-]{subsection.1.4.6}{نشانگان}{section.1.4}% 23
+\BOOKMARK [2][-]{subsection.1.4.7}{برهم‌کنش غذا - دارو}{section.1.4}% 24
+\BOOKMARK [2][-]{subsection.1.4.8}{ویژگی های سه بعدی }{section.1.4}% 25
+\BOOKMARK [1][-]{section.1.5}{تعریف مسئله}{chapter.1}% 26
+\BOOKMARK [2][-]{subsection.1.5.1}{برچسب برهم‌کنش‌ها}{section.1.5}% 27
+\BOOKMARK [1][-]{section.1.6}{ساختار پایان‌نامه}{chapter.1}% 28
+\BOOKMARK [0][-]{chapter.2}{بررسی تاریخچه‌، مفاهیم اولیه و الگوریتم‌های پیش‌بینی برهم‌کنش دارو-دارو}{}% 29
+\BOOKMARK [1][-]{section.2.1}{پیشینه تحقیق}{chapter.2}% 30
+\BOOKMARK [1][-]{section.2.2}{آماده‌سازی داده}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.1}{محاسبه‌ی شباهت‌های دارویی }{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.2}{ترکیب شباهت‌های شبکه‌ای }{section.2.2}% 33
+\BOOKMARK [1][-]{section.2.3}{سامانه‌های توصیه‌گر}{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.3.1}{فیلترینگ همکارانه}{section.2.3}% 35
+\BOOKMARK [2][-]{subsection.2.3.2}{فیلترینگ مبتنی بر محتوا}{section.2.3}% 36
+\BOOKMARK [2][-]{subsection.2.3.3}{فیلترینگ مبتنی بر دانش}{section.2.3}% 37
+\BOOKMARK [2][-]{subsection.2.3.4}{روش‌های ترکیبی}{section.2.3}% 38
+\BOOKMARK [1][-]{section.2.4}{یادگیری عمیق}{chapter.2}% 39
+\BOOKMARK [2][-]{subsection.2.4.1}{شبکه‌های عصبی کانولوشن}{section.2.4}% 40
+\BOOKMARK [2][-]{subsection.2.4.2}{ماشین بولتزمن محدود شده}{section.2.4}% 41
+\BOOKMARK [2][-]{subsection.2.4.3}{خودرمزنگار}{section.2.4}% 42
+\BOOKMARK [2][-]{subsection.2.4.4}{کدگذاری تنک}{section.2.4}% 43
+\BOOKMARK [1][-]{section.2.5}{الگوریتم‌های پیشین در مسئله‌ی پیش‌بینی سه‌کلاسه برهم‌کنش دارو - دارو}{chapter.2}% 44
+\BOOKMARK [2][-]{subsection.2.5.1}{چارچوب یکپارچه مبتنی بر تجزیه ماتریس سه‌کلاسه}{section.2.5}% 45
+\BOOKMARK [2][-]{subsection.2.5.2}{ پیش بینی برهم‌کنش دارو-دارو بر اساس تجزیه ماتریس غیرمنفی}{section.2.5}% 46
+\BOOKMARK [2][-]{subsection.2.5.3}{تنظیم متعادل تجزیه ماتریس نیمه غیر منفی}{section.2.5}% 47
+\BOOKMARK [0][-]{chapter.3}{ پیش‌بینی برهم‌کنش دارو-داروی با رویکرد سیتم توصیه‌گر یادگیری عمیق }{}% 48
+\BOOKMARK [1][-]{section.3.1}{داده‌ها و ویژگی‌ها}{chapter.3}% 49
+\BOOKMARK [1][-]{section.3.2}{مدل‌سازی مسئله }{chapter.3}% 50
+\BOOKMARK [1][-]{section.3.3}{ آماده‌سازی داده }{chapter.3}% 51
+\BOOKMARK [2][-]{subsection.3.3.1}{ محاسبه‌ی ماتریس شباهت دارویی}{section.3.3}% 52
+\BOOKMARK [2][-]{subsection.3.3.2}{ ادغام ماتریس‌های شباهت دارویی}{section.3.3}% 53
+\BOOKMARK [2][-]{subsection.3.3.3}{تشکیل ماتریس ورودی}{section.3.3}% 54
+\BOOKMARK [1][-]{section.3.4}{ طراحی سیستم توصیه‌گر }{chapter.3}% 55
+\BOOKMARK [2][-]{subsection.3.4.1}{روند انتخاب و آموزش مدل روی برهم‌کنش‌های شناخته‌شده}{section.3.4}% 56
+\BOOKMARK [3][-]{subsubsection.3.4.1.1}{روند اعتبارسنجی جهت انتخاب مدل }{subsection.3.4.1}% 57
+\BOOKMARK [3][-]{subsubsection.3.4.1.2}{ارائه‌ی مدل انتخابی \(شبکه عصبی کانولوشن\) }{subsection.3.4.1}% 58
+\BOOKMARK [2][-]{subsection.3.4.2}{تشخیص جفت داروهای بدون برهم‌کنش احتمالی}{section.3.4}% 59
+\BOOKMARK [2][-]{subsection.3.4.3}{آموزش مدل روی برهم‌کنش‌های شناخته‌شده و ناشناخته}{section.3.4}% 60
+\BOOKMARK [3][-]{subsubsection.3.4.3.1}{روند اعتبارسنجی نتایج مدل پیش‌بینی برهم‌کنش داروها}{subsection.3.4.3}% 61
+\BOOKMARK [3][-]{subsubsection.3.4.3.2}{مدل نهایی پیش‌بینی برهم‌کنش داروها}{subsection.3.4.3}% 62
+\BOOKMARK [0][-]{chapter.4}{بررسی نتایج و نتیجه‌گیری‌}{}% 63
+\BOOKMARK [1][-]{section.4.1}{ روش جامع اعتبارسنجی متقابل k برابری }{chapter.4}% 64
+\BOOKMARK [1][-]{section.4.2}{معرفی معیارهای سنجش}{chapter.4}% 65
+\BOOKMARK [1][-]{section.4.3}{مقایسه‌ی نتایج}{chapter.4}% 66
+\BOOKMARK [1][-]{section.4.4}{نتیجه‌گیری و جمع‌بندی}{chapter.4}% 67
+\BOOKMARK [0][-]{chapter.5}{ کار‌های آینده و مسائل باز}{}% 68
+\BOOKMARK [0][-]{chapter.5}{واژه‌نامه فارسی به انگلیسی}{}% 69
+\BOOKMARK [0][-]{chapter*.5}{واژه‌نامه انگلیسی به فارسی}{}% 70
+\BOOKMARK [0][-]{chapter*.7}{مراجع}{}% 71

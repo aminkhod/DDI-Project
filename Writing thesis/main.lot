@@ -1,0 +1,12 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces مقایسه‌ی روش‌های مختلف شبکه‌های عصبی عمیق \cite {Guo Y2016} }}{32}{table.2.1}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces جزئیات مجموعه‌ی داده‌‌‌های برهم‌کنش \cite {Yu H2018} }}{42}{table.3.1}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces حالت‌های ممکن نتایج یک یادگیری ماشین }}{58}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces گزارش دسته‌بندی نوع برهم‌کنش}}{60}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces گزارش دسته‌بندی حالت سه‌کلاسه برهم‌کنش}}{60}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces نتایج الگوریتم \lr {SNF-CNN} در پیش‌بینی سه‌کلاسه براساس معیارهای \lr {AUC} و \lr {AUPR} و بازه‌ی اطمینان آن‌ها }}{61}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces مقایسه‌نتایج الگوریتم‌های پیش‌بینی سه‌کلاسه براساس معیارهای \lr {AUC} و \lr {AUPR} }}{61}{table.4.5}
+\addvspace {10\p@ }

@@ -1,0 +1,40 @@
+‎\contentsline {chapter}{پیشگفتار}{آ‍}{Item.2}‎
+‎\contentsline {paragraph}{}{آ‍}{paragraph*.2}‎
+‎\contentsline {paragraph}{}{آ‍}{paragraph*.3}‎
+‎\contentsline {paragraph}{}{آ‍}{paragraph*.4}‎
+‎\contentsline {paragraph}{}{ب}{paragraph*.5}‎
+‎\contentsline {paragraph}{}{ب}{paragraph*.6}‎
+‎\contentsline {chapter}{فهرست تصاویر}{ث}{chapter*.8}
+‎\contentsline {chapter}{فهرست جداول}{چ}{chapter*.9}
+‎\contentsline {chapter}{\numberline {1}مقدمه}{1}{chapter.1}‎
+‎\contentsline {section}{\numberline {1‎‏.‏1}مفاهیم زیستی}{1}{section.1.1}
+‎\contentsline {subsection}{\numberline {1‏.‏1‏.‏1}سلول}{1}{subsection.1.1.1}‎
+‎\contentsline {subsection}{\numberline {1‏.‏1‏.‏2}پروتئین}{7}{subsection.1.1.2}‎
+\contentsline {subsection}{\numberline ‎{1.1.3}‎‏دارو}{‎‏‎9‎}{subsection.1.1.‎3‎}
+‎\contentsline {subsection}{\numberline {1‎‏.‏1‏.4}برهم‌کنش دارو-هدف}{9}{subsection.1.1.4}
+‎\contentsline {section}{\numberline {1‎‏.‏2}تعریف مساله}{9}{section.1.2}
+‎\contentsline {chapter}{\numberline {2}‎بررسی تاریخچه و الگوریتم‌های پیش‌بینی مکان زیرسلولی}{11}{chapter.2}
+‎\contentsline {section}{\numberline {2‎‏.‏1}پیشینه تحقیق}{11}{section.2.1}
+‎\contentsline {section}{\numberline {2‎‏.‏2}الگوریتم‌های‌ پیش‌بینی جایگاه زیرسلولی پروتئین در سلول}{13}{section.2.2}
+‎\contentsline {subsection}{\numberline {2‏.‏2‏.‏1}Yloc‎ یک وب‌سرور تفسیری برای پیش‌بینی جایگاه زیرسلولی پروتئین‎\cite {briesemeister2010yloc}}{13}{subsection.2.2.1}‎
+‎\contentsline {subsection}{\numberline {2‏.‏2‏.‏2}WoLF-PSORT‎ پیش‌بینی کننده‌ی جایگاه زیرسلولی پروتئین‎\cite {horton2007wolf}}{15}{subsection.2.2.2}‎
+‎\contentsline {subsection}{\numberline {2‏.‏2‏.‏3}Hum-mPLoc‎ پیش بینی جایگاه زیر سلولی پروتئین‌های انسان به وسیله مدل سازی با استفاده از ویژگی‌های ارتباط پنهان اطلاعات ‎GO‎ و دامنه‌های عملکردی ‎\cite {zhou2017hum}}{16}{subsection.2.2.3}‎
+‎\contentsline {chapter}{\numberline {3}‎روشی نوین جهت پیش‌بینی جایگاه زیر‌سلولی پروتئین‌های انسان با استفاده از سامانه‌های توصیه‌گر}{19}{chapter.3}
+‎\contentsline {section}{\numberline {3‏.‏1}داده‌ها}{19}{section.3.1}‎
+‎\contentsline {subsection}{\numberline {3‎‏.‏1‏.‏1}شباهت با استفاده از اطلاعات ‎GO}{21}{subsection.3.1.1}‎
+‎\contentsline {subsection}{\numberline {3‎‏.‏1‏.‏2}شباهت استخراج شده از پایگاه داده ‎STRING}{23}{subsection.3.1.2}‎
+‎\contentsline {subsection}{\numberline {3‎‏.‏1‏.‏3}شباهت با استفاده از ماتریس ‎PSSM}{31}{subsection.3.1.3}‎
+‎\contentsline {section}{\numberline {3‏.‏2}روش}{35}{section.3.2}‎
+‎\contentsline {subsection}{\numberline {3‎‏.‏2‏.‏1}سامانه‌های توصیه‌گر}{37}{subsection.3.2.1}
+‎\contentsline {subsubsection}{\numberline {3‎‏.‏2‏.‏1‏.‏1}تقسیم‌بندی سامانه‌های توصیه‌گر}{39}{subsubsection.3.2.1.1}
+‎\contentsline {subsection}{\numberline {3‎‏.‏2‏.‏2}روش ‎PSL-توصیه‌گر}{42}{subsection.3.2.2}‎
+‎\contentsline {chapter}{\numberline {4}‎بررسی نتایج و نتیجه‌گیری}{51}{chapter.4}
+‎\contentsline {section}{\numberline {4‎‏.‏1}معرفی معیارهای سنجش}{51}{section.4.1}
+‎\contentsline {section}{\numberline {4‎‏.‏2}بررسی نتایج}{52}{section.4.2}
+‎\contentsline {subsection}{\numberline {4‎‏.‏2‏.‏1}بررسی تاثیر هریک از ویژگی‌ها در نتایج بدست آمده ‎}{53}{subsection.4.2.1}‎
+‎\contentsline {subsection}{\numberline {4‎‏.‏2‏.‏2}بررسی تاثیر پارامتر‌های مدل}{53}{subsection.4.2.2}
+‎\contentsline {section}{\numberline {4‎‏.‏3}مقایسه نتایج}{54}{section.4.3}
+‎\contentsline {section}{\numberline {4‎‏.‏4}نتیجه‌گیری و جمع‌بندی}{55}{section.4.4}
+‎\contentsline {chapter}{واژه‌نامه فارسی به انگلیسی}{59}{section.4.4}
+‎\contentsline {chapter}{واژه‌نامه انگلیسی به فارسی}{63}{chapter*.10}
+‎\contentsline {chapter}{مراجع}{67}{chapter*.12}‎
