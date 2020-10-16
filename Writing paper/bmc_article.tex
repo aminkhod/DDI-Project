@@ -246,58 +246,73 @@ This new approach is not only able to predict comprehensive DDI, but also predic
 When two or more drugs are taken together, drugs' effects or behaviors are unexpectedly influenced by each other
 \cite{wienkers2005predicting}. 
 This kind of influence is termed as Drug-Drug interaction (DDI), which would reduce drug efficacy, increase unexpected toxicity, or induce other adverse drug reactions between the co-prescribed drugs. As the number of approved drugs increases, the number of drug-unidentified DDIs is rapidly increasing, such that among approved small molecular drugs in Drug Bank, on average, 15 out of every 100  drug pairs have DDIs
-\cite{Law2014}. 
-They would put patients who are treated with multiple drugs in an unsafe situation
-\cite{Leape1995, Businaro2013,Karbownik2017,Mulroy2017}.
-Understanding DDIs is also the first step in drug combinations, which becomes one of the most promising solutions for the treatment of multifactorial complex diseases
-\cite{Zhao2011}.
-Consequently, there is an urgent need for screening and analysis of DDIs prior to clinical co-medications administered. However, traditional approaches for DDI identifications (e.g. testing Cytochrome P450
-\cite{Veith2009}
-or transporter-associated interactions
-\cite{Huang2007}
-) face challenges, such as high costs, long duration, and animal welfare considerations
-\ cite {Zhang2015}
-, the very limited number of participants in the trial, and the great number of drug combinations under screening in clinical trials. As a result, only a small few of DDIs have been identified during drug development production (usually in the clinical trial phase), Some of them have been reported after drugs approved, and many have been found in post-marketing surveillance.
+\cite{law2014drugbank}. 
+The DDIs would put patients who are treated with multiple drugs in an unsafe situation
+\cite{leape1995systems, businaro2013we, karbownik2017pharmacokinetic, mulroy2017giant}.
+Understanding DDI is the first step in drug combinations, which becomes one of the most promising solutions for the treatment of multifactorial complex diseases
+\cite{zhao2011prediction}.
+Therefore, there is an urgent need for screening and analysis of DDIs before clinical co-medications are administered. However, traditional DDI identification approaches (e.g., testing Cytochrome P450
+\cite{veith2009comprehensive}
+ or transporter-associated interactions
+\cite{huang2007drug})
+face challenges, such as high costs, long duration, animal welfare considerations
+\cite {zhang2015label},
+the very limited number of participants in the trial, and the great number of drug combinations under screening in clinical trials. As a result, only a few DDIs have been identified during drug development production (usually in the clinical trial phase). Some of them have been reported after drugs approved, and many have been found in post-marketing surveillance.
 
-Computational approaches are a promising alternative to the discovery of potential DDIs on a large scale, and they have been gained attention from academy and industry recently
-\cite{Wisniowska2016, Zhou2016}.
+Computational approaches are a promising alternative to discovering potential DDIs on a large scale, and they have gained attention from academy and industry recently
+\cite{wisniowska2016role, zhou2016simulation}.
 Data mining-based computational approaches have been developed to detect DDIs from various sources
-\cite{Zhang2015}
+\cite{zhang2015label}
 , such as scientific literature
-\cite{Bui2014, Zhang2016}
+\cite{bui2014novel, zhang2016leveraging}
 , electronic medical records
-\cite{Duke2012}
-, and the Adverse Event Reporting System of FDA (http://www.fda.gov). These approaches rely on post-market clinical evidence, so they cannot provide alerts of potential DDIs before clinical medications are administered. In contrast, machine learning-based computational approaches (e.g. Naïve Similarity-Based Approach
-\cite{Vilar2014}
+\cite{yamanishi2008prediction}
+, and the Adverse Event Reporting System of FDA (http://www.fda.gov). These approaches rely on post-market clinical evidence. So, they cannot provide alerts of potential DDIs before clinical medications are administered. In contrast, machine learning-based computational approaches (e.g. Naïve Similarity-Based Approach
+\cite{vilar2014similarity}
 , Network Recommendation-Based
-\cite{Zhang2015}
+\cite{zhang2015label}
 , Classification-Based
-\cite{Cheng2014}
-) are able to provide such alerts by utilizing pre-marketed or post-marketed drug attributes, such as drug features or similarities
-\cite{Li2016}.
+\cite{cheng2014machine}
+) can provide such alerts by utilizing pre-marketed or post-marketed drug attributes, such as drug features or similarities
+\cite{pahikkala2015toward}.
 These methods use different drug features to predict DDIs, such as chemical structures
-\cite{Vilar2014}
+\cite{vilar2014similarity}
 , targets
-\cite{luo2014}
+\cite{luo2014ddi}
 , hierarchical classification codes
-\cite{Cheng2014}
-, and side effects
-\cite{Zhang2015, Shi2017}.
+\cite{cheng2014machine}
+, side effects, and off-label side effects
+\cite{zhang2015label, shi2017predicting}.
 
-Most of these existing machine learning approaches are designed to predict typical two-class, which only indicates how likely a pair of drugs is a DDI. However, two interacting drugs may change their own pharmacological behaviors or effects (e.g. increasing or decreasing serum concentration) in vivo. For example, the serum concentration of Flunisolide (DrugBank Id: DB00180) decreases when it is taken with Mitotane (DrugBank Id: DB00648), whereas its serum concentration increases when taken with Roxithromycin (DrugBank Id: DB00778). for short, the first case is degressive DDI and the second case is enhancive DDIs, which contains drug changes in terms of pharmacological effects.It is more important to know exactly whether the interaction increases or decreases the pharmaceutical behaviors of the drug, especially when making optimal patient care, establishing drug dosage, designing prophylactic drug therapy, or finding the resistance to therapy with a drug
-\cite{Koch1981}.
+Most of these existing machine learning approaches are designed to predict the typical two-class problem, which only indicates how likely a pair of drugs is a DDI. However, two interacting drugs may change their own pharmacological behaviors or effects (e.g., increasing or decreasing serum concentration) in vivo. For example, the serum concentration of Flunisolide (DrugBank Id: DB00180) decreases when it is taken with Mitotane (DrugBank Id: DB00648), whereas its serum concentration increases when taken with Roxithromycin (DrugBank Id: DB00778). For short, the first case is degressive DDI, and the second case is enhancive DDI, which contains drug changes in terms of pharmacological effects. It is more important to know exactly whether the interaction increases or decreases the drug's pharmaceutical behaviors, especially when making optimal patient care, establishing drug dosage, designing prophylactic drug therapy, or finding the resistance to therapy with a drug
+\cite{koch1981serum}.
 
-On the other hand, the occurrence of both enhancive and degressive DDIs is not random, but most current approaches have not yet exploited this structural property and have been developed only for conventional two-classes DDIs. Furthermore, revealing such a structural relationship is very important, because it is able to help understand how DDIs occur, is one of the most important steps for the treatment of complex diseases, and guides physicians in preparing safer prescriptions to high-order drug interaction.In the following, the proposed algorithms for predicting three-classes DDIs are introduced and how they work are briefly described. All three introduced algorithms use matrix factorization methods which is a network recommender-based approach. This approach with slightly modifying is a suitable solution for the subject of predicting DDI.
+On the other hand, the occurrence of both enhancive and degressive DDIs is not random, but most current approaches have not yet exploited this structural property and have been developed only for conventional two-classes DDIs. Furthermore, revealing such a structural relationship is very important because it can help us understand how DDIs occur. It is one of the most important steps for treating complex diseases and guides physicians in preparing safer prescriptions to high-order drug interaction. The proposed algorithms for predicting three-classes DDIs are introduced in the following. And how they work are briefly described. All three introduced algorithms use matrix factorization methods, which is a network recommender-based approach. The matrix factorization approach, with slightly modifying, is a suitable solution for the subject of predicting DDI that has received much attention from researchers.
 
-In this paper, we firstly introduce data and features. Then a novel algorithm (SNF-CNN) based on the integration of drug similarities and deep learning recommendation systems for predicting DDI is presented in a comprehensive three-class model. This algorithm is called,  Predicting Comprehensive Drug-Drug Interaction via Similarity Network Fusion and Convolutional Neural Networks. 
+In this paper, we firstly introduce data and features. Then, a novel algorithm (SNF-CNN) based on the integration of drug similarities and deep learning recommendation systems for predicting DDI is presented in a comprehensive three-class model. This algorithm is called Predicting Comprehensive Drug-Drug Interaction via Similarity Network Fusion and Convolutional Neural Networks.
 
-The paper is organized as follows. In the first section, the data preparation process is explained and then the recommendation system is designed and trained on enhancive and degressive, which detects pairs of non-interacting drugs with high probability. Next, the previous recommender system, which is based on a convolutional neural network, is trained on incremental and decremental interaction data without interaction (detected in the previous step).In section Results and Discussions, we investigate the results of SNF-CNN in the 10-fold cross-validation process(10-fold CV).
+The paper is organized as follows. In the first section, the data preparation process is explained. The recommendation system is then designed and trained on enhancive and degressive, which detects pairs of non-interacting drugs with high probability. Next, the previous recommender system, based on a convolutional neural network, is trained on incremental and decremental interaction data without interaction (detected in the previous step).In section Results and Discussions, we investigate the results of SNF-CNN in the 10-fold cross-validation process(10-fold CV).
 
 It should be noted that the proposed method of this research is a recommender-based on deep neural networks and has no structural similarities with matrix factorization methods. The only reason for mentioning these methods is the limited number of articles that have used three-class data in their work.
 
 \section*{Methods}
 \subsection*{Dataset and features}
-In this study, we use the data set presented in article 11. This set contains 568 approved small molecule drugs, each of them has at least one interaction with the other drugs in the set. In total, the interactions between these 568 drugs contain 21,351 DDIs, including 16,757 enhancive DDIs and 4,594 degressive DDIs.In addition, each drug represented as an  881-dimensional feature vector $ F_ {str} $  based on PubChem chemical structure descriptor and also a 9149-dimensional feature vector $ F_ {se} $ according to the off-label side effects provided by OFFSIDES.
+In this study, we use the data set presented in paper of \cite{yu2018predicting}. This set contains 568 approved small molecule drugs, each of them has at least one interaction with the other drugs in the set. In total, the interactions between these 568 drugs contain 21,351 DDIs, including 16,757 enhancive DDIs and 4,594 degressive DDIs.In addition, each drug represented as an  881-dimensional feature vector $ F_ {str} $  based on PubChem chemical structure descriptor and also a 9149-dimensional feature vector $ F_ {se} $ according to the off-label side effects provided by OFFSIDES.
+
+\subsection*{Problem formulation}
+
+Without loss of generality, let $D = \{d_i\}$, $i = 1, 2, .., m$ be a set of m approved drugs. Their  interactions can be accordingly represented as an $m \times m$ symmetric interaction matrix $A_{m \times m} = \{a_{ij}\}$. For the conventional DDIs, $a_{ij} = 1$ if $d_i$ interacts with $d_j$, and $a_{ij} = 0$ otherwise. For the comprehensive DDIs, $a_{ij} ∈ \{−1, 0, +1\}$ . Again, if $d_i$ and $d_j$ do not interact with each other, $a_{ij} = 0$ . When there is an enhancive DDI or a degressive DDI between $d_i$ and $d_j$ , $a_{ij} = +1$ or $a_{ij} = −1$ respectively.
+
+In addition, each drug $d_i$ in the D is represented as a p-dimension feature vector $f_i = \left[  f_1, f_2, .., f_k, .., f_p \right]$, which $f_k = 1$ indicates the K-th specific chemical structure fragment or occurs an off-label side effect, and $f_k = 0$ otherwise. Because each drug has two chemical structure feature vectors and off-label side effects, there are two feature matrices of $F$ with dimensions of m×p (amount of p depends on kind of feature ). Matrices of $F_{str}$ and $F_{se}$ are, respectively, the feature matrix of the chemical structure and the feature matrix of off-label side effects.
+
+\subsection*{Data preparing}
+
+\subsubsection*{Cosine Similarity}
+
+
+
+
+
 
 
 

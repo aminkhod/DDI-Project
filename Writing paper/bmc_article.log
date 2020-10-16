@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.10.5)  12 OCT 2020 18:20
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.10.5)  16 OCT 2020 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -341,27 +341,6 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 
 \address@aff1=\toks30
 \address@aff2=\toks31
-
-LaTeX Warning: Citation `Leape1995' on page 1 undefined on input line 251.
-
-
-LaTeX Warning: Citation `Businaro2013' on page 1 undefined on input line 251.
-
-
-LaTeX Warning: Citation `Karbownik2017' on page 1 undefined on input line 251.
-
-
-LaTeX Warning: Citation `Mulroy2017' on page 1 undefined on input line 251.
-
-
-LaTeX Warning: Citation `Zhao2011' on page 1 undefined on input line 253.
-
-
-LaTeX Warning: Citation `Veith2009' on page 1 undefined on input line 255.
-
-
-LaTeX Warning: Citation `Huang2007' on page 1 undefined on input line 257.
-
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 261.
 
@@ -371,68 +350,36 @@ Overfull \hbox (1.0pt too wide) has occurred while \output is active
 
 [1
 
-]
+] [2]
+Missing character: There is no ∈ in font cmr10!
+Missing character: There is no − in font cmr10!
+Missing character: There is no − in font cmr10!
+ [3]
 
-LaTeX Warning: Citation `Wisniowska2016' on page 2 undefined on input line 263.
+LaTeX Warning: Citation `koon' on page 4 undefined on input line 351.
 
-
-
-LaTeX Warning: Citation `Zhou2016' on page 2 undefined on input line 263.
-
-
-LaTeX Warning: Citation `Zhang2015' on page 2 undefined on input line 265.
-
-
-LaTeX Warning: Citation `Bui2014' on page 2 undefined on input line 267.
-
-
-LaTeX Warning: Citation `Zhang2016' on page 2 undefined on input line 267.
-
-
-LaTeX Warning: Citation `Duke2012' on page 2 undefined on input line 269.
-
-
-LaTeX Warning: Citation `Vilar2014' on page 2 undefined on input line 271.
-
-
-LaTeX Warning: Citation `Zhang2015' on page 2 undefined on input line 273.
-
-
-LaTeX Warning: Citation `Cheng2014' on page 2 undefined on input line 275.
-
-
-LaTeX Warning: Citation `Li2016' on page 2 undefined on input line 277.
-
-
-LaTeX Warning: Citation `Vilar2014' on page 2 undefined on input line 279.
-
-
-LaTeX Warning: Citation `luo2014' on page 2 undefined on input line 281.
-
-
-LaTeX Warning: Citation `Cheng2014' on page 2 undefined on input line 283.
-
-
-LaTeX Warning: Citation `Zhang2015' on page 2 undefined on input line 285.
-
-
-LaTeX Warning: Citation `Shi2017' on page 2 undefined on input line 285.
-
-
-LaTeX Warning: Citation `Koch1981' on page 2 undefined on input line 288.
-
-[2] [3] (./bmc_article.bbl)
+(./bmc_article.bbl [4]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 71.
+)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+
 AED: lastpage setting LastPage
-[4] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 467.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 467.
+[6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
  (./bmc_article.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 467.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 467.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 482.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 482.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -441,15 +388,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 467.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
  ) 
 Here is how much of TeX's memory you used:
- 9571 strings out of 494947
- 131482 string characters out of 6176913
- 218193 words of memory out of 5000000
- 13365 multiletter control sequences out of 15000+600000
- 8481 words of font info for 51 fonts, out of 8000000 for 9000
+ 9575 strings out of 494947
+ 131724 string characters out of 6176913
+ 222973 words of memory out of 5000000
+ 13368 multiletter control sequences out of 15000+600000
+ 8489 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 30i,13n,38p,985b,415s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,13n,38p,994b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bmc_article.pdf (5 pages).
+Output written on bmc_article.pdf (6 pages).

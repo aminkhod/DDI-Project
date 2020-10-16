@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{6}
+\begin{thebibliography}{27}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -47,44 +47,376 @@
 \begin{barticle}
 \bauthor{\bsnm{Wienkers}, \binits{L.C.}},
 \bauthor{\bsnm{Heath}, \binits{T.G.}}:
-\batitle{Predicting in vivo drug interactions from in vitro drug discovery data}.
+\batitle{Predicting in vivo drug interactions from in vitro drug discovery
+  data}.
 \bjtitle{Nature reviews Drug discovery}
-\bvolume{4},
+\bvolume{4}(\bissue{10}),
 \bfpage{825}--\blpage{833}
 (\byear{2005})
 \end{barticle}
 \endbibitem
 
-%2
-\bibitem{Law2014}
+%%% 2
+\bibitem{law2014drugbank}
 \begin{barticle}
-\bauthor{Law V, Knox C, Djoumbou Y, Jewison T, Guo AC, Liu Y, Maciejewski A, Arndt D, Wilson M, Neveu V et al.}
-\batitle{DrugBank 4.0: shedding new light on drug metabolism.}.
-\bjtitle{Nucleic Acids Res}
-\bvolume{42},
+\bauthor{\bsnm{Law}, \binits{V.}},
+\bauthor{\bsnm{Knox}, \binits{C.}},
+\bauthor{\bsnm{Djoumbou}, \binits{Y.}},
+\bauthor{\bsnm{Jewison}, \binits{T.}},
+\bauthor{\bsnm{Guo}, \binits{A.C.}},
+\bauthor{\bsnm{Liu}, \binits{Y.}},
+\bauthor{\bsnm{Maciejewski}, \binits{A.}},
+\bauthor{\bsnm{Arndt}, \binits{D.}},
+\bauthor{\bsnm{Wilson}, \binits{M.}},
+\bauthor{\bsnm{Neveu}, \binits{V.}}, \betal:
+\batitle{Drugbank 4.0: shedding new light on drug metabolism}.
+\bjtitle{Nucleic acids research}
+\bvolume{42}(\bissue{D1}),
 \bfpage{1091}--\blpage{1097}
 (\byear{2014})
 \end{barticle}
 \endbibitem
 
-
-
-%%% 1
-\bibitem{koon}
+%%% 3
+\bibitem{leape1995systems}
 \begin{barticle}
-\bauthor{\bsnm{Koonin}, \binits{E.V.}},
-\bauthor{\bsnm{Altschul}, \binits{S.F.}},
-\bauthor{\bsnm{Bork}, \binits{P.}}:
-\batitle{Brca1 protein products: functional motifs}.
-\bjtitle{Nat. Genet.}
-\bvolume{13},
-\bfpage{266}--\blpage{267}
-(\byear{1996})
+\bauthor{\bsnm{Leape}, \binits{L.L.}},
+\bauthor{\bsnm{Bates}, \binits{D.W.}},
+\bauthor{\bsnm{Cullen}, \binits{D.J.}},
+\bauthor{\bsnm{Cooper}, \binits{J.}},
+\bauthor{\bsnm{Demonaco}, \binits{H.J.}},
+\bauthor{\bsnm{Gallivan}, \binits{T.}},
+\bauthor{\bsnm{Hallisey}, \binits{R.}},
+\bauthor{\bsnm{Ives}, \binits{J.}},
+\bauthor{\bsnm{Laird}, \binits{N.}},
+\bauthor{\bsnm{Laffel}, \binits{G.}}, \betal:
+\batitle{Systems analysis of adverse drug events}.
+\bjtitle{Jama}
+\bvolume{274}(\bissue{1}),
+\bfpage{35}--\blpage{43}
+(\byear{1995})
 \end{barticle}
 \endbibitem
 
+%%% 4
+\bibitem{businaro2013we}
+\begin{botherref}
+\oauthor{\bsnm{Businaro}, \binits{R.}}:
+Why we need an efficient and careful pharmacovigilance?
+Journal of pharmacovigilance
+(2013)
+\end{botherref}
+\endbibitem
 
-%%% 2
+%%% 5
+\bibitem{karbownik2017pharmacokinetic}
+\begin{barticle}
+\bauthor{\bsnm{Karbownik}, \binits{A.}},
+\bauthor{\bsnm{Sza{\l}ek}, \binits{E.}},
+\bauthor{\bsnm{Soba{\'n}ska}, \binits{K.}},
+\bauthor{\bsnm{Grabowski}, \binits{T.}},
+\bauthor{\bsnm{Wolc}, \binits{A.}},
+\bauthor{\bsnm{Grze{\'s}kowiak}, \binits{E.}}:
+\batitle{Pharmacokinetic drug-drug interaction between erlotinib and
+  paracetamol: a potential risk for clinical practice}.
+\bjtitle{European Journal of Pharmaceutical Sciences}
+\bvolume{102},
+\bfpage{55}--\blpage{62}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 6
+\bibitem{mulroy2017giant}
+\begin{barticle}
+\bauthor{\bsnm{Mulroy}, \binits{E.}},
+\bauthor{\bsnm{Highton}, \binits{J.}},
+\bauthor{\bsnm{Jordan}, \binits{S.}}:
+\batitle{Giant cell arteritis treatment failure resulting from probable
+  steroid/antiepileptic drug-drug interaction}.
+\bjtitle{The New Zealand Medical Journal (Online)}
+\bvolume{130}(\bissue{1450}),
+\bfpage{102}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem{zhao2011prediction}
+\begin{barticle}
+\bauthor{\bsnm{Zhao}, \binits{X.-M.}},
+\bauthor{\bsnm{Iskar}, \binits{M.}},
+\bauthor{\bsnm{Zeller}, \binits{G.}},
+\bauthor{\bsnm{Kuhn}, \binits{M.}},
+\bauthor{\bsnm{Van~Noort}, \binits{V.}},
+\bauthor{\bsnm{Bork}, \binits{P.}}:
+\batitle{Prediction of drug combinations by integrating molecular and
+  pharmacological data}.
+\bjtitle{PLoS Comput Biol}
+\bvolume{7}(\bissue{12}),
+\bfpage{1002323}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 8
+\bibitem{veith2009comprehensive}
+\begin{barticle}
+\bauthor{\bsnm{Veith}, \binits{H.}},
+\bauthor{\bsnm{Southall}, \binits{N.}},
+\bauthor{\bsnm{Huang}, \binits{R.}},
+\bauthor{\bsnm{James}, \binits{T.}},
+\bauthor{\bsnm{Fayne}, \binits{D.}},
+\bauthor{\bsnm{Artemenko}, \binits{N.}},
+\bauthor{\bsnm{Shen}, \binits{M.}},
+\bauthor{\bsnm{Inglese}, \binits{J.}},
+\bauthor{\bsnm{Austin}, \binits{C.P.}},
+\bauthor{\bsnm{Lloyd}, \binits{D.G.}}, \betal:
+\batitle{Comprehensive characterization of cytochrome p450 isozyme selectivity
+  across chemical libraries}.
+\bjtitle{Nature biotechnology}
+\bvolume{27}(\bissue{11}),
+\bfpage{1050}--\blpage{1055}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem{huang2007drug}
+\begin{barticle}
+\bauthor{\bsnm{Huang}, \binits{S.-M.}},
+\bauthor{\bsnm{Temple}, \binits{R.}},
+\bauthor{\bsnm{Throckmorton}, \binits{D.}},
+\bauthor{\bsnm{Lesko}, \binits{L.}}:
+\batitle{Drug interaction studies: study design, data analysis, and
+  implications for dosing and labeling}.
+\bjtitle{Clinical Pharmacology \& Therapeutics}
+\bvolume{81}(\bissue{2}),
+\bfpage{298}--\blpage{304}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem{zhang2015label}
+\begin{barticle}
+\bauthor{\bsnm{Zhang}, \binits{P.}},
+\bauthor{\bsnm{Wang}, \binits{F.}},
+\bauthor{\bsnm{Hu}, \binits{J.}},
+\bauthor{\bsnm{Sorrentino}, \binits{R.}}:
+\batitle{Label propagation prediction of drug-drug interactions based on
+  clinical side effects}.
+\bjtitle{Scientific reports}
+\bvolume{5}(\bissue{1}),
+\bfpage{1}--\blpage{10}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem{wisniowska2016role}
+\begin{barticle}
+\bauthor{\bsnm{Wi{\'s}niowska}, \binits{B.}},
+\bauthor{\bsnm{Polak}, \binits{S.}}:
+\batitle{The role of interaction model in simulation of drug interactions and
+  qt prolongation}.
+\bjtitle{Current pharmacology reports}
+\bvolume{2}(\bissue{6}),
+\bfpage{339}--\blpage{344}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem{zhou2016simulation}
+\begin{barticle}
+\bauthor{\bsnm{Zhou}, \binits{D.}},
+\bauthor{\bsnm{Bui}, \binits{K.}},
+\bauthor{\bsnm{Sostek}, \binits{M.}},
+\bauthor{\bsnm{Al-Huniti}, \binits{N.}}:
+\batitle{Simulation and prediction of the drug-drug interaction potential of
+  naloxegol by physiologically based pharmacokinetic modeling}.
+\bjtitle{CPT: pharmacometrics \& systems pharmacology}
+\bvolume{5}(\bissue{5}),
+\bfpage{250}--\blpage{257}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 13
+\bibitem{bui2014novel}
+\begin{barticle}
+\bauthor{\bsnm{Bui}, \binits{Q.-C.}},
+\bauthor{\bsnm{Sloot}, \binits{P.M.}},
+\bauthor{\bsnm{Van~Mulligen}, \binits{E.M.}},
+\bauthor{\bsnm{Kors}, \binits{J.A.}}:
+\batitle{A novel feature-based approach to extract drug--drug interactions from
+  biomedical text}.
+\bjtitle{Bioinformatics}
+\bvolume{30}(\bissue{23}),
+\bfpage{3365}--\blpage{3371}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem{zhang2016leveraging}
+\begin{barticle}
+\bauthor{\bsnm{Zhang}, \binits{Y.}},
+\bauthor{\bsnm{Wu}, \binits{H.-Y.}},
+\bauthor{\bsnm{Xu}, \binits{J.}},
+\bauthor{\bsnm{Wang}, \binits{J.}},
+\bauthor{\bsnm{Soysal}, \binits{E.}},
+\bauthor{\bsnm{Li}, \binits{L.}},
+\bauthor{\bsnm{Xu}, \binits{H.}}:
+\batitle{Leveraging syntactic and semantic graph kernels to extract
+  pharmacokinetic drug drug interactions from biomedical literature}.
+\bjtitle{BMC systems biology}
+\bvolume{10}(\bissue{3}),
+\bfpage{67}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 15
+\bibitem{yamanishi2008prediction}
+\begin{barticle}
+\bauthor{\bsnm{Yamanishi}, \binits{Y.}},
+\bauthor{\bsnm{Araki}, \binits{M.}},
+\bauthor{\bsnm{Gutteridge}, \binits{A.}},
+\bauthor{\bsnm{Honda}, \binits{W.}},
+\bauthor{\bsnm{Kanehisa}, \binits{M.}}:
+\batitle{Prediction of drug--target interaction networks from the integration
+  of chemical and genomic spaces}.
+\bjtitle{Bioinformatics}
+\bvolume{24}(\bissue{13}),
+\bfpage{232}--\blpage{240}
+(\byear{2008})
+\end{barticle}
+\endbibitem
+
+%%% 16
+\bibitem{vilar2014similarity}
+\begin{barticle}
+\bauthor{\bsnm{Vilar}, \binits{S.}},
+\bauthor{\bsnm{Uriarte}, \binits{E.}},
+\bauthor{\bsnm{Santana}, \binits{L.}},
+\bauthor{\bsnm{Lorberbaum}, \binits{T.}},
+\bauthor{\bsnm{Hripcsak}, \binits{G.}},
+\bauthor{\bsnm{Friedman}, \binits{C.}},
+\bauthor{\bsnm{Tatonetti}, \binits{N.P.}}:
+\batitle{Similarity-based modeling in large-scale prediction of drug-drug
+  interactions}.
+\bjtitle{Nature protocols}
+\bvolume{9}(\bissue{9}),
+\bfpage{2147}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 17
+\bibitem{cheng2014machine}
+\begin{barticle}
+\bauthor{\bsnm{Cheng}, \binits{F.}},
+\bauthor{\bsnm{Zhao}, \binits{Z.}}:
+\batitle{Machine learning-based prediction of drug--drug interactions by
+  integrating drug phenotypic, therapeutic, chemical, and genomic properties}.
+\bjtitle{Journal of the American Medical Informatics Association}
+\bvolume{21}(\bissue{e2}),
+\bfpage{278}--\blpage{286}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem{pahikkala2015toward}
+\begin{barticle}
+\bauthor{\bsnm{Pahikkala}, \binits{T.}},
+\bauthor{\bsnm{Airola}, \binits{A.}},
+\bauthor{\bsnm{Pietil{\"a}}, \binits{S.}},
+\bauthor{\bsnm{Shakyawar}, \binits{S.}},
+\bauthor{\bsnm{Szwajda}, \binits{A.}},
+\bauthor{\bsnm{Tang}, \binits{J.}},
+\bauthor{\bsnm{Aittokallio}, \binits{T.}}:
+\batitle{Toward more realistic drug--target interaction predictions}.
+\bjtitle{Briefings in bioinformatics}
+\bvolume{16}(\bissue{2}),
+\bfpage{325}--\blpage{337}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 19
+\bibitem{luo2014ddi}
+\begin{barticle}
+\bauthor{\bsnm{Luo}, \binits{H.}},
+\bauthor{\bsnm{Zhang}, \binits{P.}},
+\bauthor{\bsnm{Huang}, \binits{H.}},
+\bauthor{\bsnm{Huang}, \binits{J.}},
+\bauthor{\bsnm{Kao}, \binits{E.}},
+\bauthor{\bsnm{Shi}, \binits{L.}},
+\bauthor{\bsnm{He}, \binits{L.}},
+\bauthor{\bsnm{Yang}, \binits{L.}}:
+\batitle{Ddi-cpi, a server that predicts drug--drug interactions through
+  implementing the chemical--protein interactome}.
+\bjtitle{Nucleic acids research}
+\bvolume{42}(\bissue{W1}),
+\bfpage{46}--\blpage{52}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem{shi2017predicting}
+\begin{bchapter}
+\bauthor{\bsnm{Shi}, \binits{J.-Y.}},
+\bauthor{\bsnm{Huang}, \binits{H.}},
+\bauthor{\bsnm{Li}, \binits{J.-X.}},
+\bauthor{\bsnm{Lei}, \binits{P.}},
+\bauthor{\bsnm{Zhang}, \binits{Y.-N.}},
+\bauthor{\bsnm{Yiu}, \binits{S.-M.}}:
+\bctitle{Predicting comprehensive drug-drug interactions for new drugs via
+  triple matrix factorization}.
+In: \bbtitle{International Conference on Bioinformatics and Biomedical
+  Engineering},
+pp. \bfpage{108}--\blpage{117}
+(\byear{2017}).
+\bcomment{Springer}
+\end{bchapter}
+\endbibitem
+
+%%% 21
+\bibitem{koch1981serum}
+\begin{barticle}
+\bauthor{\bsnm{Koch-Weser}, \binits{J.}}:
+\batitle{Serum drug concentrations in clinical perspective.}
+\bjtitle{Therapeutic drug monitoring}
+\bvolume{3}(\bissue{1}),
+\bfpage{3}--\blpage{16}
+(\byear{1981})
+\end{barticle}
+\endbibitem
+
+%%% 22
+\bibitem{yu2018predicting}
+\begin{barticle}
+\bauthor{\bsnm{Yu}, \binits{H.}},
+\bauthor{\bsnm{Mao}, \binits{K.-T.}},
+\bauthor{\bsnm{Shi}, \binits{J.-Y.}},
+\bauthor{\bsnm{Huang}, \binits{H.}},
+\bauthor{\bsnm{Chen}, \binits{Z.}},
+\bauthor{\bsnm{Dong}, \binits{K.}},
+\bauthor{\bsnm{Yiu}, \binits{S.-M.}}:
+\batitle{Predicting and understanding comprehensive drug-drug interactions via
+  semi-nonnegative matrix factorization}.
+\bjtitle{BMC systems biology}
+\bvolume{12}(\bissue{1}),
+\bfpage{14}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 23
 \bibitem{xjon}
 \begin{bchapter}
 \bauthor{\bsnm{Jones}, \binits{X.}}:
@@ -97,7 +429,7 @@ pp. \bfpage{16}--\blpage{27}
 \end{bchapter}
 \endbibitem
 
-%%% 3
+%%% 24
 \bibitem{marg}
 \begin{bbook}
 \bauthor{\bsnm{Margulis}, \binits{L.}}:
@@ -108,7 +440,7 @@ pp. \bfpage{16}--\blpage{27}
 \end{bbook}
 \endbibitem
 
-%%% 4
+%%% 25
 \bibitem{schn}
 \begin{bchapter}
 \bauthor{\bsnm{Schnepf}, \binits{E.}}:
@@ -124,7 +456,7 @@ pp. \bfpage{53}--\blpage{76}.
 \end{bchapter}
 \endbibitem
 
-%%% 5
+%%% 26
 \bibitem{koha}
 \begin{botherref}
 \oauthor{\bsnm{Kohavi}, \binits{R.}}:
@@ -135,7 +467,7 @@ Stanford University, Computer Science Department
 \end{botherref}
 \endbibitem
 
-%%% 6
+%%% 27
 \bibitem{issnic}
 \begin{botherref}
 \oauthor{\bsnm{{ISSN International Centre}}}:
@@ -155,20 +487,418 @@ Accessed Accessed 20 Feb 2007
 <refgrp>
 
 <bibl id="B1">
-  <title><p>BRCA1 protein products: functional motifs</p></title>
+  <title><p>Predicting in vivo drug interactions from in vitro drug discovery
+  data</p></title>
   <aug>
-    <au><snm>Koonin</snm><fnm>E V</fnm></au>
-    <au><snm>Altschul</snm><fnm>S F</fnm></au>
-    <au><snm>Bork</snm><fnm>P</fnm></au>
+    <au><snm>Wienkers</snm><fnm>LC</fnm></au>
+    <au><snm>Heath</snm><fnm>TG</fnm></au>
   </aug>
-  <source>Nat. Genet.</source>
-  <pubdate>1996</pubdate>
-  <volume>13</volume>
-  <fpage>266</fpage>
-  <lpage>267</lpage>
+  <source>Nature reviews Drug discovery</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2005</pubdate>
+  <volume>4</volume>
+  <issue>10</issue>
+  <fpage>825</fpage>
+  <lpage>-833</lpage>
 </bibl>
 
 <bibl id="B2">
+  <title><p>DrugBank 4.0: shedding new light on drug metabolism</p></title>
+  <aug>
+    <au><snm>Law</snm><fnm>V</fnm></au>
+    <au><snm>Knox</snm><fnm>C</fnm></au>
+    <au><snm>Djoumbou</snm><fnm>Y</fnm></au>
+    <au><snm>Jewison</snm><fnm>T</fnm></au>
+    <au><snm>Guo</snm><fnm>AC</fnm></au>
+    <au><snm>Liu</snm><fnm>Y</fnm></au>
+    <au><snm>Maciejewski</snm><fnm>A</fnm></au>
+    <au><snm>Arndt</snm><fnm>D</fnm></au>
+    <au><snm>Wilson</snm><fnm>M</fnm></au>
+    <au><snm>Neveu</snm><fnm>V</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Nucleic acids research</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2014</pubdate>
+  <volume>42</volume>
+  <issue>D1</issue>
+  <fpage>D1091</fpage>
+  <lpage>-D1097</lpage>
+</bibl>
+
+<bibl id="B3">
+  <title><p>Systems analysis of adverse drug events</p></title>
+  <aug>
+    <au><snm>Leape</snm><fnm>LL</fnm></au>
+    <au><snm>Bates</snm><fnm>DW</fnm></au>
+    <au><snm>Cullen</snm><fnm>DJ</fnm></au>
+    <au><snm>Cooper</snm><fnm>J</fnm></au>
+    <au><snm>Demonaco</snm><fnm>HJ</fnm></au>
+    <au><snm>Gallivan</snm><fnm>T</fnm></au>
+    <au><snm>Hallisey</snm><fnm>R</fnm></au>
+    <au><snm>Ives</snm><fnm>J</fnm></au>
+    <au><snm>Laird</snm><fnm>N</fnm></au>
+    <au><snm>Laffel</snm><fnm>G</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Jama</source>
+  <publisher>American Medical Association</publisher>
+  <pubdate>1995</pubdate>
+  <volume>274</volume>
+  <issue>1</issue>
+  <fpage>35</fpage>
+  <lpage>-43</lpage>
+</bibl>
+
+<bibl id="B4">
+  <title><p>Why we need an efficient and careful pharmacovigilance?</p></title>
+  <aug>
+    <au><snm>Businaro</snm><fnm>R</fnm></au>
+  </aug>
+  <source>Journal of pharmacovigilance</source>
+  <publisher>OMICS International</publisher>
+  <pubdate>2013</pubdate>
+</bibl>
+
+<bibl id="B5">
+  <title><p>Pharmacokinetic drug-drug interaction between erlotinib and
+  paracetamol: a potential risk for clinical practice</p></title>
+  <aug>
+    <au><snm>Karbownik</snm><fnm>A</fnm></au>
+    <au><snm>Sza{\l}ek</snm><fnm>E</fnm></au>
+    <au><snm>Soba{\'n}ska</snm><fnm>K</fnm></au>
+    <au><snm>Grabowski</snm><fnm>T</fnm></au>
+    <au><snm>Wolc</snm><fnm>A</fnm></au>
+    <au><snm>Grze{\'s}kowiak</snm><fnm>E</fnm></au>
+  </aug>
+  <source>European Journal of Pharmaceutical Sciences</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2017</pubdate>
+  <volume>102</volume>
+  <fpage>55</fpage>
+  <lpage>-62</lpage>
+</bibl>
+
+<bibl id="B6">
+  <title><p>Giant cell arteritis treatment failure resulting from probable
+  steroid/antiepileptic drug-drug interaction</p></title>
+  <aug>
+    <au><snm>Mulroy</snm><fnm>E</fnm></au>
+    <au><snm>Highton</snm><fnm>J</fnm></au>
+    <au><snm>Jordan</snm><fnm>S</fnm></au>
+  </aug>
+  <source>The New Zealand Medical Journal (Online)</source>
+  <publisher>New Zealand Medical Association (NZMA)</publisher>
+  <pubdate>2017</pubdate>
+  <volume>130</volume>
+  <issue>1450</issue>
+  <fpage>102</fpage>
+</bibl>
+
+<bibl id="B7">
+  <title><p>Prediction of drug combinations by integrating molecular and
+  pharmacological data</p></title>
+  <aug>
+    <au><snm>Zhao</snm><fnm>XM</fnm></au>
+    <au><snm>Iskar</snm><fnm>M</fnm></au>
+    <au><snm>Zeller</snm><fnm>G</fnm></au>
+    <au><snm>Kuhn</snm><fnm>M</fnm></au>
+    <au><snm>Van Noort</snm><fnm>V</fnm></au>
+    <au><snm>Bork</snm><fnm>P</fnm></au>
+  </aug>
+  <source>PLoS Comput Biol</source>
+  <publisher>Public Library of Science</publisher>
+  <pubdate>2011</pubdate>
+  <volume>7</volume>
+  <issue>12</issue>
+  <fpage>e1002323</fpage>
+</bibl>
+
+<bibl id="B8">
+  <title><p>Comprehensive characterization of cytochrome P450 isozyme
+  selectivity across chemical libraries</p></title>
+  <aug>
+    <au><snm>Veith</snm><fnm>H</fnm></au>
+    <au><snm>Southall</snm><fnm>N</fnm></au>
+    <au><snm>Huang</snm><fnm>R</fnm></au>
+    <au><snm>James</snm><fnm>T</fnm></au>
+    <au><snm>Fayne</snm><fnm>D</fnm></au>
+    <au><snm>Artemenko</snm><fnm>N</fnm></au>
+    <au><snm>Shen</snm><fnm>M</fnm></au>
+    <au><snm>Inglese</snm><fnm>J</fnm></au>
+    <au><snm>Austin</snm><fnm>CP</fnm></au>
+    <au><snm>Lloyd</snm><fnm>DG</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Nature biotechnology</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2009</pubdate>
+  <volume>27</volume>
+  <issue>11</issue>
+  <fpage>1050</fpage>
+  <lpage>-1055</lpage>
+</bibl>
+
+<bibl id="B9">
+  <title><p>Drug interaction studies: study design, data analysis, and
+  implications for dosing and labeling</p></title>
+  <aug>
+    <au><snm>Huang</snm><fnm>S M</fnm></au>
+    <au><snm>Temple</snm><fnm>R</fnm></au>
+    <au><snm>Throckmorton</snm><fnm>DC</fnm></au>
+    <au><snm>Lesko</snm><fnm>LJ</fnm></au>
+  </aug>
+  <source>Clinical Pharmacology \& Therapeutics</source>
+  <publisher>Wiley Online Library</publisher>
+  <pubdate>2007</pubdate>
+  <volume>81</volume>
+  <issue>2</issue>
+  <fpage>298</fpage>
+  <lpage>-304</lpage>
+</bibl>
+
+<bibl id="B10">
+  <title><p>Label propagation prediction of drug-drug interactions based on
+  clinical side effects</p></title>
+  <aug>
+    <au><snm>Zhang</snm><fnm>P</fnm></au>
+    <au><snm>Wang</snm><fnm>F</fnm></au>
+    <au><snm>Hu</snm><fnm>J</fnm></au>
+    <au><snm>Sorrentino</snm><fnm>R</fnm></au>
+  </aug>
+  <source>Scientific reports</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2015</pubdate>
+  <volume>5</volume>
+  <issue>1</issue>
+  <fpage>1</fpage>
+  <lpage>-10</lpage>
+</bibl>
+
+<bibl id="B11">
+  <title><p>The role of interaction model in simulation of drug interactions
+  and QT prolongation</p></title>
+  <aug>
+    <au><snm>Wi{\'s}niowska</snm><fnm>B</fnm></au>
+    <au><snm>Polak</snm><fnm>S</fnm></au>
+  </aug>
+  <source>Current pharmacology reports</source>
+  <publisher>Springer</publisher>
+  <pubdate>2016</pubdate>
+  <volume>2</volume>
+  <issue>6</issue>
+  <fpage>339</fpage>
+  <lpage>-344</lpage>
+</bibl>
+
+<bibl id="B12">
+  <title><p>Simulation and prediction of the drug-drug interaction potential of
+  naloxegol by physiologically based pharmacokinetic modeling</p></title>
+  <aug>
+    <au><snm>Zhou</snm><fnm>D</fnm></au>
+    <au><snm>Bui</snm><fnm>K</fnm></au>
+    <au><snm>Sostek</snm><fnm>M</fnm></au>
+    <au><snm>Al Huniti</snm><fnm>N</fnm></au>
+  </aug>
+  <source>CPT: pharmacometrics \& systems pharmacology</source>
+  <publisher>Wiley Online Library</publisher>
+  <pubdate>2016</pubdate>
+  <volume>5</volume>
+  <issue>5</issue>
+  <fpage>250</fpage>
+  <lpage>-257</lpage>
+</bibl>
+
+<bibl id="B13">
+  <title><p>A novel feature-based approach to extract drug--drug interactions
+  from biomedical text</p></title>
+  <aug>
+    <au><snm>Bui</snm><fnm>QC</fnm></au>
+    <au><snm>Sloot</snm><fnm>PM</fnm></au>
+    <au><snm>Van Mulligen</snm><fnm>EM</fnm></au>
+    <au><snm>Kors</snm><fnm>JA</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2014</pubdate>
+  <volume>30</volume>
+  <issue>23</issue>
+  <fpage>3365</fpage>
+  <lpage>-3371</lpage>
+</bibl>
+
+<bibl id="B14">
+  <title><p>Leveraging syntactic and semantic graph kernels to extract
+  pharmacokinetic drug drug interactions from biomedical literature</p></title>
+  <aug>
+    <au><snm>Zhang</snm><fnm>Y</fnm></au>
+    <au><snm>Wu</snm><fnm>HY</fnm></au>
+    <au><snm>Xu</snm><fnm>J</fnm></au>
+    <au><snm>Wang</snm><fnm>J</fnm></au>
+    <au><snm>Soysal</snm><fnm>E</fnm></au>
+    <au><snm>Li</snm><fnm>L</fnm></au>
+    <au><snm>Xu</snm><fnm>H</fnm></au>
+  </aug>
+  <source>BMC systems biology</source>
+  <publisher>Springer</publisher>
+  <pubdate>2016</pubdate>
+  <volume>10</volume>
+  <issue>3</issue>
+  <fpage>67</fpage>
+</bibl>
+
+<bibl id="B15">
+  <title><p>Prediction of drug--target interaction networks from the
+  integration of chemical and genomic spaces</p></title>
+  <aug>
+    <au><snm>Yamanishi</snm><fnm>Y</fnm></au>
+    <au><snm>Araki</snm><fnm>M</fnm></au>
+    <au><snm>Gutteridge</snm><fnm>A</fnm></au>
+    <au><snm>Honda</snm><fnm>W</fnm></au>
+    <au><snm>Kanehisa</snm><fnm>M</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2008</pubdate>
+  <volume>24</volume>
+  <issue>13</issue>
+  <fpage>i232</fpage>
+  <lpage>-i240</lpage>
+</bibl>
+
+<bibl id="B16">
+  <title><p>Similarity-based modeling in large-scale prediction of drug-drug
+  interactions</p></title>
+  <aug>
+    <au><snm>Vilar</snm><fnm>S</fnm></au>
+    <au><snm>Uriarte</snm><fnm>E</fnm></au>
+    <au><snm>Santana</snm><fnm>L</fnm></au>
+    <au><snm>Lorberbaum</snm><fnm>T</fnm></au>
+    <au><snm>Hripcsak</snm><fnm>G</fnm></au>
+    <au><snm>Friedman</snm><fnm>C</fnm></au>
+    <au><snm>Tatonetti</snm><fnm>NP</fnm></au>
+  </aug>
+  <source>Nature protocols</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2014</pubdate>
+  <volume>9</volume>
+  <issue>9</issue>
+  <fpage>2147</fpage>
+</bibl>
+
+<bibl id="B17">
+  <title><p>Machine learning-based prediction of drug--drug interactions by
+  integrating drug phenotypic, therapeutic, chemical, and genomic
+  properties</p></title>
+  <aug>
+    <au><snm>Cheng</snm><fnm>F</fnm></au>
+    <au><snm>Zhao</snm><fnm>Z</fnm></au>
+  </aug>
+  <source>Journal of the American Medical Informatics Association</source>
+  <publisher>BMJ Publishing Group BMA House, Tavistock Square, London, WC1H
+  9JR</publisher>
+  <pubdate>2014</pubdate>
+  <volume>21</volume>
+  <issue>e2</issue>
+  <fpage>e278</fpage>
+  <lpage>-e286</lpage>
+</bibl>
+
+<bibl id="B18">
+  <title><p>Toward more realistic drug--target interaction
+  predictions</p></title>
+  <aug>
+    <au><snm>Pahikkala</snm><fnm>T</fnm></au>
+    <au><snm>Airola</snm><fnm>A</fnm></au>
+    <au><snm>Pietil{\"a}</snm><fnm>S</fnm></au>
+    <au><snm>Shakyawar</snm><fnm>S</fnm></au>
+    <au><snm>Szwajda</snm><fnm>A</fnm></au>
+    <au><snm>Tang</snm><fnm>J</fnm></au>
+    <au><snm>Aittokallio</snm><fnm>T</fnm></au>
+  </aug>
+  <source>Briefings in bioinformatics</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2015</pubdate>
+  <volume>16</volume>
+  <issue>2</issue>
+  <fpage>325</fpage>
+  <lpage>-337</lpage>
+</bibl>
+
+<bibl id="B19">
+  <title><p>DDI-CPI, a server that predicts drug--drug interactions through
+  implementing the chemical--protein interactome</p></title>
+  <aug>
+    <au><snm>Luo</snm><fnm>H</fnm></au>
+    <au><snm>Zhang</snm><fnm>P</fnm></au>
+    <au><snm>Huang</snm><fnm>H</fnm></au>
+    <au><snm>Huang</snm><fnm>J</fnm></au>
+    <au><snm>Kao</snm><fnm>E</fnm></au>
+    <au><snm>Shi</snm><fnm>L</fnm></au>
+    <au><snm>He</snm><fnm>L</fnm></au>
+    <au><snm>Yang</snm><fnm>L</fnm></au>
+  </aug>
+  <source>Nucleic acids research</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2014</pubdate>
+  <volume>42</volume>
+  <issue>W1</issue>
+  <fpage>W46</fpage>
+  <lpage>-W52</lpage>
+</bibl>
+
+<bibl id="B20">
+  <title><p>Predicting comprehensive drug-drug interactions for new drugs via
+  triple matrix factorization</p></title>
+  <aug>
+    <au><snm>Shi</snm><fnm>JY</fnm></au>
+    <au><snm>Huang</snm><fnm>H</fnm></au>
+    <au><snm>Li</snm><fnm>JX</fnm></au>
+    <au><snm>Lei</snm><fnm>P</fnm></au>
+    <au><snm>Zhang</snm><fnm>YN</fnm></au>
+    <au><snm>Yiu</snm><fnm>SM</fnm></au>
+  </aug>
+  <source>International Conference on Bioinformatics and Biomedical
+  Engineering</source>
+  <pubdate>2017</pubdate>
+  <fpage>108</fpage>
+  <lpage>-117</lpage>
+</bibl>
+
+<bibl id="B21">
+  <title><p>Serum drug concentrations in clinical perspective.</p></title>
+  <aug>
+    <au><snm>Koch Weser</snm><fnm>J</fnm></au>
+  </aug>
+  <source>Therapeutic drug monitoring</source>
+  <pubdate>1981</pubdate>
+  <volume>3</volume>
+  <issue>1</issue>
+  <fpage>3</fpage>
+  <lpage>-16</lpage>
+</bibl>
+
+<bibl id="B22">
+  <title><p>Predicting and understanding comprehensive drug-drug interactions
+  via semi-nonnegative matrix factorization</p></title>
+  <aug>
+    <au><snm>Yu</snm><fnm>H</fnm></au>
+    <au><snm>Mao</snm><fnm>KT</fnm></au>
+    <au><snm>Shi</snm><fnm>JY</fnm></au>
+    <au><snm>Huang</snm><fnm>H</fnm></au>
+    <au><snm>Chen</snm><fnm>Z</fnm></au>
+    <au><snm>Dong</snm><fnm>K</fnm></au>
+    <au><snm>Yiu</snm><fnm>SM</fnm></au>
+  </aug>
+  <source>BMC systems biology</source>
+  <publisher>Springer</publisher>
+  <pubdate>2018</pubdate>
+  <volume>12</volume>
+  <issue>1</issue>
+  <fpage>14</fpage>
+</bibl>
+
+<bibl id="B23">
   <title><p>Zeolites and synthetic mechanisms</p></title>
   <aug>
     <au><snm>Jones</snm><fnm>X</fnm></au>
@@ -181,7 +911,7 @@ Accessed Accessed 20 Feb 2007
   <lpage>27</lpage>
 </bibl>
 
-<bibl id="B3">
+<bibl id="B24">
   <title><p>Origin of Eukaryotic Cells</p></title>
   <aug>
     <au><snm>Margulis</snm><fnm>L</fnm></au>
@@ -190,7 +920,7 @@ Accessed Accessed 20 Feb 2007
   <pubdate>1970</pubdate>
 </bibl>
 
-<bibl id="B4">
+<bibl id="B25">
   <title><p>From prey via endosymbiont to plastids: comparative studies in
   dinoflagellates</p></title>
   <aug>
@@ -205,7 +935,7 @@ Accessed Accessed 20 Feb 2007
   <lpage>76</lpage>
 </bibl>
 
-<bibl id="B5">
+<bibl id="B26">
   <title><p>Wrappers for performance enhancement and obvious decision
   graphs</p></title>
   <aug>
@@ -216,7 +946,7 @@ Accessed Accessed 20 Feb 2007
   <pubdate>1995</pubdate>
 </bibl>
 
-<bibl id="B6">
+<bibl id="B27">
   <title><p>The ISSN register</p></title>
   <aug>
     <au><cnm>{ISSN International Centre}</cnm></au>
