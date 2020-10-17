@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{25}
+\begin{thebibliography}{26}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -468,6 +468,17 @@ pp. \bfpage{427}--\blpage{434}
 \bfpage{333}
 (\byear{2014})
 \end{barticle}
+\endbibitem
+
+%%% 26
+\bibitem{SNFPy2020}
+\begin{botherref}
+\oauthor{\bsnm{{Ross Markello}}}:
+snfpy 0.2.2
+(2018).
+\url{https://pypi.org/project/snfpy/}
+Accessed Accessed 20 October 2020
+\end{botherref}
 \endbibitem
 
 \end{thebibliography}
@@ -943,6 +954,15 @@ pp. \bfpage{427}--\blpage{434}
   <volume>11</volume>
   <issue>3</issue>
   <fpage>333</fpage>
+</bibl>
+
+<bibl id="B26">
+  <title><p>snfpy 0.2.2</p></title>
+  <aug>
+    <au><cnm>{Ross Markello}</cnm></au>
+  </aug>
+  <pubdate>2018</pubdate>
+  <url>https://pypi.org/project/snfpy/</url>
 </bibl>
 
 </refgrp>

@@ -74,8 +74,8 @@
 %%                                             %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\includegraphic{}
-\def\includegraphics{}
+%\def\includegraphic{}
+%\def\includegraphics{}
 
 %%% Put your definitions there:
 \startlocaldefs
@@ -305,9 +305,9 @@ In this study, we use the data set presented in paper of \cite{yu2018predicting}
 
 \subsection*{Problem formulation}
 
-Without loss of generality, let $D = \{d_i\}$, $i = 1, 2, .., m$ be a set of m approved drugs. Their  interactions can be accordingly represented as an $m \times m$ symmetric interaction matrix $A_{m \times m} = \{a_{ij}\}$. For the conventional DDIs, $a_{ij} = 1$ if $d_i$ interacts with $d_j$, and $a_{ij} = 0$ otherwise. For the comprehensive DDIs, $a_{ij} ∈ \{−1, 0, +1\}$ . Again, if $d_i$ and $d_j$ do not interact with each other, $a_{ij} = 0$ . When there is an enhancive DDI or a degressive DDI between $d_i$ and $d_j$ , $a_{ij} = +1$ or $a_{ij} = −1$ respectively.
+Without loss of generality, let $D = \{d_i\}$, $i = 1, 2, .., m$ be a set of m approved drugs. Their  interactions can be accordingly represented as an $m \times m$ symmetric interaction matrix $A_{m \times m} = \{a_{ij}\}$. For the conventional DDIs, $a_{ij} = 1$ if $d_i$ interacts with $d_j$, and $a_{ij} = 0$ otherwise. For the comprehensive DDIs, $a_{ij} \in \{-1, 0, +1\}$ . Again, if $d_i$ and $d_j$ do not interact with each other, $a_{ij} = 0$ . When there is an enhancive DDI or a degressive DDI between $d_i$ and $d_j$ , $a_{ij} = +1$ or $a_{ij} = -1$ respectively.
 
-In addition, each drug $d_i$ in the D is represented as a p-dimension feature vector $f_i = \left[  f_1, f_2, .., f_k, .., f_p \right]$, which $f_k = 1$ indicates the K-th specific chemical structure fragment or occurs an off-label side effect, and $f_k = 0$ otherwise. Because each drug has two chemical structure feature vectors and off-label side effects, there are two feature matrices of $F$ with dimensions of m×p (amount of p depends on kind of feature ). Matrices of $F_{str}$ and $F_{se}$ are, respectively, the feature matrix of the chemical structure and the feature matrix of off-label side effects.
+In addition, each drug $d_i$ in the D is represented as a p-dimension feature vector $f_i = \left[  f_1, f_2, .., f_k, .., f_p \right]$, which $f_k = 1$ indicates the K-th specific chemical structure fragment or occurs an off-label side effect, and $f_k = 0$ otherwise. Because each drug has two chemical structure feature vectors and off-label side effects, there are two feature matrices of $F$ with dimensions of $m \times p$ (amount of p depends on kind of feature ). Matrices of $F_{str}$ and $F_{se}$ are, respectively, the feature matrix of the chemical structure and the feature matrix of off-label side effects.
 
 \subsection*{Data preparing}
 Since the new drugs are isolated nodes in the interaction network, we cannot infer their possible interaction from topological information alone. Therefore, additional information (such as chemical structure or off-label side effects) is needed, which is called a drug feature in terms of machine learning. First, we prepare the features based on our model, and then we teach a deep learning model of interaction prediction.
@@ -328,14 +328,29 @@ It was observed that the values of the feature matrices are discrete, and also t
 \subsubsection*{Integration drug similarity matrices}
 Similarity Network Fusion (SNF)\cite{wang2014similarity} is a new computational method for data integration.  Briefly, SNF combines many different types of features (such as chemical structure and off-label side effect, and more - clinical data, questionnaires, image data, etc.) for a given set of samples (e.g., drugs). SNF first constructs a sample similarity network for each of the data types and then iteratively integrates these networks using a novel network fusion method. Working in the sample network space allows SNF to avoid dealing with different scales, collection bias, and noise in different data types. Integrating data in a non-linear fashion allows SNF to take advantage of the common and complementary information in different data types. Figure \ref{fs8} is a good visualization of SNF processes  that has been used in our method structure.
 
-
 \begin{figure}[!h]
-	\centering
-	\includegraphics{SNF}
-	\caption{SNF processes \cite{wang2014similarity}}
+	%\centering
+	\includegraphics[scale=.53]{SNF.png}
+	\caption{SNF processes \cite{wang2014similarity}:
+	A detailed example of SNF steps. (a) An example representation of chemical structure feature and off-label side effect feature for the same set of drugs. (b) Drug-drug similarity matrices for each feature type. (c) Drug-drug similarity networks, equivalent to the drug-drug data. Nodes represent drugs, and edges represent drug pairwise similarities. (d) Network fusion by SNF iteratively updates each of the networks with information from the other networks, making them more similar with each step. (e) The iterative network fusion results in convergence to the final fused network. Edge color indicates which data type has contributed to the given similarity. }
 	\label{fs8}
 \end{figure}
 
+In this section, using the similarity network fusion method that has described above, similarity matrices of the chemical structure and the off-label side effect of drugs were integrated. The output of this integration is a new similarity matrix of $S_{snf}$ with dimensions of $568 \times 568$, and elements of $S_{snf}$ have a value between zero and one.To integrate the network similarity, the package of SNFPy is used, which is implemented in Python and is available at \cite{SNFPy2020}.
+
+\subsubsection*{Input matrix format}
+
+At this stage, a matrix forms with 1139 columns and 322056 rows, which consists of the following columns:
+
+1) Drug pairs: Name of the drug i-th and the name of the drug j-th.
+
+2) Type of interaction: degressive (-1), enhancive (+1), and unknown (0).
+
+3) The similarity vector of i-th drug from the $S_{snf}$ matrix with 568 elements.
+
+4) The similarity vector of j-th drug from the $S_{snf}$ matrix with 568 elements.
+
+We have 568 drugs, and the interaction of each drug with itself is meaningless. On the other hand, the drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ have the same label, while the corresponding similarity vectors of drugs in the drug pairs have been displaced. So, these drug pairs are dual. The presence of both of them in the data increases the training data, which increases the model's ability to have a better prediction.
 
 \subsubsection*{Sub-sub heading for section}
 Text for this sub-sub-heading\ldots
@@ -447,6 +462,8 @@ Text for this section\ldots
 
 %%
 %% Do not use \listoffigures as most will included as separate files
+
+
 
 \section*{Figures}
 \begin{figure}[h!]
