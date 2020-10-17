@@ -47,10 +47,14 @@
 \usepackage{hyperref}
 
 %%% Load packages
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{lscape}
+\usepackage{rotating}
 \usepackage{amsthm,amsmath}
-%\RequirePackage[numbers]{natbib}
 %\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
 %\RequirePackage{hyperref}
+\usepackage{graphicx}
 \usepackage[utf8]{inputenc} %unicode support
 %\usepackage[applemac]{inputenc} %applemac support if unicode package fails
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
@@ -306,27 +310,38 @@ Without loss of generality, let $D = \{d_i\}$, $i = 1, 2, .., m$ be a set of m a
 In addition, each drug $d_i$ in the D is represented as a p-dimension feature vector $f_i = \left[  f_1, f_2, .., f_k, .., f_p \right]$, which $f_k = 1$ indicates the K-th specific chemical structure fragment or occurs an off-label side effect, and $f_k = 0$ otherwise. Because each drug has two chemical structure feature vectors and off-label side effects, there are two feature matrices of $F$ with dimensions of m×p (amount of p depends on kind of feature ). Matrices of $F_{str}$ and $F_{se}$ are, respectively, the feature matrix of the chemical structure and the feature matrix of off-label side effects.
 
 \subsection*{Data preparing}
+Since the new drugs are isolated nodes in the interaction network, we cannot infer their possible interaction from topological information alone. Therefore, additional information (such as chemical structure or off-label side effects) is needed, which is called a drug feature in terms of machine learning. First, we prepare the features based on our model, and then we teach a deep learning model of interaction prediction.
 
-\subsubsection*{Cosine Similarity}
+\subsubsection*{Similarity matrix calculation}
+
+A common method of calculating similarity called Cosine Similarity is used in machine learning articles such as Articles \cite{zhang2016drug, zhang2018manifold}. If we name feature vectors of the drug of $d_i$ and $d_j$
+as $x_i$ and $x_j$,Cosine Similarity between $x_i$ and $x_j$ is defined as follows:
+\begin{equation}
+	\begin{aligned}
+		S_{Cos}(x_i,x_j) =\dfrac{x_i . x_j}{||x_i||_2 ||x_j||_2}
+	\end{aligned}
+\end{equation}
+Where $||.||_2$ is the Euclidean Norm and ${x_i . x_j}$ is inner product of two vectors.
+
+It was observed that the values of the feature matrices are discrete, and also the dimensions of the matrices are large. The chemical structure and the off-label side effect have 881 and 9149 dimensions, respectively. On the other hand, machine learning algorithms do not work properly with high-dimensional data and discrete data. As a result, they do not get good results on these kinds of data. Therefore, by exploiting the cosine similarity, that was described above, drug similarity matrices based on chemical structure and off-label side effects are calculated. These matrices are $S_{str}$ and $S_{se}$, respectively. The dimensions of these two matrices are $m \times m$, where $s_{i,j}$ is an element of similarity matrices that shows similarity value between drugs of $di$ and $d_j$. Each element of $S$ has a continuous value between zero and one.
+
+\subsubsection*{Integration drug similarity matrices}
+Similarity Network Fusion (SNF)\cite{wang2014similarity} is a new computational method for data integration.  Briefly, SNF combines many different types of features (such as chemical structure and off-label side effect, and more - clinical data, questionnaires, image data, etc.) for a given set of samples (e.g., drugs). SNF first constructs a sample similarity network for each of the data types and then iteratively integrates these networks using a novel network fusion method. Working in the sample network space allows SNF to avoid dealing with different scales, collection bias, and noise in different data types. Integrating data in a non-linear fashion allows SNF to take advantage of the common and complementary information in different data types. Figure \ref{fs8} is a good visualization of SNF processes  that has been used in our method structure.
 
 
-
-
-
-
+\begin{figure}[!h]
+	\centering
+	\includegraphics{SNF.pdf}
+	\caption{SNF processes \cite{wang2014similarity}}
+	\label{fs8}
+\end{figure}
 
 
 \subsubsection*{Sub-sub heading for section}
 Text for this sub-sub-heading\ldots
 \paragraph*{Sub-sub-sub heading for section}
-Text for this sub-sub-sub-heading\ldots
 
-In this section we examine the growth rate of the mean of $Z_0$, $Z_1$ and $Z_2$. In
-addition, we examine a common modeling assumption and note the
-importance of considering the tails of the extinction time $T_x$ in
-studies of escape dynamics.
-We will first consider the expected resistant population at $vT_x$ for
-some $v>0$, (and temporarily assume $\alpha=0$)
+
 %
 \[
 E \bigl[Z_1(vT_x) \bigr]=
@@ -347,8 +362,7 @@ estimate the expected value as
 \int_0^{v\wedge1}x^{1-u}x^{({\lambda_1}/{r})(v-u)}\,du .
 \end{aligned}
 \end{equation}
-%
-Thus we observe that this expected value is finite for all $v>0$ (also see \cite{koon,xjon,marg,schn,koha,issnic}).
+
 
 
 \section*{Appendix}

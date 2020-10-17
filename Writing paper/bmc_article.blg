@@ -20,51 +20,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bmc_article.bib.bib
-Warning--I didn't find a database entry for "koon"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 27 entries,
+You've used 25 entries,
             7128 wiz_defined-function locations,
-            1298 strings with 15082 characters,
-and the built_in function-call counts, 297147 in all, are:
-= -- 46754
-> -- 1073
-< -- 584
-+ -- 22903
-- -- 291
-* -- 15047
-:= -- 54845
-add.period$ -- 29
-call.type$ -- 27
+            1281 strings with 15195 characters,
+and the built_in function-call counts, 247241 in all, are:
+= -- 36128
+> -- 1106
+< -- 598
++ -- 15409
+- -- 297
+* -- 15054
+:= -- 46583
+add.period$ -- 27
+call.type$ -- 25
 change.case$ -- 288
-chr.to.int$ -- 1194
-cite$ -- 27
-duplicate$ -- 2933
-empty$ -- 9878
-format.name$ -- 1222
-if$ -- 71448
+chr.to.int$ -- 1231
+cite$ -- 25
+duplicate$ -- 2928
+empty$ -- 10291
+format.name$ -- 1310
+if$ -- 57829
 int.to.chr$ -- 1
-int.to.str$ -- 60
-missing$ -- 1001
-newline$ -- 915
-num.names$ -- 141
-pop$ -- 1181
+int.to.str$ -- 56
+missing$ -- 970
+newline$ -- 902
+num.names$ -- 125
+pop$ -- 1148
 preamble$ -- 1
-purify$ -- 113
-quote$ -- 54
-skip$ -- 26044
+purify$ -- 105
+quote$ -- 50
+skip$ -- 19284
 stack$ -- 0
-substring$ -- 34144
-swap$ -- 1005
-text.length$ -- 402
+substring$ -- 30581
+swap$ -- 1035
+text.length$ -- 370
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1168
+type$ -- 1108
 warning$ -- 0
-while$ -- 1057
+while$ -- 1044
 width$ -- 0
-write$ -- 1317
-(There was 1 warning)
+write$ -- 1332

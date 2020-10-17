@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{27}
+\begin{thebibliography}{25}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -417,65 +417,57 @@ pp. \bfpage{108}--\blpage{117}
 \endbibitem
 
 %%% 23
-\bibitem{xjon}
+\bibitem{zhang2016drug}
 \begin{bchapter}
-\bauthor{\bsnm{Jones}, \binits{X.}}:
-\bctitle{Zeolites and synthetic mechanisms}.
-In: \beditor{\bsnm{Smith}, \binits{Y.}} (ed.)
-\bbtitle{Proceedings of the First National Conference on Porous Sieves: 27-30
-  June 1996; Baltimore},
-pp. \bfpage{16}--\blpage{27}
-(\byear{1996})
+\bauthor{\bsnm{Zhang}, \binits{W.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}},
+\bauthor{\bsnm{Tu}, \binits{S.}},
+\bauthor{\bsnm{Liu}, \binits{F.}},
+\bauthor{\bsnm{Qu}, \binits{Q.}}:
+\bctitle{Drug side effect prediction through linear neighborhoods and multiple
+  data source integration}.
+In: \bbtitle{2016 IEEE International Conference on Bioinformatics and
+  Biomedicine (BIBM)},
+pp. \bfpage{427}--\blpage{434}
+(\byear{2016}).
+\bcomment{IEEE}
 \end{bchapter}
 \endbibitem
 
 %%% 24
-\bibitem{marg}
-\begin{bbook}
-\bauthor{\bsnm{Margulis}, \binits{L.}}:
-\bbtitle{Origin of Eukaryotic Cells}.
-\bpublisher{Yale University Press},
-\blocation{New Haven}
-(\byear{1970})
-\end{bbook}
+\bibitem{zhang2018manifold}
+\begin{barticle}
+\bauthor{\bsnm{Zhang}, \binits{W.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}},
+\bauthor{\bsnm{Li}, \binits{D.}},
+\bauthor{\bsnm{Yue}, \binits{X.}}:
+\batitle{Manifold regularized matrix factorization for drug-drug interaction
+  prediction}.
+\bjtitle{Journal of biomedical informatics}
+\bvolume{88},
+\bfpage{90}--\blpage{97}
+(\byear{2018})
+\end{barticle}
 \endbibitem
 
 %%% 25
-\bibitem{schn}
-\begin{bchapter}
-\bauthor{\bsnm{Schnepf}, \binits{E.}}:
-\bctitle{From prey via endosymbiont to plastids: comparative studies in
-  dinoflagellates}.
-In: \beditor{\bsnm{Lewin}, \binits{R.A.}} (ed.)
-\bbtitle{Origins of Plastids},
-\bedition{2nd} edn.,
-pp. \bfpage{53}--\blpage{76}.
-\bpublisher{Chapman and Hall},
-\blocation{New York}
-(\byear{1993})
-\end{bchapter}
-\endbibitem
-
-%%% 26
-\bibitem{koha}
-\begin{botherref}
-\oauthor{\bsnm{Kohavi}, \binits{R.}}:
-Wrappers for performance enhancement and obvious decision graphs.
-PhD thesis,
-Stanford University, Computer Science Department
-(1995)
-\end{botherref}
-\endbibitem
-
-%%% 27
-\bibitem{issnic}
-\begin{botherref}
-\oauthor{\bsnm{{ISSN International Centre}}}:
-The ISSN register
-(2006).
-\url{http://www.issn.org}
-Accessed Accessed 20 Feb 2007
-\end{botherref}
+\bibitem{wang2014similarity}
+\begin{barticle}
+\bauthor{\bsnm{Wang}, \binits{B.}},
+\bauthor{\bsnm{Mezlini}, \binits{A.M.}},
+\bauthor{\bsnm{Demir}, \binits{F.}},
+\bauthor{\bsnm{Fiume}, \binits{M.}},
+\bauthor{\bsnm{Tu}, \binits{Z.}},
+\bauthor{\bsnm{Brudno}, \binits{M.}},
+\bauthor{\bsnm{Haibe-Kains}, \binits{B.}},
+\bauthor{\bsnm{Goldenberg}, \binits{A.}}:
+\batitle{Similarity network fusion for aggregating data types on a genomic
+  scale}.
+\bjtitle{Nature methods}
+\bvolume{11}(\bissue{3}),
+\bfpage{333}
+(\byear{2014})
+\end{barticle}
 \endbibitem
 
 \end{thebibliography}
@@ -899,60 +891,58 @@ Accessed Accessed 20 Feb 2007
 </bibl>
 
 <bibl id="B23">
-  <title><p>Zeolites and synthetic mechanisms</p></title>
+  <title><p>Drug side effect prediction through linear neighborhoods and
+  multiple data source integration</p></title>
   <aug>
-    <au><snm>Jones</snm><fnm>X</fnm></au>
+    <au><snm>Zhang</snm><fnm>W</fnm></au>
+    <au><snm>Chen</snm><fnm>Y</fnm></au>
+    <au><snm>Tu</snm><fnm>S</fnm></au>
+    <au><snm>Liu</snm><fnm>F</fnm></au>
+    <au><snm>Qu</snm><fnm>Q</fnm></au>
   </aug>
-  <source>Proceedings of the First National Conference on Porous Sieves: 27-30
-  June 1996; Baltimore</source>
-  <editor>Y Smith</editor>
-  <pubdate>1996</pubdate>
-  <fpage>16</fpage>
-  <lpage>27</lpage>
+  <source>2016 IEEE international conference on bioinformatics and biomedicine
+  (BIBM)</source>
+  <pubdate>2016</pubdate>
+  <fpage>427</fpage>
+  <lpage>-434</lpage>
 </bibl>
 
 <bibl id="B24">
-  <title><p>Origin of Eukaryotic Cells</p></title>
+  <title><p>Manifold regularized matrix factorization for drug-drug interaction
+  prediction</p></title>
   <aug>
-    <au><snm>Margulis</snm><fnm>L</fnm></au>
+    <au><snm>Zhang</snm><fnm>W</fnm></au>
+    <au><snm>Chen</snm><fnm>Y</fnm></au>
+    <au><snm>Li</snm><fnm>D</fnm></au>
+    <au><snm>Yue</snm><fnm>X</fnm></au>
   </aug>
-  <publisher>New Haven: Yale University Press</publisher>
-  <pubdate>1970</pubdate>
+  <source>Journal of biomedical informatics</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2018</pubdate>
+  <volume>88</volume>
+  <fpage>90</fpage>
+  <lpage>-97</lpage>
 </bibl>
 
 <bibl id="B25">
-  <title><p>From prey via endosymbiont to plastids: comparative studies in
-  dinoflagellates</p></title>
+  <title><p>Similarity network fusion for aggregating data types on a genomic
+  scale</p></title>
   <aug>
-    <au><snm>Schnepf</snm><fnm>E</fnm></au>
+    <au><snm>Wang</snm><fnm>B</fnm></au>
+    <au><snm>Mezlini</snm><fnm>AM</fnm></au>
+    <au><snm>Demir</snm><fnm>F</fnm></au>
+    <au><snm>Fiume</snm><fnm>M</fnm></au>
+    <au><snm>Tu</snm><fnm>Z</fnm></au>
+    <au><snm>Brudno</snm><fnm>M</fnm></au>
+    <au><snm>Haibe Kains</snm><fnm>B</fnm></au>
+    <au><snm>Goldenberg</snm><fnm>A</fnm></au>
   </aug>
-  <source>Origins of Plastids</source>
-  <publisher>New York: Chapman and Hall</publisher>
-  <editor>R A Lewin</editor>
-  <edition>2</edition>
-  <pubdate>1993</pubdate>
-  <fpage>53</fpage>
-  <lpage>76</lpage>
-</bibl>
-
-<bibl id="B26">
-  <title><p>Wrappers for performance enhancement and obvious decision
-  graphs</p></title>
-  <aug>
-    <au><snm>Kohavi</snm><fnm>R</fnm></au>
-  </aug>
-  <source>PhD thesis</source>
-  <publisher>Stanford University, Computer Science Department</publisher>
-  <pubdate>1995</pubdate>
-</bibl>
-
-<bibl id="B27">
-  <title><p>The ISSN register</p></title>
-  <aug>
-    <au><cnm>{ISSN International Centre}</cnm></au>
-  </aug>
-  <pubdate>2006</pubdate>
-  <url>http://www.issn.org</url>
+  <source>Nature methods</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2014</pubdate>
+  <volume>11</volume>
+  <issue>3</issue>
+  <fpage>333</fpage>
 </bibl>
 
 </refgrp>
