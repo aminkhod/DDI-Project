@@ -350,7 +350,20 @@ At this stage, a matrix forms with 1139 columns and 322056 rows, which consists 
 
 4) The similarity vector of j-th drug from the $S_{snf}$ matrix with 568 elements.
 
-We have 568 drugs, and the interaction of each drug with itself is meaningless. On the other hand, the drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ have the same label, while the corresponding similarity vectors of drugs in the drug pairs have been displaced. So, these drug pairs are dual. The presence of both of them in the data increases the training data, which increases the model's ability to have a better prediction.
+Figure of \ref{BMatHeader} shows the header of matrix.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=.53]{MatrixheaderB.png}
+	\caption{Matrix header of B}
+	\label{BMatHeader}
+\end{figure}
+
+We have 568 drugs, and the interaction of each drug with itself is meaningless. On the other hand, the drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ have the same label, while the corresponding similarity vectors of drugs in the drug pairs have been displaced. So, these drug pairs are dual. Both of them in the data augment the training data, which increases the model's ability to have a better prediction. As a result, the resulting matrix has 322056 data samples or rows ($(568 \times 568) - 568 = 322056$). According to the explanations provided, a matrix with dimensions of $322056 \times 1139$ is formed to input into our model, which is called $B$.
+
+\subsection*{devising of Recommender System}
+
+
 
 \subsubsection*{Sub-sub heading for section}
 Text for this sub-sub-heading\ldots
