@@ -361,9 +361,92 @@ Figure of \ref{BMatHeader} shows the header of matrix.
 
 We have 568 drugs, and the interaction of each drug with itself is meaningless. On the other hand, the drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ have the same label, while the corresponding similarity vectors of drugs in the drug pairs have been displaced. So, these drug pairs are dual. Both of them in the data augment the training data, which increases the model's ability to have a better prediction. As a result, the resulting matrix has 322056 data samples or rows ($(568 \times 568) - 568 = 322056$). According to the explanations provided, a matrix with dimensions of $322056 \times 1139$ is formed to input into our model, which is called $B$.
 
-\subsection*{devising of Recommender System}
+\subsection*{Devising Recommender System}
+In the previous steps, data was prepared to input any learning machine models, including deep learning models. Before presenting the model and inputting the data into the machine, one important point must be considered. As discussed, the enhancive and degressive drug pairs have clear and significant labels, while a zero label drug pair does not mean that there is no interaction between them. It indicates, still, no interaction has been found for this pair of drugs. In the following, we present a method for detecting non-interaction drug pairs. Then we use these pairs of drugs as zero-labeled data to train a model in the next phase.
+
+\subsection*{Selecting and training model with known interactions}
+To solve this problem, it is necessary to provide a model that detects non-interaction with high accuracy and confidence. Therefore, we design a model based on deep learning that predicts the possible non-interaction drug pairs and then uses them to train a three-class model. Obviously, the higher accuracy in detecting zeros, the more accurate and confident the three-class model will be designed and trained.
+
+\subsubsection*{Cross-validation process for model selection}
+We separate rows of matrix B that contain positive or negative interactions. The new matrix contains 42,702 drug pairs with degressive and enhancive interactions. This data was exploited to design more accurate and more efficient network architecture. The obtained data contains 42702 drug pairs, and each pair of drugs has a feature vector with 1136 dimensions. At first, the drug pairs are divided into 10 almost equal parts randomly. Then in 10 iterations (K = 10), in each iteration, one part of data is considered as a test dataset and the other nine parts as a train dataset. The drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ are not biologically different, so a drug pair and its dual must be in the same part When the data is separated into ten parts. This prevents fraud and improves model training by augmenting the train data.
+
+We tried different models, then trained and evaluated them in the 10-Fold cross-validation procedure. The final model is a deep neural network that is a stack of convolutional and fully connected layers.
+
+\subsubsection*{Presenting the selected model}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.63]{section3/model.jpg}
+	\caption{
+		نحوه‌ی چینش لایه‌های شبکه عصبی تشخیص صفرهای احتمالی}
+	\label{CNNModel}
+\end{figure}
+After trying different structures, we have the final deep neural network as shown in Figure
+\ref{CNNModel}. This network has three layers of two-dimensional convolution and following it, there are three fully connected convolution layers. The last layer has two outputs for predicting degressive or enhancive interaction. Convolution layers have 4-dimensions square filters with a Stride of 1. Each convolution layer also has a Relu activation function. The number of convolution filters is 128, 32, and 8, respectively. All connected layers have 64, 16, and 2 nodes, respectively, the first two layers have Relu activation function and the last layer with 2 nodes has a Sigmoid activation function. Convolution layers using a Flatten layer Connects to fully connected layers. The function of this layer is to transform a two-dimensional matrix into a one-dimensional vector. The output of this input layer of the first layer is fully connected. Also between fully connected 64 and 16 nodes, we used one Dropout layer with a wast value of 0.2. This wast value indicates that the network in this layer does not randomly consider 20 percent of the features. This layer is used to prevent over-fitting of the model and forces the model to extract and use more features with more confidence for prediction. and if some of them are removed, either the prediction power of the algorithm does not decrease or rely on a few specific features. Studies have shown that two-dimensional convolution layers work better than their one-dimensional counterparts because in this case, the filters can detect more drug similarities, and it is possible to extract more powerful Features. Therefore, the 1136-dimension  feature vectors are transformed into matrices with dimensions of $ 71 \ $ 16 times. Figure
+\ref{paramNumber1} 
+shows the number of learnable weights for each layer. Also, the total number of weights is calculated, which indicates the general complexity of the model.
+
+The following settings are used in the construction of convolution neural network:
+
+1) We used Tensorflow
+\cite{TENSORFLOW114}
+(version 1.14.0) and KERAS
+\cite{KERAS2020}
+(version 2.2.5)   packages to implement the neural network.
+
+2) ADAM optimization function was used.
+
+3) The categorical-cross entropy loss function was considered.
+
+4) Epochs were considered 5.
+
+5) Learning rate 0.00001 was used.
+
+Keep in mind that the hyperparameters of this network are not optimized and the specified parameters are not necessarily at their best. There are two reasons for not optimizing hyperparameters:
+
+1) Model overfitting: If hyperparameters changed to the best values, it is expected that the model will get better results on the present data, but there is no guarantee that the extracted features by the model are significant and works well when used in new cases. In this case, the so-called model is over-fitted and will be a negative point for the model.
+
+2)Robustness: Optimal hyperparameters give better results for the present data, but different drug similarities may be used in the future, or new data may be collected and the present results may not be repeated. In this case, the model loses it's robust and will not be accepted in the pharmaceutical and pharmacological community.
+
+Finally, we examine the results of the proposed model in the 10-fold cross-validation from three views:
 
 
+
+
+
+\section*{Result and discussion}
+\subsection*{Assessment}
+K-Fold cross-validation (K-fold CV) is a well-proven approach to verify the algorithms' accuracy in machine learning. To demonstrate that new drugs have no interaction and avoid overly optimistic predictions, the CV equation C must be carefully designed. For drug pairs with no known interactions, the K-fold CV scheme seeks to assess the task of anticipating new types of potential interactions between them and drugs that have known interactions. The production of test and experimental samples is as follows:
+
+The whole data set is divided into k equal parts. The k-1 part is used as a training data set, and the model is built based on it, and the testing is performed with the remaining part. The procedure is repeated k times so that each of the k parts is used only once for testing, and each time accuracy is calculated for the constructed model. In this method, the average of predicting accuracy in all rounds of K-fold CV is taken as the final accuracy Classifier. The most common value for k in scientific literary is 5 or 10. Obviously, the larger the value of k, the more reliable the calculated accuracy classifier, and the more comprehensive the knowledge obtained, and the longer the classifier's testing time, which is the most important problem. Each setting and each data set has its own validation. In this approach, according to the type of problem and the methods, we used two types of 10-fold CV to divide the data into two sets of testing and training, which are:
+
+\subsubsection*{First case: 10-fold CV without unknown interactions}
+In this case, we randomly select 90 percent of the enhancive and degressive interactions. For the testing set, we consider the remaining 10 percent of the enhancive and degressive interactions. In the first case of the testing procedure,  the model was selected, and some hyper-parameters, such as the number of epochs, were determined.Figure
+\ref{ModelSelection}
+It shows the training process for the selected model. As expected, the model's accuracy is strict on ascending training data, but there are ups and downs for testing data after Epoch 5. In the loss function graph, by the end of epoch 5, as the epochs increase, the loss function's value on training and testing procedure decreases. After epoch 5, the trend of training data continues, but the testing trend is reversed. In other words, over feet occurs. Therefore, based on the graphs, the appropriate number of epochs in this step was considered 5.
+\begin{figure}[!h]
+	%\centering
+	\begin{minipage}{1\linewidth} 
+		\includegraphics[width=.48\textwidth]{ModelSelection/selectedModelAcc.png} 
+		\includegraphics[width=.48\textwidth]{ModelSelection/selectedModelLoss.png} 
+	\end{minipage}
+	\caption{\textbf{Accuracy and loss function for the binary model:} The right figure shows the model's accuracy on training and validation data during 15 epochs, and the left figure shows the loss function values at different epochs.}
+	\label{ModelSelection}
+\end{figure}
+\subsubsection*{Second case: 10-fold CV with unknown interactions}
+In this case, we divide the set of all interactions (enhancive, degressive, and zeros of the first step) into 10 equal parts. We consider one part of the testing set and the other 9 parts as the training data set. Divide all the zeros in the previous step into 10 parts and add a 1 to 9 ratio to both testing and training sets. In the second case, the previous model's 10-fold CV procedure was trained with the least changes to predict the three classes. Besides, hyper-parameter, the number of epochs was determined. Figure
+\ref{lastTripleModel} 
+
+It shows the training process. The process of the accuracy of the model on training data increases steadily with the increase of epochs. Still, the model after epoch 9 reduces a constant and decreases the accuracy a little for testing data.
+
+\begin{figure}[!h]
+	%\centering
+	\begin{minipage}{1\linewidth}
+		\includegraphics[width=.48\textwidth]{lastTripleModel/modelTripleACC.png}
+		\includegraphics[width=.48\textwidth]{lastTripleModel/modelTripleLoss.png}
+	\end{minipage}
+	\caption{\textbf{Accuracy and loss function diagrams for the triple model:} The right figure shows the accuracy of the model on training and validation data during 16 epochs, and the left figure shows the loss function values at different epochs.}
+	\label{lastTripleModel}
+\end{figure}
 
 \subsubsection*{Sub-sub heading for section}
 Text for this sub-sub-heading\ldots
