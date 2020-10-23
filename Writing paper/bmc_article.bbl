@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{26}
+\begin{thebibliography}{28}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -478,6 +478,36 @@ snfpy 0.2.2
 (2018).
 \url{https://pypi.org/project/snfpy/}
 Accessed Accessed 20 October 2020
+\end{botherref}
+\endbibitem
+
+%%% 27
+\bibitem{abadi2016tensorflow}
+\begin{bchapter}
+\bauthor{\bsnm{Abadi}, \binits{M.}},
+\bauthor{\bsnm{Barham}, \binits{P.}},
+\bauthor{\bsnm{Chen}, \binits{J.}},
+\bauthor{\bsnm{Chen}, \binits{Z.}},
+\bauthor{\bsnm{Davis}, \binits{A.}},
+\bauthor{\bsnm{Dean}, \binits{J.}},
+\bauthor{\bsnm{Devin}, \binits{M.}},
+\bauthor{\bsnm{Ghemawat}, \binits{S.}},
+\bauthor{\bsnm{Irving}, \binits{G.}},
+\bauthor{\bsnm{Isard}, \binits{M.}}, \betal:
+\bctitle{Tensorflow: A system for large-scale machine learning}.
+In: \bbtitle{12th $\{$USENIX$\}$ Symposium on Operating Systems Design and
+  Implementation ($\{$OSDI$\}$ 16)},
+pp. \bfpage{265}--\blpage{283}
+(\byear{2016})
+\end{bchapter}
+\endbibitem
+
+%%% 28
+\bibitem{chollet2015keras}
+\begin{botherref}
+\oauthor{\bsnm{Chollet}, \binits{F.}}, et al.:
+Keras.
+\url{https://github.com/fchollet/keras}
 \end{botherref}
 \endbibitem
 
@@ -963,6 +993,39 @@ Accessed Accessed 20 October 2020
   </aug>
   <pubdate>2018</pubdate>
   <url>https://pypi.org/project/snfpy/</url>
+</bibl>
+
+<bibl id="B27">
+  <title><p>Tensorflow: A system for large-scale machine learning</p></title>
+  <aug>
+    <au><snm>Abadi</snm><fnm>M</fnm></au>
+    <au><snm>Barham</snm><fnm>P</fnm></au>
+    <au><snm>Chen</snm><fnm>J</fnm></au>
+    <au><snm>Chen</snm><fnm>Z</fnm></au>
+    <au><snm>Davis</snm><fnm>A</fnm></au>
+    <au><snm>Dean</snm><fnm>J</fnm></au>
+    <au><snm>Devin</snm><fnm>M</fnm></au>
+    <au><snm>Ghemawat</snm><fnm>S</fnm></au>
+    <au><snm>Irving</snm><fnm>G</fnm></au>
+    <au><snm>Isard</snm><fnm>M</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>12th $\{$USENIX$\}$ Symposium on Operating Systems Design and
+  Implementation ($\{$OSDI$\}$ 16)</source>
+  <pubdate>2016</pubdate>
+  <fpage>265</fpage>
+  <lpage>-283</lpage>
+</bibl>
+
+<bibl id="B28">
+  <title><p>Keras</p></title>
+  <aug>
+    <au><snm>Chollet</snm><fnm>F</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <publisher>GitHub</publisher>
+  <pubdate>2015</pubdate>
+  <url>https://github.com/fchollet/keras</url>
 </bibl>
 
 </refgrp>

@@ -20,49 +20,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bmc_article.bib.bib
+Warning--entry type for "chollet2015keras" isn't style-file defined
+--line 290 of file bmc_article.bib.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 26 entries,
+You've used 28 entries,
             7128 wiz_defined-function locations,
-            1287 strings with 15294 characters,
-and the built_in function-call counts, 249649 in all, are:
-= -- 36458
-> -- 1116
-< -- 602
-+ -- 15488
-- -- 300
-* -- 15196
-:= -- 47080
-add.period$ -- 28
-call.type$ -- 26
-change.case$ -- 293
-chr.to.int$ -- 1232
-cite$ -- 26
-duplicate$ -- 2988
-empty$ -- 10409
-format.name$ -- 1322
-if$ -- 58373
+            1297 strings with 15753 characters,
+and the built_in function-call counts, 323664 in all, are:
+= -- 50434
+> -- 1202
+< -- 641
++ -- 24388
+- -- 337
+* -- 16958
+:= -- 59797
+add.period$ -- 30
+call.type$ -- 28
+change.case$ -- 330
+chr.to.int$ -- 1294
+cite$ -- 28
+duplicate$ -- 3215
+empty$ -- 11172
+format.name$ -- 1447
+if$ -- 77411
 int.to.chr$ -- 1
-int.to.str$ -- 58
-missing$ -- 1000
-newline$ -- 922
-num.names$ -- 130
-pop$ -- 1189
+int.to.str$ -- 63
+missing$ -- 1081
+newline$ -- 983
+num.names$ -- 140
+pop$ -- 1281
 preamble$ -- 1
-purify$ -- 109
-quote$ -- 52
-skip$ -- 19434
+purify$ -- 117
+quote$ -- 56
+skip$ -- 27958
 stack$ -- 0
-substring$ -- 30838
-swap$ -- 1040
-text.length$ -- 381
+substring$ -- 37923
+swap$ -- 1099
+text.length$ -- 418
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1138
+type$ -- 1215
 warning$ -- 0
-while$ -- 1063
+while$ -- 1156
 width$ -- 0
-write$ -- 1356
+write$ -- 1460
+(There was 1 warning)

@@ -383,22 +383,24 @@ After trying different structures, we have the final deep neural network as show
 \ref{CNNModel}. This network has three two-dimensional Convolution (Conv) Layers. Following them, there are three Fully Connected (FC) layers. The last layer has two outputs for predicting degressive or enhancive interaction. Conv layers have square filters with a size of $4 \times 4$ and stride of 1. No padding has been used for Conv layers. Each Conv layer also has a Relu activation function. The number of convolution filters is 128, 32, and 8, respectively. The FC layers have 64, 16, and 2 nodes, respectively. The first two FC layers have the Relu activation function, but the last FC layer has a Sigmoid activation function. After Conv layers, there is a Flatten layer that reshapes two-dimensional matrices into a one-dimensional vector. It connects to the first FC layer. The output of the Flatten layer is the input for the first FC layer. Also, there is a Dropout layer between FC  layers with 64 and 16 nodes, which its dropout amount is 0.2. This dropout value indicates that this layer does not consider 20 percent of the input edges randomly. This layer is used to prevent over-fitting of the model and forces the model to extract and use more features with more confidence for prediction. and if some of them are removed, either the prediction power of the algorithm does not decrease or rely on a few specific features. Our trials have shown that two-dimensional convolution layers work far better than their one-dimensional counterparts. Two-dimensional filters with an arbitrary size of n can cover more feature elements than a one-dimensional filter with the same size and consider many different combinations of features when moves on matrice. As a result, two-dimensional convolutional filters may extract more significant and confident features. Therefore, the 1136-dimension  feature vectors are transformed into matrices with dimensions of $71 \times 16$ to reshape feature vectors into feature matrices. Figure
 \ref{paramNumber1} 
 shows the number of learnable weights for each layer. Also, the total number of weights is calculated, which indicates the general complexity of the model.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.50]{ModelSelection/modelparameters.png}
+	\caption{Learnable parameters of two-class predictive neural network}
+	\label{paramNumber1}
+\end{figure}
 
 The following settings are used in the construction of convolution neural network:
 
-1) We used Tensorflow
-\cite{TENSORFLOW114}
-(version 1.14.0) and KERAS
-\cite{KERAS2020}
-(version 2.2.5)   packages to implement the neural network.
+1) We used Tensorflow \cite{abadi2016tensorflow} (version 1.14.0) and KERAS \cite{chollet2015keras} (version 2.2.5) packages to implement the neural network.
 
 2) ADAM optimization function was used.
 
 3) The categorical-cross entropy loss function was considered.
 
-4) Epochs were considered 5.
+4) Number of epochs is 5.
 
-5) Learning rate 0.00001 was used.
+5) Learning rate  is 0.00001.
 
 Keep in mind that the hyperparameters of this network are not optimized and the specified parameters are not necessarily at their best. There are two reasons for not optimizing hyperparameters:
 
@@ -407,8 +409,6 @@ Keep in mind that the hyperparameters of this network are not optimized and the 
 2)Robustness: Optimal hyperparameters give better results for the present data, but different drug similarities may be used in the future, or new data may be collected and the present results may not be repeated. In this case, the model loses it's robust and will not be accepted in the pharmaceutical and pharmacological community.
 
 Finally, we examine the results of the proposed model in the 10-fold cross-validation from three views:
-
-
 
 
 
