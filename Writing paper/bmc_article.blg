@@ -1,18 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: bmc_article.aux
-White space in argument---line 94 of file bmc_article.aux
- : \citation{Shi
- :               J2019}
-I'm skipping whatever remains of this command
-White space in argument---line 95 of file bmc_article.aux
- : \citation{Yu
- :              H2018}
-I'm skipping whatever remains of this command
-White space in argument---line 96 of file bmc_article.aux
- : \citation{Shi
- :               J-Y2018}
-I'm skipping whatever remains of this command
 The style file: bmc-mathphys.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -39,45 +27,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 37 entries,
+You've used 39 entries,
             7128 wiz_defined-function locations,
-            1346 strings with 17703 characters,
-and the built_in function-call counts, 429739 in all, are:
-= -- 67397
-> -- 1575
-< -- 852
-+ -- 32942
-- -- 436
-* -- 22060
-:= -- 79300
-add.period$ -- 40
-call.type$ -- 37
-change.case$ -- 439
-chr.to.int$ -- 1738
-cite$ -- 37
-duplicate$ -- 4197
-empty$ -- 14450
-format.name$ -- 1843
-if$ -- 103106
+            1358 strings with 18238 characters,
+and the built_in function-call counts, 442895 in all, are:
+= -- 68894
+> -- 1660
+< -- 896
++ -- 33174
+- -- 458
+* -- 23258
+:= -- 81960
+add.period$ -- 42
+call.type$ -- 39
+change.case$ -- 460
+chr.to.int$ -- 1827
+cite$ -- 39
+duplicate$ -- 4430
+empty$ -- 15328
+format.name$ -- 1948
+if$ -- 105932
 int.to.chr$ -- 1
-int.to.str$ -- 88
-missing$ -- 1412
-newline$ -- 1270
-num.names$ -- 185
-pop$ -- 1673
+int.to.str$ -- 92
+missing$ -- 1490
+newline$ -- 1340
+num.names$ -- 195
+pop$ -- 1765
 preamble$ -- 1
-purify$ -- 160
-quote$ -- 74
-skip$ -- 37554
+purify$ -- 168
+quote$ -- 78
+skip$ -- 38181
 stack$ -- 0
-substring$ -- 49844
-swap$ -- 1453
-text.length$ -- 564
+substring$ -- 51820
+swap$ -- 1536
+text.length$ -- 592
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1621
+type$ -- 1711
 warning$ -- 0
-while$ -- 1513
+while$ -- 1598
 width$ -- 0
-write$ -- 1877
-(There were 3 error messages)
+write$ -- 1982
+(There was 1 warning)

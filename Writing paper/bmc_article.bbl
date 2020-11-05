@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{37}
+\begin{thebibliography}{39}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -656,6 +656,41 @@ pp. \bfpage{265}--\blpage{283}
 Keras.
 \url{https://github.com/fchollet/keras}
 \end{botherref}
+\endbibitem
+
+%%% 38
+\bibitem{shi2019detecting}
+\begin{barticle}
+\bauthor{\bsnm{Shi}, \binits{J.-Y.}},
+\bauthor{\bsnm{Mao}, \binits{K.-T.}},
+\bauthor{\bsnm{Yu}, \binits{H.}},
+\bauthor{\bsnm{Yiu}, \binits{S.-M.}}:
+\batitle{Detecting drug communities and predicting comprehensive drug--drug
+  interactions via balance regularized semi-nonnegative matrix factorization}.
+\bjtitle{Journal of cheminformatics}
+\bvolume{11}(\bissue{1}),
+\bfpage{1}--\blpage{16}
+(\byear{2019})
+\end{barticle}
+\endbibitem
+
+%%% 39
+\bibitem{shi2018tmfuf}
+\begin{barticle}
+\bauthor{\bsnm{Shi}, \binits{J.-Y.}},
+\bauthor{\bsnm{Huang}, \binits{H.}},
+\bauthor{\bsnm{Li}, \binits{J.-X.}},
+\bauthor{\bsnm{Lei}, \binits{P.}},
+\bauthor{\bsnm{Zhang}, \binits{Y.-N.}},
+\bauthor{\bsnm{Dong}, \binits{K.}},
+\bauthor{\bsnm{Yiu}, \binits{S.-M.}}:
+\batitle{Tmfuf: a triple matrix factorization-based unified framework for
+  predicting comprehensive drug-drug interactions of new drugs}.
+\bjtitle{BMC bioinformatics}
+\bvolume{19}(\bissue{14}),
+\bfpage{27}--\blpage{37}
+(\byear{2018})
+\end{barticle}
 \endbibitem
 
 \end{thebibliography}
@@ -1333,6 +1368,46 @@ Keras.
   <publisher>GitHub</publisher>
   <pubdate>2015</pubdate>
   <url>https://github.com/fchollet/keras</url>
+</bibl>
+
+<bibl id="B38">
+  <title><p>Detecting drug communities and predicting comprehensive drug--drug
+  interactions via balance regularized semi-nonnegative matrix
+  factorization</p></title>
+  <aug>
+    <au><snm>Shi</snm><fnm>JY</fnm></au>
+    <au><snm>Mao</snm><fnm>KT</fnm></au>
+    <au><snm>Yu</snm><fnm>H</fnm></au>
+    <au><snm>Yiu</snm><fnm>SM</fnm></au>
+  </aug>
+  <source>Journal of cheminformatics</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2019</pubdate>
+  <volume>11</volume>
+  <issue>1</issue>
+  <fpage>1</fpage>
+  <lpage>-16</lpage>
+</bibl>
+
+<bibl id="B39">
+  <title><p>TMFUF: a triple matrix factorization-based unified framework for
+  predicting comprehensive drug-drug interactions of new drugs</p></title>
+  <aug>
+    <au><snm>Shi</snm><fnm>JY</fnm></au>
+    <au><snm>Huang</snm><fnm>H</fnm></au>
+    <au><snm>Li</snm><fnm>JX</fnm></au>
+    <au><snm>Lei</snm><fnm>P</fnm></au>
+    <au><snm>Zhang</snm><fnm>YN</fnm></au>
+    <au><snm>Dong</snm><fnm>K</fnm></au>
+    <au><snm>Yiu</snm><fnm>SM</fnm></au>
+  </aug>
+  <source>BMC bioinformatics</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2018</pubdate>
+  <volume>19</volume>
+  <issue>14</issue>
+  <fpage>27</fpage>
+  <lpage>-37</lpage>
 </bibl>
 
 </refgrp>
