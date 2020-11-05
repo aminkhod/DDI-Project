@@ -2,7 +2,6 @@
 %%                                      %
 %  bmc_article.tex            ver: 1.06 %
 %                                       %
-
 %%IMPORTANT: do not delete the first line of this template
 %%It must be present to enable the BMC Submission system to
 %%recognise this template!!
@@ -290,6 +289,10 @@ These methods use different drug features to predict DDIs, such as chemical stru
 , side effects, and off-label side effects
 \cite{zhang2015label, shi2017predicting}.
 
+A Dependency-based Convolutional Neural Network (DCNN) has proposed for drug-drug interaction extraction at paper of \cite{liu2016dependency}.
+DCNN is a text-mining approach which predicts DDIs based on unstructured biomedical literature and the existing knowledge bases. It applies convolution layers on word sequences as well as dependency parsing trees of candidate DDIs for adjacent words.
+DeepDDI has proposed by \cite{ryu2018deep}, which is a combination of the structural similarity profile generation pipeline and Deep Neural Network (DNN). DeepDDI predicts DDIs from chemical structures and names of drugs in pairs. It has various implications for adverse drug events such as prediction of potential causal mechanism and using them for output sentences.
+
 Most of these existing machine learning approaches are designed to predict the typical two-class problem, which only indicates how likely a pair of drugs is a DDI. However, two interacting drugs may change their own pharmacological behaviors or effects (e.g., increasing or decreasing serum concentration) in vivo. For example, the serum concentration of Flunisolide (DrugBank Id: DB00180) decreases when it is taken with Mitotane (DrugBank Id: DB00648), whereas its serum concentration increases when taken with Roxithromycin (DrugBank Id: DB00778). For short, the first case is degressive DDI, and the second case is enhancive DDI, which contains drug changes in terms of pharmacological effects. It is more important to know exactly whether the interaction increases or decreases the drug's pharmaceutical behaviors, especially when making optimal patient care, establishing drug dosage, designing prophylactic drug therapy, or finding the resistance to therapy with a drug
 \cite{koch1981serum}.
 
@@ -331,7 +334,7 @@ It was observed that the values of the feature matrices are discrete, and also t
 Similarity Network Fusion (SNF)\cite{wang2014similarity} is a new computational method for data integration.  Briefly, SNF combines many different types of features (such as chemical structure and off-label side effect, and more - clinical data, questionnaires, image data, etc.) for a given set of samples (e.g., drugs). SNF first constructs a sample similarity network for each of the data types and then iteratively integrates these networks using a novel network fusion method. Working in the sample network space allows SNF to avoid dealing with different scales, collection bias, and noise in different data types. Integrating data in a non-linear fashion allows SNF to take advantage of the common and complementary information in different data types. Figure \ref{SNF} is a good visualization of SNF processes  that has been used in our method structure.
 
 \begin{figure}[!h]
-	%\centering
+	\centering
 	\includegraphics[scale=.53]{SNF.png}
 	\caption{SNF processes \cite{wang2014similarity}:
 	A detailed example of SNF steps. (a) An example representation of chemical structure feature and off-label side effect feature for the same set of drugs. (b) Drug-drug similarity matrices for each feature type. (c) Drug-drug similarity networks, equivalent to the drug-drug data. Nodes represent drugs, and edges represent drug pairwise similarities. (d) Network fusion by SNF iteratively updates each of the networks with information from the other networks, making them more similar with each step. (e) The iterative network fusion results in convergence to the final fused network. Edge color indicates which data type has contributed to the given similarity. }
@@ -395,9 +398,9 @@ shows the number of learnable weights for each layer. Also, the total number of 
 The following settings are used in the construction of convolution neural network:
 
 1) We used Tensorflow
-\cite{TENSORFLOW114}
+\cite{abadi2016tensorflow}
 (version 1.14.0) and KERAS
-\cite{KERAS2020}
+\cite{chollet2015keras}
 (version 2.2.5)   packages to implement the neural network.
 
 2) ADAM optimization function was used.
@@ -727,7 +730,7 @@ for the algorithm presented in this research, high and low intervals are reporte
 \hline
 SNF-CNN	& 0.971 & 0.912\\
 \hline
-BRSNM\cite{Shi J2019}  & 0.645 & 0.346\\
+BRSNMF\cite{Shi J2019}  & 0.645 & 0.346\\
 \hline
 Semi-NMF \cite{Yu H2018} & 0.796 & 0.579\\
 \hline
