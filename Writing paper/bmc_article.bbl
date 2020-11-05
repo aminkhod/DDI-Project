@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{28}
+\begin{thebibliography}{33}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -386,71 +386,38 @@ pp. \bfpage{108}--\blpage{117}
 \endbibitem
 
 %%% 21
-\bibitem{koch1981serum}
-\begin{barticle}
-\bauthor{\bsnm{Koch-Weser}, \binits{J.}}:
-\batitle{Serum drug concentrations in clinical perspective.}
-\bjtitle{Therapeutic drug monitoring}
-\bvolume{3}(\bissue{1}),
-\bfpage{3}--\blpage{16}
-(\byear{1981})
-\end{barticle}
-\endbibitem
-
-%%% 22
-\bibitem{yu2018predicting}
-\begin{barticle}
-\bauthor{\bsnm{Yu}, \binits{H.}},
-\bauthor{\bsnm{Mao}, \binits{K.-T.}},
-\bauthor{\bsnm{Shi}, \binits{J.-Y.}},
-\bauthor{\bsnm{Huang}, \binits{H.}},
-\bauthor{\bsnm{Chen}, \binits{Z.}},
-\bauthor{\bsnm{Dong}, \binits{K.}},
-\bauthor{\bsnm{Yiu}, \binits{S.-M.}}:
-\batitle{Predicting and understanding comprehensive drug-drug interactions via
-  semi-nonnegative matrix factorization}.
-\bjtitle{BMC systems biology}
-\bvolume{12}(\bissue{1}),
-\bfpage{14}
-(\byear{2018})
-\end{barticle}
-\endbibitem
-
-%%% 23
-\bibitem{zhang2016drug}
+\bibitem{liu2016dependency}
 \begin{bchapter}
-\bauthor{\bsnm{Zhang}, \binits{W.}},
-\bauthor{\bsnm{Chen}, \binits{Y.}},
-\bauthor{\bsnm{Tu}, \binits{S.}},
-\bauthor{\bsnm{Liu}, \binits{F.}},
-\bauthor{\bsnm{Qu}, \binits{Q.}}:
-\bctitle{Drug side effect prediction through linear neighborhoods and multiple
-  data source integration}.
+\bauthor{\bsnm{Liu}, \binits{S.}},
+\bauthor{\bsnm{Chen}, \binits{K.}},
+\bauthor{\bsnm{Chen}, \binits{Q.}},
+\bauthor{\bsnm{Tang}, \binits{B.}}:
+\bctitle{Dependency-based convolutional neural network for drug-drug
+  interaction extraction}.
 In: \bbtitle{2016 IEEE International Conference on Bioinformatics and
   Biomedicine (BIBM)},
-pp. \bfpage{427}--\blpage{434}
+pp. \bfpage{1074}--\blpage{1080}
 (\byear{2016}).
 \bcomment{IEEE}
 \end{bchapter}
 \endbibitem
 
-%%% 24
-\bibitem{zhang2018manifold}
+%%% 22
+\bibitem{ryu2018deep}
 \begin{barticle}
-\bauthor{\bsnm{Zhang}, \binits{W.}},
-\bauthor{\bsnm{Chen}, \binits{Y.}},
-\bauthor{\bsnm{Li}, \binits{D.}},
-\bauthor{\bsnm{Yue}, \binits{X.}}:
-\batitle{Manifold regularized matrix factorization for drug-drug interaction
-  prediction}.
-\bjtitle{Journal of biomedical informatics}
-\bvolume{88},
-\bfpage{90}--\blpage{97}
+\bauthor{\bsnm{Ryu}, \binits{J.Y.}},
+\bauthor{\bsnm{Kim}, \binits{H.U.}},
+\bauthor{\bsnm{Lee}, \binits{S.Y.}}:
+\batitle{Deep learning improves prediction of drug--drug and drug--food
+  interactions}.
+\bjtitle{Proceedings of the National Academy of Sciences}
+\bvolume{115}(\bissue{18}),
+\bfpage{4304}--\blpage{4311}
 (\byear{2018})
 \end{barticle}
 \endbibitem
 
-%%% 25
+%%% 23
 \bibitem{wang2014similarity}
 \begin{barticle}
 \bauthor{\bsnm{Wang}, \binits{B.}},
@@ -470,7 +437,120 @@ pp. \bfpage{427}--\blpage{434}
 \end{barticle}
 \endbibitem
 
+%%% 24
+\bibitem{olayan2018ddr}
+\begin{barticle}
+\bauthor{\bsnm{Olayan}, \binits{R.S.}},
+\bauthor{\bsnm{Ashoor}, \binits{H.}},
+\bauthor{\bsnm{Bajic}, \binits{V.B.}}:
+\batitle{Ddr: efficient computational method to predict drug--target
+  interactions using graph mining and machine learning approaches}.
+\bjtitle{Bioinformatics}
+\bvolume{34}(\bissue{7}),
+\bfpage{1164}--\blpage{1173}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 25
+\bibitem{tian2017constructing}
+\begin{barticle}
+\bauthor{\bsnm{Tian}, \binits{Z.}},
+\bauthor{\bsnm{Guo}, \binits{M.}},
+\bauthor{\bsnm{Wang}, \binits{C.}},
+\bauthor{\bsnm{Xing}, \binits{L.}},
+\bauthor{\bsnm{Wang}, \binits{L.}},
+\bauthor{\bsnm{Zhang}, \binits{Y.}}:
+\batitle{Constructing an integrated gene similarity network for the
+  identification of disease genes}.
+\bjtitle{Journal of biomedical semantics}
+\bvolume{8}(\bissue{1}),
+\bfpage{32}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
 %%% 26
+\bibitem{kim2016understanding}
+\begin{barticle}
+\bauthor{\bsnm{Kim}, \binits{Y.-A.}},
+\bauthor{\bsnm{Cho}, \binits{D.-Y.}},
+\bauthor{\bsnm{Przytycka}, \binits{T.M.}}:
+\batitle{Understanding genotype-phenotype effects in cancer via network
+  approaches}.
+\bjtitle{PLoS computational biology}
+\bvolume{12}(\bissue{3}),
+\bfpage{1004747}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 27
+\bibitem{koch1981serum}
+\begin{barticle}
+\bauthor{\bsnm{Koch-Weser}, \binits{J.}}:
+\batitle{Serum drug concentrations in clinical perspective.}
+\bjtitle{Therapeutic drug monitoring}
+\bvolume{3}(\bissue{1}),
+\bfpage{3}--\blpage{16}
+(\byear{1981})
+\end{barticle}
+\endbibitem
+
+%%% 28
+\bibitem{yu2018predicting}
+\begin{barticle}
+\bauthor{\bsnm{Yu}, \binits{H.}},
+\bauthor{\bsnm{Mao}, \binits{K.-T.}},
+\bauthor{\bsnm{Shi}, \binits{J.-Y.}},
+\bauthor{\bsnm{Huang}, \binits{H.}},
+\bauthor{\bsnm{Chen}, \binits{Z.}},
+\bauthor{\bsnm{Dong}, \binits{K.}},
+\bauthor{\bsnm{Yiu}, \binits{S.-M.}}:
+\batitle{Predicting and understanding comprehensive drug-drug interactions via
+  semi-nonnegative matrix factorization}.
+\bjtitle{BMC systems biology}
+\bvolume{12}(\bissue{1}),
+\bfpage{14}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem{zhang2016drug}
+\begin{bchapter}
+\bauthor{\bsnm{Zhang}, \binits{W.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}},
+\bauthor{\bsnm{Tu}, \binits{S.}},
+\bauthor{\bsnm{Liu}, \binits{F.}},
+\bauthor{\bsnm{Qu}, \binits{Q.}}:
+\bctitle{Drug side effect prediction through linear neighborhoods and multiple
+  data source integration}.
+In: \bbtitle{2016 IEEE International Conference on Bioinformatics and
+  Biomedicine (BIBM)},
+pp. \bfpage{427}--\blpage{434}
+(\byear{2016}).
+\bcomment{IEEE}
+\end{bchapter}
+\endbibitem
+
+%%% 30
+\bibitem{zhang2018manifold}
+\begin{barticle}
+\bauthor{\bsnm{Zhang}, \binits{W.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}},
+\bauthor{\bsnm{Li}, \binits{D.}},
+\bauthor{\bsnm{Yue}, \binits{X.}}:
+\batitle{Manifold regularized matrix factorization for drug-drug interaction
+  prediction}.
+\bjtitle{Journal of biomedical informatics}
+\bvolume{88},
+\bfpage{90}--\blpage{97}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 31
 \bibitem{SNFPy2020}
 \begin{botherref}
 \oauthor{\bsnm{{Ross Markello}}}:
@@ -481,7 +561,7 @@ Accessed Accessed 20 October 2020
 \end{botherref}
 \endbibitem
 
-%%% 27
+%%% 32
 \bibitem{abadi2016tensorflow}
 \begin{bchapter}
 \bauthor{\bsnm{Abadi}, \binits{M.}},
@@ -502,7 +582,7 @@ pp. \bfpage{265}--\blpage{283}
 \end{bchapter}
 \endbibitem
 
-%%% 28
+%%% 33
 \bibitem{chollet2015keras}
 \begin{botherref}
 \oauthor{\bsnm{Chollet}, \binits{F.}}, et al.:
@@ -899,73 +979,39 @@ Keras.
 </bibl>
 
 <bibl id="B21">
-  <title><p>Serum drug concentrations in clinical perspective.</p></title>
+  <title><p>Dependency-based convolutional neural network for drug-drug
+  interaction extraction</p></title>
   <aug>
-    <au><snm>Koch Weser</snm><fnm>J</fnm></au>
-  </aug>
-  <source>Therapeutic drug monitoring</source>
-  <pubdate>1981</pubdate>
-  <volume>3</volume>
-  <issue>1</issue>
-  <fpage>3</fpage>
-  <lpage>-16</lpage>
-</bibl>
-
-<bibl id="B22">
-  <title><p>Predicting and understanding comprehensive drug-drug interactions
-  via semi-nonnegative matrix factorization</p></title>
-  <aug>
-    <au><snm>Yu</snm><fnm>H</fnm></au>
-    <au><snm>Mao</snm><fnm>KT</fnm></au>
-    <au><snm>Shi</snm><fnm>JY</fnm></au>
-    <au><snm>Huang</snm><fnm>H</fnm></au>
-    <au><snm>Chen</snm><fnm>Z</fnm></au>
-    <au><snm>Dong</snm><fnm>K</fnm></au>
-    <au><snm>Yiu</snm><fnm>SM</fnm></au>
-  </aug>
-  <source>BMC systems biology</source>
-  <publisher>Springer</publisher>
-  <pubdate>2018</pubdate>
-  <volume>12</volume>
-  <issue>1</issue>
-  <fpage>14</fpage>
-</bibl>
-
-<bibl id="B23">
-  <title><p>Drug side effect prediction through linear neighborhoods and
-  multiple data source integration</p></title>
-  <aug>
-    <au><snm>Zhang</snm><fnm>W</fnm></au>
-    <au><snm>Chen</snm><fnm>Y</fnm></au>
-    <au><snm>Tu</snm><fnm>S</fnm></au>
-    <au><snm>Liu</snm><fnm>F</fnm></au>
-    <au><snm>Qu</snm><fnm>Q</fnm></au>
+    <au><snm>Liu</snm><fnm>S</fnm></au>
+    <au><snm>Chen</snm><fnm>K</fnm></au>
+    <au><snm>Chen</snm><fnm>Q</fnm></au>
+    <au><snm>Tang</snm><fnm>B</fnm></au>
   </aug>
   <source>2016 IEEE international conference on bioinformatics and biomedicine
   (BIBM)</source>
   <pubdate>2016</pubdate>
-  <fpage>427</fpage>
-  <lpage>-434</lpage>
+  <fpage>1074</fpage>
+  <lpage>-1080</lpage>
 </bibl>
 
-<bibl id="B24">
-  <title><p>Manifold regularized matrix factorization for drug-drug interaction
-  prediction</p></title>
+<bibl id="B22">
+  <title><p>Deep learning improves prediction of drug--drug and drug--food
+  interactions</p></title>
   <aug>
-    <au><snm>Zhang</snm><fnm>W</fnm></au>
-    <au><snm>Chen</snm><fnm>Y</fnm></au>
-    <au><snm>Li</snm><fnm>D</fnm></au>
-    <au><snm>Yue</snm><fnm>X</fnm></au>
+    <au><snm>Ryu</snm><fnm>JY</fnm></au>
+    <au><snm>Kim</snm><fnm>HU</fnm></au>
+    <au><snm>Lee</snm><fnm>SY</fnm></au>
   </aug>
-  <source>Journal of biomedical informatics</source>
-  <publisher>Elsevier</publisher>
+  <source>Proceedings of the National Academy of Sciences</source>
+  <publisher>National Acad Sciences</publisher>
   <pubdate>2018</pubdate>
-  <volume>88</volume>
-  <fpage>90</fpage>
-  <lpage>-97</lpage>
+  <volume>115</volume>
+  <issue>18</issue>
+  <fpage>E4304</fpage>
+  <lpage>-E4311</lpage>
 </bibl>
 
-<bibl id="B25">
+<bibl id="B23">
   <title><p>Similarity network fusion for aggregating data types on a genomic
   scale</p></title>
   <aug>
@@ -986,7 +1032,126 @@ Keras.
   <fpage>333</fpage>
 </bibl>
 
+<bibl id="B24">
+  <title><p>DDR: efficient computational method to predict drug--target
+  interactions using graph mining and machine learning approaches</p></title>
+  <aug>
+    <au><snm>Olayan</snm><fnm>RS</fnm></au>
+    <au><snm>Ashoor</snm><fnm>H</fnm></au>
+    <au><snm>Bajic</snm><fnm>VB</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2018</pubdate>
+  <volume>34</volume>
+  <issue>7</issue>
+  <fpage>1164</fpage>
+  <lpage>-1173</lpage>
+</bibl>
+
+<bibl id="B25">
+  <title><p>Constructing an integrated gene similarity network for the
+  identification of disease genes</p></title>
+  <aug>
+    <au><snm>Tian</snm><fnm>Z</fnm></au>
+    <au><snm>Guo</snm><fnm>M</fnm></au>
+    <au><snm>Wang</snm><fnm>C</fnm></au>
+    <au><snm>Xing</snm><fnm>L</fnm></au>
+    <au><snm>Wang</snm><fnm>L</fnm></au>
+    <au><snm>Zhang</snm><fnm>Y</fnm></au>
+  </aug>
+  <source>Journal of biomedical semantics</source>
+  <publisher>Springer</publisher>
+  <pubdate>2017</pubdate>
+  <volume>8</volume>
+  <issue>1</issue>
+  <fpage>32</fpage>
+</bibl>
+
 <bibl id="B26">
+  <title><p>Understanding genotype-phenotype effects in cancer via network
+  approaches</p></title>
+  <aug>
+    <au><snm>Kim</snm><fnm>YA</fnm></au>
+    <au><snm>Cho</snm><fnm>DY</fnm></au>
+    <au><snm>Przytycka</snm><fnm>TM</fnm></au>
+  </aug>
+  <source>PLoS computational biology</source>
+  <publisher>Public Library of Science San Francisco, CA USA</publisher>
+  <pubdate>2016</pubdate>
+  <volume>12</volume>
+  <issue>3</issue>
+  <fpage>e1004747</fpage>
+</bibl>
+
+<bibl id="B27">
+  <title><p>Serum drug concentrations in clinical perspective.</p></title>
+  <aug>
+    <au><snm>Koch Weser</snm><fnm>J</fnm></au>
+  </aug>
+  <source>Therapeutic drug monitoring</source>
+  <pubdate>1981</pubdate>
+  <volume>3</volume>
+  <issue>1</issue>
+  <fpage>3</fpage>
+  <lpage>-16</lpage>
+</bibl>
+
+<bibl id="B28">
+  <title><p>Predicting and understanding comprehensive drug-drug interactions
+  via semi-nonnegative matrix factorization</p></title>
+  <aug>
+    <au><snm>Yu</snm><fnm>H</fnm></au>
+    <au><snm>Mao</snm><fnm>KT</fnm></au>
+    <au><snm>Shi</snm><fnm>JY</fnm></au>
+    <au><snm>Huang</snm><fnm>H</fnm></au>
+    <au><snm>Chen</snm><fnm>Z</fnm></au>
+    <au><snm>Dong</snm><fnm>K</fnm></au>
+    <au><snm>Yiu</snm><fnm>SM</fnm></au>
+  </aug>
+  <source>BMC systems biology</source>
+  <publisher>Springer</publisher>
+  <pubdate>2018</pubdate>
+  <volume>12</volume>
+  <issue>1</issue>
+  <fpage>14</fpage>
+</bibl>
+
+<bibl id="B29">
+  <title><p>Drug side effect prediction through linear neighborhoods and
+  multiple data source integration</p></title>
+  <aug>
+    <au><snm>Zhang</snm><fnm>W</fnm></au>
+    <au><snm>Chen</snm><fnm>Y</fnm></au>
+    <au><snm>Tu</snm><fnm>S</fnm></au>
+    <au><snm>Liu</snm><fnm>F</fnm></au>
+    <au><snm>Qu</snm><fnm>Q</fnm></au>
+  </aug>
+  <source>2016 IEEE international conference on bioinformatics and biomedicine
+  (BIBM)</source>
+  <pubdate>2016</pubdate>
+  <fpage>427</fpage>
+  <lpage>-434</lpage>
+</bibl>
+
+<bibl id="B30">
+  <title><p>Manifold regularized matrix factorization for drug-drug interaction
+  prediction</p></title>
+  <aug>
+    <au><snm>Zhang</snm><fnm>W</fnm></au>
+    <au><snm>Chen</snm><fnm>Y</fnm></au>
+    <au><snm>Li</snm><fnm>D</fnm></au>
+    <au><snm>Yue</snm><fnm>X</fnm></au>
+  </aug>
+  <source>Journal of biomedical informatics</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2018</pubdate>
+  <volume>88</volume>
+  <fpage>90</fpage>
+  <lpage>-97</lpage>
+</bibl>
+
+<bibl id="B31">
   <title><p>snfpy 0.2.2</p></title>
   <aug>
     <au><cnm>{Ross Markello}</cnm></au>
@@ -995,7 +1160,7 @@ Keras.
   <url>https://pypi.org/project/snfpy/</url>
 </bibl>
 
-<bibl id="B27">
+<bibl id="B32">
   <title><p>Tensorflow: A system for large-scale machine learning</p></title>
   <aug>
     <au><snm>Abadi</snm><fnm>M</fnm></au>
@@ -1017,7 +1182,7 @@ Keras.
   <lpage>-283</lpage>
 </bibl>
 
-<bibl id="B28">
+<bibl id="B33">
   <title><p>Keras</p></title>
   <aug>
     <au><snm>Chollet</snm><fnm>F</fnm></au>
