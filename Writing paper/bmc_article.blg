@@ -1,15 +1,15 @@
 This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: bmc_article.aux
-White space in argument---line 90 of file bmc_article.aux
+White space in argument---line 94 of file bmc_article.aux
  : \citation{Shi
  :               J2019}
 I'm skipping whatever remains of this command
-White space in argument---line 91 of file bmc_article.aux
+White space in argument---line 95 of file bmc_article.aux
  : \citation{Yu
  :              H2018}
 I'm skipping whatever remains of this command
-White space in argument---line 92 of file bmc_article.aux
+White space in argument---line 96 of file bmc_article.aux
  : \citation{Shi
  :               J-Y2018}
 I'm skipping whatever remains of this command
@@ -33,51 +33,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bmc_article.bib.bib
 Warning--entry type for "chollet2015keras" isn't style-file defined
---line 347 of file bmc_article.bib.bib
+--line 390 of file bmc_article.bib.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 33 entries,
+You've used 37 entries,
             7128 wiz_defined-function locations,
-            1325 strings with 16807 characters,
-and the built_in function-call counts, 405609 in all, are:
-= -- 64598
-> -- 1416
-< -- 772
-+ -- 32479
-- -- 392
-* -- 19909
-:= -- 74403
-add.period$ -- 36
-call.type$ -- 33
-change.case$ -- 397
-chr.to.int$ -- 1587
-cite$ -- 33
-duplicate$ -- 3751
-empty$ -- 12895
-format.name$ -- 1639
-if$ -- 97926
+            1346 strings with 17703 characters,
+and the built_in function-call counts, 429739 in all, are:
+= -- 67397
+> -- 1575
+< -- 852
++ -- 32942
+- -- 436
+* -- 22060
+:= -- 79300
+add.period$ -- 40
+call.type$ -- 37
+change.case$ -- 439
+chr.to.int$ -- 1738
+cite$ -- 37
+duplicate$ -- 4197
+empty$ -- 14450
+format.name$ -- 1843
+if$ -- 103106
 int.to.chr$ -- 1
-int.to.str$ -- 79
-missing$ -- 1258
-newline$ -- 1136
-num.names$ -- 165
-pop$ -- 1503
+int.to.str$ -- 88
+missing$ -- 1412
+newline$ -- 1270
+num.names$ -- 185
+pop$ -- 1673
 preamble$ -- 1
-purify$ -- 143
-quote$ -- 66
-skip$ -- 36307
+purify$ -- 160
+quote$ -- 74
+skip$ -- 37554
 stack$ -- 0
-substring$ -- 46401
-swap$ -- 1305
-text.length$ -- 508
+substring$ -- 49844
+swap$ -- 1453
+text.length$ -- 564
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1441
+type$ -- 1621
 warning$ -- 0
-while$ -- 1354
+while$ -- 1513
 width$ -- 0
-write$ -- 1675
+write$ -- 1877
 (There were 3 error messages)

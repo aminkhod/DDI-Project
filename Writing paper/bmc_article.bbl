@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{33}
+\begin{thebibliography}{37}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -486,6 +486,73 @@ pp. \bfpage{1074}--\blpage{1080}
 \endbibitem
 
 %%% 27
+\bibitem{wang2016predicting}
+\begin{barticle}
+\bauthor{\bsnm{Wang}, \binits{Y.}},
+\bauthor{\bsnm{Liu}, \binits{T.}},
+\bauthor{\bsnm{Xu}, \binits{D.}},
+\bauthor{\bsnm{Shi}, \binits{H.}},
+\bauthor{\bsnm{Zhang}, \binits{C.}},
+\bauthor{\bsnm{Mo}, \binits{Y.-Y.}},
+\bauthor{\bsnm{Wang}, \binits{Z.}}:
+\batitle{Predicting dna methylation state of cpg dinucleotide using genome
+  topological features and deep networks}.
+\bjtitle{Scientific reports}
+\bvolume{6},
+\bfpage{19598}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 28
+\bibitem{huang2009effect}
+\begin{barticle}
+\bauthor{\bsnm{Huang}, \binits{Q.-R.}},
+\bauthor{\bsnm{Hu}, \binits{F.}},
+\bauthor{\bsnm{Huang}, \binits{S.}},
+\bauthor{\bsnm{Li}, \binits{H.-X.}},
+\bauthor{\bsnm{Yuan}, \binits{Y.-H.}},
+\bauthor{\bsnm{Pan}, \binits{G.-X.}},
+\bauthor{\bsnm{Zhang}, \binits{W.-J.}}, \betal:
+\batitle{Effect of long-term fertilization on organic carbon and nitrogen in a
+  subtropical paddy soil}.
+\bjtitle{Pedosphere}
+\bvolume{19}(\bissue{6}),
+\bfpage{727}--\blpage{734}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem{fu2017deep}
+\begin{barticle}
+\bauthor{\bsnm{Fu}, \binits{L.}},
+\bauthor{\bsnm{Peng}, \binits{Q.}}:
+\batitle{A deep ensemble model to predict mirna-disease association}.
+\bjtitle{Scientific reports}
+\bvolume{7}(\bissue{1}),
+\bfpage{1}--\blpage{13}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 30
+\bibitem{pan2016ipminer}
+\begin{barticle}
+\bauthor{\bsnm{Pan}, \binits{X.}},
+\bauthor{\bsnm{Fan}, \binits{Y.-X.}},
+\bauthor{\bsnm{Yan}, \binits{J.}},
+\bauthor{\bsnm{Shen}, \binits{H.-B.}}:
+\batitle{Ipminer: hidden ncrna-protein interaction sequential pattern mining
+  with stacked autoencoder for accurate computational prediction}.
+\bjtitle{BMC genomics}
+\bvolume{17}(\bissue{1}),
+\bfpage{582}
+(\byear{2016})
+\end{barticle}
+\endbibitem
+
+%%% 31
 \bibitem{koch1981serum}
 \begin{barticle}
 \bauthor{\bsnm{Koch-Weser}, \binits{J.}}:
@@ -497,7 +564,7 @@ pp. \bfpage{1074}--\blpage{1080}
 \end{barticle}
 \endbibitem
 
-%%% 28
+%%% 32
 \bibitem{yu2018predicting}
 \begin{barticle}
 \bauthor{\bsnm{Yu}, \binits{H.}},
@@ -516,7 +583,7 @@ pp. \bfpage{1074}--\blpage{1080}
 \end{barticle}
 \endbibitem
 
-%%% 29
+%%% 33
 \bibitem{zhang2016drug}
 \begin{bchapter}
 \bauthor{\bsnm{Zhang}, \binits{W.}},
@@ -534,7 +601,7 @@ pp. \bfpage{427}--\blpage{434}
 \end{bchapter}
 \endbibitem
 
-%%% 30
+%%% 34
 \bibitem{zhang2018manifold}
 \begin{barticle}
 \bauthor{\bsnm{Zhang}, \binits{W.}},
@@ -550,7 +617,7 @@ pp. \bfpage{427}--\blpage{434}
 \end{barticle}
 \endbibitem
 
-%%% 31
+%%% 35
 \bibitem{SNFPy2020}
 \begin{botherref}
 \oauthor{\bsnm{{Ross Markello}}}:
@@ -561,7 +628,7 @@ Accessed Accessed 20 October 2020
 \end{botherref}
 \endbibitem
 
-%%% 32
+%%% 36
 \bibitem{abadi2016tensorflow}
 \begin{bchapter}
 \bauthor{\bsnm{Abadi}, \binits{M.}},
@@ -582,7 +649,7 @@ pp. \bfpage{265}--\blpage{283}
 \end{bchapter}
 \endbibitem
 
-%%% 33
+%%% 37
 \bibitem{chollet2015keras}
 \begin{botherref}
 \oauthor{\bsnm{Chollet}, \binits{F.}}, et al.:
@@ -1085,6 +1152,81 @@ Keras.
 </bibl>
 
 <bibl id="B27">
+  <title><p>Predicting DNA methylation state of CpG dinucleotide using genome
+  topological features and deep networks</p></title>
+  <aug>
+    <au><snm>Wang</snm><fnm>Y</fnm></au>
+    <au><snm>Liu</snm><fnm>T</fnm></au>
+    <au><snm>Xu</snm><fnm>D</fnm></au>
+    <au><snm>Shi</snm><fnm>H</fnm></au>
+    <au><snm>Zhang</snm><fnm>C</fnm></au>
+    <au><snm>Mo</snm><fnm>YY</fnm></au>
+    <au><snm>Wang</snm><fnm>Z</fnm></au>
+  </aug>
+  <source>Scientific reports</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2016</pubdate>
+  <volume>6</volume>
+  <fpage>19598</fpage>
+</bibl>
+
+<bibl id="B28">
+  <title><p>Effect of long-term fertilization on organic carbon and nitrogen in
+  a subtropical paddy soil</p></title>
+  <aug>
+    <au><snm>Huang</snm><fnm>QR</fnm></au>
+    <au><snm>Hu</snm><fnm>F</fnm></au>
+    <au><snm>Huang</snm><fnm>S</fnm></au>
+    <au><snm>Li</snm><fnm>HX</fnm></au>
+    <au><snm>Yuan</snm><fnm>YH</fnm></au>
+    <au><snm>Pan</snm><fnm>GX</fnm></au>
+    <au><snm>Zhang</snm><fnm>WJ</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Pedosphere</source>
+  <publisher>Science Press, P. O. Box 821 Nanjing 210008 People's People's
+  Republic of China</publisher>
+  <pubdate>2009</pubdate>
+  <volume>19</volume>
+  <issue>6</issue>
+  <fpage>727</fpage>
+  <lpage>-734</lpage>
+</bibl>
+
+<bibl id="B29">
+  <title><p>A deep ensemble model to predict miRNA-disease
+  association</p></title>
+  <aug>
+    <au><snm>Fu</snm><fnm>L</fnm></au>
+    <au><snm>Peng</snm><fnm>Q</fnm></au>
+  </aug>
+  <source>Scientific reports</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2017</pubdate>
+  <volume>7</volume>
+  <issue>1</issue>
+  <fpage>1</fpage>
+  <lpage>-13</lpage>
+</bibl>
+
+<bibl id="B30">
+  <title><p>IPMiner: hidden ncRNA-protein interaction sequential pattern mining
+  with stacked autoencoder for accurate computational prediction</p></title>
+  <aug>
+    <au><snm>Pan</snm><fnm>X</fnm></au>
+    <au><snm>Fan</snm><fnm>YX</fnm></au>
+    <au><snm>Yan</snm><fnm>J</fnm></au>
+    <au><snm>Shen</snm><fnm>HB</fnm></au>
+  </aug>
+  <source>BMC genomics</source>
+  <publisher>Springer</publisher>
+  <pubdate>2016</pubdate>
+  <volume>17</volume>
+  <issue>1</issue>
+  <fpage>582</fpage>
+</bibl>
+
+<bibl id="B31">
   <title><p>Serum drug concentrations in clinical perspective.</p></title>
   <aug>
     <au><snm>Koch Weser</snm><fnm>J</fnm></au>
@@ -1097,7 +1239,7 @@ Keras.
   <lpage>-16</lpage>
 </bibl>
 
-<bibl id="B28">
+<bibl id="B32">
   <title><p>Predicting and understanding comprehensive drug-drug interactions
   via semi-nonnegative matrix factorization</p></title>
   <aug>
@@ -1117,7 +1259,7 @@ Keras.
   <fpage>14</fpage>
 </bibl>
 
-<bibl id="B29">
+<bibl id="B33">
   <title><p>Drug side effect prediction through linear neighborhoods and
   multiple data source integration</p></title>
   <aug>
@@ -1134,7 +1276,7 @@ Keras.
   <lpage>-434</lpage>
 </bibl>
 
-<bibl id="B30">
+<bibl id="B34">
   <title><p>Manifold regularized matrix factorization for drug-drug interaction
   prediction</p></title>
   <aug>
@@ -1151,7 +1293,7 @@ Keras.
   <lpage>-97</lpage>
 </bibl>
 
-<bibl id="B31">
+<bibl id="B35">
   <title><p>snfpy 0.2.2</p></title>
   <aug>
     <au><cnm>{Ross Markello}</cnm></au>
@@ -1160,7 +1302,7 @@ Keras.
   <url>https://pypi.org/project/snfpy/</url>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B36">
   <title><p>Tensorflow: A system for large-scale machine learning</p></title>
   <aug>
     <au><snm>Abadi</snm><fnm>M</fnm></au>
@@ -1182,7 +1324,7 @@ Keras.
   <lpage>-283</lpage>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B37">
   <title><p>Keras</p></title>
   <aug>
     <au><snm>Chollet</snm><fnm>F</fnm></au>

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  5 NOV 2020 21:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  5 NOV 2020 22:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -762,7 +762,7 @@ Overfull \hbox (1.0pt too wide) has occurred while \output is active
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2] [3] [4]
-<SNF.png, id=128, 663.47874pt x 241.90375pt>
+<SNF.png, id=136, 663.47874pt x 241.90375pt>
 File: SNF.png Graphic file (type png)
 <use SNF.png>
 Package pdftex.def Info: SNF.png  used on input line 340.
@@ -772,7 +772,7 @@ Overfull \hbox (3.14206pt too wide) in paragraph at lines 340--342
  [][] 
  []
 
-<MatrixheaderB.png, id=132, 636.3775pt x 104.39pt>
+<MatrixheaderB.png, id=140, 636.3775pt x 104.39pt>
 File: MatrixheaderB.png Graphic file (type png)
 <use MatrixheaderB.png>
 Package pdftex.def Info: MatrixheaderB.png  used on input line 364.
@@ -787,7 +787,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.370 
        <./SNF.png>]
-<ModelSelection/model.jpg, id=145, 462.72874pt x 962.59625pt>
+<ModelSelection/model.jpg, id=153, 462.72874pt x 962.59625pt>
 File: ModelSelection/model.jpg Graphic file (type jpg)
 <use ModelSelection/model.jpg>
 Package pdftex.def Info: ModelSelection/model.jpg  used on input line 384.
@@ -805,7 +805,7 @@ e identifier (name{figure.3}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.392 
        <./ModelSelection/model.jpg>]
-<ModelSelection/modelparameters.png, id=163, 424.58624pt x 285.31593pt>
+<ModelSelection/modelparameters.png, id=172, 424.58624pt x 285.31593pt>
 File: ModelSelection/modelparameters.png Graphic file (type png)
 <use ModelSelection/modelparameters.png>
 Package pdftex.def Info: ModelSelection/modelparameters.png  used on input line
@@ -824,7 +824,7 @@ $\OML/cmm/m/it/10 AUC \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 97\O
 ML/cmm/m/it/10 ; AUPR \OT1/cmr/m/n/10 =
  []
 
-<ModelSelection/densityDegEnh.png, id=177, 567.11874pt x 409.53pt>
+<ModelSelection/densityDegEnh.png, id=185, 567.11874pt x 409.53pt>
 File: ModelSelection/densityDegEnh.png Graphic file (type png)
 <use ModelSelection/densityDegEnh.png>
 Package pdftex.def Info: ModelSelection/densityDegEnh.png  used on input line 4
@@ -845,20 +845,20 @@ Package hyperref Warning: Suppressing empty link on input line 477.
 
 Package hyperref Warning: Suppressing empty link on input line 485.
 
-<lastTripleModel/modelTripleLayers.png, id=195, 462.72874pt x 962.59625pt>
+<lastTripleModel/modelTripleLayers.png, id=203, 462.72874pt x 962.59625pt>
 File: lastTripleModel/modelTripleLayers.png Graphic file (type png)
 <use lastTripleModel/modelTripleLayers.png>
 Package pdftex.def Info: lastTripleModel/modelTripleLayers.png  used on input l
 ine 499.
 (pdftex.def)             Requested size: 198.96948pt x 413.90833pt.
 [10]
-<ModelSelection/selectedModelAcc.png, id=206, 393.47pt x 279.0425pt>
+<ModelSelection/selectedModelAcc.png, id=214, 393.47pt x 279.0425pt>
 File: ModelSelection/selectedModelAcc.png Graphic file (type png)
 <use ModelSelection/selectedModelAcc.png>
 Package pdftex.def Info: ModelSelection/selectedModelAcc.png  used on input lin
 e 554.
 (pdftex.def)             Requested size: 173.27846pt x 122.88551pt.
-<ModelSelection/selectedModelLoss.png, id=207, 393.47pt x 279.0425pt>
+<ModelSelection/selectedModelLoss.png, id=215, 393.47pt x 279.0425pt>
 File: ModelSelection/selectedModelLoss.png Graphic file (type png)
 <use ModelSelection/selectedModelLoss.png>
 Package pdftex.def Info: ModelSelection/selectedModelLoss.png  used on input li
@@ -873,13 +873,13 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 553--557
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<lastTripleModel/modelTripleACC.png, id=226, 393.47pt x 279.0425pt>
+<lastTripleModel/modelTripleACC.png, id=234, 393.47pt x 279.0425pt>
 File: lastTripleModel/modelTripleACC.png Graphic file (type png)
 <use lastTripleModel/modelTripleACC.png>
 Package pdftex.def Info: lastTripleModel/modelTripleACC.png  used on input line
  569.
 (pdftex.def)             Requested size: 173.27846pt x 122.88551pt.
-<lastTripleModel/modelTripleLoss.png, id=227, 387.4475pt x 279.0425pt>
+<lastTripleModel/modelTripleLoss.png, id=235, 387.4475pt x 279.0425pt>
 File: lastTripleModel/modelTripleLoss.png Graphic file (type png)
 <use lastTripleModel/modelTripleLoss.png>
 Package pdftex.def Info: lastTripleModel/modelTripleLoss.png  used on input lin
@@ -987,10 +987,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 898.
  ) 
 Here is how much of TeX's memory you used:
- 7764 strings out of 492982
- 108336 string characters out of 6134896
- 218661 words of memory out of 5000000
- 11095 multiletter control sequences out of 15000+600000
+ 7772 strings out of 492982
+ 108478 string characters out of 6134896
+ 221664 words of memory out of 5000000
+ 11099 multiletter control sequences out of 15000+600000
  13093 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,10n,37p,1700b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1011,10 +1011,10 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on bmc_article.pdf (19 pages, 581942 bytes).
+Output written on bmc_article.pdf (19 pages, 582741 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 343 compressed objects within 4 object streams
- 124 named destinations out of 1000 (max. 500000)
+ 413 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 128 named destinations out of 1000 (max. 500000)
  59 words of extra memory for PDF output out of 10000 (max. 10000000)
 
