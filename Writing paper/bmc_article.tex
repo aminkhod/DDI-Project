@@ -328,14 +328,14 @@ Where $||.||_2$ is the Euclidean Norm and ${x_i . x_j}$ is inner product of two 
 It was observed that the values of the feature matrices are discrete, and also the dimensions of the matrices are large. The chemical structure and the off-label side effect have 881 and 9149 dimensions, respectively. On the other hand, machine learning algorithms do not work properly with high-dimensional data and discrete data. As a result, they do not get good results on these kinds of data. Therefore, by exploiting the cosine similarity, that was described above, drug similarity matrices based on chemical structure and off-label side effects are calculated. These matrices are $S_{str}$ and $S_{se}$, respectively. The dimensions of these two matrices are $m \times m$, where $s_{i,j}$ is an element of similarity matrices that shows similarity value between drugs of $di$ and $d_j$. Each element of $S$ has a continuous value between zero and one.
 
 \subsubsection*{Integration drug similarity matrices}
-Similarity Network Fusion (SNF)\cite{wang2014similarity} is a new computational method for data integration.  Briefly, SNF combines many different types of features (such as chemical structure and off-label side effect, and more - clinical data, questionnaires, image data, etc.) for a given set of samples (e.g., drugs). SNF first constructs a sample similarity network for each of the data types and then iteratively integrates these networks using a novel network fusion method. Working in the sample network space allows SNF to avoid dealing with different scales, collection bias, and noise in different data types. Integrating data in a non-linear fashion allows SNF to take advantage of the common and complementary information in different data types. Figure \ref{fs8} is a good visualization of SNF processes  that has been used in our method structure.
+Similarity Network Fusion (SNF)\cite{wang2014similarity} is a new computational method for data integration.  Briefly, SNF combines many different types of features (such as chemical structure and off-label side effect, and more - clinical data, questionnaires, image data, etc.) for a given set of samples (e.g., drugs). SNF first constructs a sample similarity network for each of the data types and then iteratively integrates these networks using a novel network fusion method. Working in the sample network space allows SNF to avoid dealing with different scales, collection bias, and noise in different data types. Integrating data in a non-linear fashion allows SNF to take advantage of the common and complementary information in different data types. Figure \ref{SNF} is a good visualization of SNF processes  that has been used in our method structure.
 
 \begin{figure}[!h]
 	%\centering
 	\includegraphics[scale=.53]{SNF.png}
 	\caption{SNF processes \cite{wang2014similarity}:
 	A detailed example of SNF steps. (a) An example representation of chemical structure feature and off-label side effect feature for the same set of drugs. (b) Drug-drug similarity matrices for each feature type. (c) Drug-drug similarity networks, equivalent to the drug-drug data. Nodes represent drugs, and edges represent drug pairwise similarities. (d) Network fusion by SNF iteratively updates each of the networks with information from the other networks, making them more similar with each step. (e) The iterative network fusion results in convergence to the final fused network. Edge color indicates which data type has contributed to the given similarity. }
-	\label{fs8}
+	\label{SNF}
 \end{figure}
 
 In this section, using the similarity network fusion method that has described above, similarity matrices of the chemical structure and the off-label side effect of drugs were integrated. The output of this integration is a new similarity matrix of $S_{snf}$ with dimensions of $568 \times 568$, and elements of $S_{snf}$ have a value between zero and one.To integrate the network similarity, the package of SNFPy is used, which is implemented in Python and is available at \cite{SNFPy2020}.
@@ -374,9 +374,23 @@ To solve this problem, it is necessary to provide a model that detects non-inter
 We separated rows of matrix B that contain positive and negative interactions. The new matrix contains 42,702 pairs of drugs with degressive and enhancive interactions.This data was used to train and find a more suitable model and found a stronger model among a large number of models with different network structures. The final model was a deep neural network that used convolutional and fully connected layers. The features of all interactions (+1 and -1) contain 1136 features. We first divide these features into 10 equal parts. Then, in a 10-cycle for, each period we consider 1 part as testing data and the other 9 parts as a set of training data.We select different models and train the model in the 10-Fold cross-validations with 90  of the data. Then we test the model on the remaining 10 percent of the data. In the separating process, pairs of drugs dual are considered. Since the $ (d_i, d_j) $ and $ (d_j, d_i) $ pairs of drugs are not biologically different from each other, in the separation of training and testing data, necessarily a pair of drugs and their duals are in the same group. This work prevents machine fraud.
 After testing the different structures, we modeled the final deep neural network as shown in Figure
 \ref{CNNModel}.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.4]{ModelSelection/model.jpg}
+	\caption{The arrangement of the neural network layers for detecting possible zeros}
+	\label{CNNModel}
+\end{figure}
+
 This network has three layers of two-dimensional convolution and following it, there are three fully connected convolution layers. The last layer has two outputs for predicting degressive or enhancive interaction. Convolution layers have 4-dimensions square filters with a Stride of 1. Each convolution layer also has a Relu activation function. The number of convolution filters is 128, 32, and 8, respectively. All connected layers have 64, 16, and 2 nodes, respectively, the first two layers have Relu activation function and the last layer with 2 nodes has a Sigmoid activation function. Convolution layers using a Flatten layer Connects to fully connected layers. The function of this layer is to transform a two-dimensional matrix into a one-dimensional vector. The output of this input layer of the first layer is fully connected. Also between fully connected 64 and 16 nodes, we used one Dropout layer with a wast value of 0.2. This wast value indicates that the network in this layer does not randomly consider 20 percent of the features. This layer is used to prevent over-fitting of the model and forces the model to extract and use more features with more confidence for prediction. and if some of them are removed, either the prediction power of the algorithm does not decrease or rely on a few specific features. Studies have shown that two-dimensional convolution layers work better than their one-dimensional counterparts because in this case, the filters can detect more drug similarities, and it is possible to extract more powerful Features. Therefore, the 1136-dimension  feature vectors are transformed into matrices with dimensions of $ 71 \ $ 16 times. Figure
 \ref{paramNumber1} 
 shows the number of learnable weights for each layer. Also, the total number of weights is calculated, which indicates the general complexity of the model.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.65]{ModelSelection/modelparameters.png}
+	\caption{Learnable parameters of two-class Neural Networks}
+	\label{paramNumber1}
+\end{figure}
 
 The following settings are used in the construction of convolution neural network:
 
@@ -412,7 +426,7 @@ it is clear that values +1 and -1 are well separated, and probability distributi
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.62]{ModelSelection/densityDegEnh.png}
+	\includegraphics[scale=0.5]{ModelSelection/densityDegEnh.png}
 	\caption{probability density distribution diagram of Degressive and enhancive. In this figure, 0 is the same as the $-1$label, and 1 is the same as $+1$.}
 	\label{DDIProbHist}
 \end{figure}
@@ -587,11 +601,11 @@ In this study, we classify drug pairs according to the type of interaction or no
 \end{tabular}
 \newline
 	\caption{The confusion matrix and relevant evaluation index.True Positive (TP): The number of residues classified as interacting correctly, False Positive (FP): The number of residues classified as interacting correctly incorrectly, False Negative (FN): The number of residues classified as non-interacting incorrectly, True Negative (TN): The number of residues classified as non-interacting correctly.}
-	\label{f1}
+	\label{Table1}
 \end{table}
 
 By using the table
-\ref{f1}, four evaluation criteria are defined in the following order:
+\ref{Table1}, four evaluation criteria are defined in the following order:
 Acurracy:The fraction of actual predicted interactions (TP and TN) to all predicted interactions.
 $$ \mbox{Acurracy} =  \frac{ \mbox{TP} + \mbox{TN}}{\mbox{ all predicted interactions}} $$
 
