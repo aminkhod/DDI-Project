@@ -58,7 +58,9 @@
 \usepackage[utf8]{inputenc} %unicode support
 %\usepackage[applemac]{inputenc} %applemac support if unicode package fails
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
-
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\renewcommand{\algorithmiccomment}[1]{$\triangleright$ #1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                             %%
 %%  If you wish to display your graphics for   %%
@@ -361,46 +363,36 @@ Figure of \ref{BMatHeader} shows the header of matrix.
 
 We have 568 drugs, and the interaction of each drug with itself is meaningless. On the other hand, the drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ have the same label, while the corresponding similarity vectors of drugs in the drug pairs have been displaced. So, these drug pairs are dual. Both of them in the data augment the training data, which increases the model's ability to have a better prediction. As a result, the resulting matrix has 322056 data samples or rows ($(568 \times 568) - 568 = 322056$). According to the explanations provided, a matrix with dimensions of $322056 \times 1139$ is formed to input into our model, which is called $B$.
 
-\subsection*{Devising Recommender System}
-In the previous steps, data was prepared to input any learning machine models, including deep learning models. Before presenting the model and inputting the data into the machine, one important point must be considered. As discussed, the enhancive and degressive drug pairs have clear and significant labels, while a zero label drug pair does not mean that there is no interaction between them. It indicates, still, no interaction has been found for this pair of drugs. In the following, we present a method for detecting non-interaction drug pairs. Then we use these pairs of drugs as zero-labeled data to train a model in the next phase.
+\subsection*{Devising of Recommender System}
+In the previous steps, data was prepared to input into any learning machine, including deep learning machines. But before presenting the model and inputting the data into the machine, one important point must be considered. As mentioned before, in this approach and also in other approaches, the positive and negative data have a specific label. While the zero label does not mean that there is no interaction between a pair of drugs, it does indicate that no interaction has yet been found for this pair of drugs.In the following, we present a method for detecting pairs of non-interacting drugs. Then we use these pairs of drugs as zero-labeled data in the next training.
 
-\subsection*{Selecting and training model with known interactions}
-To solve this problem, it is necessary to provide a model that detects non-interaction with high accuracy and confidence. Therefore, we design a model based on deep learning that predicts the possible non-interaction drug pairs and then uses them to train a three-class model. Obviously, the higher accuracy in detecting zeros, the more accurate and confident the three-class model will be designed and trained.
+\subsection*{Selecting and training model on known interactions}
+To solve this problem, it is necessary to provide a model that detects non-interaction with high accuracy and confidence. Therefore, we design a model based on deep learning that predicts the possible non-interaction of drug pairs, and then use it to design a three-class model. Obviously, high accuracy in detecting these zeros can help provide a more accurate and confident three-class model.
 
-\subsubsection*{Cross-validation process for model selection}
-We separate rows of matrix B that contain positive or negative interactions. The new matrix contains 42,702 drug pairs with degressive and enhancive interactions. This data was exploited to design more accurate and more efficient network architecture. The obtained data contains 42702 drug pairs, and each pair of drugs has a feature vector with 1136 dimensions. At first, the drug pairs are divided into 10 almost equal parts randomly. Then in 10 iterations (K = 10), in each iteration, one part of data is considered as a test dataset and the other nine parts as a train dataset. The drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ are not biologically different, so a drug pair and its dual must be in the same part When the data is separated into ten parts. This prevents fraud and improves model training by augmenting the train data.
 
-We tried different models, then trained and evaluated them in the 10-Fold cross-validation procedure. The final model is a deep neural network that is a stack of convolutional and fully connected layers.
-
-\subsubsection*{Presenting the selected model}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.43]{ModelSelection/model(-1,1).png}
-		\caption{Layers of CNN model which trains on degressive and enhancive pairs only}
-	\label{CNNModel}
-\end{figure}
-After trying different structures, we have the final deep neural network as shown in Figure
-\ref{CNNModel}. This network has three two-dimensional Convolution (Conv) Layers. Following them, there are three Fully Connected (FC) layers. The last layer has two outputs for predicting degressive or enhancive interaction. Conv layers have square filters with a size of $4 \times 4$ and stride of 1. No padding has been used for Conv layers. Each Conv layer also has a Relu activation function. The number of convolution filters is 128, 32, and 8, respectively. The FC layers have 64, 16, and 2 nodes, respectively. The first two FC layers have the Relu activation function, but the last FC layer has a Sigmoid activation function. After Conv layers, there is a Flatten layer that reshapes two-dimensional matrices into a one-dimensional vector. It connects to the first FC layer. The output of the Flatten layer is the input for the first FC layer. Also, there is a Dropout layer between FC  layers with 64 and 16 nodes, which its dropout amount is 0.2. This dropout value indicates that this layer does not consider 20 percent of the input edges randomly. This layer is used to prevent over-fitting of the model and forces the model to extract and use more features with more confidence for prediction. and if some of them are removed, either the prediction power of the algorithm does not decrease or rely on a few specific features. Our trials have shown that two-dimensional convolution layers work far better than their one-dimensional counterparts. Two-dimensional filters with an arbitrary size of n can cover more feature elements than a one-dimensional filter with the same size and consider many different combinations of features when moves on matrice. As a result, two-dimensional convolutional filters may extract more significant and confident features. Therefore, the 1136-dimension  feature vectors are transformed into matrices with dimensions of $71 \times 16$ to reshape feature vectors into feature matrices. Figure
+\subsection*{Selecting model\label{Selecting model}}
+We separated rows of matrix B that contain positive and negative interactions. The new matrix contains 42,702 pairs of drugs with degressive and enhancive interactions.This data was used to train and find a more suitable model and found a stronger model among a large number of models with different network structures. The final model was a deep neural network that used convolutional and fully connected layers. The features of all interactions (+1 and -1) contain 1136 features. We first divide these features into 10 equal parts. Then, in a 10-cycle for, each period we consider 1 part as testing data and the other 9 parts as a set of training data.We select different models and train the model in the 10-Fold cross-validations with 90  of the data. Then we test the model on the remaining 10 percent of the data. In the separating process, pairs of drugs dual are considered. Since the $ (d_i, d_j) $ and $ (d_j, d_i) $ pairs of drugs are not biologically different from each other, in the separation of training and testing data, necessarily a pair of drugs and their duals are in the same group. This work prevents machine fraud.
+After testing the different structures, we modeled the final deep neural network as shown in Figure
+\ref{CNNModel}.
+This network has three layers of two-dimensional convolution and following it, there are three fully connected convolution layers. The last layer has two outputs for predicting degressive or enhancive interaction. Convolution layers have 4-dimensions square filters with a Stride of 1. Each convolution layer also has a Relu activation function. The number of convolution filters is 128, 32, and 8, respectively. All connected layers have 64, 16, and 2 nodes, respectively, the first two layers have Relu activation function and the last layer with 2 nodes has a Sigmoid activation function. Convolution layers using a Flatten layer Connects to fully connected layers. The function of this layer is to transform a two-dimensional matrix into a one-dimensional vector. The output of this input layer of the first layer is fully connected. Also between fully connected 64 and 16 nodes, we used one Dropout layer with a wast value of 0.2. This wast value indicates that the network in this layer does not randomly consider 20 percent of the features. This layer is used to prevent over-fitting of the model and forces the model to extract and use more features with more confidence for prediction. and if some of them are removed, either the prediction power of the algorithm does not decrease or rely on a few specific features. Studies have shown that two-dimensional convolution layers work better than their one-dimensional counterparts because in this case, the filters can detect more drug similarities, and it is possible to extract more powerful Features. Therefore, the 1136-dimension  feature vectors are transformed into matrices with dimensions of $ 71 \ $ 16 times. Figure
 \ref{paramNumber1} 
 shows the number of learnable weights for each layer. Also, the total number of weights is calculated, which indicates the general complexity of the model.
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.50]{ModelSelection/modelparameters.png}
-	\caption{Learnable parameters of two-class predictive neural network}
-	\label{paramNumber1}
-\end{figure}
 
 The following settings are used in the construction of convolution neural network:
 
-1) We used Tensorflow \cite{abadi2016tensorflow} (version 1.14.0) and KERAS \cite{chollet2015keras} (version 2.2.5) packages to implement the neural network.
+1) We used Tensorflow
+\cite{TENSORFLOW114}
+(version 1.14.0) and KERAS
+\cite{KERAS2020}
+(version 2.2.5)   packages to implement the neural network.
 
 2) ADAM optimization function was used.
 
 3) The categorical-cross entropy loss function was considered.
 
-4) Number of epochs is 5.
+4) Epochs were considered 5.
 
-5) Learning rate  is 0.00001.
+5) Learning rate 0.00001 was used.
 
 Keep in mind that the hyperparameters of this network are not optimized and the specified parameters are not necessarily at their best. There are two reasons for not optimizing hyperparameters:
 
@@ -410,6 +402,108 @@ Keep in mind that the hyperparameters of this network are not optimized and the 
 
 Finally, we examine the results of the proposed model in the 10-fold cross-validation from three views:
 
+1)Accuracy:In a 10-fold cross-validation,the model obtained $AUC=0.97 , AUPR=0.93$ for degressive interactions , and  $AUC=0.97,AUPR=0.99 $ for enhansive interactions. These results indicate the high accuracy and detection power of the model.
+
+2) Variance: The confidence interval for the reported values with a reliability coefficient above 95 percent was narrow and close to each other. So that out of four reported values, three values were less than 0.002, and only for the degressive interaction, the AUPR was in the range of $\pm 0.005$. Due to the small amount of variance obtained from the model, it is clear that the proposed model is robust.
+
+3) Resolution capability: By plotting the output probability distribution diagram as shown in Figure
+\ref{DDIProbHist},
+it is clear that values +1 and -1 are well separated, and probability distribution degressive and enhancive have slightly Subscriptions.
+
+The Suducode
+\ref{modelSelectionSuducode}
+shows the step-by-step model selection process.
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\begin{algorithm}[!h]
+\caption{Model selection suducode}
+\label{modelSelectionSuducode}
+\begin{algorithmic}[1]
+\REQUIRE
++1 and -1 drug pairs features  
+\ENSURE 
++1 and -1 diagnostic model
+\vskip.5\baselineskip\hrule height 0.4pt\vskip.5\baselineskip
+
+\STATE
+Apply 10-fold cross-validation to the features of +1 and -1 drug pairs.
+
+\STATE
+Select the right model. 
+
+\STATE
+Test the model results in 10-fold cross-validation.
+ 
+\STATE
+If 3 is correct then select the model, else go to 2. 
+
+\end{algorithmic}
+\end{algorithm}
+
+
+\subsection*{Detection of drug pairs without possible interaction}
+In the previous step, a high-precision, robust, and accurate model was presented that could detect the degressive and enhancive interactions of drug pairs. Therefore, this model has the ability to detect non-interactions (real zeros) as follows. If drug pairs are unlikely to interact, then those drug pairs are likely to be real zeros.
+According to this hypothesis, the model was used to make predicts all unknown drug pairs (zeros). Unknown drug pairs include 270,000 drug pairs. In the output of the model, we consider drug pairs with enhancive probability less than 0.4 and degressive probability less than 0.4 as non-interacting drug pairs. Among the unlabeled data, about 65,000 drug pairs had the condition. These drug pairs are candidates for non-interaction. Due to the high accuracy of the model, the low variance of results, and the high resolution of the model, we consider these pairs as non-interacting drug pairs.
+
+\subsection*{Selecting and training model on known and unknown interactions}
+This section uses known data and potential non-interaction candidates to form a data set. In this article, we will replace and use the non-interaction candidate drug pairs with the term real zero. The recommender system presented in Section
+\ref{Selecting model}
+is also used for the final model.
+
+First, the rows of matrix B, which contain the +1 and -1 interactions, are separated according to the previously detailed procedure and placed in 10 parts. Then, 30,000 non-interacting candidate drug pairs were randomly selected from 65,000 drug pairs. In the chosen drug pairs, the drug pairs, and the duals of them must be non-interaction candidates. This group of zeros is randomly divided into 10 parts, so each drug pairs and the dual are in the same batch. Then 10 parts of zeros are merged with 10 parts of pre-prepared +1s and -1s.
+The data set contains approximately 72,702 drug pairs divided into relatively equal parts and is ready for use in the training and testing of the final recommender system.
+
+\subsection*{Selecting final model}
+The final model is almost the same as that described in Section
+\ref{Selecting model}.
+That means it has three Conv-layer with 128, 32, and 8 filters. Then, as before, three fully connected Conv layers were used. The difference was that the number of nodes changed from 64, 16 and 2 to 64, 16, and 3 in each layer, respectively. Specifically, this model gives three possible outputs for the three modes of enhancive interaction, non-interaction, and depressive interaction. Also, the number of epochs was considered 9. The deep neural network model for predicting interaction is shown in Figure
+\ref{Triple_model}.
+At this stage, the new model was not chosen because:
+
+1) The power of this model for relatively accurate detection of enhancive and degressive interactions has been proven.
+
+2) The actual zeros used in this section are suggested and have not been approved by the Pharmacology Laboratory, and until the writing of this article, a comprehensive database for non-interaction cases has not been made public. So, if the model selection is done again, may be selected and used a model that is not valid in terms of real-world application and will not be accepted.
+Due to the above reasons, the zeros recommender system is used to advance drug interactions by changing the number of outputs from 2 to 3, as the input data. The general process of the proposed SNF-CNN method is presented in the form of suducode 
+\ref{SNFCNNSuducode},
+which includes the steps of preparation, model selection, real zero detection, and the presentation of a comprehensive recommender system. 
+
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\begin{algorithm}[!h]
+\caption{Final model selection(SNF-CNN) suducode}
+\label{SNFCNNSuducode}
+\begin{algorithmic}[1]
+\REQUIRE
+Drug pairs features(+1,-1,real 0)  
+\ENSURE
+Diagnostic model for interaction and non-interaction
+\vskip.5\baselineskip\hrule height 0.4pt\vskip.5\baselineskip
+
+\STATE
+Calculate drug similarity matrices with the cosine method. 
+
+\STATE 
+Integrate drug similarity matrices with the similarity network fusion(SNF) method.
+
+\STATE
+Built the input matrix of the model. 
+
+\STATE
+Select the fit known interactions model and train it.
+
+\STATE
+Predict probable zeros by using step 4.
+
+\STATE
+Select the fit known interactions and zeros of step 5 model , and train it.
+
+\STATE
+Predict on unknown drug pairs.
+
+\end{algorithmic}
+\end{algorithm}
 
 
 \section*{Result and discussion}
@@ -447,33 +541,197 @@ It shows the training process. The process of the accuracy of the model on train
 	\label{lastTripleModel}
 \end{figure}
 
-\subsubsection*{Sub-sub heading for section}
-Text for this sub-sub-heading\ldots
-\paragraph*{Sub-sub-sub heading for section}
+\section*{Evaluation criteria}
+In this study, we classify drug pairs according to the type of interaction or non-interaction. So in order to compare the method performance with other existing methods, from four measurement criteria, F- measure, accuracy, Area Under Roc Curve(AUC), and Area Under Precision-Recall Curve(AUPR) Used. To define these criteria, at first, introduced four counting criteria in table
+\ref {f1}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{2}{|c}{}&\multicolumn{2}{|c|}{}&\\
+\multicolumn{2}{|c}{}&\multicolumn{2}{|c|}{Actual Condition}&\\
+\multicolumn{2}{|c}{}&\multicolumn{2}{|c|}{}&\\
+\cline{1-5}
+&&&&\\
+&Total Smpelse & Actual Positive & Actual Negative&\\
+&&&&\\
+\cline{1-5}
+&&&&\\
+\multirow{2}{*}{output of classifier} &Classify Positive & TP & FP&PPV(Precision)\\
+&&&&\\
+\cline{2-5}
+&&&&\\
+&Classify Negative & FN & TN&\\
+&&&&\\
+\cline{1-5}
+&&&&ACC\\
+\cline{5-5}
+&&TPR(Recall) & TNR(Specifcity) & F-measure \\
+\cline{5-5}
+&&&&MCC\\
+\cline{1-5}
+\end{tabular}
+\newline
+	\caption{The confusion matrix and relevant evaluation index.True Positive (TP): The number of residues classified as interacting correctly, False Positive (FP): The number of residues classified as interacting correctly incorrectly, False Negative (FN): The number of residues classified as non-interacting incorrectly, True Negative (TN): The number of residues classified as non-interacting correctly.}
+	\label{f1}
+\end{table}
+
+By using the table
+\ref{f1}, four evaluation criteria are defined in the following order:
+Acurracy:The fraction of actual predicted interactions (TP and TN) to all predicted interactions.
+$$ \mbox{Acurracy} =  \frac{ \mbox{TP} + \mbox{TN}}{\mbox{ all predicted interactions}} $$
+
+Precision:The fraction of correct predicted interactions among all predicted interactions.
+$$ \mbox{Precision} =  \frac{\mbox{TP}}{\mbox{TP} + \mbox{FP}} $$
+
+Recall:The fraction of correct predicted interactions among all true interactions.
+$$ \mbox{Recall} =  \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$
+Precision and recall have a trade-off; thus, improving one of them may lead to a reduction in another.Therefore, utilizing F-measure, is more reasonable.
+
+F-measure:the geometric mean of precision and recall.
+$$ F-measure = \frac{ 2\times \mbox{Precision} \times \mbox{Recall}}{\mbox{Precision} + \mbox{Recall}} $$
+
+It should be noted that if the interaction of two drugs is assigned to zero, it denotes that no evidence of their interaction has been found yet; thus, they may interact with each other. So we cannot identify TN and FP pairs correctly. The training process requires both interaction and non-interaction samples. Therefore, some of the zero assigned pairs are considered as non-interactive pairs in the training model. So every method may have some FP in its evaluations. This leads to a reduction in calculated precision and F-measure, while the real values of precision and F-measure may be higher.
+
+Since the values of precision, recall, and F-measure is dependent on the value of the threshold, we also evaluate methods via AUC which is the area under the receiver operating characteristic (ROC) curve, and AUPR, that is the area under the precision-recall curve. These criteria indicate the efficiency of methods independent of the threshold value. In cases that the fraction of negative samples and positive samples are not equal, AUPR is the fairer criterion for evaluation.
+
+%$$ \mbox{TPR} = \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$ 
+
+ 
+%$$ \mbox{FPR} =  \frac{ \mbox{FP}}{\mbox{FP} + \mbox{TN}} $$
 
 
-%
-\[
-E \bigl[Z_1(vT_x) \bigr]=
-\int_0^{v\wedge
-1}Z_0(uT_x)
-\exp (\lambda_1)\,du .
-\]
-%
-If we assume that sensitive cells follow a deterministic decay
-$Z_0(t)=xe^{\lambda_0 t}$ and approximate their extinction time as
-$T_x\approx-\frac{1}{\lambda_0}\log x$, then we can heuristically
-estimate the expected value as
-%
-\begin{equation}\label{eqexpmuts}
-\begin{aligned}[b]
-&      E\bigl[Z_1(vT_x)\bigr]\\
-&\quad      = \frac{\mu}{r}\log x
-\int_0^{v\wedge1}x^{1-u}x^{({\lambda_1}/{r})(v-u)}\,du .
-\end{aligned}
-\end{equation}
+\section*{Comparison of results}
+Based on the validation procedure described in Section
+\ref{K-fold CV}
+, the interaction type detection model was selected and trained. Then, the final three-class model was presented by recognizing the most probable non-interactions. So we tested the SNF-CNN model on data to check the evaluation, robustness, and efficiency of the cross-validation. Results SNF-CNN and other methods for comparison are presented and discussed in this section. Before comparing the different methods, an example of the results of neural network implementation is presented to identify the type of degressive and enhancive interactions.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+& Precision & Recall & F-measure & Support \\
+\hline
+Degressive & 0.94 & 0.83 & 0.88 & 850 \\
+\hline
+Enhancive & 0.95 & 0.99 & 0.97 & 3052 \\
+\hline
+Accuracy &  & & 0.95 &3902\\
+\hline
+Macro Avg & 0.95 & 0.91 & 0.93 & 3902\\
+\hline
+Weighted Avg & 0.95 & 0.95 &0.95 & 3902\\
+\hline
+\end{tabular}
+\newline
+	\caption{Interaction type classification report}
+	\label{classificatonReport}
+\end{table}
+
+Table
+\ref{classificatonReport}
+an example of a model implementation result is the ability of the model in terms of precision, recall and F-measure Indicates the type of interactions. According to table
+\ref{classificatonReport}
+the precision of the model in detecting enhancive and degressive interactions is 95 percent and 94 percent, while recall is 99 percent and 83 percent, respectively. the F-measure is also 97  percent and 88 percent that the higher ability of the model to detect degressive interactions comes from a higher number of these types of interactions. The ratio of degressive interaction to enhancive interaction is approximately 4 to 1.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+& Precision & Recall & F-measure & Support  \\
+\hline
+Enhancive & 0.88 & 0.84 & 0.86 & 850\\
+\hline
+Non-intraction & 0.96 & 0.95 & 0.96 & 3000\\
+\hline
+Degressive & 0.95 & 0.97 & 0.96 & 3052\\
+\hline
+Accuracy &  & & 0.95 &6902\\
+\hline
+Macro Avg & 0.93 & 0.92 & 0.93 & 6902 \\
+\hline
+Weighted Avg & 0.95 & 0.95 &0.95 & 6902\\
+\hline
+\end{tabular}
+\newline
+	\caption{Three-Classes interaction classification report}
+	\label{TripleclassificatonReport}
+\end{table}
+
+Also in the table
+\ref{TripleclassificatonReport}
+three-Classes interaction classification is displayed. In this implementation, the accuracy of the model for detecting degressive interaction, non-interaction, and enhancive interaction is 95 percent, 96 percent, and 88 percent, respectively. The recall is 97 percent, 95 percent, and 84 percent, respectively, and finally F-measure It is 96, 96, and 86 percent. In comparison, the model power in the three-classes decreases slightly to the two-classes, which can be due to two reasons.
+
+1) The problem of three-classes is more difficult than two-classes.
+
+2) Zeros or non-interaction are not necessarily real and are not pharmacologically proven, so there is a possibility of some disturbance.
+
+For the above reasons, some reduction in the power of the three-classes model in detection was not unexpected.
+
+\begin{table}[h!]
+\centering 
+\begin{tabular}{|c|c|c|c|}
+\hline
+& AUC & AUPR\\
+\hline
+degressive	& $0.9747 \pm 0.0033$ & $0.9666 \pm 0.0045$\\
+\hline
+enhancive  & $0.9686 \pm 0.0028$ & $0.8221 \pm 0.0184$\\
+\hline
+non-interaction & $0.9714 \pm 0.0040$ & $0.9480 \pm 0.0083$\\
+\hline
+\end{tabular}
+\newline
+	\caption{Results of SNF-CNN algorithm in predicting three-classes based on AUC and AUPR criteria and their confidence interval}
+	\label{SNF-CNNresult}
+\end{table}
+
+Since the previous algorithms in the three-classes prediction of DDI used AUC and AUPR therefore, the results of the proposed algorithm are based on these two criteria according to table
+\ref{SNF-CNNresult}.Also in table
+\ref{SNF-CNNresult}
+for the algorithm presented in this research, high and low intervals are reported with 95 percent confidence, which shows that the results of the algorithm have slightly changed in the 10- fold CV and the proposed algorithm is robust and reliable.
+
+\begin{table}[h!]
+\centering 
+\begin{tabular}{|c|c|c|c|}
+\hline
+& AUC	& AUPR \\
+\hline
+SNF-CNN	& 0.971 & 0.912\\
+\hline
+BRSNM\cite{Shi J2019}  & 0.645 & 0.346\\
+\hline
+Semi-NMF \cite{Yu H2018} & 0.796 & 0.579\\
+\hline
+TMFUF\cite{Shi J-Y2018}   & 0.842  & 0.526\\
+\hline
+\end{tabular}
+\newline 
+	\caption{Comparison of the results of three-classes prediction algorithms based on criteria AUC and AUPR}
+	\label{AUCAUPR}
+\end{table}
+
+In the table
+\ref{AUCAUPR}
+results of SNF-CNN averaged for the three classes and compared with other existing three-classes algorithms. According to the table
+\ref{AUCAUPR} the proposed algorithm has a high difference compared to other superior algorithms with the problem of ternary and has been able to challenge other algorithms.
 
 
+\section*{Conclusions}
+Existing computational approaches are able to present potential large-scale interactions before using drugs on the market. However, they cannot predict comprehensive interactions, including degressive and enhancive interactions. It is more useful to know whether or not a drug pair is enhancive DDI or a degressive DDI  than to know whether or not a drug pair is DDI. Without considering the pharmacological changes caused by DDIs, most existing approaches only report two-classes prediction.  In addition, the occurrence of degressive and enhancive DDIs is not random, but none of the existing approaches investigates and leverages this intrinsic important property of interactions when treating complex diseases (including treatment with three or more drugs).
+
+In this work, after representing a comprehensive DDI network, we used the structure of recommender systems to design a novel algorithm. Although the prediction obtained by the new algorithm is inspiring, overall performance can still be improved. For this reason, we investigate those incorrectly predicted DDIs. After checking them case-by-case, and in order to prove the algorithm in practice, check the prediction performance of the algorithm in the latest version of the DrugBank database. Observations and investigations led to the discovery of three reasons for wrong predictions:
+
+The first is named as false-positive drug pairs, which are precisely labeled as DDIs in DrugBank version 4, but in the current version, they are correctly labeled as non-DDIs. For example, the old version of DrugBank records that Apraclonidine ( a Sympathomimetic drug used in glaucoma therapy) increases the atrioventricular blocking activities of Alprenolol and Bevantolol, while the newer version removes it.
+
+The second one is false-negative drug Pairs, which are wrongly labeled as non-DDIs in DrugBank version 4  but in the current version, they are reported as DDIs.For example, the pair of Valrubicin and Cyclosporine as well as the pair of Ergocalciferol and  Calcitriol in the newer version of DrugBank reports, Valrubicin (bladder cancer treatment drug) Increases the activity of the nephrotoxic drug Cyclosporine(A drug that suppresses the immune system with a special action on T-lymphocytes), while the combined therapy of Calcitriol and Ergocalciferol increases the risk or severity of adverse effects in the multiple-drug therapy.
+
+The last one refers to change Pair DDIs, which are labeled as enhancive DDIs in DrugBank version 4, but in the current version, are labeled as degressive DDIs, and vice versa.
+
+It is anticipated that the SNF-CNN approach, will be able to achieve better DDI prediction by the better datasets with fewer of both false-positive and false-negative drug pairs. For future work, it is recommended that the dataset always be collected from the latest version of DrugBank.
+
+Three-classes data is an attempt to improve expression and problem solving over two-classes data. However, three-classes data does not have sufficient biological significance and provides limited biological information. This means that predicting the type of DDI can be useful, but it is not clear at what stage of the pharmacokinetic or pharmacodynamic stages this DDI occurred. Therefore, it is suggested to collect datasets with degressive and enhancive labels from each of the pharmacokinetic and pharmacodynamic steps. In this case, more meaningful models in terms of pharmacology and machine learning are taught. The resulting models are more important to pharmacists and pharmacists and will be more useful.
 
 \section*{Appendix}
 Text for this section\ldots
@@ -487,33 +745,32 @@ Text for this section\ldots
 \begin{backmatter}
 
 \section*{Acknowledgements}%% if any
-Text for this section\ldots
+The author would like to thank the reviewers for their constructive comments that help make the paper much clearer.
 
 \section*{Funding}%% if any
 Text for this section\ldots
 
 \section*{Abbreviations}%% if any
-Text for this section\ldots
+DDI:Drug-drug interactions;k-fold CV:k-fold cross-validation;SNF:Similarity Network Fusion
 
 \section*{Availability of data and materials}%% if any
 the code and data is available at GitHub page of \href{https://github.com/aminkhod/DDI-Project/tree/master/CNN\%20model\%20to\%20Recommend\%20Comperhancive\%20DDIs}{SNF-CNN code and data}
 
 
 \section*{Ethics approval and consent to participate}%% if any
-Text for this section\ldots
+The authors declare that they have consenting to participate.
 
 \section*{Competing interests}
 The authors declare that they have no competing interests.
 
 \section*{Consent for publication}%% if any
-Text for this section\ldots
+The authors declare that they have consenting to publication.
 
 \section*{Authors' contributions}
-Text for this section \ldots
+Bl conceived and designed the experiments, draft the manuscript, and analyzed the results. MAK contributed materials/analysis tools and developed the codes used in the analysis. CE is the corresponding author. All authors read and approved the final manuscript.
 
-\section*{Authors' information}%% if any
-Text for this section\ldots
-
+%\section*{Authors' information}%% if any
+%Text for this section\ldots
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                  The Bibliography                       %%
 %%                                                         %%
@@ -588,6 +845,7 @@ Text for this section\ldots
     A3 & ..  & .   & .\\ \hline
   \end{tabular}
 \end{table}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                               %%
