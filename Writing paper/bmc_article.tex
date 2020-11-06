@@ -405,7 +405,7 @@ The number of convolution filters is 128, 32, and 8, respectively. All connected
 
 Convolution layers using a Flatten layer Connects to fully connected layers. The function of this layer is to transform a two-dimensional matrix into a one-dimensional vector. The output of this input layer of the first layer is fully connected. Also, between fully connected 64 and 16 nodes, we used one Dropout layer \cite{srivastava2014dropout} with a wast value of 0.2. This value indicates that the network in this layer does not randomly consider 20 percent of the features. This layer is used to prevent over-fitting of the model and forces the model to extract and use more features with more confidence for prediction. If some of them are removed, the algorithm's prediction power either doesn't decrease or doesn't rely on a few specific features.
 
-Studies have shown that two-dimensional convolution layers work better than their one-dimensional counterparts because in this case, the filters can detect more drug similarities, and it is possible to extract more powerful Features. Therefore, the 1136-dimension  feature vectors are transformed into matrices with dimensions of $ 71 \ $ 16 times. Figure
+Our studies and trials have shown that two-dimensional convolution layers work better than their one-dimensional counterparts because in this case, the filters can detect more drug similarities, and it is possible to extract more powerful Features. Therefore, the 1136-dimension  feature vectors are transformed into matrices with dimensions of $ 71 \ $ 16 times. Figure
 \ref{paramNumber1} 
 shows the number of learnable weights for each layer. Also, the total number of weights is calculated, which indicates the general complexity of the model.
 
@@ -416,17 +416,13 @@ shows the number of learnable weights for each layer. Also, the total number of 
 	\label{paramNumber1}
 \end{figure}
 
-The following settings are used in the construction of convolution neural network:
+The following settings are used in the construction of the convolution neural network:
 
-1) We used Tensorflow
-\cite{abadi2016tensorflow}
-(version 1.14.0) and KERAS
-\cite{chollet2015keras}
-(version 2.2.5)   packages to implement the neural network.
+1) We used Tensorflow \cite{abadi2016tensorflow} (version 1.14.0) and KERAS \cite{chollet2015keras} (version 2.2.5) packages to implement the neural network.
 
-2) ADAM optimization function was used.
+2) The categorical-cross entropy loss function was considered as objective function for the neural network which is generally used to train a classification network \cite{ghosal1997your, toda2012research, seen20121}.
 
-3) The categorical-cross entropy loss function was considered.
+3) ADAM optimization \cite{kingma2014adam} was used to manipulate the neural network weights in order to find promising optimal (minimum) state of the loss function.
 
 4) Epochs were considered 5.
 
@@ -513,7 +509,7 @@ Due to the above reasons, the zeros recommender system is used to advance drug i
 \ref{SNFCNNSuducode},
 which includes the steps of preparation, model selection, real zero detection, and the presentation of a comprehensive recommender system. 
 
-\begin{figure}
+\begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.43]{lastTripleModel/modelTripleLayers.png}
 	\caption{Arrangement of neural network layers SNF-CNN Predict triple-class interaction. Non-interaction (0), degressive interaction (-1) and enhancive interaction (+1)}

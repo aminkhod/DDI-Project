@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{42}
+\begin{thebibliography}{46}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -708,6 +708,60 @@ Keras.
 \endbibitem
 
 %%% 41
+\bibitem{ghosal1997your}
+\begin{barticle}
+\bauthor{\bsnm{Ghosal}, \binits{T.}},
+\bauthor{\bsnm{Edithal}, \binits{V.}},
+\bauthor{\bsnm{Ekbal}, \binits{A.}},
+\bauthor{\bsnm{Bhattacharyya}, \binits{P.}},
+\bauthor{\bsnm{Chivukula}, \binits{S.S.S.K.}},
+\bauthor{\bsnm{Tsatsaronis}, \binits{G.}}:
+\batitle{Is your document novel? let attention guide you. an attention based
+  model for document level novelty detection}.
+\bjtitle{Natural Language Engineering}
+\bvolume{1}(\bissue{1}),
+\bfpage{1}--\blpage{38}
+(\byear{1997})
+\end{barticle}
+\endbibitem
+
+%%% 42
+\bibitem{toda2012research}
+\begin{botherref}
+\oauthor{\bsnm{Toda}, \binits{Y.}},
+\oauthor{\bsnm{Okura}, \binits{F.}}:
+Research article how convolutional neural networks diagnose plant disease.
+Challenge (LSVRC),
+20
+(2012)
+\end{botherref}
+\endbibitem
+
+%%% 43
+\bibitem{seen20121}
+\begin{barticle}
+\bauthor{\bsnm{Seen}, \binits{S.}}:
+\batitle{1-day learning, 1-year localization: Long-term lidar localization
+  using scan context image}.
+\bjtitle{Database}
+\bvolume{2012},
+\bfpage{01}--\blpage{15}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 44
+\bibitem{kingma2014adam}
+\begin{botherref}
+\oauthor{\bsnm{Kingma}, \binits{D.P.}},
+\oauthor{\bsnm{Ba}, \binits{J.}}:
+Adam: A method for stochastic optimization.
+arXiv preprint arXiv:1412.6980
+(2014)
+\end{botherref}
+\endbibitem
+
+%%% 45
 \bibitem{shi2019detecting}
 \begin{barticle}
 \bauthor{\bsnm{Shi}, \binits{J.-Y.}},
@@ -723,7 +777,7 @@ Keras.
 \end{barticle}
 \endbibitem
 
-%%% 42
+%%% 46
 \bibitem{shi2018tmfuf}
 \begin{barticle}
 \bauthor{\bsnm{Shi}, \binits{J.-Y.}},
@@ -1475,6 +1529,61 @@ Keras.
 </bibl>
 
 <bibl id="B41">
+  <title><p>Is Your Document Novel? Let Attention Guide You. An Attention Based
+  Model For Document Level Novelty Detection</p></title>
+  <aug>
+    <au><snm>Ghosal</snm><fnm>T</fnm></au>
+    <au><snm>Edithal</snm><fnm>V</fnm></au>
+    <au><snm>Ekbal</snm><fnm>A</fnm></au>
+    <au><snm>Bhattacharyya</snm><fnm>P</fnm></au>
+    <au><snm>Chivukula</snm><fnm>SSSK</fnm></au>
+    <au><snm>Tsatsaronis</snm><fnm>G</fnm></au>
+  </aug>
+  <source>Natural Language Engineering</source>
+  <publisher>Cambridge University Press</publisher>
+  <pubdate>1997</pubdate>
+  <volume>1</volume>
+  <issue>1</issue>
+  <fpage>1</fpage>
+  <lpage>-38</lpage>
+</bibl>
+
+<bibl id="B42">
+  <title><p>Research Article How Convolutional Neural Networks Diagnose Plant
+  Disease</p></title>
+  <aug>
+    <au><snm>Toda</snm><fnm>Y</fnm></au>
+    <au><snm>Okura</snm><fnm>F</fnm></au>
+  </aug>
+  <source>Challenge (LSVRC)</source>
+  <pubdate>2012</pubdate>
+  <fpage>20</fpage>
+</bibl>
+
+<bibl id="B43">
+  <title><p>1-Day Learning, 1-Year Localization: Long-term LiDAR Localization
+  using Scan Context Image</p></title>
+  <aug>
+    <au><snm>Seen</snm><fnm>S</fnm></au>
+  </aug>
+  <source>Database</source>
+  <pubdate>2012</pubdate>
+  <volume>2012</volume>
+  <fpage>01</fpage>
+  <lpage>-15</lpage>
+</bibl>
+
+<bibl id="B44">
+  <title><p>Adam: A method for stochastic optimization</p></title>
+  <aug>
+    <au><snm>Kingma</snm><fnm>DP</fnm></au>
+    <au><snm>Ba</snm><fnm>J</fnm></au>
+  </aug>
+  <source>arXiv preprint arXiv:1412.6980</source>
+  <pubdate>2014</pubdate>
+</bibl>
+
+<bibl id="B45">
   <title><p>Detecting drug communities and predicting comprehensive drug--drug
   interactions via balance regularized semi-nonnegative matrix
   factorization</p></title>
@@ -1493,7 +1602,7 @@ Keras.
   <lpage>-16</lpage>
 </bibl>
 
-<bibl id="B42">
+<bibl id="B46">
   <title><p>TMFUF: a triple matrix factorization-based unified framework for
   predicting comprehensive drug-drug interactions of new drugs</p></title>
   <aug>

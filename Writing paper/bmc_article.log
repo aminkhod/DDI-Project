@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  6 NOV 2020 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  6 NOV 2020 19:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -817,167 +817,160 @@ Package pdftex.def Info: ModelSelection/modelparameters.png  used on input line
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.435 K
-       eep in mind that the hyperparameters of this network are not optimize...
+l.425 3
+       ) ADAM optimization \cite{kingma2014adam} was used to manipulate the ...
  <./ModelSelection/modelparameters.png>]
-Overfull \hbox (5.23372pt too wide) in paragraph at lines 443--444
+Overfull \hbox (5.23372pt too wide) in paragraph at lines 439--440
 []\OT1/cmr/m/n/10 1)Accuracy:In a 10-fold cross-validation,the model ob-tained 
 $\OML/cmm/m/it/10 AUC \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 97\O
 ML/cmm/m/it/10 ; AUPR \OT1/cmr/m/n/10 =
  []
 
-<ModelSelection/densityDegEnh.png, id=193, 567.11874pt x 409.53pt>
+<ModelSelection/densityDegEnh.png, id=197, 567.11874pt x 409.53pt>
 File: ModelSelection/densityDegEnh.png Graphic file (type png)
 <use ModelSelection/densityDegEnh.png>
 Package pdftex.def Info: ModelSelection/densityDegEnh.png  used on input line 4
-53.
+49.
 (pdftex.def)             Requested size: 283.55867pt x 204.7645pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 465.
+put line 461.
 [9]
 
-Package hyperref Warning: Suppressing empty link on input line 496.
+Package hyperref Warning: Suppressing empty link on input line 492.
 
 
-Package hyperref Warning: Suppressing empty link on input line 504.
+Package hyperref Warning: Suppressing empty link on input line 500.
 
 [10pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.509 1
-       ) The power of this model for relatively accurate detection of enhanc...
- <./ModelSelection/densityDegEnh.png>]
-<lastTripleModel/modelTripleLayers.png, id=219, 462.72874pt x 962.59625pt>
+l.504 
+       <./ModelSelection/densityDegEnh.png>]
+<lastTripleModel/modelTripleLayers.png, id=227, 462.72874pt x 962.59625pt>
 File: lastTripleModel/modelTripleLayers.png Graphic file (type png)
 <use lastTripleModel/modelTripleLayers.png>
 Package pdftex.def Info: lastTripleModel/modelTripleLayers.png  used on input l
-ine 518.
+ine 514.
 (pdftex.def)             Requested size: 198.96948pt x 413.90833pt.
-<ModelSelection/selectedModelAcc.png, id=221, 393.47pt x 279.0425pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11]
+<ModelSelection/selectedModelAcc.png, id=245, 393.47pt x 279.0425pt>
 File: ModelSelection/selectedModelAcc.png Graphic file (type png)
 <use ModelSelection/selectedModelAcc.png>
 Package pdftex.def Info: ModelSelection/selectedModelAcc.png  used on input lin
-e 573.
+e 569.
 (pdftex.def)             Requested size: 173.27846pt x 122.88551pt.
-<ModelSelection/selectedModelLoss.png, id=222, 393.47pt x 279.0425pt>
+<ModelSelection/selectedModelLoss.png, id=246, 393.47pt x 279.0425pt>
 File: ModelSelection/selectedModelLoss.png Graphic file (type png)
 <use ModelSelection/selectedModelLoss.png>
 Package pdftex.def Info: ModelSelection/selectedModelLoss.png  used on input li
-ne 574.
+ne 570.
 (pdftex.def)             Requested size: 173.27846pt x 122.88551pt.
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 572--576
+Overfull \hbox (12.5pt too wide) in paragraph at lines 568--572
  []$[]$ 
  []
 
-[11]
+[12pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ has been already used, duplicate ignored
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<lastTripleModel/modelTripleACC.png, id=240, 393.47pt x 279.0425pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.575 \subsubsection
+                    *{Second case: 10-fold CV with unknown interactions} <./las
+tTripleModel/modelTripleLayers.png>]
+<lastTripleModel/modelTripleACC.png, id=256, 393.47pt x 279.0425pt>
 File: lastTripleModel/modelTripleACC.png Graphic file (type png)
 <use lastTripleModel/modelTripleACC.png>
 Package pdftex.def Info: lastTripleModel/modelTripleACC.png  used on input line
- 588.
+ 584.
 (pdftex.def)             Requested size: 173.27846pt x 122.88551pt.
-<lastTripleModel/modelTripleLoss.png, id=241, 387.4475pt x 279.0425pt>
+<lastTripleModel/modelTripleLoss.png, id=257, 387.4475pt x 279.0425pt>
 File: lastTripleModel/modelTripleLoss.png Graphic file (type png)
 <use lastTripleModel/modelTripleLoss.png>
 Package pdftex.def Info: lastTripleModel/modelTripleLoss.png  used on input lin
-e 589.
+e 585.
 (pdftex.def)             Requested size: 173.27846pt x 124.79729pt.
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 587--591
+Overfull \hbox (12.5pt too wide) in paragraph at lines 583--587
  []$[]$ 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `f1' on page 13 undefined on input line 593.
 
-
-LaTeX Warning: Reference `f1' on page 12 undefined on input line 597.
-
-[12pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
-has been already used, duplicate ignored
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.634 $$
-         \mbox{Acurracy} =  \frac{ \mbox{TP} + \mbox{TN}}{\mbox{ all predict...
+l.594 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.594 
+       <./ModelSelection/selectedModelAcc.png> <./ModelSelection/selectedModelL
+oss.png> <./lastTripleModel/modelTripleACC.png> <./lastTripleModel/modelTripleL
+oss.png>] [14pdfTeX warning (ext4): destination with the same identifier (name{
+table.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.644 S
+       ince the values of precision, recall, and F-measure is dependent on t...
 ]
 
-LaTeX Warning: Reference `K-fold CV' on page 13 undefined on input line 658.
+LaTeX Warning: Reference `K-fold CV' on page 15 undefined on input line 654.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+[15pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.774 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+l.713 1
+       ) The problem of three-classes is more difficult than two-classes.pdfTeX
+ warning (ext4): destination with the same identifier (name{table.3}) has been 
+already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.713 1
+       ) The problem of three-classes is more difficult than two-classes.]
+[16pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.772 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.774 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.774 
-      ] [15pdfTeX warning (ext4): destination with the same identifier (name{ta
-ble.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.786 
-      ] (./bmc_article.bbl
+l.772 
+      ] [17] (./bmc_article.bbl
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 71.
 
-[16] [17]) 
+[18]) 
 AED: lastpage setting LastPage
-[18] [19pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.917 \end{document}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.917 \end{document}
-                     <./lastTripleModel/modelTripleLayers.png> <./ModelSelectio
-n/selectedModelAcc.png> <./ModelSelection/selectedModelLoss.png>] [20pdfTeX war
-ning (ext4): destination with the same identifier (name{figure.8}) has been alr
-eady used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.917 \end{document}
-                     <./lastTripleModel/modelTripleACC.png> <./lastTripleModel/
-modelTripleLoss.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 917.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 917.
+[19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 913.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 913.
  (./bmc_article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 917.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 917.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 913.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 913.
 Package rerunfilecheck Info: File `bmc_article.out' has not changed.
 (rerunfilecheck)             Checksum: ED3CDF9133C37D676C26CC0D4896F289;44.
 
@@ -988,16 +981,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 917.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 913.
  ) 
 Here is how much of TeX's memory you used:
- 7780 strings out of 492982
- 108651 string characters out of 6134896
- 221874 words of memory out of 5000000
- 11100 multiletter control sequences out of 15000+600000
+ 7787 strings out of 492982
+ 108778 string characters out of 6134896
+ 221474 words of memory out of 5000000
+ 11104 multiletter control sequences out of 15000+600000
  12784 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,11n,37p,1145b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,11n,37p,1145b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
@@ -1014,10 +1007,10 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on bmc_article.pdf (20 pages, 578065 bytes).
+Output written on bmc_article.pdf (19 pages, 578861 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 367 compressed objects within 4 object streams
- 136 named destinations out of 1000 (max. 500000)
+ 432 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
+ 139 named destinations out of 1000 (max. 500000)
  59 words of extra memory for PDF output out of 10000 (max. 10000000)
 
