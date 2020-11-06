@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{39}
+\begin{thebibliography}{42}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -629,6 +629,55 @@ Accessed Accessed 20 October 2020
 \endbibitem
 
 %%% 36
+\bibitem{nair2010rectified}
+\begin{bchapter}
+\bauthor{\bsnm{Nair}, \binits{V.}},
+\bauthor{\bsnm{Hinton}, \binits{G.E.}}:
+\bctitle{Rectified linear units improve restricted boltzmann machines}.
+In: \bbtitle{ICML}
+(\byear{2010})
+\end{bchapter}
+\endbibitem
+
+%%% 37
+\bibitem{hinton2012deep}
+\begin{barticle}
+\bauthor{\bsnm{Hinton}, \binits{G.}},
+\bauthor{\bsnm{Deng}, \binits{L.}},
+\bauthor{\bsnm{Yu}, \binits{D.}},
+\bauthor{\bsnm{Dahl}, \binits{G.E.}},
+\bauthor{\bsnm{Mohamed}, \binits{A.-r.}},
+\bauthor{\bsnm{Jaitly}, \binits{N.}},
+\bauthor{\bsnm{Senior}, \binits{A.}},
+\bauthor{\bsnm{Vanhoucke}, \binits{V.}},
+\bauthor{\bsnm{Nguyen}, \binits{P.}},
+\bauthor{\bsnm{Sainath}, \binits{T.N.}}, \betal:
+\batitle{Deep neural networks for acoustic modeling in speech recognition: The
+  shared views of four research groups}.
+\bjtitle{IEEE Signal processing magazine}
+\bvolume{29}(\bissue{6}),
+\bfpage{82}--\blpage{97}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 38
+\bibitem{srivastava2014dropout}
+\begin{barticle}
+\bauthor{\bsnm{Srivastava}, \binits{N.}},
+\bauthor{\bsnm{Hinton}, \binits{G.}},
+\bauthor{\bsnm{Krizhevsky}, \binits{A.}},
+\bauthor{\bsnm{Sutskever}, \binits{I.}},
+\bauthor{\bsnm{Salakhutdinov}, \binits{R.}}:
+\batitle{Dropout: a simple way to prevent neural networks from overfitting}.
+\bjtitle{The journal of machine learning research}
+\bvolume{15}(\bissue{1}),
+\bfpage{1929}--\blpage{1958}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 39
 \bibitem{abadi2016tensorflow}
 \begin{bchapter}
 \bauthor{\bsnm{Abadi}, \binits{M.}},
@@ -649,7 +698,7 @@ pp. \bfpage{265}--\blpage{283}
 \end{bchapter}
 \endbibitem
 
-%%% 37
+%%% 40
 \bibitem{chollet2015keras}
 \begin{botherref}
 \oauthor{\bsnm{Chollet}, \binits{F.}}, et al.:
@@ -658,7 +707,7 @@ Keras.
 \end{botherref}
 \endbibitem
 
-%%% 38
+%%% 41
 \bibitem{shi2019detecting}
 \begin{barticle}
 \bauthor{\bsnm{Shi}, \binits{J.-Y.}},
@@ -674,7 +723,7 @@ Keras.
 \end{barticle}
 \endbibitem
 
-%%% 39
+%%% 42
 \bibitem{shi2018tmfuf}
 \begin{barticle}
 \bauthor{\bsnm{Shi}, \binits{J.-Y.}},
@@ -1338,6 +1387,61 @@ Keras.
 </bibl>
 
 <bibl id="B36">
+  <title><p>Rectified linear units improve restricted boltzmann
+  machines</p></title>
+  <aug>
+    <au><snm>Nair</snm><fnm>V</fnm></au>
+    <au><snm>Hinton</snm><fnm>GE</fnm></au>
+  </aug>
+  <source>ICML</source>
+  <pubdate>2010</pubdate>
+</bibl>
+
+<bibl id="B37">
+  <title><p>Deep neural networks for acoustic modeling in speech recognition:
+  The shared views of four research groups</p></title>
+  <aug>
+    <au><snm>Hinton</snm><fnm>G</fnm></au>
+    <au><snm>Deng</snm><fnm>L</fnm></au>
+    <au><snm>Yu</snm><fnm>D</fnm></au>
+    <au><snm>Dahl</snm><fnm>GE</fnm></au>
+    <au><snm>Mohamed</snm><fnm>Ar</fnm></au>
+    <au><snm>Jaitly</snm><fnm>N</fnm></au>
+    <au><snm>Senior</snm><fnm>A</fnm></au>
+    <au><snm>Vanhoucke</snm><fnm>V</fnm></au>
+    <au><snm>Nguyen</snm><fnm>P</fnm></au>
+    <au><snm>Sainath</snm><fnm>TN</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>IEEE Signal processing magazine</source>
+  <publisher>IEEE</publisher>
+  <pubdate>2012</pubdate>
+  <volume>29</volume>
+  <issue>6</issue>
+  <fpage>82</fpage>
+  <lpage>-97</lpage>
+</bibl>
+
+<bibl id="B38">
+  <title><p>Dropout: a simple way to prevent neural networks from
+  overfitting</p></title>
+  <aug>
+    <au><snm>Srivastava</snm><fnm>N</fnm></au>
+    <au><snm>Hinton</snm><fnm>G</fnm></au>
+    <au><snm>Krizhevsky</snm><fnm>A</fnm></au>
+    <au><snm>Sutskever</snm><fnm>I</fnm></au>
+    <au><snm>Salakhutdinov</snm><fnm>R</fnm></au>
+  </aug>
+  <source>The journal of machine learning research</source>
+  <publisher>JMLR. org</publisher>
+  <pubdate>2014</pubdate>
+  <volume>15</volume>
+  <issue>1</issue>
+  <fpage>1929</fpage>
+  <lpage>-1958</lpage>
+</bibl>
+
+<bibl id="B39">
   <title><p>Tensorflow: A system for large-scale machine learning</p></title>
   <aug>
     <au><snm>Abadi</snm><fnm>M</fnm></au>
@@ -1359,7 +1463,7 @@ Keras.
   <lpage>-283</lpage>
 </bibl>
 
-<bibl id="B37">
+<bibl id="B40">
   <title><p>Keras</p></title>
   <aug>
     <au><snm>Chollet</snm><fnm>F</fnm></au>
@@ -1370,7 +1474,7 @@ Keras.
   <url>https://github.com/fchollet/keras</url>
 </bibl>
 
-<bibl id="B38">
+<bibl id="B41">
   <title><p>Detecting drug communities and predicting comprehensive drug--drug
   interactions via balance regularized semi-nonnegative matrix
   factorization</p></title>
@@ -1389,7 +1493,7 @@ Keras.
   <lpage>-16</lpage>
 </bibl>
 
-<bibl id="B39">
+<bibl id="B42">
   <title><p>TMFUF: a triple matrix factorization-based unified framework for
   predicting comprehensive drug-drug interactions of new drugs</p></title>
   <aug>
