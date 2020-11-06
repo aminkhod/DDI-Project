@@ -420,29 +420,27 @@ The following settings are used in the construction of the convolution neural ne
 
 1) We used Tensorflow \cite{abadi2016tensorflow} (version 1.14.0) and KERAS \cite{chollet2015keras} (version 2.2.5) packages to implement the neural network.
 
-2) The categorical-cross entropy loss function was considered as objective function for the neural network which is generally used to train a classification network \cite{ghosal1997your, toda2012research, seen20121}.
+2) The categorical-cross entropy loss function was considered an objective function for the neural network, which is generally used to train a classification network \cite{ghosal1997your, toda2012research, seen20121}.
 
-3) ADAM optimization \cite{kingma2014adam} was used to manipulate the neural network weights in order to find promising optimal (minimum) state of the loss function.
+3) ADAM optimization \cite{kingma2014adam} was used to manipulate the neural network weights to find a promising optimal (minimum) state of the loss function.
 
-4) Epochs were considered 5.
+4) The number of epochs was considered 5.
 
-5) Learning rate 0.00001 was used.
+5) Learning rate of $1.0 \times 10^{-5}$ was used.
 
-Keep in mind that the hyperparameters of this network are not optimized and the specified parameters are not necessarily at their best. There are two reasons for not optimizing hyperparameters:
+Keep in mind that this network's hyperparameters are not optimized, and the specified parameters are not necessarily at their best. There are two reasons for not optimizing hyperparameters:
 
 1) Model overfitting: If hyperparameters changed to the best values, it is expected that the model will get better results on the present data, but there is no guarantee that the extracted features by the model are significant and works well when used in new cases. In this case, the so-called model is over-fitted and will be a negative point for the model.
 
-2)Robustness: Optimal hyperparameters give better results for the present data, but different drug similarities may be used in the future, or new data may be collected and the present results may not be repeated. In this case, the model loses it's robust and will not be accepted in the pharmaceutical and pharmacological community.
+2)Robustness: Optimal hyperparameters give better results for the present data, but different drug similarities may be used in the future, or new data may be collected, and the present results may not be repeated. In this case, the model loses its robustness and will not be accepted in the pharmaceutical and pharmacological community.
 
 Finally, we examine the results of the proposed model in the 10-fold cross-validation from three views:
 
-1)Accuracy:In a 10-fold cross-validation,the model obtained $AUC=0.97 , AUPR=0.93$ for degressive interactions , and  $AUC=0.97,AUPR=0.99 $ for enhansive interactions. These results indicate the high accuracy and detection power of the model.
+1)Accuracy:In a 10-fold cross-validation,the model obtained $AUC=0.97 , AUPR=0.93$ for degressive interactions , and $AUC=0.97,AUPR=0.99 $ for enhansive interactions. These results indicate the high accuracy and detection power of the model.
 
 2) Variance: The confidence interval for the reported values with a reliability coefficient above 95 percent was narrow and close to each other. So that out of four reported values, three values were less than 0.002, and only for the degressive interaction, the AUPR was in the range of $\pm 0.005$. Due to the small amount of variance obtained from the model, it is clear that the proposed model is robust.
 
-3) Resolution capability: By plotting the output probability distribution diagram as shown in Figure
-\ref{DDIProbHist},
-it is clear that values +1 and -1 are well separated, and probability distribution degressive and enhancive have slightly Subscriptions.
+3) Resolution capability: By plotting the output probability distribution diagram as shown in Figure \ref{DDIProbHist}, it is clear that values +1 and -1 are well separated, and probability distribution degressive and enhancive have slightly Subscriptions.
 
 \begin{figure}[!h]
 	\centering
@@ -451,9 +449,7 @@ it is clear that values +1 and -1 are well separated, and probability distributi
 	\label{DDIProbHist}
 \end{figure}
 
-The Suducode
-\ref{modelSelectionSuducode}
-shows the step-by-step model selection process.
+The Suducode \ref{modelSelectionSuducode} shows the step-by-step model selection process.
 
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
 \renewcommand{\algorithmicensure}{\textbf{Output:}}
@@ -484,16 +480,16 @@ If 3 is correct then select the model, else go to 2.
 
 
 \subsection*{Detection of drug pairs without possible interaction}
-In the previous step, a high-precision, robust, and accurate model was presented that could detect the degressive and enhancive interactions of drug pairs. Therefore, this model has the ability to detect non-interactions (real zeros) as follows. If drug pairs are unlikely to interact, then those drug pairs are likely to be real zeros.
-According to this hypothesis, the model was used to make predicts all unknown drug pairs (zeros). Unknown drug pairs include 270,000 drug pairs. In the output of the model, we consider drug pairs with enhancive probability less than 0.4 and degressive probability less than 0.4 as non-interacting drug pairs. Among the unlabeled data, about 65,000 drug pairs had the condition. These drug pairs are candidates for non-interaction. Due to the high accuracy of the model, the low variance of results, and the high resolution of the model, we consider these pairs as non-interacting drug pairs.
+In the previous step, a high-precision, robust, and accurate model has been presented to detect the potential interactions of drug pairs for both degressive and enhancive. Therefore, this model has the ability to detect non-interactions (real zeros) as follows. If drug pairs are unlikely to interact, then those drug pairs are likely to be real zeros.
+
+According to this hypothesis, the model was used to make predicts all unknown drug pairs (zeros). Unknown drug pairs include 270,000 drug pairs. In the model's output, we consider drug pairs as non-interacting drug pairs if the enhancive and degressive probability are less than 0.4 and 0.4. Among the unlabeled data, about 65,000 drug pairs had these conditions. These drug pairs are candidates for non-interaction. Due to the model's high accuracy, the low variance of results, and the model's high resolution, we consider these pairs non-interaction drug pairs.
 
 \subsection*{Selecting and training model on known and unknown interactions}
-This section uses known data and potential non-interaction candidates to form a data set. In this article, we will replace and use the non-interaction candidate drug pairs with the term real zero. The recommender system presented in Section
-\ref{Selecting model}
-is also used for the final model.
+This section uses known data and potential non-interaction candidates to form a data set. Here, we use the non-interaction candidate drug pairs as real zeros. The recommender system presented in Section \ref{Selecting model} is also used for the final model.
 
-First, the rows of matrix B, which contain the +1 and -1 interactions, are separated according to the previously detailed procedure and placed in 10 parts. Then, 30,000 non-interacting candidate drug pairs were randomly selected from 65,000 drug pairs. In the chosen drug pairs, the drug pairs, and the duals of them must be non-interaction candidates. This group of zeros is randomly divided into 10 parts, so each drug pairs and the dual are in the same batch. Then 10 parts of zeros are merged with 10 parts of pre-prepared +1s and -1s.
-The data set contains approximately 72,702 drug pairs divided into relatively equal parts and is ready for use in the training and testing of the final recommender system.
+First, the rows of the B matrix, which contain the +1 and -1 interactions, are separated according to the previously detailed procedure and placed in 10 parts. Then, 30,000 non-interacting candidate drug pairs were randomly selected from 65,000 drug pairs. In the chosen drug pairs, the drug pairs and the duals of them must be non-interaction candidates. The zeros group is randomly divided into 10 parts, so each drug pairs and the dual are in the same batch. Then 10 parts of zeros are merged with 10 parts of pre-prepared +1s and -1s. 
+
+The data set contains approximately 72,702 drug pairs divided into relatively equal parts and is ready for use in the final recommender system's training and testing.
 
 \subsection*{Selecting final model}
 The final model is almost the same as that described in Section
