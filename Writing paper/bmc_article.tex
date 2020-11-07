@@ -376,7 +376,7 @@ To solve this problem, it is necessary to provide a model that detects non-inter
 
 
 \subsection*{Selecting model\label{Selecting model}}
-We separated rows of matrix B that contain positive and negative interactions. The new matrix contains 42,702 pairs of drugs with degressive and enhancive interactions. This data was used to train and find a more suitable model and found a stronger model among many models with different network structures. The final model was a deep neural network that used convolutional and fully connected layers. The features of all interactions (+1 and -1) contain 1136 features. We first divide these features into 10 equal parts. Then, in a 10-cycle for, each period we consider 1 part as testing data and the other 9 parts as a set of training data. We select different models and train the model in the 10-Fold cross-validations with 90  of the data. Then we test the model on the remaining 10 percent of the data. In the separating process, pairs of drugs dual are considered. Since the $ (d_i, d_j) $ and $ (d_j, d_i) $ pairs of drugs are not biologically different from each other, in the separation of training and testing data, necessarily a pair of drugs and their duals are in the same group. This work prevents machine fraud.
+We separated rows of matrix B that contain positive and negative interactions. The new matrix contains 42,702 pairs of drugs with degressive and enhancive interactions. This data was used to train and find a more suitable model and found a stronger model among many models with different network structures. The final model was a deep neural network that used convolutional and fully connected layers. The features of all interactions (+1 and -1) contain 1136 features. We first divide these features into 10 equal parts. Then, in a 10-cycle for, each period we consider 1 part as testing data and the other 9 parts as a set of training data. We select different models and train the model in the 10-fold CV with 90  of the data. Then we test the model on the remaining 10 percent of the data. In the separating process, pairs of drugs dual are considered. Since the $ (d_i, d_j) $ and $ (d_j, d_i) $ pairs of drugs are not biologically different from each other, in the separation of training and testing data, necessarily a pair of drugs and their duals are in the same group. This work prevents machine fraud.
 
 After testing the different structures, we have modeled the final deep neural network shown in Figure
 \ref{CNNModel}.
@@ -432,15 +432,15 @@ Keep in mind that this network's hyperparameters are not optimized, and the spec
 
 1) Model overfitting: If hyperparameters changed to the best values, it is expected that the model will get better results on the present data, but there is no guarantee that the extracted features by the model are significant and works well when used in new cases. In this case, the so-called model is over-fitted and will be a negative point for the model.
 
-2)Robustness: Optimal hyperparameters give better results for the present data, but different drug similarities may be used in the future, or new data may be collected, and the present results may not be repeated. In this case, the model loses its robustness and will not be accepted in the pharmaceutical and pharmacological community.
+2) Robustness: Optimal hyperparameters give better results for the present data, but different drug similarities may be used in the future, or new data may be collected, and the present results may not be repeated. In this case, the model loses its robustness and will not be accepted in the pharmaceutical and pharmacological community.
 
-Finally, we examine the results of the proposed model in the 10-fold cross-validation from three views:
+Finally, we examine the results of the proposed model in the 10-fold CV from three views:
 
-1)Accuracy:In a 10-fold cross-validation,the model obtained $AUC=0.97 , AUPR=0.93$ for degressive interactions , and $AUC=0.97,AUPR=0.99 $ for enhansive interactions. These results indicate the high accuracy and detection power of the model.
+1)Accuracy:In a 10-fold CV,the model obtained $AUC=0.97 , AUPR=0.93$ for degressive interactions , and $AUC=0.97,AUPR=0.99 $ for enhansive interactions. These results indicate the high accuracy and detection power of the model.
 
-2) Variance: The confidence interval for the reported values with a reliability coefficient above 95 percent was narrow and close to each other. So that out of four reported values, three values were less than 0.002, and only for the degressive interaction, the AUPR was in the range of $\pm 0.005$. Due to the small amount of variance obtained from the model, it is clear that the proposed model is robust.
+2) Variance: The confidence interval for the reported values with a reliability coefficient above 95 percent was narrow and close to each other. Out of four reported confidence interval values, three values were less than $\pm 0.002$, and only for the degressive interaction, the AUPR was in the range of $\pm 0.005$. The low amount of variance obtained from the model shows that the proposed model is robust.
 
-3) Resolution capability: By plotting the output probability distribution diagram as shown in Figure \ref{DDIProbHist}, it is clear that values +1 and -1 are well separated, and probability distribution degressive and enhancive have slightly Subscriptions.
+3) Resolution capability: By plotting the output probability distribution diagram, as shown in Figure \ref{DDIProbHist}, it is clear that values +1 and -1 are well separated, and probability distribution degressive and enhancive have slightly Subscriptions.
 
 \begin{figure}[!h]
 	\centering
@@ -464,13 +464,13 @@ The Suducode \ref{modelSelectionSuducode} shows the step-by-step model selection
 \vskip.5\baselineskip\hrule height 0.4pt\vskip.5\baselineskip
 
 \STATE
-Apply 10-fold cross-validation to the features of +1 and -1 drug pairs.
+Apply 10-fold CV to the features of +1 and -1 drug pairs.
 
 \STATE
 Select the right model. 
 
 \STATE
-Test the model results in 10-fold cross-validation.
+Test the model results in 10-fold CV.
  
 \STATE
 If 3 is correct then select the model, else go to 2. 
@@ -480,30 +480,27 @@ If 3 is correct then select the model, else go to 2.
 
 
 \subsection*{Detection of drug pairs without possible interaction}
-In the previous step, a high-precision, robust, and accurate model has been presented to detect the potential interactions of drug pairs for both degressive and enhancive. Therefore, this model has the ability to detect non-interactions (real zeros) as follows. If drug pairs are unlikely to interact, then those drug pairs are likely to be real zeros.
+In the previous step, a high-precision, robust, and accurate model has been presented to detect drug pairs' potential interactions for both degressive and enhancive. Therefore, this model has the ability to detect non-interactions (real zeros) as follows. If drug pairs are unlikely to interact, then those drug pairs are likely to be real zeros.
 
-According to this hypothesis, the model was used to make predicts all unknown drug pairs (zeros). Unknown drug pairs include 270,000 drug pairs. In the model's output, we consider drug pairs as non-interacting drug pairs if the enhancive and degressive probability are less than 0.4 and 0.4. Among the unlabeled data, about 65,000 drug pairs had these conditions. These drug pairs are candidates for non-interaction. Due to the model's high accuracy, the low variance of results, and the model's high resolution, we consider these pairs non-interaction drug pairs.
+According to this hypothesis, the model was used to predict all unknown drug pairs (zeros). Unknown drug pairs include 270,000 drug pairs. We consider drug pairs as non-interacting drug pairs in the model's output if the enhancive and degressive probability are less than 0.4 and 0.4. Among the unlabeled data, about 65,000 drug pairs had these conditions. These drug pairs are candidates for non-interaction. Due to the model's high accuracy, the low variance of results, and the model's high resolution, we consider these pairs non-interaction drug pairs.
 
 \subsection*{Selecting and training model on known and unknown interactions}
 This section uses known data and potential non-interaction candidates to form a data set. Here, we use the non-interaction candidate drug pairs as real zeros. The recommender system presented in Section \ref{Selecting model} is also used for the final model.
 
-First, the rows of the B matrix, which contain the +1 and -1 interactions, are separated according to the previously detailed procedure and placed in 10 parts. Then, 30,000 non-interacting candidate drug pairs were randomly selected from 65,000 drug pairs. In the chosen drug pairs, the drug pairs and the duals of them must be non-interaction candidates. The zeros group is randomly divided into 10 parts, so each drug pairs and the dual are in the same batch. Then 10 parts of zeros are merged with 10 parts of pre-prepared +1s and -1s. 
+First, the B matrix rows, which contain the +1 and -1 interactions, are separated according to the previously detailed procedure and placed in 10 parts. Then, 30,000 non-interacting candidate drug pairs were randomly selected from 65,000 drug pairs. In the chosen drug pairs, the drug pairs and the duals of them must be non-interaction candidates. The zeros group is randomly divided into 10 parts, so each drug pairs and the dual are in the same batch. Then 10 parts of zeros are merged with 10 parts of pre-prepared +1s and -1s. 
 
-The data set contains approximately 72,702 drug pairs divided into relatively equal parts and is ready for use in the final recommender system's training and testing.
+The data set contains approximately 72,702 drug pairs, divided into relatively equal parts, is ready to use in the training and testing of the final recommender system.
 
 \subsection*{Selecting final model}
 The final model is almost the same as that described in Section
-\ref{Selecting model}.
-That means it has three Conv-layer with 128, 32, and 8 filters. Then, as before, three fully connected Conv layers were used. The difference was that the number of nodes changed from 64, 16 and 2 to 64, 16, and 3 in each layer, respectively. Specifically, this model gives three possible outputs for the three modes of enhancive interaction, non-interaction, and depressive interaction. Also, the number of epochs was considered 9. The deep neural network model for predicting interaction is shown in Figure
-\ref{Triple_model}.
-At this stage, the new model was not chosen because:
+\ref{Selecting model}. That means it has three Conv-layer with 128, 32, and 8 filters. Then, as before, three fully connected Conv layers were used. The difference was that the number of nodes changed from 64, 16 and 2 to 64, 16, and 3 in each layer, respectively. Specifically, this model gives three possible outputs for the three modes of enhancive interaction, non-interaction, and depressive interaction. Also, the number of epochs was considered 9. The deep neural network model for predicting interaction is shown in Figure
+\ref{Triple_model}. At this stage, the new model was not chosen because:
 
 1) The power of this model for relatively accurate detection of enhancive and degressive interactions has been proven.
 
-2) The actual zeros used in this section are suggested and have not been approved by the Pharmacology Laboratory, and until the writing of this article, a comprehensive database for non-interaction cases has not been made public. So, if the model selection is done again, may be selected and used a model that is not valid in terms of real-world application and will not be accepted.
-Due to the above reasons, the zeros recommender system is used to advance drug interactions by changing the number of outputs from 2 to 3, as the input data. The general process of the proposed SNF-CNN method is presented in the form of suducode 
-\ref{SNFCNNSuducode},
-which includes the steps of preparation, model selection, real zero detection, and the presentation of a comprehensive recommender system. 
+2) The zeros used in this section are just suggested and have not been approved by the Pharmacology Laboratory. Until the writing of this article, a comprehensive database for non-interaction cases has not been made public. If the model selection is made again, a model may be selected that is not necessarily valid in real-world application and hard to accept.
+
+Due to the above reasons, the zeros recommender system is used to advance drug interactions by changing the number of outputs from 2 to 3, as the input data. The general process of the proposed SNF-CNN method is presented in the form of suducode \ref{SNFCNNSuducode}, which includes the steps of preparation, model selection, real zero detection, and the presentation of a comprehensive recommender system. 
 
 \begin{figure}[!h]
 	\centering
@@ -648,7 +645,7 @@ Since the values of precision, recall, and F-measure is dependent on the value o
 \section*{Comparison of results}
 Based on the validation procedure described in Section
 \ref{K-fold CV}
-, the interaction type detection model was selected and trained. Then, the final three-class model was presented by recognizing the most probable non-interactions. So we tested the SNF-CNN model on data to check the evaluation, robustness, and efficiency of the cross-validation. Results SNF-CNN and other methods for comparison are presented and discussed in this section. Before comparing the different methods, an example of the results of neural network implementation is presented to identify the type of degressive and enhancive interactions.
+, the interaction type detection model was selected and trained. Then, the final three-class model was presented by recognizing the most probable non-interactions. So we tested the SNF-CNN model on data to check the evaluation, robustness, and efficiency of the CV. Results SNF-CNN and other methods for comparison are presented and discussed in this section. Before comparing the different methods, an example of the results of neural network implementation is presented to identify the type of degressive and enhancive interactions.
 
 \begin{table}[h!]
 \centering
@@ -794,7 +791,7 @@ The author would like to thank the reviewers for their constructive comments tha
 Text for this section\ldots
 
 \section*{Abbreviations}%% if any
-DDI:Drug-drug interactions;k-fold CV:k-fold cross-validation;SNF:Similarity Network Fusion
+DDI:Drug-drug interactions; CV:cross-validation; SNF:Similarity Network Fusion; 
 
 \section*{Availability of data and materials}%% if any
 the code and data is available at GitHub page of \href{https://github.com/aminkhod/DDI-Project/tree/master/CNN\%20model\%20to\%20Recommend\%20Comperhancive\%20DDIs}{SNF-CNN code and data}
