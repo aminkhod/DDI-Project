@@ -302,7 +302,7 @@ On the other hand, the occurrence of both enhancive and degressive DDIs is not r
 
 In this paper, we firstly introduce data and features. Then, a novel algorithm (SNF-CNN) based on the integration of drug similarities and deep learning recommendation systems for predicting DDI is presented in a comprehensive three-class model. This algorithm is called Predicting Comprehensive Drug-Drug Interaction via Similarity Network Fusion and Convolutional Neural Networks.
 
-The paper is organized as follows. In the first section, the data preparation process is explained. The recommendation system is then designed and trained on enhancive and degressive, which detects pairs of non-interacting drugs with high probability. Next, the previous recommender system, based on a convolutional neural network, is trained on incremental and decremental interaction data without interaction (detected in the previous step).In section Results and Discussions, we investigate the results of SNF-CNN in the 10-fold cross-validation process(10-fold CV).
+The paper is organized as follows. In the first section, the data preparation process is explained. The recommendation system is then designed and trained on enhancive and degressive, which detects pairs of non-interacting drugs with high probability. Next, the previous recommender system, based on a convolutional neural network, is trained on incremental and decremental interaction data without interaction (detected in the previous step).In section Results and Discussions, we investigate the results of SNF-CNN in the 10-fold cross-validation (CV) process.
 
 It should be noted that the proposed method of this research is a recommender-based on deep neural networks and has no structural similarities with matrix factorization methods. The only reason for mentioning these methods is the limited number of articles that have used three-class data in their work.
 
@@ -500,7 +500,7 @@ The final model is almost the same as that described in Section
 
 2) The zeros used in this section are just suggested and have not been approved by the Pharmacology Laboratory. Until the writing of this article, a comprehensive database for non-interaction cases has not been made public. If the model selection is made again, a model may be selected that is not necessarily valid in real-world application and hard to accept.
 
-Due to the above reasons, the zeros recommender system is used to advance drug interactions by changing the number of outputs from 2 to 3, as the input data. The general process of the proposed SNF-CNN method is presented in the form of suducode \ref{SNFCNNSuducode}, which includes the steps of preparation, model selection, real zero detection, and the presentation of a comprehensive recommender system. 
+Due to the above reasons, the zeros recommender system is used to comprehensive drug-drug interactions prediction by changing the number of outputs from 2 to 3 as the input data. The proposed SNF-CNN method's general process is presented in the form of pseudocode \ref{SNFCNNSuducode}, which includes the steps of preparation, model selection, real zero detection, and the presentation of a comprehensive recommender system.
 
 \begin{figure}[!h]
 	\centering
@@ -548,7 +548,7 @@ Predict on unknown drug pairs.
 
 \section*{Result and discussion}
 \subsection*{Assessment}
-K-Fold cross-validation (K-fold CV) is a well-proven approach to verify the algorithms' accuracy in machine learning. To demonstrate that new drugs have no interaction and avoid overly optimistic predictions, the CV equation C must be carefully designed. For drug pairs with no known interactions, the K-fold CV scheme seeks to assess the task of anticipating new types of potential interactions between them and drugs that have known interactions. The production of test and experimental samples is as follows:
+K-Fold cross-validation (CV) is a well-proven approach to verify the algorithms' accuracy in machine learning. To demonstrate that new drugs have no interaction and avoid overly optimistic predictions, the CV equation C must be carefully designed. For drug pairs with no known interactions, the K-fold CV scheme seeks to assess the task of anticipating new types of potential interactions between them and drugs that have known interactions. The production of test and experimental samples is as follows:
 
 The whole data set is divided into k equal parts. The k-1 part is used as a training data set, and the model is built based on it, and the testing is performed with the remaining part. The procedure is repeated k times so that each of the k parts is used only once for testing, and each time accuracy is calculated for the constructed model. In this method, the average of predicting accuracy in all rounds of K-fold CV is taken as the final accuracy Classifier. The most common value for k in scientific literary is 5 or 10. Obviously, the larger the value of k, the more reliable the calculated accuracy classifier, and the more comprehensive the knowledge obtained, and the longer the classifier's testing time, which is the most important problem. Each setting and each data set has its own validation. In this approach, according to the type of problem and the methods, we used two types of 10-fold CV to divide the data into two sets of testing and training, which are:
 

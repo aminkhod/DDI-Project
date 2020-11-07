@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  7 NOV 2020 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  7 NOV 2020 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -850,7 +850,7 @@ l.498
 File: lastTripleModel/modelTripleLayers.png Graphic file (type png)
 <use lastTripleModel/modelTripleLayers.png>
 Package pdftex.def Info: lastTripleModel/modelTripleLayers.png  used on input l
-ine 509.
+ine 507.
 (pdftex.def)             Requested size: 198.96948pt x 413.90833pt.
 
 
@@ -861,16 +861,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ModelSelection/selectedModelAcc.png Graphic file (type png)
 <use ModelSelection/selectedModelAcc.png>
 Package pdftex.def Info: ModelSelection/selectedModelAcc.png  used on input lin
-e 564.
+e 562.
 (pdftex.def)             Requested size: 173.27846pt x 122.88551pt.
 <ModelSelection/selectedModelLoss.png, id=246, 393.47pt x 279.0425pt>
 File: ModelSelection/selectedModelLoss.png Graphic file (type png)
 <use ModelSelection/selectedModelLoss.png>
 Package pdftex.def Info: ModelSelection/selectedModelLoss.png  used on input li
-ne 565.
+ne 563.
 (pdftex.def)             Requested size: 173.27846pt x 122.88551pt.
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 563--567
+Overfull \hbox (12.5pt too wide) in paragraph at lines 561--565
  []$[]$ 
  []
 
@@ -879,23 +879,23 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 563--567
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.570 \subsubsection
+l.568 \subsubsection
                     *{Second case: 10-fold CV with unknown interactions} <./las
 tTripleModel/modelTripleLayers.png>]
 <lastTripleModel/modelTripleACC.png, id=255, 393.47pt x 279.0425pt>
 File: lastTripleModel/modelTripleACC.png Graphic file (type png)
 <use lastTripleModel/modelTripleACC.png>
 Package pdftex.def Info: lastTripleModel/modelTripleACC.png  used on input line
- 579.
+ 577.
 (pdftex.def)             Requested size: 173.27846pt x 122.88551pt.
 <lastTripleModel/modelTripleLoss.png, id=256, 387.4475pt x 279.0425pt>
 File: lastTripleModel/modelTripleLoss.png Graphic file (type png)
 <use lastTripleModel/modelTripleLoss.png>
 Package pdftex.def Info: lastTripleModel/modelTripleLoss.png  used on input lin
-e 580.
+e 578.
 (pdftex.def)             Requested size: 173.27846pt x 124.79729pt.
 
-Overfull \hbox (12.5pt too wide) in paragraph at lines 578--582
+Overfull \hbox (12.5pt too wide) in paragraph at lines 576--580
  []$[]$ 
  []
 
@@ -903,7 +903,7 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 578--582
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `f1' on page 13 undefined on input line 588.
+LaTeX Warning: Reference `f1' on page 13 undefined on input line 586.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -913,7 +913,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.628 ...frac{\mbox{TP}}{\mbox{TP} + \mbox{FP}} $$
+l.626 ...frac{\mbox{TP}}{\mbox{TP} + \mbox{FP}} $$
                                                    <./ModelSelection/selectedMo
 delAcc.png> <./ModelSelection/selectedModelLoss.png>] [14pdfTeX warning (ext4):
  destination with the same identifier (name{figure.8}) has been already used, d
@@ -921,42 +921,42 @@ uplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.638 
+l.636 
       pdfTeX warning (ext4): destination with the same identifier (name{table.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.638 
+l.636 
        <./lastTripleModel/modelTripleACC.png> <./lastTripleModel/modelTripleLos
 s.png>]
 
-LaTeX Warning: Reference `K-fold CV' on page 15 undefined on input line 649.
+LaTeX Warning: Reference `K-fold CV' on page 15 undefined on input line 647.
 
 [15pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.707 
+l.705 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.707 
+l.705 
       ] [16pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.767 
+l.765 
       pdfTeX warning (ext4): destination with the same identifier (name{table.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.767 
+l.765 
       ] [17] (./bmc_article.bbl
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
@@ -965,11 +965,11 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
 [18]) 
 AED: lastpage setting LastPage
 [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 908.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 908.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 906.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 906.
  (./bmc_article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 908.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 908.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 906.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 906.
 Package rerunfilecheck Info: File `bmc_article.out' has not changed.
 (rerunfilecheck)             Checksum: ED3CDF9133C37D676C26CC0D4896F289;44.
 
@@ -980,7 +980,7 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 908.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 906.
  ) 
 Here is how much of TeX's memory you used:
  7787 strings out of 492982
@@ -1006,7 +1006,7 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on bmc_article.pdf (19 pages, 579215 bytes).
+Output written on bmc_article.pdf (19 pages, 579207 bytes).
 PDF statistics:
  432 PDF objects out of 1000 (max. 8388607)
  372 compressed objects within 4 object streams
