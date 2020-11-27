@@ -1,0 +1,367 @@
+\begin{thebibliography}{46}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+
+\bibitem[{Abadi et~al.(2016)Abadi, Barham, Chen, Chen, Davis, Dean
+  et~al.}]{abadi2016tensorflow}
+Abadi, M., Barham, P., Chen, J., Chen, Z., Davis, A., Dean, J., et~al. (2016).
+\newblock Tensorflow: A system for large-scale machine learning.
+\newblock In \emph{12th $\{$USENIX$\}$ Symposium on Operating Systems Design
+  and Implementation ($\{$OSDI$\}$ 16)}. 265--283
+\bibAnnoteFile{abadi2016tensorflow}
+
+\bibitem[{Bui et~al.(2014)Bui, Sloot, Van~Mulligen, and Kors}]{bui2014novel}
+Bui, Q.-C., Sloot, P.~M., Van~Mulligen, E.~M., and Kors, J.~A. (2014).
+\newblock A novel feature-based approach to extract drug--drug interactions
+  from biomedical text.
+\newblock \emph{Bioinformatics} 30, 3365--3371
+\bibAnnoteFile{bui2014novel}
+
+\bibitem[{Businaro(2013)}]{businaro2013we}
+Businaro, R. (2013).
+\newblock Why we need an efficient and careful pharmacovigilance?
+\newblock \emph{Journal of pharmacovigilance}
+\bibAnnoteFile{businaro2013we}
+
+\bibitem[{Cheng and Zhao(2014)}]{cheng2014machine}
+Cheng, F. and Zhao, Z. (2014).
+\newblock Machine learning-based prediction of drug--drug interactions by
+  integrating drug phenotypic, therapeutic, chemical, and genomic properties.
+\newblock \emph{Journal of the American Medical Informatics Association} 21,
+  e278--e286
+\bibAnnoteFile{cheng2014machine}
+
+\bibitem[{Chollet et~al.(2015)}]{chollet2015keras}
+[Dataset] Chollet, F. et~al. (2015).
+\newblock Keras
+\bibAnnoteFile{chollet2015keras}
+
+\bibitem[{Fu and Peng(2017)}]{fu2017deep}
+Fu, L. and Peng, Q. (2017).
+\newblock A deep ensemble model to predict mirna-disease association.
+\newblock \emph{Scientific reports} 7, 1--13
+\bibAnnoteFile{fu2017deep}
+
+\bibitem[{Ghosal et~al.(1997)Ghosal, Edithal, Ekbal, Bhattacharyya, Chivukula,
+  and Tsatsaronis}]{ghosal1997your}
+Ghosal, T., Edithal, V., Ekbal, A., Bhattacharyya, P., Chivukula, S. S. S.~K.,
+  and Tsatsaronis, G. (1997).
+\newblock Is your document novel? let attention guide you. an attention based
+  model for document level novelty detection.
+\newblock \emph{Natural Language Engineering} 1, 1--38
+\bibAnnoteFile{ghosal1997your}
+
+\bibitem[{Hinton et~al.(2012)Hinton, Deng, Yu, Dahl, Mohamed, Jaitly
+  et~al.}]{hinton2012deep}
+Hinton, G., Deng, L., Yu, D., Dahl, G.~E., Mohamed, A.-r., Jaitly, N., et~al.
+  (2012).
+\newblock Deep neural networks for acoustic modeling in speech recognition: The
+  shared views of four research groups.
+\newblock \emph{IEEE Signal processing magazine} 29, 82--97
+\bibAnnoteFile{hinton2012deep}
+
+\bibitem[{Huang et~al.(2009)Huang, Hu, Huang, Li, Yuan, Pan
+  et~al.}]{huang2009effect}
+Huang, Q.-R., Hu, F., Huang, S., Li, H.-X., Yuan, Y.-H., Pan, G.-X., et~al.
+  (2009).
+\newblock Effect of long-term fertilization on organic carbon and nitrogen in a
+  subtropical paddy soil.
+\newblock \emph{Pedosphere} 19, 727--734
+\bibAnnoteFile{huang2009effect}
+
+\bibitem[{Huang et~al.(2007)Huang, Temple, Throckmorton, and
+  Lesko}]{huang2007drug}
+Huang, S.-M., Temple, R., Throckmorton, D., and Lesko, L. (2007).
+\newblock Drug interaction studies: study design, data analysis, and
+  implications for dosing and labeling.
+\newblock \emph{Clinical Pharmacology \& Therapeutics} 81, 298--304
+\bibAnnoteFile{huang2007drug}
+
+\bibitem[{Karbownik et~al.(2017)Karbownik, Sza{\l}ek, Soba{\'n}ska, Grabowski,
+  Wolc, and Grze{\'s}kowiak}]{karbownik2017pharmacokinetic}
+Karbownik, A., Sza{\l}ek, E., Soba{\'n}ska, K., Grabowski, T., Wolc, A., and
+  Grze{\'s}kowiak, E. (2017).
+\newblock Pharmacokinetic drug-drug interaction between erlotinib and
+  paracetamol: a potential risk for clinical practice.
+\newblock \emph{European Journal of Pharmaceutical Sciences} 102, 55--62
+\bibAnnoteFile{karbownik2017pharmacokinetic}
+
+\bibitem[{Kim et~al.(2016)Kim, Cho, and Przytycka}]{kim2016understanding}
+Kim, Y.-A., Cho, D.-Y., and Przytycka, T.~M. (2016).
+\newblock Understanding genotype-phenotype effects in cancer via network
+  approaches.
+\newblock \emph{PLoS computational biology} 12, e1004747
+\bibAnnoteFile{kim2016understanding}
+
+\bibitem[{Kingma and Ba(2014)}]{kingma2014adam}
+Kingma, D.~P. and Ba, J. (2014).
+\newblock Adam: A method for stochastic optimization.
+\newblock \emph{arXiv preprint arXiv:1412.6980}
+\bibAnnoteFile{kingma2014adam}
+
+\bibitem[{Koch-Weser(1981)}]{koch1981serum}
+Koch-Weser, J. (1981).
+\newblock Serum drug concentrations in clinical perspective.
+\newblock \emph{Therapeutic drug monitoring} 3, 3--16
+\bibAnnoteFile{koch1981serum}
+
+\bibitem[{Law et~al.(2014)Law, Knox, Djoumbou, Jewison, Guo, Liu
+  et~al.}]{law2014drugbank}
+Law, V., Knox, C., Djoumbou, Y., Jewison, T., Guo, A.~C., Liu, Y., et~al.
+  (2014).
+\newblock Drugbank 4.0: shedding new light on drug metabolism.
+\newblock \emph{Nucleic acids research} 42, D1091--D1097
+\bibAnnoteFile{law2014drugbank}
+
+\bibitem[{Leape et~al.(1995)Leape, Bates, Cullen, Cooper, Demonaco, Gallivan
+  et~al.}]{leape1995systems}
+Leape, L.~L., Bates, D.~W., Cullen, D.~J., Cooper, J., Demonaco, H.~J.,
+  Gallivan, T., et~al. (1995).
+\newblock Systems analysis of adverse drug events.
+\newblock \emph{Jama} 274, 35--43
+\bibAnnoteFile{leape1995systems}
+
+\bibitem[{Liu et~al.(2016)Liu, Chen, Chen, and Tang}]{liu2016dependency}
+Liu, S., Chen, K., Chen, Q., and Tang, B. (2016).
+\newblock Dependency-based convolutional neural network for drug-drug
+  interaction extraction.
+\newblock In \emph{2016 IEEE international conference on bioinformatics and
+  biomedicine (BIBM)} (IEEE), 1074--1080
+\bibAnnoteFile{liu2016dependency}
+
+\bibitem[{Luo et~al.(2014)Luo, Zhang, Huang, Huang, Kao, Shi
+  et~al.}]{luo2014ddi}
+Luo, H., Zhang, P., Huang, H., Huang, J., Kao, E., Shi, L., et~al. (2014).
+\newblock Ddi-cpi, a server that predicts drug--drug interactions through
+  implementing the chemical--protein interactome.
+\newblock \emph{Nucleic acids research} 42, W46--W52
+\bibAnnoteFile{luo2014ddi}
+
+\bibitem[{Mulroy et~al.(2017)Mulroy, Highton, and Jordan}]{mulroy2017giant}
+Mulroy, E., Highton, J., and Jordan, S. (2017).
+\newblock Giant cell arteritis treatment failure resulting from probable
+  steroid/antiepileptic drug-drug interaction.
+\newblock \emph{The New Zealand Medical Journal (Online)} 130, 102
+\bibAnnoteFile{mulroy2017giant}
+
+\bibitem[{Nair and Hinton(2010)}]{nair2010rectified}
+Nair, V. and Hinton, G.~E. (2010).
+\newblock Rectified linear units improve restricted boltzmann machines.
+\newblock In \emph{ICML}
+\bibAnnoteFile{nair2010rectified}
+
+\bibitem[{Olayan et~al.(2018)Olayan, Ashoor, and Bajic}]{olayan2018ddr}
+Olayan, R.~S., Ashoor, H., and Bajic, V.~B. (2018).
+\newblock Ddr: efficient computational method to predict drug--target
+  interactions using graph mining and machine learning approaches.
+\newblock \emph{Bioinformatics} 34, 1164--1173
+\bibAnnoteFile{olayan2018ddr}
+
+\bibitem[{Pahikkala et~al.(2015)Pahikkala, Airola, Pietil{\"a}, Shakyawar,
+  Szwajda, Tang et~al.}]{pahikkala2015toward}
+Pahikkala, T., Airola, A., Pietil{\"a}, S., Shakyawar, S., Szwajda, A., Tang,
+  J., et~al. (2015).
+\newblock Toward more realistic drug--target interaction predictions.
+\newblock \emph{Briefings in bioinformatics} 16, 325--337
+\bibAnnoteFile{pahikkala2015toward}
+
+\bibitem[{Pan et~al.(2016)Pan, Fan, Yan, and Shen}]{pan2016ipminer}
+Pan, X., Fan, Y.-X., Yan, J., and Shen, H.-B. (2016).
+\newblock Ipminer: hidden ncrna-protein interaction sequential pattern mining
+  with stacked autoencoder for accurate computational prediction.
+\newblock \emph{BMC genomics} 17, 582
+\bibAnnoteFile{pan2016ipminer}
+
+\bibitem[{{Ross Markello}(2018)}]{SNFPy2020}
+[Dataset] {Ross Markello} (2018).
+\newblock snfpy 0.2.2
+\bibAnnoteFile{SNFPy2020}
+
+\bibitem[{Ryu et~al.(2018)Ryu, Kim, and Lee}]{ryu2018deep}
+Ryu, J.~Y., Kim, H.~U., and Lee, S.~Y. (2018).
+\newblock Deep learning improves prediction of drug--drug and drug--food
+  interactions.
+\newblock \emph{Proceedings of the National Academy of Sciences} 115,
+  E4304--E4311
+\bibAnnoteFile{ryu2018deep}
+
+\bibitem[{Seen(2012)}]{seen20121}
+Seen, S. (2012).
+\newblock 1-day learning, 1-year localization: Long-term lidar localization
+  using scan context image.
+\newblock \emph{Database} 2012, 01--15
+\bibAnnoteFile{seen20121}
+
+\bibitem[{Shi et~al.(2018)Shi, Huang, Li, Lei, Zhang, Dong
+  et~al.}]{shi2018tmfuf}
+Shi, J.-Y., Huang, H., Li, J.-X., Lei, P., Zhang, Y.-N., Dong, K., et~al.
+  (2018).
+\newblock Tmfuf: a triple matrix factorization-based unified framework for
+  predicting comprehensive drug-drug interactions of new drugs.
+\newblock \emph{BMC bioinformatics} 19, 27--37
+\bibAnnoteFile{shi2018tmfuf}
+
+\bibitem[{Shi et~al.(2017)Shi, Huang, Li, Lei, Zhang, and
+  Yiu}]{shi2017predicting}
+Shi, J.-Y., Huang, H., Li, J.-X., Lei, P., Zhang, Y.-N., and Yiu, S.-M. (2017).
+\newblock Predicting comprehensive drug-drug interactions for new drugs via
+  triple matrix factorization.
+\newblock In \emph{International Conference on Bioinformatics and Biomedical
+  Engineering} (Springer), 108--117
+\bibAnnoteFile{shi2017predicting}
+
+\bibitem[{Shi et~al.(2019)Shi, Mao, Yu, and Yiu}]{shi2019detecting}
+Shi, J.-Y., Mao, K.-T., Yu, H., and Yiu, S.-M. (2019).
+\newblock Detecting drug communities and predicting comprehensive drug--drug
+  interactions via balance regularized semi-nonnegative matrix factorization.
+\newblock \emph{Journal of cheminformatics} 11, 1--16
+\bibAnnoteFile{shi2019detecting}
+
+\bibitem[{Srivastava et~al.(2014)Srivastava, Hinton, Krizhevsky, Sutskever, and
+  Salakhutdinov}]{srivastava2014dropout}
+Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I., and Salakhutdinov,
+  R. (2014).
+\newblock Dropout: a simple way to prevent neural networks from overfitting.
+\newblock \emph{The journal of machine learning research} 15, 1929--1958
+\bibAnnoteFile{srivastava2014dropout}
+
+\bibitem[{Tian et~al.(2017)Tian, Guo, Wang, Xing, Wang, and
+  Zhang}]{tian2017constructing}
+Tian, Z., Guo, M., Wang, C., Xing, L., Wang, L., and Zhang, Y. (2017).
+\newblock Constructing an integrated gene similarity network for the
+  identification of disease genes.
+\newblock \emph{Journal of biomedical semantics} 8, 32
+\bibAnnoteFile{tian2017constructing}
+
+\bibitem[{Toda and Okura(2012)}]{toda2012research}
+Toda, Y. and Okura, F. (2012).
+\newblock Research article how convolutional neural networks diagnose plant
+  disease.
+\newblock \emph{Challenge (LSVRC)} , 20
+\bibAnnoteFile{toda2012research}
+
+\bibitem[{Veith et~al.(2009)Veith, Southall, Huang, James, Fayne, Artemenko
+  et~al.}]{veith2009comprehensive}
+Veith, H., Southall, N., Huang, R., James, T., Fayne, D., Artemenko, N., et~al.
+  (2009).
+\newblock Comprehensive characterization of cytochrome p450 isozyme selectivity
+  across chemical libraries.
+\newblock \emph{Nature biotechnology} 27, 1050--1055
+\bibAnnoteFile{veith2009comprehensive}
+
+\bibitem[{Vilar et~al.(2014)Vilar, Uriarte, Santana, Lorberbaum, Hripcsak,
+  Friedman et~al.}]{vilar2014similarity}
+Vilar, S., Uriarte, E., Santana, L., Lorberbaum, T., Hripcsak, G., Friedman,
+  C., et~al. (2014).
+\newblock Similarity-based modeling in large-scale prediction of drug-drug
+  interactions.
+\newblock \emph{Nature protocols} 9, 2147
+\bibAnnoteFile{vilar2014similarity}
+
+\bibitem[{Wang et~al.(2014)Wang, Mezlini, Demir, Fiume, Tu, Brudno
+  et~al.}]{wang2014similarity}
+Wang, B., Mezlini, A.~M., Demir, F., Fiume, M., Tu, Z., Brudno, M., et~al.
+  (2014).
+\newblock Similarity network fusion for aggregating data types on a genomic
+  scale.
+\newblock \emph{Nature methods} 11, 333
+\bibAnnoteFile{wang2014similarity}
+
+\bibitem[{Wang et~al.(2016)Wang, Liu, Xu, Shi, Zhang, Mo
+  et~al.}]{wang2016predicting}
+Wang, Y., Liu, T., Xu, D., Shi, H., Zhang, C., Mo, Y.-Y., et~al. (2016).
+\newblock Predicting dna methylation state of cpg dinucleotide using genome
+  topological features and deep networks.
+\newblock \emph{Scientific reports} 6, 19598
+\bibAnnoteFile{wang2016predicting}
+
+\bibitem[{Wienkers and Heath(2005)}]{wienkers2005predicting}
+Wienkers, L.~C. and Heath, T.~G. (2005).
+\newblock Predicting in vivo drug interactions from in vitro drug discovery
+  data.
+\newblock \emph{Nature reviews Drug discovery} 4, 825--833
+\bibAnnoteFile{wienkers2005predicting}
+
+\bibitem[{Wi{\'s}niowska and Polak(2016)}]{wisniowska2016role}
+Wi{\'s}niowska, B. and Polak, S. (2016).
+\newblock The role of interaction model in simulation of drug interactions and
+  qt prolongation.
+\newblock \emph{Current pharmacology reports} 2, 339--344
+\bibAnnoteFile{wisniowska2016role}
+
+\bibitem[{Yamanishi et~al.(2008)Yamanishi, Araki, Gutteridge, Honda, and
+  Kanehisa}]{yamanishi2008prediction}
+Yamanishi, Y., Araki, M., Gutteridge, A., Honda, W., and Kanehisa, M. (2008).
+\newblock Prediction of drug--target interaction networks from the integration
+  of chemical and genomic spaces.
+\newblock \emph{Bioinformatics} 24, i232--i240
+\bibAnnoteFile{yamanishi2008prediction}
+
+\bibitem[{Yu et~al.(2018)Yu, Mao, Shi, Huang, Chen, Dong
+  et~al.}]{yu2018predicting}
+Yu, H., Mao, K.-T., Shi, J.-Y., Huang, H., Chen, Z., Dong, K., et~al. (2018).
+\newblock Predicting and understanding comprehensive drug-drug interactions via
+  semi-nonnegative matrix factorization.
+\newblock \emph{BMC systems biology} 12, 14
+\bibAnnoteFile{yu2018predicting}
+
+\bibitem[{Zhang et~al.(2015)Zhang, Wang, Hu, and Sorrentino}]{zhang2015label}
+Zhang, P., Wang, F., Hu, J., and Sorrentino, R. (2015).
+\newblock Label propagation prediction of drug-drug interactions based on
+  clinical side effects.
+\newblock \emph{Scientific reports} 5, 1--10
+\bibAnnoteFile{zhang2015label}
+
+\bibitem[{Zhang et~al.(2018)Zhang, Chen, Li, and Yue}]{zhang2018manifold}
+Zhang, W., Chen, Y., Li, D., and Yue, X. (2018).
+\newblock Manifold regularized matrix factorization for drug-drug interaction
+  prediction.
+\newblock \emph{Journal of biomedical informatics} 88, 90--97
+\bibAnnoteFile{zhang2018manifold}
+
+\bibitem[{Zhang et~al.(2016{\natexlab{a}})Zhang, Chen, Tu, Liu, and
+  Qu}]{zhang2016drug}
+Zhang, W., Chen, Y., Tu, S., Liu, F., and Qu, Q. (2016{\natexlab{a}}).
+\newblock Drug side effect prediction through linear neighborhoods and multiple
+  data source integration.
+\newblock In \emph{2016 IEEE international conference on bioinformatics and
+  biomedicine (BIBM)} (IEEE), 427--434
+\bibAnnoteFile{zhang2016drug}
+
+\bibitem[{Zhang et~al.(2016{\natexlab{b}})Zhang, Wu, Xu, Wang, Soysal, Li
+  et~al.}]{zhang2016leveraging}
+Zhang, Y., Wu, H.-Y., Xu, J., Wang, J., Soysal, E., Li, L., et~al.
+  (2016{\natexlab{b}}).
+\newblock Leveraging syntactic and semantic graph kernels to extract
+  pharmacokinetic drug drug interactions from biomedical literature.
+\newblock \emph{BMC systems biology} 10, 67
+\bibAnnoteFile{zhang2016leveraging}
+
+\bibitem[{Zhao et~al.(2011)Zhao, Iskar, Zeller, Kuhn, Van~Noort, and
+  Bork}]{zhao2011prediction}
+Zhao, X.-M., Iskar, M., Zeller, G., Kuhn, M., Van~Noort, V., and Bork, P.
+  (2011).
+\newblock Prediction of drug combinations by integrating molecular and
+  pharmacological data.
+\newblock \emph{PLoS Comput Biol} 7, e1002323
+\bibAnnoteFile{zhao2011prediction}
+
+\bibitem[{Zhou et~al.(2016)Zhou, Bui, Sostek, and
+  Al-Huniti}]{zhou2016simulation}
+Zhou, D., Bui, K., Sostek, M., and Al-Huniti, N. (2016).
+\newblock Simulation and prediction of the drug-drug interaction potential of
+  naloxegol by physiologically based pharmacokinetic modeling.
+\newblock \emph{CPT: pharmacometrics \& systems pharmacology} 5, 250--257
+\bibAnnoteFile{zhou2016simulation}
+
+\end{thebibliography}
