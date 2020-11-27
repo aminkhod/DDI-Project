@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  27 NOV 2020 19:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  27 NOV 2020 20:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**frontiers.tex
-(./frontiers.tex
+**"Drug-Drug Interaction Prediction by Deep Learning Approach.tex"
+(./Drug-Drug Interaction Prediction by Deep Learning Approach.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./frontiersSCNS.cls
@@ -860,8 +860,8 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip63
 \algorithmicindent=\skip64
 )
-(./frontiers.aux)
-\openout1 = `frontiers.aux'.
+(./Drug-Drug Interaction Prediction by Deep Learning Approach.aux)
+\openout1 = `"Drug-Drug Interaction Prediction by Deep Learning Approach.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
@@ -878,7 +878,8 @@ LaTeX Font Info:    ... okay on input line 46.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 46.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -920,9 +921,10 @@ LaTeX Info: Redefining \ref on input line 46.
 LaTeX Info: Redefining \pageref on input line 46.
 LaTeX Info: Redefining \nameref on input line 46.
 
-(./frontiers.out) (./frontiers.out)
+(./Drug-Drug Interaction Prediction by Deep Learning Approach.out)
+(./Drug-Drug Interaction Prediction by Deep Learning Approach.out)
 \@outlinefile=\write3
-\openout3 = `frontiers.out'.
+\openout3 = `"Drug-Drug Interaction Prediction by Deep Learning Approach.out"'.
 
 LaTeX Info: Redefining \microtypecontext on input line 46.
 Package microtype Info: Generating PDF output.
@@ -1184,7 +1186,7 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[17] (./frontiers.bbl
+[17] (./Drug-Drug Interaction Prediction by Deep Learning Approach.bbl
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
@@ -1247,10 +1249,11 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 690.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 690.
 
-(./frontiers.aux)
+(./Drug-Drug Interaction Prediction by Deep Learning Approach.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 690.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 690.
-Package rerunfilecheck Info: File `frontiers.out' has not changed.
+Package rerunfilecheck Info: File `"Drug-Drug Interaction Prediction by Deep Le
+arning Approach".out' has not changed.
 (rerunfilecheck)             Checksum: 6DA45267ECCDEB241AC3FFDA97E191A7;511.
 
 
@@ -1259,12 +1262,12 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  12695 strings out of 492982
- 189698 string characters out of 6134896
- 333921 words of memory out of 5000000
+ 190435 string characters out of 6134896
+ 333972 words of memory out of 5000000
  15618 multiletter control sequences out of 15000+600000
  41387 words of font info for 186 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 60i,10n,94p,1128b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,10n,94p,1179b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/
@@ -1278,7 +1281,8 @@ live/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on frontiers.pdf (21 pages, 730791 bytes).
+Output written on "Drug-Drug Interaction Prediction by Deep Learning Approach.p
+df" (21 pages, 730791 bytes).
 PDF statistics:
  489 PDF objects out of 1000 (max. 8388607)
  419 compressed objects within 5 object streams
