@@ -47,7 +47,7 @@ $^{2}$Laboratory Eslahchi, School of Bioinformatics, IPM - Institute for Researc
 \onecolumn
 \firstpage{1}
 
-\title[Running Title]{Predicting Comperhensive Drug - Drug Interaction via Similarity Network Fusion and Convolutional Neural Networks} 
+\title[Running Title]{Drug-Drug Interaction Prediction by Deep Learning Approach} 
 
 \author[\firstAuthorLast ]{\Authors} %This field will be automatically populated
 \address{} %This field will be automatically populated
@@ -136,20 +136,20 @@ The paper is organized as follows. In the first section, the data preparation pr
 It should be noted that the proposed method of this research is a recommender-based on deep neural networks and has no structural similarities with matrix factorization methods. The only reason for mentioning these methods is the limited number of articles that have used three-class data in their work.
 
 
-\section*{Methods}
-\subsection*{Dataset and features}
+\section{Methods}
+\subsection{Dataset and features}
 In this study, we use the data set presented in paper of \cite{yu2018predicting}. This set contains 568 approved small molecule drugs, each of them has at least one interaction with the other drugs in the set. In total, the interactions between these 568 drugs contain 21,351 DDIs, including 16,757 enhancive DDIs and 4,594 degressive DDIs.In addition, each drug represented as an  881-dimensional feature vector $ F_ {str} $  based on PubChem chemical structure descriptor and also a 9149-dimensional feature vector $ F_ {se} $ according to the off-label side effects provided by OFFSIDES.
 
-\subsection*{Problem formulation}
+\subsection{Problem formulation}
 
 Without loss of generality, let $D = \{d_i\}$, $i = 1, 2, .., m$ be a set of m approved drugs. Their  interactions can be accordingly represented as an $m \times m$ symmetric interaction matrix $A_{m \times m} = \{a_{ij}\}$. For the conventional DDIs, $a_{ij} = 1$ if $d_i$ interacts with $d_j$, and $a_{ij} = 0$ otherwise. For the comprehensive DDIs, $a_{ij} \in \{-1, 0, +1\}$ . Again, if $d_i$ and $d_j$ do not interact with each other, $a_{ij} = 0$ . When there is an enhancive DDI or a degressive DDI between $d_i$ and $d_j$ , $a_{ij} = +1$ or $a_{ij} = -1$ respectively.
 
 In addition, each drug $d_i$ in the D is represented as a p-dimension feature vector $f_i = \left[  f_1, f_2, .., f_k, .., f_p \right]$, which $f_k = 1$ indicates the K-th specific chemical structure fragment or occurs an off-label side effect, and $f_k = 0$ otherwise. Because each drug has two chemical structure feature vectors and off-label side effects, there are two feature matrices of $F$ with dimensions of $m \times p$ (amount of p depends on kind of feature ). Matrices of $F_{str}$ and $F_{se}$ are, respectively, the feature matrix of the chemical structure and the feature matrix of off-label side effects.
 
-\subsection*{Data preparing}
+\subsection{Data preparing}
 Since the new drugs are isolated nodes in the interaction network, we cannot infer their possible interaction from topological information alone. Therefore, additional information (such as chemical structure or off-label side effects) is needed, which is called a drug feature in terms of machine learning. First, we prepare the features based on our model, and then we teach a deep learning model of interaction prediction.
 
-\subsubsection*{Similarity matrix calculation}
+\subsubsection{Similarity matrix calculation}
 
 A common method of calculating similarity called Cosine Similarity is used in machine learning articles such as Articles \cite{zhang2016drug, zhang2018manifold}. If we name feature vectors of the drug of $d_i$ and $d_j$
 as $x_i$ and $x_j$,Cosine Similarity between $x_i$ and $x_j$ is defined as follows:
@@ -162,7 +162,7 @@ Where $||.||_2$ is the Euclidean Norm and ${x_i . x_j}$ is inner product of two 
 
 It was observed that the values of the feature matrices are discrete, and also the dimensions of the matrices are large. The chemical structure and the off-label side effect have 881 and 9149 dimensions, respectively. On the other hand, machine learning algorithms do not work properly with high-dimensional data and discrete data. As a result, they do not get good results on these kinds of data. Therefore, by exploiting the cosine similarity, that was described above, drug similarity matrices based on chemical structure and off-label side effects are calculated. These matrices are $S_{str}$ and $S_{se}$, respectively. The dimensions of these two matrices are $m \times m$, where $s_{i,j}$ is an element of similarity matrices that shows similarity value between drugs of $di$ and $d_j$. Each element of $S$ has a continuous value between zero and one.
 
-\subsubsection*{Integration drug similarity matrices}
+\subsubsection{Integration drug similarity matrices}
 Similarity Network Fusion (SNF)\cite{wang2014similarity} is a new computational method for data integration.  Briefly, SNF combines many different types of features (such as chemical structure and off-label side effect, and more - clinical data, questionnaires, image data, etc.) for a given set of samples (e.g., drugs). SNF first constructs a sample similarity network for each of the data types and then iteratively integrates these networks using a novel network fusion method. Working in the sample network space allows SNF to avoid dealing with different scales, collection bias, and noise in different data types. Integrating data in a non-linear fashion allows SNF to take advantage of the common and complementary information in different data types. Figure \ref{SNF} is a good visualization of SNF processes  that has been used in our method structure.
 
 \begin{figure}[!h]
@@ -175,7 +175,7 @@ Similarity Network Fusion (SNF)\cite{wang2014similarity} is a new computational 
 
 In this section, using the similarity network fusion method that has described above, similarity matrices of the chemical structure and the off-label side effect of drugs were integrated. The output of this integration is a new similarity matrix of $S_{snf}$ with dimensions of $568 \times 568$, and elements of $S_{snf}$ have a value between zero and one.To integrate the network similarity, the package of SNFPy is used, which is implemented in Python and is available at \cite{SNFPy2020}.
 
-\subsubsection*{Input matrix format}
+\subsubsection{Input matrix format}
 
 At this stage, a matrix forms with 1139 columns and 322056 rows, which consists of the following columns:
 
@@ -198,14 +198,14 @@ Figure of \ref{BMatHeader} shows the header of matrix.
 
 We have 568 drugs, and the interaction of each drug with itself is meaningless. On the other hand, the drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ have the same label, while the corresponding similarity vectors of drugs in the drug pairs have been displaced. So, these drug pairs are dual. Both of them in the data augment the training data, which increases the model's ability to have a better prediction. As a result, the resulting matrix has 322056 data samples or rows ($(568 \times 568) - 568 = 322056$). According to the explanations provided, a matrix with dimensions of $322056 \times 1139$ is formed to input into our model, which is called $B$.
 
-\subsection*{Devising of Recommender System}
+\subsection{Devising of Recommender System}
 In the previous steps, data was prepared to input any learning machine, including deep learning machines. But before presenting the model and inputting the data into the machine, one important point must be considered. As mentioned before, in this approach and other approaches, the positive and negative data have a specific label. While the zero label does not mean that there is no interaction between a pair of drugs, it does indicate that no interaction has yet been found for this pair of drugs. In the following, we present a method for detecting pairs of non-interacting drugs. Then we use these pairs of drugs as zero-labeled data in the next training.
 
-\subsection*{Selecting and training model on known interactions}
+\subsection{Selecting and training model on known interactions}
 To solve this problem, it is necessary to provide a model that detects non-interaction with high accuracy and confidence. Therefore, we design a model based on deep learning that predicts the possible non-interaction drug pairs and then use it to design a three-class model. Obviously, high accuracy in detecting these zeros can help provide a more accurate and confident three-class model.
 
 
-\subsection*{Selecting model\label{Selecting model}}
+\subsection{Selecting model\label{Selecting model}}
 We separated rows of matrix B that contain positive and negative interactions. The new matrix contains 42,702 pairs of drugs with degressive and enhancive interactions. This data was used to train and find a more suitable model and found a stronger model among many models with different network structures. The final model was a deep neural network that used convolutional and fully connected layers. The features of all interactions (+1 and -1) contain 1136 features. We first divide these features into 10 equal parts. Then, in a 10-cycle for, each period we consider 1 part as testing data and the other 9 parts as a set of training data. We select different models and train the model in the 10-fold CV with 90  of the data. Then we test the model on the remaining 10 percent of the data. In the separating process, pairs of drugs dual are considered. Since the $ (d_i, d_j) $ and $ (d_j, d_i) $ pairs of drugs are not biologically different from each other, in the separation of training and testing data, necessarily a pair of drugs and their duals are in the same group. This work prevents machine fraud.
 
 After testing the different structures, we have modeled the final deep neural network shown in Figure
@@ -314,14 +314,14 @@ In the previous step, a high-precision, robust, and accurate model has been pres
 
 According to this hypothesis, the model was used to predict all unknown drug pairs (zeros). Unknown drug pairs include 270,000 drug pairs. We consider drug pairs as non-interacting drug pairs in the model's output if the enhancive and degressive probability are less than 0.4 and 0.4. Among the unlabeled data, about 65,000 drug pairs had these conditions. These drug pairs are candidates for non-interaction. Due to the model's high accuracy, the low variance of results, and the model's high resolution, we consider these pairs non-interaction drug pairs.
 
-\subsection*{Selecting and training model on known and unknown interactions}
+\subsection{Selecting and training model on known and unknown interactions}
 This section uses known data and potential non-interaction candidates to form a data set. Here, we use the non-interaction candidate drug pairs as real zeros. The recommender system presented in Section \ref{Selecting model} is also used for the final model.
 
 First, the B matrix rows, which contain the +1 and -1 interactions, are separated according to the previously detailed procedure and placed in 10 parts. Then, 30,000 non-interacting candidate drug pairs were randomly selected from 65,000 drug pairs. In the chosen drug pairs, the drug pairs and the duals of them must be non-interaction candidates. The zeros group is randomly divided into 10 parts, so each drug pairs and the dual are in the same batch. Then 10 parts of zeros are merged with 10 parts of pre-prepared +1s and -1s. 
 
 The data set contains approximately 72,702 drug pairs, divided into relatively equal parts, is ready to use in the training and testing of the final recommender system.
 
-\subsection*{Selecting final model}
+\subsection{Selecting final model}
 The final model is almost the same as that described in Section
 \ref{Selecting model}. That means it has three Conv-layer with 128, 32, and 8 filters. Then, as before, three fully connected Conv layers were used. The difference was that the number of nodes changed from 64, 16 and 2 to 64, 16, and 3 in each layer, respectively. Specifically, this model gives three possible outputs for the three modes of enhancive interaction, non-interaction, and depressive interaction. Also, the number of epochs was considered 9. The deep neural network model for predicting interaction is shown in Figure
 \ref{Triple_model}. At this stage, the new model was not chosen because:
@@ -375,14 +375,13 @@ Due to the above reasons, the zeros recommender system is used to comprehensive 
 	\end{algorithmic}
 \end{algorithm}
 
-
-\section*{Result and discussion}
-\subsection*{Assessment}
+\section{Result and discussion}
+\subsection{Assessment}
 K-Fold cross-validation (CV) is a well-proven approach to verify the algorithms' accuracy in machine learning. To demonstrate that new drugs have no interaction and avoid overly optimistic predictions, the CV equation C must be carefully designed. For drug pairs with no known interactions, the K-fold CV scheme seeks to assess the task of anticipating new types of potential interactions between them and drugs that have known interactions. The production of test and experimental samples is as follows:
 
 The whole data set is divided into k equal parts. The k-1 part is used as a training data set, and the model is built based on it, and the testing is performed with the remaining part. The procedure is repeated k times so that each of the k parts is used only once for testing, and each time accuracy is calculated for the constructed model. In this method, the average of predicting accuracy in all rounds of K-fold CV is taken as the final accuracy Classifier. The most common value for k in scientific literary is 5 or 10. Obviously, the larger the value of k, the more reliable the calculated accuracy classifier, and the more comprehensive the knowledge obtained, and the longer the classifier's testing time, which is the most important problem. Each setting and each data set has its own validation. In this approach, according to the type of problem and the methods, we used two types of 10-fold CV to divide the data into two sets of testing and training, which are:
 
-\subsubsection*{First case: 10-fold CV without unknown interactions}
+\subsubsection{First case: 10-fold CV without unknown interactions}
 In this case, we randomly select 90 percent of the enhancive and degressive interactions. For the testing set, we consider the remaining 10 percent of the enhancive and degressive interactions. In the first case of the testing procedure,  the model was selected, and some hyper-parameters, such as the number of epochs, were determined.Figure
 \ref{ModelSelection}
 It shows the training process for the selected model. As expected, the model's accuracy is strict on ascending training data, but there are ups and downs for testing data after Epoch 5. In the loss function graph, by the end of epoch 5, as the epochs increase, the loss function's value on training and testing procedure decreases. After epoch 5, the trend of training data continues, but the testing trend is reversed. In other words, over feet occurs. Therefore, based on the graphs, the appropriate number of epochs in this step was considered 5.
@@ -395,7 +394,7 @@ It shows the training process for the selected model. As expected, the model's a
 	\caption{\textbf{Accuracy and loss function for the binary model:} The right figure shows the model's accuracy on training and validation data during 15 epochs, and the left figure shows the loss function values at different epochs.}
 	\label{ModelSelection}
 \end{figure}
-\subsubsection*{Second case: 10-fold CV with unknown interactions}
+\subsubsection{Second case: 10-fold CV with unknown interactions}
 In this case, we divide the set of all interactions (enhancive, degressive, and zeros of the first step) into 10 equal parts. We consider one part of the testing set and the other 9 parts as the training data set. Divide all the zeros in the previous step into 10 parts and add a 1 to 9 ratio to both testing and training sets. In the second case, the previous model's 10-fold CV procedure was trained with the least changes to predict the three classes. Besides, hyper-parameter, the number of epochs was determined. Figure
 \ref{lastTripleModel} 
 
@@ -411,7 +410,7 @@ It shows the training process. The process of the accuracy of the model on train
 	\label{lastTripleModel}
 \end{figure}
 
-\section*{Evaluation criteria}
+\section{Evaluation criteria}
 In this study, we classify drug pairs according to the type of interaction or non-interaction. So in order to compare the method performance with other existing methods, from four measurement criteria, F- measure, accuracy, Area Under Roc Curve(AUC), and Area Under Precision-Recall Curve(AUPR) Used. To define these criteria, at first, introduced four counting criteria in table
 \ref {f1}.
 
@@ -472,7 +471,7 @@ Since the values of precision, recall, and F-measure is dependent on the value o
 %$$ \mbox{FPR} =  \frac{ \mbox{FP}}{\mbox{FP} + \mbox{TN}} $$
 
 
-\section*{Comparison of results}
+\section{Comparison of results}
 Based on the validation procedure described in Section
 \ref{K-fold CV}
 , the interaction type detection model was selected and trained. Then, the final three-class model was presented by recognizing the most probable non-interactions. So we tested the SNF-CNN model on data to check the evaluation, robustness, and efficiency of the CV. Results SNF-CNN and other methods for comparison are presented and discussed in this section. Before comparing the different methods, an example of the results of neural network implementation is presented to identify the type of degressive and enhancive interactions.
@@ -588,7 +587,7 @@ results of SNF-CNN averaged for the three classes and compared with other existi
 \ref{AUCAUPR} the proposed algorithm has a high difference compared to other superior algorithms with the problem of ternary and has been able to challenge other algorithms.
 
 
-\section*{Conclusions}
+\section{Conclusions}
 Existing computational approaches are able to present potential large-scale interactions before using drugs on the market. However, they cannot predict comprehensive interactions, including degressive and enhancive interactions. It is more useful to know whether or not a drug pair is enhancive DDI or a degressive DDI  than to know whether or not a drug pair is DDI. Without considering the pharmacological changes caused by DDIs, most existing approaches only report two-classes prediction.  In addition, the occurrence of degressive and enhancive DDIs is not random, but none of the existing approaches investigates and leverages this intrinsic important property of interactions when treating complex diseases (including treatment with three or more drugs).
 
 In this work, after representing a comprehensive DDI network, we used the structure of recommender systems to design a novel algorithm. Although the prediction obtained by the new algorithm is inspiring, overall performance can still be improved. For this reason, we investigate those incorrectly predicted DDIs. After checking them case-by-case, and in order to prove the algorithm in practice, check the prediction performance of the algorithm in the latest version of the DrugBank database. Observations and investigations led to the discovery of three reasons for wrong predictions:

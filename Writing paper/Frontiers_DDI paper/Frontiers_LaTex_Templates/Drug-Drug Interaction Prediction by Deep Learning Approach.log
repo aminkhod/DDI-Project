@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  27 NOV 2020 20:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  27 NOV 2020 20:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -964,7 +964,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./logo1-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./logo1-eps-converted-to.pdf, id=36, 284.06125pt x 80.3pt>
+<./logo1-eps-converted-to.pdf, id=112, 284.06125pt x 80.3pt>
 File: ./logo1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./logo1-eps-converted-to.pdf>
 Package pdftex.def Info: ./logo1-eps-converted-to.pdf  used on input line 61.
@@ -1032,18 +1032,23 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [3]
-Overfull \vbox (3.49998pt too high) has occurred while \output is active []
-
-
-[4]
-<SNF.png, id=196, 663.47874pt x 241.90375pt>
+<SNF.png, id=260, 663.47874pt x 241.90375pt>
 File: SNF.png Graphic file (type png)
 <use SNF.png>
 Package pdftex.def Info: SNF.png  used on input line 170.
 (pdftex.def)             Requested size: 351.64206pt x 128.20837pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
-<MatrixheaderB.png, id=202, 636.3775pt x 104.39pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \vbox (3.49998pt too high) has occurred while \output is active []
+
+
+[4]
+<MatrixheaderB.png, id=274, 636.3775pt x 104.39pt>
 File: MatrixheaderB.png Graphic file (type png)
 <use MatrixheaderB.png>
 Package pdftex.def Info: MatrixheaderB.png  used on input line 194.
@@ -1053,7 +1058,7 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [5 <./SNF.png> <./MatrixheaderB.png>]
-<ModelSelection/model.jpg, id=215, 462.72874pt x 962.59625pt>
+<ModelSelection/model.jpg, id=285, 462.72874pt x 962.59625pt>
 File: ModelSelection/model.jpg Graphic file (type jpg)
 <use ModelSelection/model.jpg>
 Package pdftex.def Info: ModelSelection/model.jpg  used on input line 215.
@@ -1067,7 +1072,7 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [6]
-<ModelSelection/modelparameters.png, id=234, 424.58624pt x 285.31593pt>
+<ModelSelection/modelparameters.png, id=302, 424.58624pt x 285.31593pt>
 File: ModelSelection/modelparameters.png Graphic file (type png)
 <use ModelSelection/modelparameters.png>
 Package pdftex.def Info: ModelSelection/modelparameters.png  used on input line
@@ -1078,6 +1083,9 @@ Package pdftex.def Info: ModelSelection/modelparameters.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
@@ -1086,7 +1094,7 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [8 <./ModelSelection/modelparameters.png>]
-<ModelSelection/densityDegEnh.png, id=267, 567.11874pt x 409.53pt>
+<ModelSelection/densityDegEnh.png, id=335, 567.11874pt x 409.53pt>
 File: ModelSelection/densityDegEnh.png Graphic file (type png)
 <use ModelSelection/densityDegEnh.png>
 Package pdftex.def Info: ModelSelection/densityDegEnh.png  used on input line 2
@@ -1099,7 +1107,7 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [9 <./ModelSelection/densityDegEnh.png>]
-<lastTripleModel/modelTripleLayers.png, id=285, 462.72874pt x 962.59625pt>
+<lastTripleModel/modelTripleLayers.png, id=353, 462.72874pt x 962.59625pt>
 File: lastTripleModel/modelTripleLayers.png Graphic file (type png)
 <use lastTripleModel/modelTripleLayers.png>
 Package pdftex.def Info: lastTripleModel/modelTripleLayers.png  used on input l
@@ -1121,36 +1129,36 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [11 <./lastTripleModel/modelTripleLayers.png>]
-<ModelSelection/selectedModelAcc.png, id=309, 393.47pt x 279.0425pt>
+<ModelSelection/selectedModelAcc.png, id=373, 393.47pt x 279.0425pt>
 File: ModelSelection/selectedModelAcc.png Graphic file (type png)
 <use ModelSelection/selectedModelAcc.png>
 Package pdftex.def Info: ModelSelection/selectedModelAcc.png  used on input lin
-e 392.
+e 391.
 (pdftex.def)             Requested size: 241.91785pt x 171.56114pt.
-<ModelSelection/selectedModelLoss.png, id=310, 393.47pt x 279.0425pt>
+<ModelSelection/selectedModelLoss.png, id=374, 393.47pt x 279.0425pt>
 File: ModelSelection/selectedModelLoss.png Graphic file (type png)
 <use ModelSelection/selectedModelLoss.png>
 Package pdftex.def Info: ModelSelection/selectedModelLoss.png  used on input li
-ne 393.
+ne 392.
 (pdftex.def)             Requested size: 241.91785pt x 171.56114pt.
-<lastTripleModel/modelTripleACC.png, id=312, 393.47pt x 279.0425pt>
+<lastTripleModel/modelTripleACC.png, id=376, 393.47pt x 279.0425pt>
 File: lastTripleModel/modelTripleACC.png Graphic file (type png)
 <use lastTripleModel/modelTripleACC.png>
 Package pdftex.def Info: lastTripleModel/modelTripleACC.png  used on input line
- 407.
+ 406.
 (pdftex.def)             Requested size: 241.91785pt x 171.56114pt.
-<lastTripleModel/modelTripleLoss.png, id=313, 387.4475pt x 279.0425pt>
+<lastTripleModel/modelTripleLoss.png, id=377, 387.4475pt x 279.0425pt>
 File: lastTripleModel/modelTripleLoss.png Graphic file (type png)
 <use lastTripleModel/modelTripleLoss.png>
 Package pdftex.def Info: lastTripleModel/modelTripleLoss.png  used on input lin
-e 408.
+e 407.
 (pdftex.def)             Requested size: 241.91785pt x 174.2308pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `f1' on page 12 undefined on input line 416.
+LaTeX Warning: Reference `f1' on page 12 undefined on input line 415.
 
 
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
@@ -1164,7 +1172,7 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 [13 <./lastTripleModel/modelTripleACC.png> <./lastTripleModel/modelTripleLoss.p
 ng>]
 
-LaTeX Warning: Reference `K-fold CV' on page 14 undefined on input line 477.
+LaTeX Warning: Reference `K-fold CV' on page 14 undefined on input line 476.
 
 
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
@@ -1207,16 +1215,16 @@ Package epstopdf Info: Source file: <logo1.eps>
 (epstopdf)                    size: 27674 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo1-eps-converted-to.pdf
  logo1.eps>
-(epstopdf)             \includegraphics on input line 672.
+(epstopdf)             \includegraphics on input line 671.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./logo1-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<logo1-eps-converted-to.pdf, id=400, 284.06125pt x 80.3pt>
+<logo1-eps-converted-to.pdf, id=462, 284.06125pt x 80.3pt>
 File: logo1-eps-converted-to.pdf Graphic file (type pdf)
 <use logo1-eps-converted-to.pdf>
-Package pdftex.def Info: logo1-eps-converted-to.pdf  used on input line 672.
+Package pdftex.def Info: logo1-eps-converted-to.pdf  used on input line 671.
 (pdftex.def)             Requested size: 284.52756pt x 80.43947pt.
 Package epstopdf Info: Source file: <logos.eps>
 (epstopdf)                    date: 2018-01-26 13:58:56
@@ -1226,16 +1234,16 @@ Package epstopdf Info: Source file: <logos.eps>
 (epstopdf)                    size: 135145 bytes
 (epstopdf)             Command: <repstopdf --outfile=logos-eps-converted-to.pdf
  logos.eps>
-(epstopdf)             \includegraphics on input line 680.
+(epstopdf)             \includegraphics on input line 679.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./logos-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<logos-eps-converted-to.pdf, id=401, 461.725pt x 101.37875pt>
+<logos-eps-converted-to.pdf, id=463, 461.725pt x 101.37875pt>
 File: logos-eps-converted-to.pdf Graphic file (type pdf)
 <use logos-eps-converted-to.pdf>
-Package pdftex.def Info: logos-eps-converted-to.pdf  used on input line 680.
+Package pdftex.def Info: logos-eps-converted-to.pdf  used on input line 679.
 (pdftex.def)             Requested size: 426.79134pt x 93.7089pt.
 
 Package caption Warning: Unused \captionsetup[sub] on input line 20.
@@ -1246,25 +1254,25 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [21 <./logo1-eps-converted-to.pdf> <./logos-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 690.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 690.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 689.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 689.
 
 (./Drug-Drug Interaction Prediction by Deep Learning Approach.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 690.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 690.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 689.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 689.
 Package rerunfilecheck Info: File `"Drug-Drug Interaction Prediction by Deep Le
 arning Approach".out' has not changed.
-(rerunfilecheck)             Checksum: 6DA45267ECCDEB241AC3FFDA97E191A7;511.
+(rerunfilecheck)             Checksum: 622FAB7F7C94AD8461542D8BDF6114D5;1944.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 12695 strings out of 492982
- 190435 string characters out of 6134896
- 333972 words of memory out of 5000000
- 15618 multiletter control sequences out of 15000+600000
+ 12719 strings out of 492982
+ 190850 string characters out of 6134896
+ 334620 words of memory out of 5000000
+ 15637 multiletter control sequences out of 15000+600000
  41387 words of font info for 186 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  60i,10n,94p,1179b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1282,10 +1290,10 @@ dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
 Output written on "Drug-Drug Interaction Prediction by Deep Learning Approach.p
-df" (21 pages, 730791 bytes).
+df" (21 pages, 732482 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 122 named destinations out of 1000 (max. 500000)
- 33922 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 482 compressed objects within 5 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 34074 words of extra memory for PDF output out of 35830 (max. 10000000)
 
