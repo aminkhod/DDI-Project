@@ -187,7 +187,20 @@
 Drug-drug interactions (DDIs) always cause unexpected and even adverse drug reactions. It is important to identify DDIs before drugs are used in the market.However, preclinical identification of DDIs requires much money and time. Computational approaches have exhibited their abilities to predict potential DDIs on a large scale by utilizing premarket drug properties. Nevertheless, most of them only predict whether or not one drug interacts with another, but neglect their enhancive (positive) and depressive (negative) changes of pharmacological effects. Moreover, these comprehensive DDIs do not occur at random, and derived from the structural features of the graph of DDIs. Revealing such a relationship is very important, because it is able to help understand how DDIs occur. Both the prediction of comprehensive DDIs and the discovery of structural relationship among them play an important guidance when making a co-prescription.
 
 \parttitle{Results} %if any
-In this work, treating a set of comprehensive DDIs as a signed network, we design a novel model (SNF-CNN) for the prediction of enhancive and degressive DDIs based on similarity network fusion and convolutional neural networks. SNF-CNN achieves the depressive DDI prediction ($AUC=0/9747 \pm 0/0033 $ and $AUPR=0/9666 \pm 0/0045 $), enhancive DDI prediction ($AUC=0/9686 \pm 0/0028$ and $AUPR=0/8221 \pm 0/0184$) and the Unknown DDI prediction ($AUC=0/9714 \pm 0/0040$ and $AUPR=0/9480 \pm 0/0083$). Compared with three state-of-the-art approaches, SNF-CNN shows it superiority.
+In this work, treating a set of comprehensive DDIs as a signed network, we design a novel model (SNF-CNN) for the prediction of enhancive and degressive DDIs based on similarity network fusion and convolutional neural networks. SNF-CNN achieves the depressive DDI prediction
+($AUC = 0.975
+%\pm 0.0033
+$ and $AUPR = 0.967
+%\pm 0.0045
+$), enhancive DDI prediction ($AUC = 0.969
+%\pm 0.0028
+$ and $AUPR = 0.822
+%\pm 0.0184
+$) and the Unknown DDI prediction ($AUC = 0.971
+%\pm 0.0040
+$ and $AUPR = 0.948
+%\pm 0.0083
+$). Compared with three state-of-the-art approaches, SNF-CNN shows it superiority.
 
 \parttitle{Conclusions} %if any
 This new approach is not only able to predict comprehensive DDI, but also predicts non-DDI.
@@ -299,6 +312,8 @@ Most of these existing machine learning approaches are designed to predict the t
 \cite{koch1981serum}.
 
 On the other hand, the occurrence of both enhancive and degressive DDIs is not random, but most current approaches have not yet exploited this structural property and have been developed only for conventional two-classes DDIs. Furthermore, revealing such a structural relationship is very important because it can help us understand how DDIs occur. It is one of the most important steps for treating complex diseases and guides physicians in preparing safer prescriptions to high-order drug interaction. The proposed algorithms for predicting three-classes DDIs are introduced in the following. And how they work are briefly described. All three introduced algorithms use matrix factorization methods, which is a network recommender-based approach. The matrix factorization approach, with slightly modifying, is a suitable solution for the subject of predicting DDI that has received much attention from researchers.
+
+
 
 In this paper, we firstly introduce data and features. Then, a novel algorithm (SNF-CNN) based on the integration of drug similarities and deep learning recommendation systems for predicting DDI is presented in a comprehensive three-class model. This algorithm is called Predicting Comprehensive Drug-Drug Interaction via Similarity Network Fusion and Convolutional Neural Networks.
 
