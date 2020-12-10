@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{47}
+\begin{thebibliography}{48}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -565,19 +565,21 @@ pp. \bfpage{1074}--\blpage{1080}
 \endbibitem
 
 %%% 32
-\bibitem{cokol2017efficient}
+\bibitem{shi2018tmfuf}
 \begin{barticle}
-\bauthor{\bsnm{Cokol}, \binits{M.}},
-\bauthor{\bsnm{Kuru}, \binits{N.}},
-\bauthor{\bsnm{Bicak}, \binits{E.}},
-\bauthor{\bsnm{Larkins-Ford}, \binits{J.}},
-\bauthor{\bsnm{Aldridge}, \binits{B.B.}}:
-\batitle{Efficient measurement and factorization of high-order drug
-  interactions in mycobacterium tuberculosis}.
-\bjtitle{Science advances}
-\bvolume{3}(\bissue{10}),
-\bfpage{1701881}
-(\byear{2017})
+\bauthor{\bsnm{Shi}, \binits{J.-Y.}},
+\bauthor{\bsnm{Huang}, \binits{H.}},
+\bauthor{\bsnm{Li}, \binits{J.-X.}},
+\bauthor{\bsnm{Lei}, \binits{P.}},
+\bauthor{\bsnm{Zhang}, \binits{Y.-N.}},
+\bauthor{\bsnm{Dong}, \binits{K.}},
+\bauthor{\bsnm{Yiu}, \binits{S.-M.}}:
+\batitle{Tmfuf: a triple matrix factorization-based unified framework for
+  predicting comprehensive drug-drug interactions of new drugs}.
+\bjtitle{BMC bioinformatics}
+\bvolume{19}(\bissue{14}),
+\bfpage{27}--\blpage{37}
+(\byear{2018})
 \end{barticle}
 \endbibitem
 
@@ -601,6 +603,53 @@ pp. \bfpage{1074}--\blpage{1080}
 \endbibitem
 
 %%% 34
+\bibitem{cokol2017efficient}
+\begin{barticle}
+\bauthor{\bsnm{Cokol}, \binits{M.}},
+\bauthor{\bsnm{Kuru}, \binits{N.}},
+\bauthor{\bsnm{Bicak}, \binits{E.}},
+\bauthor{\bsnm{Larkins-Ford}, \binits{J.}},
+\bauthor{\bsnm{Aldridge}, \binits{B.B.}}:
+\batitle{Efficient measurement and factorization of high-order drug
+  interactions in mycobacterium tuberculosis}.
+\bjtitle{Science advances}
+\bvolume{3}(\bissue{10}),
+\bfpage{1701881}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 35
+\bibitem{shi2019detecting}
+\begin{barticle}
+\bauthor{\bsnm{Shi}, \binits{J.-Y.}},
+\bauthor{\bsnm{Mao}, \binits{K.-T.}},
+\bauthor{\bsnm{Yu}, \binits{H.}},
+\bauthor{\bsnm{Yiu}, \binits{S.-M.}}:
+\batitle{Detecting drug communities and predicting comprehensive drug--drug
+  interactions via balance regularized semi-nonnegative matrix factorization}.
+\bjtitle{Journal of cheminformatics}
+\bvolume{11}(\bissue{1}),
+\bfpage{1}--\blpage{16}
+(\byear{2019})
+\end{barticle}
+\endbibitem
+
+%%% 36
+\bibitem{camacho2018social}
+\begin{barticle}
+\bauthor{\bsnm{Camacho}, \binits{L.A.G.}},
+\bauthor{\bsnm{Alves-Souza}, \binits{S.N.}}:
+\batitle{Social network data to alleviate cold-start in recommender system: A
+  systematic review}.
+\bjtitle{Information Processing \& Management}
+\bvolume{54}(\bissue{4}),
+\bfpage{529}--\blpage{544}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 37
 \bibitem{zhang2016drug}
 \begin{bchapter}
 \bauthor{\bsnm{Zhang}, \binits{W.}},
@@ -618,7 +667,7 @@ pp. \bfpage{427}--\blpage{434}
 \end{bchapter}
 \endbibitem
 
-%%% 35
+%%% 38
 \bibitem{zhang2018manifold}
 \begin{barticle}
 \bauthor{\bsnm{Zhang}, \binits{W.}},
@@ -634,7 +683,7 @@ pp. \bfpage{427}--\blpage{434}
 \end{barticle}
 \endbibitem
 
-%%% 36
+%%% 39
 \bibitem{SNFPy2020}
 \begin{botherref}
 \oauthor{\bsnm{{Ross Markello}}}:
@@ -645,7 +694,7 @@ Accessed Accessed 20 October 2020
 \end{botherref}
 \endbibitem
 
-%%% 37
+%%% 40
 \bibitem{nair2010rectified}
 \begin{bchapter}
 \bauthor{\bsnm{Nair}, \binits{V.}},
@@ -656,7 +705,7 @@ In: \bbtitle{ICML}
 \end{bchapter}
 \endbibitem
 
-%%% 38
+%%% 41
 \bibitem{hinton2012deep}
 \begin{barticle}
 \bauthor{\bsnm{Hinton}, \binits{G.}},
@@ -678,7 +727,7 @@ In: \bbtitle{ICML}
 \end{barticle}
 \endbibitem
 
-%%% 39
+%%% 42
 \bibitem{srivastava2014dropout}
 \begin{barticle}
 \bauthor{\bsnm{Srivastava}, \binits{N.}},
@@ -694,7 +743,7 @@ In: \bbtitle{ICML}
 \end{barticle}
 \endbibitem
 
-%%% 40
+%%% 43
 \bibitem{abadi2016tensorflow}
 \begin{bchapter}
 \bauthor{\bsnm{Abadi}, \binits{M.}},
@@ -715,7 +764,7 @@ pp. \bfpage{265}--\blpage{283}
 \end{bchapter}
 \endbibitem
 
-%%% 41
+%%% 44
 \bibitem{chollet2015keras}
 \begin{botherref}
 \oauthor{\bsnm{Chollet}, \binits{F.}}, et al.:
@@ -724,7 +773,7 @@ Keras.
 \end{botherref}
 \endbibitem
 
-%%% 42
+%%% 45
 \bibitem{ghosal1997your}
 \begin{barticle}
 \bauthor{\bsnm{Ghosal}, \binits{T.}},
@@ -742,7 +791,7 @@ Keras.
 \end{barticle}
 \endbibitem
 
-%%% 43
+%%% 46
 \bibitem{toda2012research}
 \begin{botherref}
 \oauthor{\bsnm{Toda}, \binits{Y.}},
@@ -754,7 +803,7 @@ Challenge (LSVRC),
 \end{botherref}
 \endbibitem
 
-%%% 44
+%%% 47
 \bibitem{seen20121}
 \begin{barticle}
 \bauthor{\bsnm{Seen}, \binits{S.}}:
@@ -767,7 +816,7 @@ Challenge (LSVRC),
 \end{barticle}
 \endbibitem
 
-%%% 45
+%%% 48
 \bibitem{kingma2014adam}
 \begin{botherref}
 \oauthor{\bsnm{Kingma}, \binits{D.P.}},
@@ -776,41 +825,6 @@ Adam: A method for stochastic optimization.
 arXiv preprint arXiv:1412.6980
 (2014)
 \end{botherref}
-\endbibitem
-
-%%% 46
-\bibitem{shi2019detecting}
-\begin{barticle}
-\bauthor{\bsnm{Shi}, \binits{J.-Y.}},
-\bauthor{\bsnm{Mao}, \binits{K.-T.}},
-\bauthor{\bsnm{Yu}, \binits{H.}},
-\bauthor{\bsnm{Yiu}, \binits{S.-M.}}:
-\batitle{Detecting drug communities and predicting comprehensive drug--drug
-  interactions via balance regularized semi-nonnegative matrix factorization}.
-\bjtitle{Journal of cheminformatics}
-\bvolume{11}(\bissue{1}),
-\bfpage{1}--\blpage{16}
-(\byear{2019})
-\end{barticle}
-\endbibitem
-
-%%% 47
-\bibitem{shi2018tmfuf}
-\begin{barticle}
-\bauthor{\bsnm{Shi}, \binits{J.-Y.}},
-\bauthor{\bsnm{Huang}, \binits{H.}},
-\bauthor{\bsnm{Li}, \binits{J.-X.}},
-\bauthor{\bsnm{Lei}, \binits{P.}},
-\bauthor{\bsnm{Zhang}, \binits{Y.-N.}},
-\bauthor{\bsnm{Dong}, \binits{K.}},
-\bauthor{\bsnm{Yiu}, \binits{S.-M.}}:
-\batitle{Tmfuf: a triple matrix factorization-based unified framework for
-  predicting comprehensive drug-drug interactions of new drugs}.
-\bjtitle{BMC bioinformatics}
-\bvolume{19}(\bissue{14}),
-\bfpage{27}--\blpage{37}
-(\byear{2018})
-\end{barticle}
 \endbibitem
 
 \end{thebibliography}
@@ -1395,21 +1409,24 @@ arXiv preprint arXiv:1412.6980
 </bibl>
 
 <bibl id="B32">
-  <title><p>Efficient measurement and factorization of high-order drug
-  interactions in Mycobacterium tuberculosis</p></title>
+  <title><p>TMFUF: a triple matrix factorization-based unified framework for
+  predicting comprehensive drug-drug interactions of new drugs</p></title>
   <aug>
-    <au><snm>Cokol</snm><fnm>M</fnm></au>
-    <au><snm>Kuru</snm><fnm>N</fnm></au>
-    <au><snm>Bicak</snm><fnm>E</fnm></au>
-    <au><snm>Larkins Ford</snm><fnm>J</fnm></au>
-    <au><snm>Aldridge</snm><fnm>BB</fnm></au>
+    <au><snm>Shi</snm><fnm>JY</fnm></au>
+    <au><snm>Huang</snm><fnm>H</fnm></au>
+    <au><snm>Li</snm><fnm>JX</fnm></au>
+    <au><snm>Lei</snm><fnm>P</fnm></au>
+    <au><snm>Zhang</snm><fnm>YN</fnm></au>
+    <au><snm>Dong</snm><fnm>K</fnm></au>
+    <au><snm>Yiu</snm><fnm>SM</fnm></au>
   </aug>
-  <source>Science advances</source>
-  <publisher>American Association for the Advancement of Science</publisher>
-  <pubdate>2017</pubdate>
-  <volume>3</volume>
-  <issue>10</issue>
-  <fpage>e1701881</fpage>
+  <source>BMC bioinformatics</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2018</pubdate>
+  <volume>19</volume>
+  <issue>14</issue>
+  <fpage>27</fpage>
+  <lpage>-37</lpage>
 </bibl>
 
 <bibl id="B33">
@@ -1433,6 +1450,59 @@ arXiv preprint arXiv:1412.6980
 </bibl>
 
 <bibl id="B34">
+  <title><p>Efficient measurement and factorization of high-order drug
+  interactions in Mycobacterium tuberculosis</p></title>
+  <aug>
+    <au><snm>Cokol</snm><fnm>M</fnm></au>
+    <au><snm>Kuru</snm><fnm>N</fnm></au>
+    <au><snm>Bicak</snm><fnm>E</fnm></au>
+    <au><snm>Larkins Ford</snm><fnm>J</fnm></au>
+    <au><snm>Aldridge</snm><fnm>BB</fnm></au>
+  </aug>
+  <source>Science advances</source>
+  <publisher>American Association for the Advancement of Science</publisher>
+  <pubdate>2017</pubdate>
+  <volume>3</volume>
+  <issue>10</issue>
+  <fpage>e1701881</fpage>
+</bibl>
+
+<bibl id="B35">
+  <title><p>Detecting drug communities and predicting comprehensive drug--drug
+  interactions via balance regularized semi-nonnegative matrix
+  factorization</p></title>
+  <aug>
+    <au><snm>Shi</snm><fnm>JY</fnm></au>
+    <au><snm>Mao</snm><fnm>KT</fnm></au>
+    <au><snm>Yu</snm><fnm>H</fnm></au>
+    <au><snm>Yiu</snm><fnm>SM</fnm></au>
+  </aug>
+  <source>Journal of cheminformatics</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2019</pubdate>
+  <volume>11</volume>
+  <issue>1</issue>
+  <fpage>1</fpage>
+  <lpage>-16</lpage>
+</bibl>
+
+<bibl id="B36">
+  <title><p>Social network data to alleviate cold-start in recommender system:
+  A systematic review</p></title>
+  <aug>
+    <au><snm>Camacho</snm><fnm>LAG</fnm></au>
+    <au><snm>Alves Souza</snm><fnm>SN</fnm></au>
+  </aug>
+  <source>Information Processing \& Management</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2018</pubdate>
+  <volume>54</volume>
+  <issue>4</issue>
+  <fpage>529</fpage>
+  <lpage>-544</lpage>
+</bibl>
+
+<bibl id="B37">
   <title><p>Drug side effect prediction through linear neighborhoods and
   multiple data source integration</p></title>
   <aug>
@@ -1449,7 +1519,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-434</lpage>
 </bibl>
 
-<bibl id="B35">
+<bibl id="B38">
   <title><p>Manifold regularized matrix factorization for drug-drug interaction
   prediction</p></title>
   <aug>
@@ -1466,7 +1536,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-97</lpage>
 </bibl>
 
-<bibl id="B36">
+<bibl id="B39">
   <title><p>snfpy 0.2.2</p></title>
   <aug>
     <au><cnm>{Ross Markello}</cnm></au>
@@ -1475,7 +1545,7 @@ arXiv preprint arXiv:1412.6980
   <url>https://pypi.org/project/snfpy/</url>
 </bibl>
 
-<bibl id="B37">
+<bibl id="B40">
   <title><p>Rectified linear units improve restricted boltzmann
   machines</p></title>
   <aug>
@@ -1486,7 +1556,7 @@ arXiv preprint arXiv:1412.6980
   <pubdate>2010</pubdate>
 </bibl>
 
-<bibl id="B38">
+<bibl id="B41">
   <title><p>Deep neural networks for acoustic modeling in speech recognition:
   The shared views of four research groups</p></title>
   <aug>
@@ -1511,7 +1581,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-97</lpage>
 </bibl>
 
-<bibl id="B39">
+<bibl id="B42">
   <title><p>Dropout: a simple way to prevent neural networks from
   overfitting</p></title>
   <aug>
@@ -1530,7 +1600,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-1958</lpage>
 </bibl>
 
-<bibl id="B40">
+<bibl id="B43">
   <title><p>Tensorflow: A system for large-scale machine learning</p></title>
   <aug>
     <au><snm>Abadi</snm><fnm>M</fnm></au>
@@ -1552,7 +1622,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-283</lpage>
 </bibl>
 
-<bibl id="B41">
+<bibl id="B44">
   <title><p>Keras</p></title>
   <aug>
     <au><snm>Chollet</snm><fnm>F</fnm></au>
@@ -1563,7 +1633,7 @@ arXiv preprint arXiv:1412.6980
   <url>https://github.com/fchollet/keras</url>
 </bibl>
 
-<bibl id="B42">
+<bibl id="B45">
   <title><p>Is Your Document Novel? Let Attention Guide You. An Attention Based
   Model For Document Level Novelty Detection</p></title>
   <aug>
@@ -1583,7 +1653,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-38</lpage>
 </bibl>
 
-<bibl id="B43">
+<bibl id="B46">
   <title><p>Research Article How Convolutional Neural Networks Diagnose Plant
   Disease</p></title>
   <aug>
@@ -1595,7 +1665,7 @@ arXiv preprint arXiv:1412.6980
   <fpage>20</fpage>
 </bibl>
 
-<bibl id="B44">
+<bibl id="B47">
   <title><p>1-Day Learning, 1-Year Localization: Long-term LiDAR Localization
   using Scan Context Image</p></title>
   <aug>
@@ -1608,7 +1678,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-15</lpage>
 </bibl>
 
-<bibl id="B45">
+<bibl id="B48">
   <title><p>Adam: A method for stochastic optimization</p></title>
   <aug>
     <au><snm>Kingma</snm><fnm>DP</fnm></au>
@@ -1616,46 +1686,6 @@ arXiv preprint arXiv:1412.6980
   </aug>
   <source>arXiv preprint arXiv:1412.6980</source>
   <pubdate>2014</pubdate>
-</bibl>
-
-<bibl id="B46">
-  <title><p>Detecting drug communities and predicting comprehensive drug--drug
-  interactions via balance regularized semi-nonnegative matrix
-  factorization</p></title>
-  <aug>
-    <au><snm>Shi</snm><fnm>JY</fnm></au>
-    <au><snm>Mao</snm><fnm>KT</fnm></au>
-    <au><snm>Yu</snm><fnm>H</fnm></au>
-    <au><snm>Yiu</snm><fnm>SM</fnm></au>
-  </aug>
-  <source>Journal of cheminformatics</source>
-  <publisher>BioMed Central</publisher>
-  <pubdate>2019</pubdate>
-  <volume>11</volume>
-  <issue>1</issue>
-  <fpage>1</fpage>
-  <lpage>-16</lpage>
-</bibl>
-
-<bibl id="B47">
-  <title><p>TMFUF: a triple matrix factorization-based unified framework for
-  predicting comprehensive drug-drug interactions of new drugs</p></title>
-  <aug>
-    <au><snm>Shi</snm><fnm>JY</fnm></au>
-    <au><snm>Huang</snm><fnm>H</fnm></au>
-    <au><snm>Li</snm><fnm>JX</fnm></au>
-    <au><snm>Lei</snm><fnm>P</fnm></au>
-    <au><snm>Zhang</snm><fnm>YN</fnm></au>
-    <au><snm>Dong</snm><fnm>K</fnm></au>
-    <au><snm>Yiu</snm><fnm>SM</fnm></au>
-  </aug>
-  <source>BMC bioinformatics</source>
-  <publisher>BioMed Central</publisher>
-  <pubdate>2018</pubdate>
-  <volume>19</volume>
-  <issue>14</issue>
-  <fpage>27</fpage>
-  <lpage>-37</lpage>
 </bibl>
 
 </refgrp>
