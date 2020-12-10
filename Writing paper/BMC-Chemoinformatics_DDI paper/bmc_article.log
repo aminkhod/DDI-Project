@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  10 DEC 2020 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  10 DEC 2020 17:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -762,7 +762,7 @@ Overfull \hbox (1.0pt too wide) has occurred while \output is active
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2] [3] [4]
-<SNF.png, id=136, 663.47874pt x 241.90375pt>
+<SNF.png, id=142, 663.47874pt x 241.90375pt>
 File: SNF.png Graphic file (type png)
 <use SNF.png>
 Package pdftex.def Info: SNF.png  used on input line 357.
@@ -772,55 +772,53 @@ Overfull \hbox (3.14206pt too wide) in paragraph at lines 357--359
  [][] 
  []
 
-<MatrixheaderB.png, id=140, 636.3775pt x 104.39pt>
-File: MatrixheaderB.png Graphic file (type png)
-<use MatrixheaderB.png>
-Package pdftex.def Info: MatrixheaderB.png  used on input line 381.
-(pdftex.def)             Requested size: 337.27847pt x 55.32642pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.387 
-       <./SNF.png>] [6pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.2}) has been already used, duplicate ignored
+l.377 F
+       igure of \ref{BMatHeader} shows the header of matrix. <./SNF.png>]
+<MatrixheaderB.png, id=155, 636.3775pt x 104.39pt>
+File: MatrixheaderB.png Graphic file (type png)
+<use MatrixheaderB.png>
+Package pdftex.def Info: MatrixheaderB.png  used on input line 381.
+(pdftex.def)             Requested size: 337.27847pt x 55.32642pt.
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 A
-       fter testing the different structures, we have modeled the final deep...
- <./MatrixheaderB.png>]
-<ModelSelection/model.jpg, id=162, 462.72874pt x 962.59625pt>
+l.397 
+       <./MatrixheaderB.png>]
+<ModelSelection/model.jpg, id=169, 462.72874pt x 962.59625pt>
 File: ModelSelection/model.jpg Graphic file (type jpg)
 <use ModelSelection/model.jpg>
 Package pdftex.def Info: ModelSelection/model.jpg  used on input line 402.
 (pdftex.def)             Requested size: 185.08821pt x 385.03168pt.
+
+Underfull \vbox (badness 1721) has occurred while \output is active []
+
  [7pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.416 
-       <./ModelSelection/model.jpg>]
-<ModelSelection/modelparameters.png, id=177, 424.58624pt x 285.31593pt>
+l.413 \end{equation}
+                     <./ModelSelection/model.jpg>]
+<ModelSelection/modelparameters.png, id=181, 424.58624pt x 285.31593pt>
 File: ModelSelection/modelparameters.png Graphic file (type png)
 <use ModelSelection/modelparameters.png>
 Package pdftex.def Info: ModelSelection/modelparameters.png  used on input line
  431.
 (pdftex.def)             Requested size: 275.97778pt x 185.45316pt.
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.442 3
-       ) ADAM optimization \cite{kingma2014adam} was used to manipulate the ...
- <./ModelSelection/modelparameters.png>]
-<ModelSelection/densityDegEnh.png, id=197, 567.11874pt x 409.53pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8]
+<ModelSelection/densityDegEnh.png, id=206, 567.11874pt x 409.53pt>
 File: ModelSelection/densityDegEnh.png Graphic file (type png)
 <use ModelSelection/densityDegEnh.png>
 Package pdftex.def Info: ModelSelection/densityDegEnh.png  used on input line 4
@@ -832,7 +830,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 474.
-[9]
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.501 
+       <./ModelSelection/modelparameters.png>]
 
 Package hyperref Warning: Suppressing empty link on input line 505.
 
@@ -846,7 +850,7 @@ Package hyperref Warning: Suppressing empty link on input line 513.
                                                   \fi \fi 
 l.515 
        <./ModelSelection/densityDegEnh.png>]
-<lastTripleModel/modelTripleLayers.png, id=226, 462.72874pt x 962.59625pt>
+<lastTripleModel/modelTripleLayers.png, id=232, 462.72874pt x 962.59625pt>
 File: lastTripleModel/modelTripleLayers.png Graphic file (type png)
 <use lastTripleModel/modelTripleLayers.png>
 Package pdftex.def Info: lastTripleModel/modelTripleLayers.png  used on input l
@@ -857,13 +861,13 @@ ine 524.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [11]
-<ModelSelection/selectedModelAcc.png, id=245, 393.47pt x 279.0425pt>
+<ModelSelection/selectedModelAcc.png, id=251, 393.47pt x 279.0425pt>
 File: ModelSelection/selectedModelAcc.png Graphic file (type png)
 <use ModelSelection/selectedModelAcc.png>
 Package pdftex.def Info: ModelSelection/selectedModelAcc.png  used on input lin
 e 579.
 (pdftex.def)             Requested size: 173.27846pt x 122.88551pt.
-<ModelSelection/selectedModelLoss.png, id=246, 393.47pt x 279.0425pt>
+<ModelSelection/selectedModelLoss.png, id=252, 393.47pt x 279.0425pt>
 File: ModelSelection/selectedModelLoss.png Graphic file (type png)
 <use ModelSelection/selectedModelLoss.png>
 Package pdftex.def Info: ModelSelection/selectedModelLoss.png  used on input li
@@ -882,13 +886,13 @@ Overfull \hbox (12.5pt too wide) in paragraph at lines 578--582
 l.585 \subsubsection
                     *{Second case: 10-fold CV with unknown interactions} <./las
 tTripleModel/modelTripleLayers.png>]
-<lastTripleModel/modelTripleACC.png, id=255, 393.47pt x 279.0425pt>
+<lastTripleModel/modelTripleACC.png, id=261, 393.47pt x 279.0425pt>
 File: lastTripleModel/modelTripleACC.png Graphic file (type png)
 <use lastTripleModel/modelTripleACC.png>
 Package pdftex.def Info: lastTripleModel/modelTripleACC.png  used on input line
  594.
 (pdftex.def)             Requested size: 173.27846pt x 122.88551pt.
-<lastTripleModel/modelTripleLoss.png, id=256, 387.4475pt x 279.0425pt>
+<lastTripleModel/modelTripleLoss.png, id=262, 387.4475pt x 279.0425pt>
 File: lastTripleModel/modelTripleLoss.png Graphic file (type png)
 <use lastTripleModel/modelTripleLoss.png>
 Package pdftex.def Info: lastTripleModel/modelTripleLoss.png  used on input lin
@@ -983,10 +987,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 923.
  ) 
 Here is how much of TeX's memory you used:
- 7787 strings out of 492982
- 108778 string characters out of 6134896
- 221685 words of memory out of 5000000
- 11104 multiletter control sequences out of 15000+600000
+ 7789 strings out of 492982
+ 108821 string characters out of 6134896
+ 222499 words of memory out of 5000000
+ 11105 multiletter control sequences out of 15000+600000
  12784 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,11n,37p,1130b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1006,10 +1010,10 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on bmc_article.pdf (19 pages, 579020 bytes).
+Output written on bmc_article.pdf (19 pages, 579752 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 372 compressed objects within 4 object streams
- 139 named destinations out of 1000 (max. 500000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 377 compressed objects within 4 object streams
+ 140 named destinations out of 1000 (max. 500000)
  59 words of extra memory for PDF output out of 10000 (max. 10000000)
 

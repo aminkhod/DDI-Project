@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{46}
+\begin{thebibliography}{47}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -565,6 +565,23 @@ pp. \bfpage{1074}--\blpage{1080}
 \endbibitem
 
 %%% 32
+\bibitem{cokol2017efficient}
+\begin{barticle}
+\bauthor{\bsnm{Cokol}, \binits{M.}},
+\bauthor{\bsnm{Kuru}, \binits{N.}},
+\bauthor{\bsnm{Bicak}, \binits{E.}},
+\bauthor{\bsnm{Larkins-Ford}, \binits{J.}},
+\bauthor{\bsnm{Aldridge}, \binits{B.B.}}:
+\batitle{Efficient measurement and factorization of high-order drug
+  interactions in mycobacterium tuberculosis}.
+\bjtitle{Science advances}
+\bvolume{3}(\bissue{10}),
+\bfpage{1701881}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 33
 \bibitem{yu2018predicting}
 \begin{barticle}
 \bauthor{\bsnm{Yu}, \binits{H.}},
@@ -583,7 +600,7 @@ pp. \bfpage{1074}--\blpage{1080}
 \end{barticle}
 \endbibitem
 
-%%% 33
+%%% 34
 \bibitem{zhang2016drug}
 \begin{bchapter}
 \bauthor{\bsnm{Zhang}, \binits{W.}},
@@ -601,7 +618,7 @@ pp. \bfpage{427}--\blpage{434}
 \end{bchapter}
 \endbibitem
 
-%%% 34
+%%% 35
 \bibitem{zhang2018manifold}
 \begin{barticle}
 \bauthor{\bsnm{Zhang}, \binits{W.}},
@@ -617,7 +634,7 @@ pp. \bfpage{427}--\blpage{434}
 \end{barticle}
 \endbibitem
 
-%%% 35
+%%% 36
 \bibitem{SNFPy2020}
 \begin{botherref}
 \oauthor{\bsnm{{Ross Markello}}}:
@@ -628,7 +645,7 @@ Accessed Accessed 20 October 2020
 \end{botherref}
 \endbibitem
 
-%%% 36
+%%% 37
 \bibitem{nair2010rectified}
 \begin{bchapter}
 \bauthor{\bsnm{Nair}, \binits{V.}},
@@ -639,7 +656,7 @@ In: \bbtitle{ICML}
 \end{bchapter}
 \endbibitem
 
-%%% 37
+%%% 38
 \bibitem{hinton2012deep}
 \begin{barticle}
 \bauthor{\bsnm{Hinton}, \binits{G.}},
@@ -661,7 +678,7 @@ In: \bbtitle{ICML}
 \end{barticle}
 \endbibitem
 
-%%% 38
+%%% 39
 \bibitem{srivastava2014dropout}
 \begin{barticle}
 \bauthor{\bsnm{Srivastava}, \binits{N.}},
@@ -677,7 +694,7 @@ In: \bbtitle{ICML}
 \end{barticle}
 \endbibitem
 
-%%% 39
+%%% 40
 \bibitem{abadi2016tensorflow}
 \begin{bchapter}
 \bauthor{\bsnm{Abadi}, \binits{M.}},
@@ -698,7 +715,7 @@ pp. \bfpage{265}--\blpage{283}
 \end{bchapter}
 \endbibitem
 
-%%% 40
+%%% 41
 \bibitem{chollet2015keras}
 \begin{botherref}
 \oauthor{\bsnm{Chollet}, \binits{F.}}, et al.:
@@ -707,7 +724,7 @@ Keras.
 \end{botherref}
 \endbibitem
 
-%%% 41
+%%% 42
 \bibitem{ghosal1997your}
 \begin{barticle}
 \bauthor{\bsnm{Ghosal}, \binits{T.}},
@@ -725,7 +742,7 @@ Keras.
 \end{barticle}
 \endbibitem
 
-%%% 42
+%%% 43
 \bibitem{toda2012research}
 \begin{botherref}
 \oauthor{\bsnm{Toda}, \binits{Y.}},
@@ -737,7 +754,7 @@ Challenge (LSVRC),
 \end{botherref}
 \endbibitem
 
-%%% 43
+%%% 44
 \bibitem{seen20121}
 \begin{barticle}
 \bauthor{\bsnm{Seen}, \binits{S.}}:
@@ -750,7 +767,7 @@ Challenge (LSVRC),
 \end{barticle}
 \endbibitem
 
-%%% 44
+%%% 45
 \bibitem{kingma2014adam}
 \begin{botherref}
 \oauthor{\bsnm{Kingma}, \binits{D.P.}},
@@ -761,7 +778,7 @@ arXiv preprint arXiv:1412.6980
 \end{botherref}
 \endbibitem
 
-%%% 45
+%%% 46
 \bibitem{shi2019detecting}
 \begin{barticle}
 \bauthor{\bsnm{Shi}, \binits{J.-Y.}},
@@ -777,7 +794,7 @@ arXiv preprint arXiv:1412.6980
 \end{barticle}
 \endbibitem
 
-%%% 46
+%%% 47
 \bibitem{shi2018tmfuf}
 \begin{barticle}
 \bauthor{\bsnm{Shi}, \binits{J.-Y.}},
@@ -1378,6 +1395,24 @@ arXiv preprint arXiv:1412.6980
 </bibl>
 
 <bibl id="B32">
+  <title><p>Efficient measurement and factorization of high-order drug
+  interactions in Mycobacterium tuberculosis</p></title>
+  <aug>
+    <au><snm>Cokol</snm><fnm>M</fnm></au>
+    <au><snm>Kuru</snm><fnm>N</fnm></au>
+    <au><snm>Bicak</snm><fnm>E</fnm></au>
+    <au><snm>Larkins Ford</snm><fnm>J</fnm></au>
+    <au><snm>Aldridge</snm><fnm>BB</fnm></au>
+  </aug>
+  <source>Science advances</source>
+  <publisher>American Association for the Advancement of Science</publisher>
+  <pubdate>2017</pubdate>
+  <volume>3</volume>
+  <issue>10</issue>
+  <fpage>e1701881</fpage>
+</bibl>
+
+<bibl id="B33">
   <title><p>Predicting and understanding comprehensive drug-drug interactions
   via semi-nonnegative matrix factorization</p></title>
   <aug>
@@ -1397,7 +1432,7 @@ arXiv preprint arXiv:1412.6980
   <fpage>14</fpage>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B34">
   <title><p>Drug side effect prediction through linear neighborhoods and
   multiple data source integration</p></title>
   <aug>
@@ -1414,7 +1449,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-434</lpage>
 </bibl>
 
-<bibl id="B34">
+<bibl id="B35">
   <title><p>Manifold regularized matrix factorization for drug-drug interaction
   prediction</p></title>
   <aug>
@@ -1431,7 +1466,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-97</lpage>
 </bibl>
 
-<bibl id="B35">
+<bibl id="B36">
   <title><p>snfpy 0.2.2</p></title>
   <aug>
     <au><cnm>{Ross Markello}</cnm></au>
@@ -1440,7 +1475,7 @@ arXiv preprint arXiv:1412.6980
   <url>https://pypi.org/project/snfpy/</url>
 </bibl>
 
-<bibl id="B36">
+<bibl id="B37">
   <title><p>Rectified linear units improve restricted boltzmann
   machines</p></title>
   <aug>
@@ -1451,7 +1486,7 @@ arXiv preprint arXiv:1412.6980
   <pubdate>2010</pubdate>
 </bibl>
 
-<bibl id="B37">
+<bibl id="B38">
   <title><p>Deep neural networks for acoustic modeling in speech recognition:
   The shared views of four research groups</p></title>
   <aug>
@@ -1476,7 +1511,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-97</lpage>
 </bibl>
 
-<bibl id="B38">
+<bibl id="B39">
   <title><p>Dropout: a simple way to prevent neural networks from
   overfitting</p></title>
   <aug>
@@ -1495,7 +1530,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-1958</lpage>
 </bibl>
 
-<bibl id="B39">
+<bibl id="B40">
   <title><p>Tensorflow: A system for large-scale machine learning</p></title>
   <aug>
     <au><snm>Abadi</snm><fnm>M</fnm></au>
@@ -1517,7 +1552,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-283</lpage>
 </bibl>
 
-<bibl id="B40">
+<bibl id="B41">
   <title><p>Keras</p></title>
   <aug>
     <au><snm>Chollet</snm><fnm>F</fnm></au>
@@ -1528,7 +1563,7 @@ arXiv preprint arXiv:1412.6980
   <url>https://github.com/fchollet/keras</url>
 </bibl>
 
-<bibl id="B41">
+<bibl id="B42">
   <title><p>Is Your Document Novel? Let Attention Guide You. An Attention Based
   Model For Document Level Novelty Detection</p></title>
   <aug>
@@ -1548,7 +1583,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-38</lpage>
 </bibl>
 
-<bibl id="B42">
+<bibl id="B43">
   <title><p>Research Article How Convolutional Neural Networks Diagnose Plant
   Disease</p></title>
   <aug>
@@ -1560,7 +1595,7 @@ arXiv preprint arXiv:1412.6980
   <fpage>20</fpage>
 </bibl>
 
-<bibl id="B43">
+<bibl id="B44">
   <title><p>1-Day Learning, 1-Year Localization: Long-term LiDAR Localization
   using Scan Context Image</p></title>
   <aug>
@@ -1573,7 +1608,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-15</lpage>
 </bibl>
 
-<bibl id="B44">
+<bibl id="B45">
   <title><p>Adam: A method for stochastic optimization</p></title>
   <aug>
     <au><snm>Kingma</snm><fnm>DP</fnm></au>
@@ -1583,7 +1618,7 @@ arXiv preprint arXiv:1412.6980
   <pubdate>2014</pubdate>
 </bibl>
 
-<bibl id="B45">
+<bibl id="B46">
   <title><p>Detecting drug communities and predicting comprehensive drug--drug
   interactions via balance regularized semi-nonnegative matrix
   factorization</p></title>
@@ -1602,7 +1637,7 @@ arXiv preprint arXiv:1412.6980
   <lpage>-16</lpage>
 </bibl>
 
-<bibl id="B46">
+<bibl id="B47">
   <title><p>TMFUF: a triple matrix factorization-based unified framework for
   predicting comprehensive drug-drug interactions of new drugs</p></title>
   <aug>

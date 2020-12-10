@@ -21,51 +21,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bmc_article.bib.bib
 Warning--entry type for "chollet2015keras" isn't style-file defined
---line 390 of file bmc_article.bib.bib
+--line 401 of file bmc_article.bib.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 46 entries,
+You've used 47 entries,
             7128 wiz_defined-function locations,
-            1398 strings with 19688 characters,
-and the built_in function-call counts, 481800 in all, are:
-= -- 73507
-> -- 1897
-< -- 1019
-+ -- 33991
-- -- 523
-* -- 26481
-:= -- 89884
-add.period$ -- 49
-call.type$ -- 46
-change.case$ -- 528
-chr.to.int$ -- 2053
-cite$ -- 46
-duplicate$ -- 5129
-empty$ -- 17794
-format.name$ -- 2239
-if$ -- 114383
+            1404 strings with 19971 characters,
+and the built_in function-call counts, 487970 in all, are:
+= -- 74202
+> -- 1939
+< -- 1042
++ -- 34095
+- -- 533
+* -- 27042
+:= -- 91123
+add.period$ -- 50
+call.type$ -- 47
+change.case$ -- 538
+chr.to.int$ -- 2102
+cite$ -- 47
+duplicate$ -- 5242
+empty$ -- 18209
+format.name$ -- 2287
+if$ -- 115702
 int.to.chr$ -- 1
-int.to.str$ -- 109
-missing$ -- 1743
-newline$ -- 1544
-num.names$ -- 230
-pop$ -- 2067
+int.to.str$ -- 111
+missing$ -- 1781
+newline$ -- 1577
+num.names$ -- 235
+pop$ -- 2114
 preamble$ -- 1
-purify$ -- 199
-quote$ -- 92
-skip$ -- 40307
+purify$ -- 203
+quote$ -- 94
+skip$ -- 40589
 stack$ -- 0
-substring$ -- 57385
-swap$ -- 1743
-text.length$ -- 692
+substring$ -- 58328
+swap$ -- 1783
+text.length$ -- 705
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1989
+type$ -- 2034
 warning$ -- 0
-while$ -- 1848
+while$ -- 1884
 width$ -- 0
-write$ -- 2281
+write$ -- 2330
 (There was 1 warning)
