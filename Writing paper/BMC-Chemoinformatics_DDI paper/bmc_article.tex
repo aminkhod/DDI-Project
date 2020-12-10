@@ -313,7 +313,9 @@ Most of these existing machine learning approaches are designed to predict the t
 
 Besides the occurrence of both enhancive and degressive DDIs is not random \cite{shi2018tmfuf, yu2018predicting}, however most current approaches have not yet exploited this structural property and have been developed only for conventional two-classes DDIs. Furthermore, revealing such a structural relationship is very important because it can help to understand how the DDIs occur. It is one of the most important steps for treating complex diseases \cite{cokol2017efficient} and guides physicians in preparing safer prescriptions to high-order drug interaction. The previous algorithms for predicting three-classes DDIs are introduced in the following, and how they work are briefly described. 
 
-The recent works attempted to investigate two major issues: 1) predicting three-class DDIs instead of two-class prediction, 2) extracting the topological information of drugs in a DDI network. The model of TMFUF was proposed In the article \cite{shi2018tmfuf} which predicts enhancive and degressive DDIs for different predicting scenarios of new drugs (those with no known DDI). 
+The recent works attempted to investigate two major issues: 1) predicting three-class DDIs instead of two-class prediction, 2) extracting the topological information of drugs in a DDI network.
+
+Model of TMFUF is proposed In the article \cite{shi2018tmfuf} which predicts enhancive and degressive DDIs for different predicting scenarios of new drugs (those with no known DDI). Proposed DDINMF model \cite{yu2018predicting} in addition to predicting DDIs, asigns every drugs to drug communities . In result, some corelations are observed between drug communities and the numbers of enhancive and degressive DDIs of each drug, as well as their sum or difference of DDIs. These observation shows that not only occurrences enhancive and degressive DDIs are not randomly but also representes some topological features in DDI network. BRSNMF \cite{shi2019detecting} model is a method based on Semi-NMF to predict the degressive and enhansive DDIs, more accurately, in cold start scenario. This method exploits Drug Binding Protein (DBP) feature to map new drugs (without any known DDIs) with known drugs (drugs which has one DDI at least). Results show that BRSNMF defines drug communities with more moderate sizes by adding a regularization term to Semi-NMF objective function based on weakly balance theorem.
 
 All three introduced algorithms are using matrix factorization methods, which are a network recommender-based approach. The matrix factorization approach, with slight modification, is a suitable solution for the subject of predicting DDI that has received much attention from researchers.
 
@@ -757,7 +759,7 @@ for the algorithm presented in this research, high and low intervals are reporte
 \hline
 SNF-CNN	& 0.971 & 0.912\\
 \hline
-BRSNMF\cite{shi2019detecting}  & 0.645 & 0.346\\
+BRSNMF\cite{shi2019detecting}  & 0.805 & 0.644\\
 \hline
 Semi-NMF \cite{yu2018predicting} & 0.796 & 0.579\\
 \hline
