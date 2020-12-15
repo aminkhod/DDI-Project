@@ -319,9 +319,10 @@ Model of TMFUF is proposed In the article \cite{shi2018tmfuf} which predicts enh
 
 In result, some corelations are observed between drug communities and the numbers of enhancive and degressive DDIs of each drug, as well as their sum or difference of DDIs. These observation shows that not only occurrences enhancive and degressive DDIs are not randomly but also representes some topological features in DDI network. BRSNMF \cite{shi2019detecting} model is a method based on Semi-NMF to predict the degressive and enhansive DDIs, more accurately, in cold start scenario \cite{camacho2018social}. This method exploits Drug Binding Protein (DBP) feature to map new drugs (without any known DDIs) with known drugs (drugs which has one DDI at least). Results show that BRSNMF defines drug communities with more moderate sizes by adding a regularization term to Semi-NMF objective function based on weakly balance theorem.
 
-All three introduced algorithms are using matrix factorization methods, which are a network recommender-based approach. The matrix factorization approach, with slight modification, is a suitable solution for the subject of predicting DDI that has received much attention from researchers, but these methods do.
+All three introduced algorithms are using matrix factorization methods, which are a network recommender-based approach. The matrix factorization approach, with slight modification, is a suitable solution for the subject of predicting DDI that has received much attention from researchers, but these methods do not work on potential DDIs which are crucially important in giving safer prescriptions.
 
-In this paper, we firstly introduce data and features. Then, a novel algorithm (SNF-CNN) based on the integration of drug similarities and deep learning recommendation systems for predicting DDI is presented in a comprehensive three-class model. This algorithm is called Predicting Comprehensive Drug-Drug Interaction via Similarity Network Fusion and Convolutional Neural Networks.
+In this paper, we firstly introduce data and features. Then, a novel algorithm based on the integration of drug similarities and deep learning recommendation systems for predicting DDI is presented in a comprehensive three-class model. This algorithm is called Predicting Comprehensive Drug-Drug Interaction via Similarity Network Fusion and Convolutional Neural Networks (SNF-CNN). The SNF-CNN trying to recognize unknown and potential DDIs which are not detected yet. The feature's intrinsic of off-label side effect and chemical structure of drugs may provide information to find hidden potential DDIs in already DDI's network. To use both of them together we will take advantage of SNF.
+%The feature's intrinsic of off-label side effect and chemical structure of drugs may provide information to find hidden potential DDIs in already DDI's network.
 
 The paper is organized as follows. In the first section, the data preparation process is explained. The recommendation system is then designed and trained on enhancive and degressive, which detects pairs of non-interacting drugs with high probability. Next, the previous recommender system, based on a convolutional neural network, is trained on incremental and decremental interaction data without interaction (detected in the previous step).In section Results and Discussions, we investigate the results of SNF-CNN in the 10-fold cross-validation (CV) process.
 
@@ -397,7 +398,7 @@ To solve this problem, it is necessary to provide a model that detects non-inter
 
 
 \subsection*{Selecting model\label{Selecting model}}
-We separated rows of matrix B that contain positive and negative interactions. The new matrix contains 42,702 pairs of drugs with degressive and enhancive interactions. This data was used to train and find a more suitable model and found a stronger model among many models with different network structures. The final model was a deep neural network that used convolutional and fully connected layers. The features of all interactions (+1 and -1) contain 1136 features. We first divide these features into 10 equal parts. Then, in a 10-cycle for, each period we consider 1 part as testing data and the other 9 parts as a set of training data. We select different models and train the model in the 10-fold CV with 90  of the data. Then we test the model on the remaining 10 percent of the data. In the separating process, pairs of drugs dual are considered. Since the $ (d_i, d_j) $ and $ (d_j, d_i) $ pairs of drugs are not biologically different from each other, in the separation of training and testing data, necessarily a pair of drugs and their duals are in the same group. This work prevents machine fraud.
+We separated rows of matrix B that contain positive and negative interactions. The new matrix contains 42,702 pairs of drugs with degressive and enhancive interactions. This data was used to train and find a more suitable model and found a stronger model among many models with different network structures. The final model was a deep neural network that used convolutional and fully connected layers. The features of all interactions (+1 and -1) contain 1136 features. We first divide these features into 10 equal parts. Then, in a 10-cycle for, each period we consider 1 part as testing data and the other 9 parts as a set of training data. We select different models and train the model in the 10-fold CV with 90  of the data. Then we test the model on the remaining 10 percent of the data. In the separating process, pairs of drugs dual are considered. Since the $ (d_i, d_j) $ and $ (d_j, d_i) $ pairs of drugs are not biologically different from each other, in the separation of training and testing data, necessarily a pair of drugs and their dual are in the same group. This prevents unfair results.
 
 After testing the different structures, we have modeled the final deep neural network shown in Figure
 \ref{CNNModel}.
@@ -500,7 +501,7 @@ If 3 is correct then select the model, else go to 2.
 \end{algorithm}
 
 
-\subsection*{Detection of drug pairs without possible interaction}
+\subsection*{Detecting of non-interaction drug pairs}
 In the previous step, a high-precision, robust, and accurate model has been presented to detect drug pairs' potential interactions for both degressive and enhancive. Therefore, this model has the ability to detect non-interactions (real zeros) as follows. If drug pairs are unlikely to interact, then those drug pairs are likely to be real zeros.
 
 According to this hypothesis, the model was used to predict all unknown drug pairs (zeros). Unknown drug pairs include 270,000 drug pairs. We consider drug pairs as non-interacting drug pairs in the model's output if the enhancive and degressive probability are less than 0.4 and 0.4. Among the unlabeled data, about 65,000 drug pairs had these conditions. These drug pairs are candidates for non-interaction. Due to the model's high accuracy, the low variance of results, and the model's high resolution, we consider these pairs non-interaction drug pairs.
@@ -508,7 +509,7 @@ According to this hypothesis, the model was used to predict all unknown drug pai
 \subsection*{Selecting and training model on known and unknown interactions}
 This section uses known data and potential non-interaction candidates to form a data set. Here, we use the non-interaction candidate drug pairs as real zeros. The recommender system presented in Section \ref{Selecting model} is also used for the final model.
 
-First, the B matrix rows, which contain the +1 and -1 interactions, are separated according to the previously detailed procedure and placed in 10 parts. Then, 30,000 non-interacting candidate drug pairs were randomly selected from 65,000 drug pairs. In the chosen drug pairs, the drug pairs and the duals of them must be non-interaction candidates. The zeros group is randomly divided into 10 parts, so each drug pairs and the dual are in the same batch. Then 10 parts of zeros are merged with 10 parts of pre-prepared +1s and -1s. 
+First, the B matrix rows, which contain the +1 and -1 interactions, are separated according to the previously detailed procedure and placed in 10 parts. Then, 30,000 non-interacting candidate drug pairs were randomly selected from 65,000 drug pairs. In the chosen drug pairs, the drug pairs and the dual of them must be non-interaction candidates. The zeros group is randomly divided into 10 parts, so each drug pairs and the dual are in the same batch. Then 10 parts of zeros are merged with 10 parts of pre-prepared +1s and -1s. 
 
 The data set contains approximately 72,702 drug pairs, divided into relatively equal parts, is ready to use in the training and testing of the final recommender system.
 
@@ -569,14 +570,72 @@ Predict on unknown drug pairs.
 
 \section*{Result and discussion}
 \subsection*{Assessment}
-K-Fold cross-validation (CV) is a well-proven approach to verify the algorithms' accuracy in machine learning. To demonstrate that new drugs have no interaction and avoid overly optimistic predictions, the CV equation C must be carefully designed. For drug pairs with no known interactions, the K-fold CV scheme seeks to assess the task of anticipating new types of potential interactions between them and drugs that have known interactions. The production of test and experimental samples is as follows:
+K-Fold cross-validation (CV) is a well-proven approach to verify the algorithms' accuracy, model selection, and feature engineering in machine learning. To demonstrate that the feature set is informative enough, the selected model is robust and confident or the method has proper accuracy in comparison with other methods, the CV equation must be carefully designed. The production of test and experimental samples is as follows:
 
-The whole data set is divided into k equal parts. The k-1 part is used as a training data set, and the model is built based on it, and the testing is performed with the remaining part. The procedure is repeated k times so that each of the k parts is used only once for testing, and each time accuracy is calculated for the constructed model. In this method, the average of predicting accuracy in all rounds of K-fold CV is taken as the final accuracy Classifier. The most common value for k in scientific literary is 5 or 10. Obviously, the larger the value of k, the more reliable the calculated accuracy classifier, and the more comprehensive the knowledge obtained, and the longer the classifier's testing time, which is the most important problem. Each setting and each data set has its own validation. In this approach, according to the type of problem and the methods, we used two types of 10-fold CV to divide the data into two sets of testing and training, which are:
+The whole data set has divided into K equal parts with consideration of dual pairs. Since biologically, the $(d_i, d_j)$ and $(d_j, d_i)$ drug pairs are the same we expect the model to predict their labels similarly.  in the separation of training and testing data, necessarily a drug pair and its dual are in the same group to prevent unfair results. The K-1 parts are used as a training data set, and the model has built based on them, and the test has performed with a remaining part. This procedure has repeated K times so that each of the K parts has used only once for testing, and each time accuracy has calculated for the constructed model. In this method, the average prediction accuracy in all K rounds is taken as the final accuracy for the classifier. The most common value for K in scientific literary is 5 or 10. Obviously, the more detailed validation in the K-fold CV the more reliable the classifier accuracy, the more comprehensive the obtained knowledge, and the more time-consuming the validation process. Each setting of model and features and each data set needs its own validation process. According to the type of problem and the methods, we use two types of 10-fold CV to select the most proper model also to validate the results of the chosen model. The metrics which are used in validation are described in following.
 
-\subsubsection*{First case: 10-fold CV without unknown interactions}
-In this case, we randomly select 90 percent of the enhancive and degressive interactions. For the testing set, we consider the remaining 10 percent of the enhancive and degressive interactions. In the first case of the testing procedure,  the model was selected, and some hyper-parameters, such as the number of epochs, were determined.Figure
-\ref{ModelSelection}
-It shows the training process for the selected model. As expected, the model's accuracy is strict on ascending training data, but there are ups and downs for testing data after Epoch 5. In the loss function graph, by the end of epoch 5, as the epochs increase, the loss function's value on training and testing procedure decreases. After epoch 5, the trend of training data continues, but the testing trend is reversed. In other words, over feet occurs. Therefore, based on the graphs, the appropriate number of epochs in this step was considered 5.
+\subsection*{Evaluation criteria}
+In this study, we classify drug pairs into three classes, according to the type of interaction or non-interaction, so in order to compare the method performance with other existing methods, four measurement criteria, F- measure, accuracy, Area Under Roc Curve(AUC), and Area Under Precision-Recall Curve(AUPR) are Used. To define these criteria, at first, introduced four counting criteria in table
+\ref{confusion_matrix_temp}.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\cline{3-5}
+		\multicolumn{2}{c}{}&\multicolumn{3}{|c|}{}\\
+		\multicolumn{2}{c}{}&\multicolumn{3}{|c|}{Actual label}\\
+		\multicolumn{2}{c}{}&\multicolumn{3}{|c|}{}\\
+		\cline{3-5}
+		\multicolumn{2}{c|}{}&&&\\
+		\multicolumn{2}{c|}{} & Actual Enhancive & Actual Degressive & Actual Non-interaction\\
+		\multicolumn{2}{c|}{}&&&\\
+		\cline{1-5}
+		&&&&\\
+		\multirow{7}{*}{Classifier Label} & Classified Enhancive & $T_{Enh}$ -- $cell_1$	 & $F_{Enh}$ -- $cell_2$&$F_{Enh}$ -- $cell_3$\\
+		&&&&\\
+		\cline{2-5}
+		&&&&\\
+		&Classified Degressive & $F_{Deg}$ -- $cell_4$ & $T_{Deg}$ -- $cell_5$&$F_{Deg}$ -- $cell_6$\\
+		&&&&\\
+		\cline{2-5}
+		&&&&\\
+		&Classified Non-interaction &$F_{N-Int}$ -- $cell_7$&$F_{N-Int}$ -- $cell_8$&$T_{N-Int}$ -- $cell_9$\\
+		&&&&\\
+		\cline{1-5}
+	\end{tabular}
+	\newline
+	\caption{The confusion matrix and relevant evaluation index.True Positive (TP): The number of residues classified as interacting correctly, False Positive (FP): The number of residues classified as interacting correctly incorrectly, False Negative (FN): The number of residues classified as non-interacting incorrectly, True Negative (TN): The number of residues classified as non-interacting correctly.}
+	\label{confusion_matrix_temp}
+\end{table}
+
+The table of shows confusion matrix of three classes. In this mode we have to modify the definitions of TP, TF, TN and TP versuse , as well as accuracy, precision, recall, \ref{confusion_matrix_temp}By using table \ref{confusion_matrix_temp}, four evaluation criteria are defined in the following order:
+
+Accuracy: The fraction of all correct predictions (TP and TN) to all predictions.
+$$ \mbox{Acurracy} =  \frac{ \mbox{TP} + \mbox{TN}}{\mbox{ all predicted interactions}} $$
+
+Precision:The fraction of correct predicted interactions among all predicted interactions.
+$$ \mbox{Precision} =  \frac{\mbox{TP}}{\mbox{TP} + \mbox{FP}} $$
+
+Recall:The fraction of correct predicted interactions among all true interactions.
+$$ \mbox{Recall} =  \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$
+Precision and recall have a trade-off; thus, improving one of them may lead to a reduction in another.Therefore, utilizing F-measure, is more reasonable.
+
+F-measure:the geometric mean of precision and recall.
+$$ F-measure = \frac{ 2\times \mbox{Precision} \times \mbox{Recall}}{\mbox{Precision} + \mbox{Recall}} $$
+
+It should be noted that if the interaction of two drugs is assigned to zero, it denotes that no evidence of their interaction has been found yet; thus, they may interact with each other. So we cannot identify TN and FP pairs correctly. The training process requires both interaction and non-interaction samples. Therefore, some of the zero assigned pairs are considered as non-interactive pairs in the training model. So every method may have some FP in its evaluations. This leads to a reduction in calculated precision and F-measure, while the real values of precision and F-measure may be higher.
+
+Since the values of precision, recall, and F-measure is dependent on the value of the threshold, we also evaluate methods via AUC which is the area under the receiver operating characteristic (ROC) curve, and AUPR, that is the area under the precision-recall curve. These criteria indicate the efficiency of methods independent of the threshold value. In cases that the fraction of negative samples and positive samples are not equal, AUPR is the fairer criterion for evaluation.
+
+%$$ \mbox{TPR} = \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$ 
+
+
+%$$ \mbox{FPR} =  \frac{ \mbox{FP}}{\mbox{FP} + \mbox{TN}} $$
+
+
+
+\subsection*{First case: 10-fold CV without unknown interactions}
+In this case, we randomly select 90 percent of the enhancive and degressive interactions. For the testing set, we consider the remaining 10 percent of the enhancive and degressive interactions. In the first case of the testing procedure,  the model was selected, and some hyper-parameters, such as the number of epochs, were determined.Figure \ref{ModelSelection}, shows the training process for the selected model. As expected, the model's accuracy is strict on ascending training data, but there are ups and downs for testing data after Epoch 5. In the loss function graph, by the end of epoch 5, as the epochs increase, the loss function's value on training and testing procedure decreases. After epoch 5, the trend of training data continues, but the testing trend is reversed. In other words, over feet occurs. Therefore, based on the graphs, the appropriate number of epochs in this step was considered 5.
 \begin{figure}[!h]
 	%\centering
 	\begin{minipage}{1\linewidth} 
@@ -601,66 +660,6 @@ It shows the training process. The process of the accuracy of the model on train
 	\caption{\textbf{Accuracy and loss function diagrams for the triple model:} The right figure shows the accuracy of the model on training and validation data during 16 epochs, and the left figure shows the loss function values at different epochs.}
 	\label{lastTripleModel}
 \end{figure}
-
-\section*{Evaluation criteria}
-In this study, we classify drug pairs according to the type of interaction or non-interaction. So in order to compare the method performance with other existing methods, from four measurement criteria, F- measure, accuracy, Area Under Roc Curve(AUC), and Area Under Precision-Recall Curve(AUPR) Used. To define these criteria, at first, introduced four counting criteria in table
-\ref {f1}.
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\multicolumn{2}{|c}{}&\multicolumn{2}{|c|}{}&\\
-\multicolumn{2}{|c}{}&\multicolumn{2}{|c|}{Actual Condition}&\\
-\multicolumn{2}{|c}{}&\multicolumn{2}{|c|}{}&\\
-\cline{1-5}
-&&&&\\
-&Total Smpelse & Actual Positive & Actual Negative&\\
-&&&&\\
-\cline{1-5}
-&&&&\\
-\multirow{2}{*}{output of classifier} &Classify Positive & TP & FP&PPV(Precision)\\
-&&&&\\
-\cline{2-5}
-&&&&\\
-&Classify Negative & FN & TN&\\
-&&&&\\
-\cline{1-5}
-&&&&ACC\\
-\cline{5-5}
-&&TPR(Recall) & TNR(Specifcity) & F-measure \\
-\cline{5-5}
-&&&&MCC\\
-\cline{1-5}
-\end{tabular}
-\newline
-	\caption{The confusion matrix and relevant evaluation index.True Positive (TP): The number of residues classified as interacting correctly, False Positive (FP): The number of residues classified as interacting correctly incorrectly, False Negative (FN): The number of residues classified as non-interacting incorrectly, True Negative (TN): The number of residues classified as non-interacting correctly.}
-	\label{Table1}
-\end{table}
-
-By using the table
-\ref{Table1}, four evaluation criteria are defined in the following order:
-Acurracy:The fraction of actual predicted interactions (TP and TN) to all predicted interactions.
-$$ \mbox{Acurracy} =  \frac{ \mbox{TP} + \mbox{TN}}{\mbox{ all predicted interactions}} $$
-
-Precision:The fraction of correct predicted interactions among all predicted interactions.
-$$ \mbox{Precision} =  \frac{\mbox{TP}}{\mbox{TP} + \mbox{FP}} $$
-
-Recall:The fraction of correct predicted interactions among all true interactions.
-$$ \mbox{Recall} =  \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$
-Precision and recall have a trade-off; thus, improving one of them may lead to a reduction in another.Therefore, utilizing F-measure, is more reasonable.
-
-F-measure:the geometric mean of precision and recall.
-$$ F-measure = \frac{ 2\times \mbox{Precision} \times \mbox{Recall}}{\mbox{Precision} + \mbox{Recall}} $$
-
-It should be noted that if the interaction of two drugs is assigned to zero, it denotes that no evidence of their interaction has been found yet; thus, they may interact with each other. So we cannot identify TN and FP pairs correctly. The training process requires both interaction and non-interaction samples. Therefore, some of the zero assigned pairs are considered as non-interactive pairs in the training model. So every method may have some FP in its evaluations. This leads to a reduction in calculated precision and F-measure, while the real values of precision and F-measure may be higher.
-
-Since the values of precision, recall, and F-measure is dependent on the value of the threshold, we also evaluate methods via AUC which is the area under the receiver operating characteristic (ROC) curve, and AUPR, that is the area under the precision-recall curve. These criteria indicate the efficiency of methods independent of the threshold value. In cases that the fraction of negative samples and positive samples are not equal, AUPR is the fairer criterion for evaluation.
-
-%$$ \mbox{TPR} = \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$ 
-
- 
-%$$ \mbox{FPR} =  \frac{ \mbox{FP}}{\mbox{FP} + \mbox{TN}} $$
 
 
 \section*{Comparison of results}
