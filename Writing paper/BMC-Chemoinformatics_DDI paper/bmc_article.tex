@@ -559,16 +559,24 @@ The Suducode \ref{modelSelectionSuducode} shows the step-by-step model selection
 \ENSURE 
 +1 and -1 diagnostic model
 \vskip.5\baselineskip\hrule height 0.4pt\vskip.5\baselineskip
+ 
+\
 
 \STATE
 Apply 10-fold CV to the features of +1 and -1 drug pairs.
+ 
+\
 
 \STATE
 Select the right model. 
+ 
+\
 
 \STATE
 Test the model results in 10-fold CV.
  
+ \
+
 \STATE
 If 3 is correct then select the model, else go to 2. 
 
@@ -617,24 +625,38 @@ Drug pairs features(+1,-1,real 0)
 \ENSURE
 Diagnostic model for interaction and non-interaction
 \vskip.5\baselineskip\hrule height 0.4pt\vskip.5\baselineskip
+ 
+\
 
 \STATE
-Calculate drug similarity matrices with the cosine method. 
+Calculate drug similarity matrices with the cosine method.
+
+\
 
 \STATE 
 Integrate drug similarity matrices with the similarity network fusion(SNF) method.
 
+\
+
 \STATE
 Built the input matrix of the model. 
+
+\
 
 \STATE
 Select the fit known interactions model and train it.
 
+\
+
 \STATE
 Predict probable zeros by using step 4.
 
+\
+
 \STATE
 Select the fit known interactions and zeros of step 5 model , and train it.
+
+\
 
 \STATE
 Predict on unknown drug pairs.
@@ -708,7 +730,7 @@ Since the values of precision, recall, and F-measure is dependent on the value o
 
 
 \subsection*{First case: 10-fold CV without unknown interactions}
-In this case, we randomly select 90 percent of the enhancive and degressive interactions. For the testing set, we consider the remaining 10 percent of the enhancive and degressive interactions. In the first case of the testing procedure,  the model was selected, and some hyper-parameters, such as the number of epochs, were determined.Figure \ref{ModelSelection}, shows the training process for the selected model. As expected, the model's accuracy is strict on ascending training data, but there are ups and downs for testing data after Epoch 5. In the loss function graph, by the end of epoch 5, as the epochs increase, the loss function's value on training and testing procedure decreases. After epoch 5, the trend of training data continues, but the testing trend is reversed. In other words, over feet occurs. Therefore, based on the graphs, the appropriate number of epochs in this step was considered 5.
+In this case, we randomly select 90 percent of the enhancive and degressive interactions. For the testing set, we consider the remaining 10 percent of the enhancive and degressive interactions. In the first case of the testing procedure,  the model was selected, and some hyper-parameters, such as the number of epochs, were determined. Figure \ref{ModelSelection}, shows the training process for the selected model. As expected, the model's accuracy is strict on ascending training data, but there are ups and downs for testing data after Epoch 5. In the loss function graph, by the end of epoch 5, as the epochs increase, the loss function's value on training and testing procedure decreases. After epoch 5, the trend of training data continues, but the testing trend is reversed. In other words, over feet occurs. Therefore, based on the graphs, the appropriate number of epochs in this step was considered 5.
 \begin{figure}[!h]
 	%\centering
 	\begin{minipage}{1\linewidth} 
