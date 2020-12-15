@@ -390,14 +390,71 @@ Figure of \ref{BMatHeader} shows the header of matrix.
 
 We have 568 drugs, and the interaction of each drug with itself is meaningless. On the other hand, the drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ have the same label, while the corresponding similarity vectors of drugs in the drug pairs have been displaced. So, these drug pairs are dual. Both of them in the data augment the training data, which increases the model's ability to have a better prediction. As a result, the resulting matrix has 322056 data samples or rows ($(568 \times 568) - 568 = 322056$). According to the explanations provided, a matrix with dimensions of $322056 \times 1139$ is formed to input into our model, which is called $B$.
 
+
 \subsection*{Devising of Recommender System}
 In the previous steps, data was prepared to input any learning machine, including deep learning machines. But before presenting the model and inputting the data into the machine, one important point must be considered. As mentioned before, in this approach and other approaches, the positive and negative data have a specific label. While the zero label does not mean that there is no interaction between a pair of drugs, it does indicate that no interaction has yet been found for this pair of drugs. In the following, we present a method for detecting pairs of non-interacting drugs. Then we use these pairs of drugs as zero-labeled data in the next training.
+
+\subsection*{Assessment}
+K-Fold cross-validation (CV) is a well-proven approach to verify the algorithms' accuracy, model selection, and feature engineering in machine learning. To demonstrate that the feature set is informative enough, the selected model is robust and confident or the method has proper accuracy in comparison with other methods, the CV equation must be carefully designed. The production of test and experimental samples is as follows:
+
+The whole data set has divided into K equal parts with consideration of dual pairs. Since biologically, the $(d_i, d_j)$ and $(d_j, d_i)$ drug pairs are the same we expect the model to predict their labels similarly.  in the separation of training and testing data, necessarily a drug pair and its dual are in the same group to prevent unfair results. The K-1 parts are used as a training data set, and the model has built based on them, and the test has performed with a remaining part. This procedure has repeated K times so that each of the K parts has used only once for testing, and each time accuracy has calculated for the constructed model. In this method, the average prediction accuracy in all K rounds is taken as the final accuracy for the classifier. The most common value for K in scientific literary is 5 or 10. Obviously, the more detailed validation in the K-fold CV the more reliable the classifier accuracy, the more comprehensive the obtained knowledge, and the more time-consuming the validation process.
+
+
+\subsection*{Evaluation criteria}
+In this study, we classify drug pairs into three classes, according to the type of interaction or non-interaction, so in order to compare the method performance with other existing methods, four measurement criteria, F- measure, accuracy, Area Under Roc Curve(AUC), and Area Under Precision-Recall Curve(AUPR) are Used. To define these criteria, at first, introduced four counting criteria in table
+\ref{confusion_matrix_enh_deg}.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\cline{3-4}
+		\multicolumn{2}{c}{}&\multicolumn{2}{|c|}{}\\
+		\multicolumn{2}{c}{}&\multicolumn{2}{|c|}{Actual label}\\
+		\multicolumn{2}{c}{}&\multicolumn{2}{|c|}{}\\
+		\cline{3-4}
+		\multicolumn{2}{c|}{}&&\\
+		\multicolumn{2}{c|}{} & Actual Enhancive & Actual Degressive \\
+		\multicolumn{2}{c|}{}&&\\
+		\cline{1-4}
+		&&&\\
+		\multirow{5}{*}{Classifier Label} & Classified Enhancive & $T_{Enh}$ -- $cell_1$	 & $F_{Enh}$ -- $cell_2$\\
+		&&&\\
+		\cline{2-4}
+		&&&\\
+		&Classified Degressive & $F_{Deg}$ -- $cell_4$ & $T_{Deg}$ -- $cell_5$\\
+		&&&\\
+		\cline{1-4}
+	\end{tabular}
+	\newline
+	\caption{The confusion matrix and relevant evaluation index.True Positive (TP): The number of residues classified as interacting correctly, False Positive (FP): The number of residues classified as interacting correctly incorrectly, False Negative (FN): The number of residues classified as non-interacting incorrectly, True Negative (TN): The number of residues classified as non-interacting correctly.}
+	\label{confusion_matrix_enh_deg}
+\end{table}
+
+The table of shows confusion matrix of three classes. In this mode we have to modify the definitions of TP, TF, TN and TP versuse , as well as accuracy, precision, recall, \ref{confusion_matrix_temp}By using table \ref{confusion_matrix_temp}, four evaluation criteria are defined in the following order:
+
+Accuracy: The fraction of all correct predictions (TP and TN) to all predictions.
+$$ \mbox{Acurracy} =  \frac{ \mbox{TP} + \mbox{TN}}{\mbox{ all predicted interactions}} $$
+
+Precision:The fraction of correct predicted interactions among all predicted interactions.
+$$ \mbox{Precision} =  \frac{\mbox{TP}}{\mbox{TP} + \mbox{FP}} $$
+
+Recall:The fraction of correct predicted interactions among all true interactions.
+$$ \mbox{Recall} =  \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$
+Precision and recall have a trade-off; thus, improving one of them may lead to a reduction in another.Therefore, utilizing F-measure, is more reasonable.
+
+F-measure:the geometric mean of precision and recall.
+$$ F-measure = \frac{ 2\times \mbox{Precision} \times \mbox{Recall}}{\mbox{Precision} + \mbox{Recall}} $$
+
+It should be noted that if the interaction of two drugs is assigned to zero, it denotes that no evidence of their interaction has been found yet; thus, they may interact with each other. So we cannot identify TN and FP pairs correctly. The training process requires both interaction and non-interaction samples. Therefore, some of the zero assigned pairs are considered as non-interactive pairs in the training model. So every method may have some FP in its evaluations. This leads to a reduction in calculated precision and F-measure, while the real values of precision and F-measure may be higher.
+
+Since the values of precision, recall, and F-measure is dependent on the value of the threshold, we also evaluate methods via AUC which is the area under the receiver operating characteristic (ROC) curve, and AUPR, that is the area under the precision-recall curve. These criteria indicate the efficiency of methods independent of the threshold value. In cases that the fraction of negative samples and positive samples are not equal, AUPR is the fairer criterion for evaluation.
 
 \subsection*{Selecting and training model on known interactions}
 To solve this problem, it is necessary to provide a model that detects non-interaction with high accuracy and confidence. Therefore, we design a model based on deep learning that predicts the possible non-interaction drug pairs and then use it to design a three-class model. Obviously, high accuracy in detecting these zeros can help provide a more accurate and confident three-class model.
 
 
-\subsection*{Selecting model\label{Selecting model}}
+\subsection*{Selecting model
+\label{Selecting model}}
 We separated rows of matrix B that contain positive and negative interactions. The new matrix contains 42,702 pairs of drugs with degressive and enhancive interactions. This data was used to train and find a more suitable model and found a stronger model among many models with different network structures. The final model was a deep neural network that used convolutional and fully connected layers. The features of all interactions (+1 and -1) contain 1136 features. We first divide these features into 10 equal parts. Then, in a 10-cycle for, each period we consider 1 part as testing data and the other 9 parts as a set of training data. We select different models and train the model in the 10-fold CV with 90  of the data. Then we test the model on the remaining 10 percent of the data. In the separating process, pairs of drugs dual are considered. Since the $ (d_i, d_j) $ and $ (d_j, d_i) $ pairs of drugs are not biologically different from each other, in the separation of training and testing data, necessarily a pair of drugs and their dual are in the same group. This prevents unfair results.
 
 After testing the different structures, we have modeled the final deep neural network shown in Figure
@@ -458,7 +515,7 @@ Keep in mind that this network's hyperparameters are not optimized, and the spec
 
 Finally, we examine the results of the proposed model in the 10-fold CV from three views:
 
-1)Accuracy:In a 10-fold CV,the model obtained $AUC=0.97 , AUPR=0.93$ for degressive interactions , and $AUC=0.97,AUPR=0.99 $ for enhansive interactions. These results indicate the high accuracy and detection power of the model.
+1)Accuracy: In a 10-fold CV,the model obtained $AUC=0.97 , AUPR=0.93$ for degressive interactions , and $AUC=0.97,AUPR=0.99 $ for enhansive interactions. These results indicate the high accuracy and detection power of the model.
 
 2) Variance: The confidence interval for the reported values with a reliability coefficient above 95 percent was narrow and close to each other. Out of four reported confidence interval values, three values were less than $\pm 0.002$, and only for the degressive interaction, the AUPR was in the range of $\pm 0.005$. The low amount of variance obtained from the model shows that the proposed model is robust.
 
@@ -569,10 +626,8 @@ Predict on unknown drug pairs.
 
 
 \section*{Result and discussion}
-\subsection*{Assessment}
-K-Fold cross-validation (CV) is a well-proven approach to verify the algorithms' accuracy, model selection, and feature engineering in machine learning. To demonstrate that the feature set is informative enough, the selected model is robust and confident or the method has proper accuracy in comparison with other methods, the CV equation must be carefully designed. The production of test and experimental samples is as follows:
 
-The whole data set has divided into K equal parts with consideration of dual pairs. Since biologically, the $(d_i, d_j)$ and $(d_j, d_i)$ drug pairs are the same we expect the model to predict their labels similarly.  in the separation of training and testing data, necessarily a drug pair and its dual are in the same group to prevent unfair results. The K-1 parts are used as a training data set, and the model has built based on them, and the test has performed with a remaining part. This procedure has repeated K times so that each of the K parts has used only once for testing, and each time accuracy has calculated for the constructed model. In this method, the average prediction accuracy in all K rounds is taken as the final accuracy for the classifier. The most common value for K in scientific literary is 5 or 10. Obviously, the more detailed validation in the K-fold CV the more reliable the classifier accuracy, the more comprehensive the obtained knowledge, and the more time-consuming the validation process. Each setting of model and features and each data set needs its own validation process. According to the type of problem and the methods, we use two types of 10-fold CV to select the most proper model also to validate the results of the chosen model. The metrics which are used in validation are described in following.
+Each setting of model and features and each data set needs its own validation process. According to the type of problem and the methods, we use two types of 10-fold CV to select the most proper model also to validate the results of the chosen model. The metrics which are used in validation are described in following.
 
 \subsection*{Evaluation criteria}
 In this study, we classify drug pairs into three classes, according to the type of interaction or non-interaction, so in order to compare the method performance with other existing methods, four measurement criteria, F- measure, accuracy, Area Under Roc Curve(AUC), and Area Under Precision-Recall Curve(AUPR) are Used. To define these criteria, at first, introduced four counting criteria in table
