@@ -513,19 +513,17 @@ Finally, we examine the results of the proposed model in the 10-fold CV from thr
 
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{|c|c|c|c|c|}
+	\begin{tabular}{|c|c|c|c|c|c|}
 		\hline
-		& Precision & Recall & F-measure & Support \\
+		& Precision & Recall & F-measure & Accuracy& Support\\
 		\hline
-		Degressive & 0.94 & 0.83 & 0.88 & 850 \\
+		Degressive & 0.94 & 0.83 & 0.88 && 850 \\
 		\hline
-		Enhancive & 0.95 & 0.99 & 0.97 & 3052 \\
+		Enhancive & 0.95 & 0.99 & 0.97 && 3052 \\
 		\hline
-		Accuracy &  & & 0.95 &3902\\
+		Macro Avg & 0.95 & 0.91 & 0.93 &0.95& 3902\\
 		\hline
-		Macro Avg & 0.95 & 0.91 & 0.93 & 3902\\
-		\hline
-		Weighted Avg & 0.95 & 0.95 &0.95 & 3902\\
+		Weighted Avg & 0.95 & 0.95 &0.95 &0.95& 3902\\
 		\hline
 	\end{tabular}
 	\newline
@@ -675,35 +673,66 @@ In this study, we classify drug pairs into three classes, according to the type 
 
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{|c|c|c|c|c|}
-		\cline{3-5}
-		\multicolumn{2}{c}{}&\multicolumn{3}{|c|}{}\\
-		\multicolumn{2}{c}{}&\multicolumn{3}{|c|}{Actual label}\\
-		\multicolumn{2}{c}{}&\multicolumn{3}{|c|}{}\\
-		\cline{3-5}
-		\multicolumn{2}{c|}{}&&&\\
-		\multicolumn{2}{c|}{} & Actual Enhancive & Actual Degressive & Actual Non-interaction\\
-		\multicolumn{2}{c|}{}&&&\\
-		\cline{1-5}
-		&&&&\\
-		\multirow{7}{*}{Classifier Label} & Classified Enhancive & $T_{Enh}$ -- $cell_1$	 & $F_{Enh}$ -- $cell_2$&$F_{Enh}$ -- $cell_3$\\
-		&&&&\\
-		\cline{2-5}
-		&&&&\\
-		&Classified Degressive & $F_{Deg}$ -- $cell_4$ & $T_{Deg}$ -- $cell_5$&$F_{Deg}$ -- $cell_6$\\
-		&&&&\\
-		\cline{2-5}
-		&&&&\\
-		&Classified Non-interaction &$F_{N-Int}$ -- $cell_7$&$F_{N-Int}$ -- $cell_8$&$T_{N-Int}$ -- $cell_9$\\
-		&&&&\\
-		\cline{1-5}
+	\begin{tabular}{|c|c|c|c|}
+		\cline{2-4}
+		\multicolumn{1}{c|}{}&&&\\
+		\multicolumn{1}{c|}{} & Actual Enhancive & Actual Degressive & Actual Non-interaction\\
+		\multicolumn{1}{c|}{}&&&\\
+		\cline{1-4}
+		&&&\\
+		Predicted Enhancive & $T_{Enh}$ -- $cell_1$	 & $F_{Enh}$ -- $cell_2$&$F_{Enh}$ -- $cell_3$\\
+		&&&\\
+		\cline{1-4}
+		&&&\\
+		Predicted Degressive & $F_{Deg}$ -- $cell_4$ & $T_{Deg}$ -- $cell_5$&$F_{Deg}$ -- $cell_6$\\
+		&&&\\
+		\cline{1-4}
+		&&&\\
+		Predicted Non-interaction &$F_{N-Int}$ -- $cell_7$&$F_{N-Int}$ -- $cell_8$&$T_{N-Int}$ -- $cell_9$\\
+		&&&\\
+		\cline{1-4}
 	\end{tabular}
 	\newline
-	\caption{The confusion matrix and relevant evaluation index.True Positive (TP): The number of residues classified as interacting correctly, False Positive (FP): The number of residues classified as interacting correctly incorrectly, False Negative (FN): The number of residues classified as non-interacting incorrectly, True Negative (TN): The number of residues classified as non-interacting correctly.}
+	\caption{The confusion matrix and relevant evaluation index for predicting triple classes whose cell names start with T (True). The main diagonal amounts of the matrix show correct predictions for each class. The other cells show drug pairs that have been classified by mistake whose cell names start with F (False).}
 	\label{confusion_matrix_temp}
 \end{table}
 
-The Table \ref{confusion_matrix_temp} shows confusion matrix of three classes. In this mode we have to modify the definitions of TP, TF, TN and TP versuse , as well as accuracy, precision, recall, and F- measure. Base on Table \ref{confusion_matrix_temp}, four evaluation criteria are defined in the following order:
+Table \ref{confusion_matrix_temp} shows the confusion matrix for the triple class case. In this mode, we have to redefine the definitions of TP, TF, TN, and TP, as well as accuracy, precision, recall, and F- measure. Base on Table \ref{confusion_matrix_temp} TP, TF, TN, and TP will define as Table \ref{TPFPFNTN}.
+
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\cline{1-3}
+		&&\\
+		Enhancive & Degressive & Non-interaction\\
+		&&\\
+		\cline{1-3}
+		&&\\
+		TP = $cell_1$ & TP = $cell_5$ & TP = $cell_9$\\
+		&&\\
+		\cline{1-3}
+		&&\\
+		FP = $cell_2 + cell_3$ & FP = $cell_4 + cell_6$ & FP = $cell_7 + cell_8$\\
+		&&\\
+		\cline{1-3}
+		&&\\
+		FN = $cell_4 + cell_7$ & FN = $cell_2 + cell_8$ & FN = $cell_3 + cell_6$\\
+		&&\\
+		\cline{1-3}
+		&&\\
+		TN = $cell_5 + cell_6 + cell_8 + cell_9$ & TN = $cell_1 + cell_3 + cell_7 + cell_9$ & TN = $cell_1 + cell_2 + cell_4 + cell_5$\\
+		&&\\
+		\cline{1-3}
+	\end{tabular}
+	\newline
+	\caption{The new definition of TP, TN, FP, and FN in the triple class mod.}
+	\label{TPFPFNTN}
+\end{table}
+
+
+
+Now we can define the four evaluation criteria as the following:
 
 Accuracy: The fraction of all correct predictions (TP and TN) to all predictions.
 $$ \mbox{Acurracy} =  \frac{ \mbox{TP} + \mbox{TN}}{\mbox{TP + FP + TN + FN}} $$
