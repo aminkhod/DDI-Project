@@ -401,7 +401,7 @@ K-Fold cross-validation (CV) is a well-proven approach to verify the algorithms'
 The whole data set has divided into K equal parts with consideration of dual pairs. Since biologically, the $(d_i, d_j)$ and $(d_j, d_i)$ drug pairs are the same we expect the model to predict their labels similarly.  in the separation of training and testing data, necessarily a drug pair and its dual are in the same group to prevent unfair results. The K-1 parts are used as a training data set, and the model has built based on them, and the test has performed with a remaining part. This procedure has repeated K times so that each of the K parts has used only once for testing, and each time a resolution metric has calculated for the constructed model. In this method, the average prediction resolution metric in all K rounds is taken as the final resolution metric for the classifier. The most common value for K in scientific literary is 5 or 10. Obviously, the more detailed validation in the K-fold CV the more reliable the classifier accuracy, the more comprehensive the obtained knowledge, and the more time-consuming the validation process.
 
 
-\subsection*{Evaluation Criteria of Model Selection step}
+\subsection*{Evaluation Criteria for Model Selection step}
 In this study, we classify drug pairs into three classes, according to the type of interaction or non-interaction, so in order to compare the method performance with other existing methods, six measurement criteria of Precision, Recall, F- measure, accuracy, Area Under Roc Curve (AUC), and Area Under Precision-Recall Curve (AUPR) are used. In order to define these criteria, at first, introduced four counting criteria in Table \ref{confusion_matrix_enh_deg}.
 
 \begin{table}[h!]
@@ -668,8 +668,7 @@ Predict on unknown drug pairs.
 Each setting of model and features and each data set needs its own validation process. According to the type of problem and the methods, we use two types of 10-fold CV to select the most proper model also to validate the results of the chosen model. The metrics which are used in validation are described in following.
 
 \subsection*{Evaluation criteria for final three-class model}
-In this study, we classify drug pairs into three classes, according to the type of interaction or non-interaction, so in order to compare the method performance with other existing methods, four measurement criteria, F- measure, accuracy, Area Under Roc Curve(AUC), and Area Under Precision-Recall Curve(AUPR) are Used. To define these criteria, at first, introduced four counting criteria in Table
-\ref{confusion_matrix_temp}.
+In this study, we classify drug pairs into three classes, according to the type of interaction or non-interaction, so in order to compare the method performance with other existing methods, four measurement criteria, F- measure, accuracy, Area Under Roc Curve(AUC), and Area Under Precision-Recall Curve(AUPR) are Used. To define these criteria, we should use a confusion matrix as Table \ref{confusion_matrix_temp}.
 
 \begin{table}[h!]
 	\centering
@@ -688,7 +687,7 @@ In this study, we classify drug pairs into three classes, according to the type 
 		&&&\\
 		\cline{1-4}
 		&&&\\
-		Predicted Non-interaction &$F_{N-Int}$ -- $cell_7$&$F_{N-Int}$ -- $cell_8$&$T_{N-Int}$ -- $cell_9$\\
+		Predicted Non-interaction &$F_{NonInt}$ -- $cell_7$&$F_{NonInt}$ -- $cell_8$&$T_{NonInt}$ -- $cell_9$\\
 		&&&\\
 		\cline{1-4}
 	\end{tabular}
@@ -697,7 +696,14 @@ In this study, we classify drug pairs into three classes, according to the type 
 	\label{confusion_matrix_temp}
 \end{table}
 
-Table \ref{confusion_matrix_temp} shows the confusion matrix for the triple class case. In this mode, we have to redefine the definitions of TP, TF, TN, and TP, as well as accuracy, precision, recall, and F- measure. Base on Table \ref{confusion_matrix_temp} TP, TF, TN, and TP will define as Table \ref{TPFPFNTN}.
+Table \ref{confusion_matrix_temp} shows the confusion matrix for the triple class case. In this mode, we have to redefine the definitions of TP, TF, TN, and TP, as well as accuracy, precision, recall, and F- measure.
+
+$Accuracy_{(enh/deg/nonInt)}$: The fraction of all correct predictions (TPs) to all predictions.
+$$ \mbox{Acurracy} =  \frac{All~corroctly~predicted~(cell_1 + cell_5 + cell_9)}{All~nine~cells~(\sum^9_{i=1} cell_i)} $$
+
+
+
+Base on Table \ref{confusion_matrix_temp} TP, TF, TN, and TP will define as Table \ref{TPFPFNTN}.
 
 
 \begin{table}[h!]
@@ -732,16 +738,13 @@ Table \ref{confusion_matrix_temp} shows the confusion matrix for the triple clas
 
 
 
-Now we can define the four evaluation criteria as the following:
+The other three evaluation criteria for each class are defined as follows:
 
-Accuracy: The fraction of all correct predictions (TP and TN) to all predictions.
-$$ \mbox{Acurracy} =  \frac{ \mbox{TP} + \mbox{TN}}{\mbox{TP + FP + TN + FN}} $$
+Precision: The fraction of correct predicted ($TP_{enh/deg/nonInt}$) interactions among all predicted (enh/deg/nonInt) interactions.
+$$ \mbox{Precision}_{(enh/deg/nonInt)} =  \frac{\mbox{TP}}{\mbox{TP} + \mbox{FP}} $$
 
-Precision: The fraction of correct predicted (enh/deg) interactions among all predicted (enh/deg) interactions.
-$$ \mbox{Precision}_{(enh/deg)} =  \frac{\mbox{TP}}{\mbox{TP} + \mbox{FP}} $$
-
-Recall: The fraction of correct predicted (enh/deg) interactions among all true (enh/deg) interactions.
-$$ \mbox{Recall}_{(enh/deg)} =  \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$
+Recall: The fraction of correct predicted ($TP_{enh/deg/nonInt}$) interactions among all true (enh/deg/nonInt) interactions.
+$$ \mbox{Recall}_{(enh/deg/nonInt)} =  \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$
 Precision and recall have a trade-off; thus, improving one of them may lead to a reduction in another. Therefore, utilizing F-measure is more reasonable.
 
 F-measure: The geometric mean of precision and recall.
