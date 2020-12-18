@@ -501,11 +501,26 @@ The following settings are used in the construction of the convolution neural ne
 
 5) Learning rate of $1.0 \times 10^{-5}$ was used.
 
-Keep in mind that this network's hyperparameters are not optimized, and the specified parameters are not necessarily at their best. There are two reasons for not optimizing hyperparameters:
+\subsection*{Two-class model's training trend}
+In this case, we randomly select 90 percent of the enhancive and degressive interactions. For the testing set, we consider the remaining 10 percent of the enhancive and degressive interactions. In the first case of the testing procedure,  the model was selected, and some hyper-parameters, such as the number of epochs, were determined. Figure \ref{ModelSelection}, shows the training process for the selected model. As expected, the model's accuracy is strict on ascending training data, but there are ups and downs for testing data after Epoch 5. In the loss function graph, by the end of epoch 5, as the epochs increase, the loss function's value on training and testing procedure decreases. After epoch 5, the trend of training data continues, but the testing trend is reversed. In other words, over feet occurs. Therefore, based on the graphs, the appropriate number of epochs in this step was considered 5.
+\begin{figure}[!h]
+	%\centering
+	\begin{minipage}{1\linewidth} 
+		\includegraphics[width=.48\textwidth]{ModelSelection/selectedModelAcc.png} 
+		\includegraphics[width=.48\textwidth]{ModelSelection/selectedModelLoss.png} 
+	\end{minipage}
+	\caption{\textbf{Accuracy and loss function for the binary model:} The right figure shows the model's accuracy on training and validation data, during 15 epochs, and the left figure shows the loss function values at different epochs.}
+	\label{ModelSelection}
+\end{figure}
+
+\subsection*{Hyperparameters Optimization}
+Keep in mind that network's hyperparameters are not optimized, and the specified parameters are not necessarily at their best. There are two reasons for not optimizing hyperparameters:
 
 1) Model overfitting: If hyperparameters changed to the best values, it is expected that the model will get better results on the present data, but there is no guarantee that the extracted features by the model are significant and works well when used in new cases. In this case, the so-called model is over-fitted and will be a negative point for the model.
 
 2) Robustness: Optimal hyperparameters give better results for the present data, but different drug similarities may be used in the future, or new data may be collected, and the present results may not be repeated. In this case, the model loses its robustness and will not be accepted in the pharmaceutical and pharmacological community.
+
+\subsection*{Evidence of reliability of the two-class model}   
 
 Finally, we examine the results of the proposed model in the 10-fold CV from three views:
 
@@ -535,7 +550,7 @@ Table \ref{classificatonReport} is an example result of implemented model which 
 
 2) Variance: The confidence interval for the reported values with a reliability coefficient above 95 percent was narrow and close to each other. Out of four reported confidence interval values, three values were less than $\pm 0.002$, and only for the degressive interaction, the AUPR was in the range of $\pm 0.005$. The low amount of variance obtained from the model shows that the proposed model is robust.
 
-3) Resolution capability: By plotting the output probability distribution diagram, as shown in Figure \ref{DDIProbHist}, it is clear that values +1 and -1 are well separated, and probability distribution degressive and enhancive have slightly Subscriptions.
+3) Separability: By plotting the output probability distribution diagram, as shown in Figure \ref{DDIProbHist}, it is clear that values +1 and -1 are well separated, and probability distribution degressive and enhancive have slightly Subscriptions.
 
 \begin{figure}[!h]
 	\centering
@@ -588,29 +603,51 @@ In the previous step, a high-precision, robust, and accurate model has been pres
 According to this hypothesis, the model was used to predict all unknown drug pairs (zeros). Unknown drug pairs include 270,000 drug pairs. We consider drug pairs as non-interacting drug pairs in the model's output if the enhancive and degressive probability are less than 0.4 and 0.4. Among the unlabeled data, about 65,000 drug pairs had these conditions. These drug pairs are candidates for non-interaction. Due to the model's high accuracy, the low variance of results, and the model's high resolution, we consider these pairs non-interaction drug pairs.
 
 \subsection*{Selecting and training model on known and unknown interactions}
-This section uses known data and potential non-interaction candidates to form a data set. Here, we use the non-interaction candidate drug pairs as real zeros. The recommender system presented in Section \ref{Selecting model} is also used for the final model.
+This section uses known data and potential non-interaction candidates to form a data set. Here, we use the non-interaction candidate drug pairs as real zeros. The recommender system presented in Section \ref{Selecting model}
+Selecting model
+is also used for the final model.
 
 First, the B matrix rows, which contain the +1 and -1 interactions, are separated according to the previously detailed procedure and placed in 10 parts. Then, 30,000 non-interacting candidate drug pairs were randomly selected from 65,000 drug pairs. In the chosen drug pairs, the drug pairs and the dual of them must be non-interaction candidates. The zeros group is randomly divided into 10 parts, so each drug pairs and the dual are in the same batch. Then 10 parts of zeros are merged with 10 parts of pre-prepared +1s and -1s. 
 
 The data set contains approximately 72,702 drug pairs, divided into relatively equal parts, is ready to use in the training and testing of the final recommender system.
 
 \subsection*{Selecting final model}
-The final model is almost the same as that described in Section
-\ref{Selecting model}. That means it has three Conv-layer with 128, 32, and 8 filters. Then, as before, three fully connected Conv layers were used. The difference was that the number of nodes changed from 64, 16 and 2 to 64, 16, and 3 in each layer, respectively. Specifically, this model gives three possible outputs for the three modes of enhancive interaction, non-interaction, and depressive interaction. Also, the number of epochs was considered 9. The deep neural network model for predicting interaction is shown in Figure
-\ref{Triple_model}. At this stage, the new model was not chosen because:
-
-1) The power of this model for relatively accurate detection of enhancive and degressive interactions has been proven.
-
-2) The zeros used in this section are just suggested and have not been approved by the Pharmacology Laboratory. Until the writing of this article, a comprehensive database for non-interaction cases has not been made public. If the model selection is made again, a model may be selected that is not necessarily valid in real-world application and hard to accept.
-
-Due to the above reasons, the zeros recommender system is used to comprehensive drug-drug interactions prediction by changing the number of outputs from 2 to 3 as the input data. The proposed SNF-CNN method's general process is presented in the form of pseudocode \ref{SNFCNNSuducode}, which includes the steps of preparation, model selection, real zero detection, and the presentation of a comprehensive recommender system.
-
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.43]{lastTripleModel/modelTripleLayers.png}
 	\caption{Arrangement of neural network layers SNF-CNN Predict triple-class interaction. Non-interaction (0), degressive interaction (-1) and enhancive interaction (+1)}
 	\label{Triple_model}
 \end{figure}
+
+The final model is almost the same as that described in Section \ref{Selecting model}
+Selecting model
+. That means it has three Conv-layer with 128, 32, and 8 filters. Then, as before, three fully connected Conv layers were used. The difference was that the number of nodes changed from 64, 16 and 2 to 64, 16, and 3 in each layer, respectively. Specifically, this model gives three possible outputs for the three modes of enhancive interaction, non-interaction, and depressive interaction. Also, the number of epochs was considered 9. The deep neural network model for predicting interaction is shown in Figure
+\ref{Triple_model}. At this stage, the new model was not chosen because:
+
+1) The power of this model for relatively accurate detection of enhancive and degressive interactions has been proven.
+
+2) The zeros used in this section are just suggested and have not been approved by the Pharmacology Laboratory. Until the writing of this article, a comprehensive database for non-interaction cases has not been made public. If the model selection is made again, a model may be selected that is not necessarily valid in real-world application and hard to accept.
+
+Due to the above reasons, the zeros recommender system is used to comprehensive drug-drug interactions prediction by changing the number of outputs from 2 to 3 as the input data.
+
+
+\subsubsection*{Three-class model's training trend}
+In this case, we divide the set of all interactions (enhancive, degressive, and zeros of the first step) into 10 equal parts. We consider one part of the testing set and the other 9 parts as the training data set. Divide all the zeros in the previous step into 10 parts and add a 1 to 9 ratio to both testing and training sets. In the second case, the previous model's 10-fold CV procedure was trained with the least changes to predict the three classes. Besides, hyper-parameter, the number of epochs was determined. Figure \ref{lastTripleModel} shows the training process. The process of the accuracy of the model on training data increases steadily with the increase of epochs. Still, the model after epoch 9 reduces a constant and decreases the accuracy a little for testing data.
+
+\begin{figure}[!h]
+	%\centering
+	\begin{minipage}{1\linewidth}
+		\includegraphics[width=.48\textwidth]{lastTripleModel/modelTripleACC.png}
+		\includegraphics[width=.48\textwidth]{lastTripleModel/modelTripleLoss.png}
+	\end{minipage}
+	\caption{\textbf{Accuracy and loss function diagrams for the triple model:} The right figure shows the accuracy of the model on training and validation data during 16 epochs, and the left figure shows the loss function values at different epochs.}
+	\label{lastTripleModel}
+\end{figure}
+
+
+
+The proposed SNF-CNN method's general process is presented in the form of pseudocode \ref{SNFCNNSuducode}, which includes the steps of preparation, model selection, real zero detection, and the presentation of a comprehensive recommender system.
+
 
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
 \renewcommand{\algorithmicensure}{\textbf{Output:}}
@@ -663,7 +700,7 @@ Predict on unknown drug pairs.
 \end{algorithm}
 
 
-\section*{Result and discussion}
+\section*{Results and discussion}
 
 Each setting of model and features and each data set needs its own validation process. According to the type of problem and the methods, we use two types of 10-fold CV to select the most proper model also to validate the results of the chosen model. The metrics which are used in validation are described in following.
 
@@ -745,68 +782,32 @@ $$ \mbox{Precision}_{(enh/deg/nonInt)} =  \frac{\mbox{TP}}{\mbox{TP} + \mbox{FP}
 
 Recall: The fraction of correct predicted ($TP_{enh/deg/nonInt}$) interactions among all true (enh/deg/nonInt) interactions.
 $$ \mbox{Recall}_{(enh/deg/nonInt)} =  \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$
-Precision and recall have a trade-off; thus, improving one of them may lead to a reduction in another. Therefore, utilizing F-measure is more reasonable.
+Precision and recall for each class have a trade-off; Therefore, F-measure can show resolution ability of model in each class.
 
-F-measure: The geometric mean of precision and recall.
-$$ F-measure_{(enh/deg)} = \frac{ 2\times \mbox{Precision}_{(enh/deg)} \times \mbox{Recall}_{(enh/deg)}}{\mbox{Precision}_{(enh/deg)} + \mbox{Recall}_{(enh/deg)}} $$
+F-measure: The geometric mean of precision and recall in three-class:
+$$ F-measure_{(enh/deg/nonInt)} = \frac{ 2\times \mbox{Precision} \times \mbox{Recall}}{\mbox{Precision} + \mbox{Recall}} $$
 
-It should be noted that if the interaction of two drugs is assigned to zero, it denotes that no evidence of their interaction has been found yet; thus, they may interact with each other. So we cannot identify TN and FP pairs correctly. The training process requires both interaction and non-interaction samples. Therefore, some of the zero assigned pairs are considered as non-interactive pairs in the training model. So every method may have some FP in its evaluations. This leads to a reduction in calculated precision and F-measure, while the real values of precision and F-measure may be higher.
-
-Since the values of precision, recall, and F-measure is dependent on the value of the threshold, we also evaluate methods via AUC which is the area under the receiver operating characteristic (ROC) curve, and AUPR, that is the area under the precision-recall curve. These criteria indicate the efficiency of methods independent of the threshold value. In cases that the fraction of negative samples and positive samples are not equal, AUPR is the fairer criterion for evaluation.
-
-%$$ \mbox{TPR} = \frac{ \mbox{TP}}{\mbox{TP} + \mbox{FN}} $$ 
+Also, we evaluated methods via modified AUC, and AUPR for three-class model.
 
 
-%$$ \mbox{FPR} =  \frac{ \mbox{FP}}{\mbox{FP} + \mbox{TN}} $$
-
-
-
-\subsection*{First case: 10-fold CV without unknown interactions}
-In this case, we randomly select 90 percent of the enhancive and degressive interactions. For the testing set, we consider the remaining 10 percent of the enhancive and degressive interactions. In the first case of the testing procedure,  the model was selected, and some hyper-parameters, such as the number of epochs, were determined. Figure \ref{ModelSelection}, shows the training process for the selected model. As expected, the model's accuracy is strict on ascending training data, but there are ups and downs for testing data after Epoch 5. In the loss function graph, by the end of epoch 5, as the epochs increase, the loss function's value on training and testing procedure decreases. After epoch 5, the trend of training data continues, but the testing trend is reversed. In other words, over feet occurs. Therefore, based on the graphs, the appropriate number of epochs in this step was considered 5.
-\begin{figure}[!h]
-	%\centering
-	\begin{minipage}{1\linewidth} 
-		\includegraphics[width=.48\textwidth]{ModelSelection/selectedModelAcc.png} 
-		\includegraphics[width=.48\textwidth]{ModelSelection/selectedModelLoss.png} 
-	\end{minipage}
-	\caption{\textbf{Accuracy and loss function for the binary model:} The right figure shows the model's accuracy on training and validation data during 15 epochs, and the left figure shows the loss function values at different epochs.}
-	\label{ModelSelection}
-\end{figure}
-\subsubsection*{Second case: 10-fold CV with unknown interactions}
-In this case, we divide the set of all interactions (enhancive, degressive, and zeros of the first step) into 10 equal parts. We consider one part of the testing set and the other 9 parts as the training data set. Divide all the zeros in the previous step into 10 parts and add a 1 to 9 ratio to both testing and training sets. In the second case, the previous model's 10-fold CV procedure was trained with the least changes to predict the three classes. Besides, hyper-parameter, the number of epochs was determined. Figure \ref{lastTripleModel} shows the training process. The process of the accuracy of the model on training data increases steadily with the increase of epochs. Still, the model after epoch 9 reduces a constant and decreases the accuracy a little for testing data.
-
-\begin{figure}[!h]
-	%\centering
-	\begin{minipage}{1\linewidth}
-		\includegraphics[width=.48\textwidth]{lastTripleModel/modelTripleACC.png}
-		\includegraphics[width=.48\textwidth]{lastTripleModel/modelTripleLoss.png}
-	\end{minipage}
-	\caption{\textbf{Accuracy and loss function diagrams for the triple model:} The right figure shows the accuracy of the model on training and validation data during 16 epochs, and the left figure shows the loss function values at different epochs.}
-	\label{lastTripleModel}
-\end{figure}
-
-
-\section*{Comparison of results}
-Based on the validation procedure described in Section
-\ref{K_foldCV}, the interaction type detection model was selected and trained. Then, the final three-class model was presented by recognizing the most probable non-interactions, so we tested the SNF-CNN model on data to check the evaluation, robustness, and efficiency of the CV. Results SNF-CNN and other methods for comparison are presented and discussed in this section. 
+\subsection*{Comparison of results}
+Based on the validation procedure, which described in Section \ref{K_foldCV}, the binary interaction type detection model is devised and trained. Then, the final three-class model is presented which took the most probable non-interactions as zeros. The SNF-CNN model is evaluated in 10- fold CV to check the robustness, and efficiency of the SNF-CNN. Results of SNF-CNN and other methods for comparison are presented and discussed in this section. 
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|}
 \hline
-& Precision & Recall & F-measure & Support  \\
+& Precision & Recall & F-measure &Accuracy& Support  \\
 \hline
-Enhancive & 0.88 & 0.84 & 0.86 & 850\\
+Enhancive & 0.88 & 0.84 & 0.86 && 850\\
 \hline
-Non-intraction & 0.96 & 0.95 & 0.96 & 3000\\
+Non-intraction & 0.96 & 0.95 & 0.96 && 3000\\
 \hline
-Degressive & 0.95 & 0.97 & 0.96 & 3052\\
+Degressive & 0.95 & 0.97 & 0.96 && 3052\\
 \hline
-Accuracy &  & & 0.95 &6902\\
+Macro Avg & 0.93 & 0.92 & 0.93 & 0.95& 6902 \\
 \hline
-Macro Avg & 0.93 & 0.92 & 0.93 & 6902 \\
-\hline
-Weighted Avg & 0.95 & 0.95 &0.95 & 6902\\
+Weighted Avg & 0.95 & 0.95 &0.95 & 0.95& 6902\\
 \hline
 \end{tabular}
 \newline
@@ -814,7 +815,7 @@ Weighted Avg & 0.95 & 0.95 &0.95 & 6902\\
 	\label{TripleclassificatonReport}
 \end{table}
 
-Also, in the Table \ref{TripleclassificatonReport} three-Classes interaction classification is displayed. In this implementation, the accuracy of the model for detecting degressive interaction, non-interaction, and enhancive interaction is 95 percent, 96 percent, and 88 percent, respectively. The recall is 97 percent, 95 percent, and 84 percent, respectively, and finally F-measure It is 96, 96, and 86 percent. In comparison, the model power in the three-classes decreases slightly to the two-classes, which can be due to two reasons.
+Table \ref{TripleclassificatonReport} three-class interaction classification is displayed. In this implementation, the accuracy of the model for detecting degressive, non-interaction, and enhancive interaction are 95 percent, 96 percent, and 88 percent, respectively. The recall is 97 percent, 95 percent, and 84 percent, respectively, and finally F-measure It is 96, 96, and 86 percent. The model power in the three-classes decreases slightly in comparison to the two-classes which can be due to two reasons.
 
 1) The problem of three-classes is more difficult than two-classes.
 
@@ -824,7 +825,7 @@ For the above reasons, some reduction in the power of the three-classes model in
 
 \begin{table}[h!]
 \centering 
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline
 & AUC & AUPR\\
 \hline
@@ -840,7 +841,7 @@ non-interaction & $0.9714 \pm 0.0040$ & $0.9480 \pm 0.0083$\\
 	\label{SNF-CNNresult}
 \end{table}
 
-Since the previous algorithms in the three-classes prediction of DDI used AUC and AUPR therefore, the results of the proposed algorithm are based on these two criteria according to Table \ref{SNF-CNNresult}. Also, in Table \ref{SNF-CNNresult} for the algorithm presented in this research, high and low intervals are reported with 95 percent confidence, which shows that the results of the algorithm have slightly changed in the 10- fold CV and the proposed algorithm is robust and reliable.
+Since the previous algorithms in the three-classes prediction of DDI used AUC and AUPR therefore, the results of the proposed algorithm are based on these two criteria as show in Table \ref{SNF-CNNresult}. Also, in Table \ref{SNF-CNNresult} for the presented algorithm, high and low intervals are reported with 95 percent confidence, which shows that the results of the algorithm have slightly changed in the 10- fold CV and the proposed algorithm is robust and reliable.
 
 \begin{table}[h!]
 \centering 
