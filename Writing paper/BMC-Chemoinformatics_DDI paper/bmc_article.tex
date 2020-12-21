@@ -815,13 +815,13 @@ Weighted Avg & 0.95 & 0.95 &0.95 & 0.95& 6902\\
 	\label{TripleclassificatonReport}
 \end{table}
 
-Table \ref{TripleclassificatonReport} three-class interaction classification is displayed. In this implementation, the accuracy of the model for detecting degressive, non-interaction, and enhancive interaction are 95 percent, 96 percent, and 88 percent, respectively. The recall is 97 percent, 95 percent, and 84 percent, respectively, and finally F-measure It is 96, 96, and 86 percent. The model power in the three-classes decreases slightly in comparison to the two-classes which can be due to two reasons.
+Table \ref{TripleclassificatonReport} three-class interaction classification is displayed. In this implementation, the precision of the model in detecting degressive interactions, non-interactions, and enhancive interactions are 95\%, 96\%, and 88\%, respectively. The recalls are  97\%, 95\%, and 84\%, respectively, and finally, F-measures are 96\%, 96\%, and 86\%. The model power in the three-classes mode decreases slightly in comparison to the two-classes which can be due to two reasons.
 
-1) The problem of three-classes is more difficult than two-classes.
+1) The problem of three-classes is more difficult than two-classes, obviously.
 
-2) Zeros or non-interaction are not necessarily real and are not pharmacologically proven, so there is a possibility of some disturbance.
+2) The suggested non-interactions or zeros are not necessarily real and are not pharmacologically proven, so there is a possibility of some disturbance.
 
-For the above reasons, some reduction in the power of the three-classes model in detection was not unexpected.
+For the above reasons, the detection ability reduction of the three-classes model was not unexpected.
 
 \begin{table}[h!]
 \centering 
@@ -841,11 +841,11 @@ non-interaction & $0.9714 \pm 0.0040$ & $0.9480 \pm 0.0083$\\
 	\label{SNF-CNNresult}
 \end{table}
 
-Since the previous algorithms in the three-classes prediction of DDI used AUC and AUPR therefore, the results of the proposed algorithm are based on these two criteria as show in Table \ref{SNF-CNNresult}. Also, in Table \ref{SNF-CNNresult} for the presented algorithm, high and low intervals are reported with 95 percent confidence, which shows that the results of the algorithm have slightly changed in the 10- fold CV and the proposed algorithm is robust and reliable.
+Since the previous three-classes DDI models reported AUC and AUPR for comparison, so SNF-CNN results which are shown in Table \ref{SNF-CNNresult} are reported based on these two criteria.  Also, the margin of error with the 95\% confidence interval is reported in Table \ref{SNF-CNNresult}. The algorithm results have a small margin in the 10- fold CV which shows the robustness and reliability of the proposed algorithm.
 
 \begin{table}[h!]
 \centering 
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline
 & AUC	& AUPR \\
 \hline
@@ -863,23 +863,25 @@ TMFUF\cite{shi2018tmfuf}   & 0.842  & 0.526\\
 	\label{AUCAUPR}
 \end{table}
 
-In the Table \ref{AUCAUPR} results of SNF-CNN averaged for the three classes and compared with other existing three-classes algorithms. According to the Table \ref{AUCAUPR} the proposed algorithm has a high difference compared to other superior algorithms with the problem of ternary and has been able to challenge other algorithms.
+In Table \ref{AUCAUPR} results of SNF-CNN averaged for the three classes and compared with other existing three-classes algorithms. According to Table \ref{AUCAUPR}, the proposed algorithm has a high difference compared to other superior algorithms with the problem of ternary and has been able to challenge other algorithms.
 
 
 \section*{Conclusions}
-Existing computational approaches are able to present potential large-scale interactions before using drugs on the market. However, they cannot predict comprehensive interactions, including degressive and enhancive interactions. It is more useful to know whether or not a drug pair is enhancive DDI or a degressive DDI  than to know whether or not a drug pair is DDI. Without considering the pharmacological changes caused by DDIs, most existing approaches only report two-classes prediction.  In addition, the occurrence of degressive and enhancive DDIs is not random, but none of the existing approaches investigates and leverages this intrinsic important property of interactions when treating complex diseases (including treatment with three or more drugs).
+Existing machine learning approaches are able to detect potential interactions of a drug by using large-scale data before taking the drug. However, they cannot predict comprehensive three-class DDIs, including degressive and enhancive interactions. It is more informative to clarify if a drug pair has an enhancive DDI or a degressive DDI or even non-DDI than recognizing a drug pair whether or not has DDI. Without considering the pharmacological changes caused by DDIs, most existing approaches only report two-classes predictions.  In addition, not only the occurrence of degressive and enhancive DDIs is not random, but also it represents a piece of information about those major behaver of those two drugs. None of the existing approaches investigates and considers this intrinsic important property of interactions when treating complex diseases \cite{cokol2017efficient}.
 
-In this work, after representing a comprehensive DDI network, we used the structure of recommender systems to design a novel algorithm. Although the prediction obtained by the new algorithm is inspiring, overall performance can still be improved. For this reason, we investigate those incorrectly predicted DDIs. After checking them case-by-case, and in order to prove the algorithm in practice, check the prediction performance of the algorithm in the latest version of the DrugBank database. Observations and investigations led to the discovery of three reasons for wrong predictions:
+In this work, after representing comprehensive DDI data and drug features, we used the template of recommender systems to design a novel algorithm. Although the prediction obtained by our algorithm was inspiring, overall performance could still be improved. So we investigated those incorrectly predicted DDIs. To prove the algorithm in practice we checked case-by-case of the model predictions, in the latest version of the DrugBank database. Observations and investigations led to the discovery of three reasons for wrong predictions:
 
-The first is named as false-positive drug pairs, which are precisely labeled as DDIs in DrugBank version 4, but in the current version, they are correctly labeled as non-DDIs. For example, the old version of DrugBank records that Apraclonidine ( a Sympathomimetic drug used in glaucoma therapy) increases the atrioventricular blocking activities of Alprenolol and Bevantolol, while the newer version removes it.
+1) The first is about removed interactions in DrugBank version 5 which are precisely labeled as DDIs in DrugBank version 4. For example, the old version of DrugBank records that Apraclonidine (DB00964) (also known as iopidine, is a sympathomimetic used in glaucoma therapy.) increases the atrioventricular blocking activities of Alprenolol (DB00866) and Bevantolol (DB01295), while the newer version removes them, so new research show they have no interaction.
 
-The second one is false-negative drug Pairs, which are wrongly labeled as non-DDIs in DrugBank version 4  but in the current version, they are reported as DDIs.For example, the pair of Valrubicin and Cyclosporine as well as the pair of Ergocalciferol and  Calcitriol in the newer version of DrugBank reports, Valrubicin (bladder cancer treatment drug) Increases the activity of the nephrotoxic drug Cyclosporine(A drug that suppresses the immune system with a special action on T-lymphocytes), while the combined therapy of Calcitriol and Ergocalciferol increases the risk or severity of adverse effects in the multiple-drug therapy.
+2) The second one is about drug Pairs which are labeled as non-DDIs in DrugBank version 4, but in the current version, they are reported as DDIs. For example, the pair of Valrubicin (DB00385) and Cyclosporine (DB00091), as well as the pair of Ergocalciferol (DB00153) and  Calcitriol (DB00136) in the newer version of DrugBank, reports, Valrubicin (bladder cancer treatment drug) Increases the activity of the nephrotoxic drug Cyclosporine(A drug that suppresses the immune system with a special action on T-lymphocytes), while the combined therapy of Calcitriol and Ergocalciferol increases the risk or severity of adverse effects in the multiple-drug therapy.
 
-The last one refers to change Pair DDIs, which are labeled as enhancive DDIs in DrugBank version 4, but in the current version, are labeled as degressive DDIs, and vice versa.
+3) The last one refers to altering DDIs' types, which are labeled as enhancive DDIs in DrugBank version 4, but in the current version, are labeled as degressive DDIs, and vice versa.
 
-It is anticipated that the SNF-CNN approach, will be able to achieve better DDI prediction by the better datasets with fewer of both false-positive and false-negative drug pairs. For future work, it is recommended that the dataset always be collected from the latest version of DrugBank.
 
-Three-classes data is an attempt to improve expression and problem solving over two-classes data. However, three-classes data does not have sufficient biological significance and provides limited biological information. This means that predicting the type of DDI can be useful, but it is not clear at what stage of the pharmacokinetic or pharmacodynamic stages this DDI occurred. Therefore, it is suggested to collect datasets with degressive and enhancive labels from each of the pharmacokinetic and pharmacodynamic steps. In this case, more meaningful models in terms of pharmacology and machine learning are taught. The resulting models are more important to pharmacists and pharmacists and will be more useful.
+We expect that the SNF-CNN approach will be able to achieve better results in DDI prediction by a better dataset that has less missed or false information about drug pairs. For future work, it is recommended that drugs and their features always be collected from the latest version of DrugBank.
+
+Three-classes data is an attempt to improve expression and problem solving over two-classes data. However, three-classes data does not have sufficient biological significance and provides limited biological information. This means that predicting the type of DDI can be useful, but it is not clear at what stage of the pharmacokinetic or pharmacodynamic stages this DDI occurred. Therefore, it is suggested to collect datasets with degressive and enhancive labels from each of the pharmacokinetic and pharmacodynamic steps. In this case, more meaningful models in terms of pharmacology and machine learning may be designed and built. Results from these models will more important to pharmacists and will be more useful for further steps with human health aim.
+
 
 \section*{Appendix}
 Text for this section\ldots
