@@ -184,10 +184,10 @@
 
 \begin{abstract} % abstract
 \parttitle{Background} %if any
-Drug-drug interactions (DDIs) usually cause unexpected and even adverse drug reactions. It is important to identify DDIs before using them in the market. However, preclinical identification of DDIs requires much money and time. Computational approaches have exhibited their abilities to predict potential DDIs on a large scale by utilizing premarket drug properties. Nevertheless, most of them only predict whether or not one drug interacts with another, but neglect their enhancive (positive) and depressive (negative) changes of pharmacological effects. Moreover, these comprehensive DDIs do not occur at random, and derived from the structural features of the graph of DDIs. Revealing such a relationship is very important, because it is able to help understand how DDIs occur. Both the prediction of comprehensive DDIs and the discovery of structural relationship among them play an important guidance when making a co-prescription.
+Drug-drug interactions (DDIs) usually cause unexpected and even adverse drug reactions. It is important to identify DDIs before using them in the market. However, preclinical identification of DDIs requires much money and time. Computational approaches have exhibited their abilities to predict potential DDIs on a large scale by utilizing premarket drug properties. Nevertheless, most of them only predict whether or not one drug interacts with another, but neglect their enhancive (positive) and depressive (negative) changes of pharmacological effects. Moreover, these comprehensive DDIs do not occur at random, and derived from the structural features of the graph of DDIs. Revealing such a relationship is very important, because it is able to help understand how DDIs occur. Prediction of comprehensive DDIs and the discovery of structural relationships in the DDI graph play important guidance when making a prescription of multiple drugs.
 
 \parttitle{Results} %if any
-In this work, treating a set of comprehensive DDIs as a signed network, we design a novel model (SNF-CNN) for the prediction of enhancive and degressive DDIs based on similarity network fusion and convolutional neural networks. SNF-CNN achieves the depressive DDI prediction
+In this work, treating a set of comprehensive DDIs as a signed network, we design a novel model (SNF-CNN) for the prediction of enhancive or degressive of a pair of drugs based on similarity network fusion and convolutional neural networks. SNF-CNN achieves the depressive DDI prediction
 ($AUC = 0.975
 %\pm 0.0033
 $ and $AUPR = 0.967
@@ -200,10 +200,10 @@ $) and the Unknown DDI prediction ($AUC = 0.971
 %\pm 0.0040
 $ and $AUPR = 0.948
 %\pm 0.0083
-$). Compared with three state-of-the-art approaches, SNF-CNN shows it superiority.
+$). Compared with three state-of-the-art methods on a dataset, SNF-CNN shows superiority.
 
 \parttitle{Conclusions} %if any
-This new approach is not only able to predict comprehensive DDI, but also predicts non-DDI.
+This new approach is not only able to predict comprehensive DDI, but also predicts non-DDI accuratly.
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -263,9 +263,9 @@ This new approach is not only able to predict comprehensive DDI, but also predic
 \section*{Introduction}
 When two or more drugs are taken together, drugs' effects or behaviors are unexpectedly influenced by each other
 \cite{wienkers2005predicting}. 
-This kind of influence is termed as Drug-Drug interaction (DDI), which would reduce drug efficacy, increase unexpected toxicity, or induce other adverse drug reactions between the co-prescribed drugs. As the number of approved drugs increases, the number of drug-unidentified DDIs is rapidly increasing, such that among approved small molecular drugs in Drug Bank, on average, 15 out of every 100  drug pairs have DDIs
+This kind of influence is termed as Drug-Drug interaction (DDI), which would reduce drug efficacy, increase unexpected toxicity, or induce other adverse drug reactions between the co-prescribed drugs. As the number of approved drugs increases, the number of drug-unidentified DDIs is rapidly increasing, such that among approved small molecular drugs in Drug Bank, on average, 15 out of every 100  drug pairs have known DDIs
 \cite{law2014drugbank}. 
-The DDIs would put patients who are treated with multiple drugs in an unsafe situation
+The DDIs would put patients, who are treated with multiple drugs, in an unsafe situation
 \cite{leape1995systems, businaro2013we, karbownik2017pharmacokinetic, mulroy2017giant}.
 Understanding DDI is the first step in drug combinations, which becomes one of the most promising solutions for the treatment of multifactorial complex diseases
 \cite{zhao2011prediction}.
@@ -302,35 +302,37 @@ These methods use different drug features to predict DDIs, such as chemical stru
 , side effects, and off-label side effects
 \cite{zhang2015label, shi2017predicting}.
 
-A Dependency-based Convolutional Neural Network (DCNN) has proposed for drug-drug interaction extraction at paper of \cite{liu2016dependency}.
+A Dependency-based Convolutional Neural Network (DCNN) has proposed for drug-drug interaction extraction by Liu and et.al in 2016 \cite{liu2016dependency}.
 DCNN is a text-mining approach which predicts DDIs based on unstructured biomedical literature and the existing knowledge bases. It applies convolution layers on word sequences as well as dependency parsing trees of candidate DDIs for adjacent words.
-DeepDDI has proposed by \cite{ryu2018deep}, which is a combination of the structural similarity profile generation pipeline and Deep Neural Network (DNN). DeepDDI predicts DDIs from chemical structures and names of drugs in pairs. It has various implications for adverse drug events such as prediction of potential causal mechanism and using them for output sentences.
+DeepDDI has proposed by \cite{ryu2018deep}, which is a combination of the structural similarity profile generation pipeline and Deep Neural Network (DNN). DeepDDI predicts DDIs from chemical structures and names of drug-drug or drug-food constituent pairs. It has various implications for adverse drug events such as prediction of potential causal mechanism and using them for output sentences.
 
-Although previous methods had great advances, more prediction accuracy is still needed.  Exploiting more similarities may help to make more advances in this way. Similarity Network Fusion (SNF) \cite{wang2014similarity} is a competent method to integrate various similarities, which is used in numerous biological contexts \cite{olayan2018ddr, tian2017constructing, kim2016understanding}. The neural network is a strongly developed approach that provides satisfactory solutions, especially for large datasets and nonlinear analyzes \cite{wang2016predicting}, which is widely used in critical problems \cite{huang2009effect, fu2017deep, pan2016ipminer}. We developed a method to overcome this issue via similarity fusion and Convolutional Neural Network.
+Although previous methods had great advances, more prediction accuracy is still needed.  Exploiting more similarities may help to make more advances in this problem. Similarity Network Fusion (SNF) \cite{wang2014similarity} is a competent method to integrate various similarities, which is used in numerous biological contexts \cite{olayan2018ddr, tian2017constructing, kim2016understanding}. The neural network is a strongly developed approach that provides satisfactory solutions, especially for large datasets and nonlinear analyzes \cite{wang2016predicting}, which is widely used in critical problems \cite{huang2009effect, fu2017deep, pan2016ipminer}. 
+%We developed a method to overcome comprehensive DDI prediction problem via similarity fusion and Convolutional Neural Network.
 
 Most of these existing machine learning approaches are designed to predict the typical two-class problem, which only indicates how likely a pair of drugs is a DDI. However, two interacting drugs may change their own pharmacological behaviors or effects (e.g., increasing or decreasing serum concentration) in vivo. For example, the serum concentration of Flunisolide (DrugBank Id: DB00180) decreases when it is taken with Mitotane (DrugBank Id: DB00648), whereas its serum concentration increases when taken with Roxithromycin (DrugBank Id: DB00778). For short, the first case is degressive DDI, and the second case is enhancive DDI, which contains drug changes in terms of pharmacological effects. It is more important to know exactly whether the interaction increases or decreases the drug's pharmaceutical behaviors, especially when making optimal patient care, establishing drug dosage, designing prophylactic drug therapy, or finding the resistance to therapy with a drug
 \cite{koch1981serum}.
 
-Besides the occurrence of both enhancive and degressive DDIs is not random \cite{shi2018tmfuf, yu2018predicting}, however most current approaches have not yet exploited this structural property and have been developed only for conventional two-classes DDIs. Furthermore, revealing such a structural relationship is very important because it can help to understand how the DDIs occur. It is one of the most important steps for treating complex diseases \cite{cokol2017efficient} and guides physicians in preparing safer prescriptions to high-order drug interaction. The previous algorithms for predicting three-classes DDIs are introduced in the following, and how they work are briefly described. 
+Besides the occurrence of both enhancive and degressive DDIs is not random \cite{shi2018tmfuf, yu2018predicting}, however most current approaches have not yet exploited this structural property and have been developed only for conventional two-classes DDIs. Furthermore, revealing such a structural relationship is very important because it can help to understand how the DDIs occur. It is one of the most important steps for treating complex diseases \cite{cokol2017efficient} and guides physicians in preparing safer prescriptions to high-order drug interaction.
+%The previous algorithms for predicting three-classes DDIs are introduced in the following, and how they work are briefly described. 
 
 The recent works attempted to investigate two major issues: 1) predicting three-class DDIs instead of two-class prediction, 2) extracting the topological information of drugs in a DDI network.
 
-Model of TMFUF is proposed In the article \cite{shi2018tmfuf} which predicts enhancive and degressive DDIs for different predicting scenarios of new drugs (those with no known DDI). Proposed DDINMF model \cite{yu2018predicting} in addition to predicting DDIs, asigns every drugs to drug communities.
+Model of TMFUF \cite{shi2018tmfuf} is proposed by Shi and et.al in 2018 which predicts enhancive and degressive DDIs for different predicting scenarios of new drugs (those with no known DDI). Proposed DDINMF model \cite{yu2018predicting} in addition to predicting DDIs, asigns every drugs to drug communities. In result, some corelations are observed between drug communities and the numbers of enhancive, degressive, sum and difference of DDIs for each drug.
 
-In result, some corelations are observed between drug communities and the numbers of enhancive and degressive DDIs of each drug, as well as their sum or difference of DDIs. These observation shows that not only occurrences enhancive and degressive DDIs are not randomly but also representes some topological features in DDI network. BRSNMF \cite{shi2019detecting} model is a method based on Semi-NMF to predict the degressive and enhansive DDIs, more accurately, in cold start scenario \cite{camacho2018social}. This method exploits Drug Binding Protein (DBP) feature to map new drugs (without any known DDIs) with known drugs (drugs which has one DDI at least). Results show that BRSNMF defines drug communities with more moderate sizes by adding a regularization term to Semi-NMF objective function based on weakly balance theorem.
+These observation shows that not only occurrence of enhancive or degressive DDIs are not randomly but also representes some topological features in DDI network. BRSNMF \cite{shi2019detecting} model is a method based on Semi-NMF to predict the degressive and enhansive DDIs, more accurately, in cold start scenario \cite{camacho2018social}. This method exploits Drug Binding Protein (DBP) feature to map new drugs (without any known DDIs) with known drugs (drugs which has one DDI at least). Results show that BRSNMF defines drug communities with more moderate sizes by adding a regularization term to Semi-NMF objective function based on weakly balance theorem.
 
 All three introduced algorithms are using matrix factorization methods, which are a network recommender-based approach. The matrix factorization approach, with slight modification, is a suitable solution for the subject of predicting DDI that has received much attention from researchers, but these methods do not work on potential DDIs which are crucially important in giving safer prescriptions.
 
-In this paper, we firstly introduce data and features. Then, a novel algorithm based on the integration of drug similarities and deep learning recommendation systems for predicting DDI is presented in a comprehensive three-class model. This algorithm is called Predicting Comprehensive Drug-Drug Interaction via Similarity Network Fusion and Convolutional Neural Networks (SNF-CNN). The SNF-CNN trying to recognize unknown and potential DDIs which are not detected yet. The feature's intrinsic of off-label side effect and chemical structure of drugs may provide information to find hidden potential DDIs in already DDI's network. To use both of them together we will take advantage of SNF.
+In this paper, we firstly introduce data and features. Then, a novel algorithm based on the integration of drug similarities and deep learning recommendation systems for predicting DDI is presented in a comprehensive three-class model. This algorithm is called Predicting Comprehensive Drug-Drug Interaction via Similarity Network Fusion and Convolutional Neural Networks (SNF-CNN). The SNF-CNN trying to recognize unknown and potential DDIs which are not detected yet. The feature's intrinsic of off-label side effect and chemical structure of drugs may provide information to find hidden potential DDIs in current DDI network. To use both of similarity features, we will take advantage of SNF.
 %The feature's intrinsic of off-label side effect and chemical structure of drugs may provide information to find hidden potential DDIs in already DDI's network.
 
-The paper is organized as follows. In the first section, the data preparation process is explained. The recommendation system is then designed and trained on enhancive and degressive, which detects pairs of non-interacting drugs with high probability. Next, the previous recommender system, based on a convolutional neural network, is trained on incremental and decremental interaction data without interaction (detected in the previous step).In section Results and Discussions, we investigate the results of SNF-CNN in the 10-fold cross-validation (CV) process.
+The paper is organized as follows. In the first section, the data preparation process is explained. The recommendation system is then designed and trained on enhancive and degressive, which detects pairs of non-interacting drugs with high probability. Next, the previous recommender system, based on a convolutional neural network, is trained on incremental and decremental interaction data without interaction (detected in the previous step). In section Results and Discussions, we investigate the DDI prediction results of SNF-CNN in the 10-fold cross-validation (CV) process in compare to other methods.
 
 It should be noted that the proposed method of this research is a recommender-based on deep neural networks and has no structural similarities with matrix factorization methods. The only reason for mentioning these methods is the limited number of articles that have used three-class data in their work.
 
 \section*{Methods}
 \subsection*{Dataset and features}
-In this study, we use the data set presented in paper of \cite{yu2018predicting}. This set contains 568 approved small molecule drugs, each of them has at least one interaction with the other drugs in the set. In total, the interactions between these 568 drugs contain 21,351 DDIs, including 16,757 enhancive DDIs and 4,594 degressive DDIs.In addition, each drug represented as an  881-dimensional feature vector $ F_ {str} $  based on PubChem chemical structure descriptor and also a 9149-dimensional feature vector $ F_ {se} $ according to the off-label side effects provided by OFFSIDES.
+In this study, we use the data set presented by Yu and et.al in 2018 \cite{yu2018predicting}. This set contains 568 approved small molecule drugs, each of them has at least one interaction with the other drugs in the set. In total, the interactions between these 568 drugs contain 21,351 DDIs, including 16,757 enhancive DDIs and 4,594 degressive DDIs. In addition, each drug represented as an  881-dimensional feature vector $ F_ {str} $  based on PubChem chemical structure descriptor and also a 9149-dimensional feature vector $ F_ {se} $ based on the off-label side effects provided by OFFSIDES. If a side effect or chemical structure is reported or has observed for the drug its vector element is one, otherwise is zero.
 
 \subsection*{Problem formulation}
 
@@ -365,7 +367,7 @@ Similarity Network Fusion (SNF)\cite{wang2014similarity} is a new computational 
 	\label{SNF}
 \end{figure}
 
-In this section, using the similarity network fusion method that has described above, similarity matrices of the chemical structure and the off-label side effect of drugs were integrated. The output of this integration is a new similarity matrix of $S_{snf}$ with dimensions of $568 \times 568$, and elements of $S_{snf}$ have a value between zero and one.To integrate the network similarity, the package of SNFPy is used, which is implemented in Python and is available at \cite{SNFPy2020}.
+In this section, using the similarity network fusion method that has described above, similarity matrices of the chemical structure and the off-label side effect of drugs were integrated. The output of this integration is a new similarity matrix of $S_{snf}$ with dimensions of $568 \times 568$, and elements of $S_{snf}$ have a value between zero and one. To integrate the network similarity, the package of SNFPy is used, which is implemented in Python and is available at \cite{SNFPy2020}.
 
 \subsubsection*{Input matrix format}
 
@@ -422,7 +424,7 @@ In this study, we classify drug pairs into three classes, according to the type 
 		\cline{1-3}
 	\end{tabular}
 	\newline
-	\caption{The confusion matrix for interaction type (Degressive or Enhancive) and relevant evaluation index.True Positive (TP): The number of drug pairs classified as enhancive interaction correctly, False Positive (FP): The number of drug pairs classified as enhancive interaction incorrectly, False Negative (FN): The number of drug pairs classified as degressive interaction incorrectly, True Negative (TN): The number of drug pairs classified as degressive interaction correctly.}
+	\caption{The confusion matrix for interaction type (Degressive or Enhancive) and relevant evaluation index. True Positive (TP): The number of drug pairs classified as enhancive interaction correctly, False Positive (FP): The number of drug pairs classified as enhancive interaction incorrectly, False Negative (FN): The number of drug pairs classified as degressive interaction incorrectly, True Negative (TN): The number of drug pairs classified as degressive interaction correctly.}
 	\label{confusion_matrix_enh_deg}
 \end{table}
 
