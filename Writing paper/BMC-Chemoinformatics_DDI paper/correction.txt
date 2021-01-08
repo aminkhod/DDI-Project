@@ -1,0 +1,42 @@
+Disclosing such relationships is very important as it helps to understand how DDI works and is a great guide in the prescription unit.
+
+
+
+
+background:
+
+Drug-drug interactions (DDIs) usually cause unexpected and even adverse drug reactions. It is important to identify DDIs before using them in the market. However, preclinical identification of DDIs requires much money and time. Computational approaches have exhibited their abilities to predict potential DDIs on a large scale by utilizing premarket drug properties. Nevertheless, most of them only predict whether or not one drug interacts with another, but neglect their enhancive (positive) and depressive (negative) changes of pharmacological effects. Moreover, these comprehensive DDIs do not occur at random, and derived from the structural features of DDIs. Revealing such a relationship is very important because it is able to help understand how DDIs occur. Disclosing such relationships is very important as it helps to understand how DDI works and is a great guide in the prescription unit.
+
+
+
+
+result:
+
+In this work, treating a set of comprehensive DDIs as a signed network, we design a novel model (SNF-CNN) for the prediction of enhancive or degressive of a pair of drugs based on similarity network fusion and convolutional neural networks. SNF-CNN achieves the degressive DDI prediction AUC=0/9747 ±0/0033 and AUPR=0/9666 ±0/0045, enhancive DDI prediction AUC=0/9686 ±0/0028 and AUPR=0/8221 ±0/0184 and the Unknown DDI prediction AUC=0/9714 ± 0/0040 and AUPR=0/9480 ±0/0083. Compared with two state-of-the-art approaches, SNF-CNN shows its superiority
+
+
+
+
+Conclusions: This new approach is not only able to predict comprehensive DDI,
+but also predicts non-DDI very accurately.
+
+
+
+A Dependency-based Convolutional Neural Network (DCNN) has proposed for
+drug-drug interaction extraction at paper of [21]. DCNN is a text-mining approach
+which predicts DDIs based on unstructured biomedical literature and the existing
+knowledge bases. It applies convolution layers on word sequences as well as
+dependency parsing trees of candidate DDIs for adjacent words. DeepDDI has proposed
+by [22], which is a combination of the structural similarity profile generation
+pipeline and Deep Neural Network (DNN). DeepDDI predicts DDIs from chemical
+structures and names of drugs in pairs. It has various implications for adverse drug
+events such as prediction of potential causal mechanism and using them for output
+sentences.
+
+ين قسمت عينا از مقاله نرجس هست
+چطور اون موقع ايراد نداشته😭😭
+
+
+
+
+
