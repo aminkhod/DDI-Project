@@ -345,8 +345,9 @@ Drug-Drug interactions can be accordingly represented as an $m \times m$ symmetr
 Since, the new drugs are isolated nodes in the interaction network, we cannot infer their possible interaction from topological information alone. Therefore, additional information (such as chemical structure or off-label side effects) is needed, which is called a drug feature in terms of machine learning. First, we prepare feature matrix data to be proper input for machine learning methods then we devise and train a deep learning model to predict potential interactions.
 
 \subsubsection*{Similarity matrix calculation}
+It was observed that the values of the feature matrices are discrete, and also the dimensions of the matrices are large. The chemical structure and the off-label side effect have 881 and 9149 dimensions, respectively. On the other hand, machine learning algorithms do not work properly with high-dimensional data and discrete data. As a result, they do not get good results on these kinds of data. Therefore, by exploiting the cosine similarity, that was described above, drug similarity matrices based on chemical structure and off-label side effects are calculated. These matrices are $S_{str}$ and $S_{se}$, respectively. The dimensions of these two matrices are $m \times m$, where $s_{i,j}$ is an element of similarity matrices that shows similarity value between drugs of $di$ and $d_j$. Each element of $S$ has a continuous value between zero and one.
 
-A common method of calculating similarity called Cosine Similarity is used in machine learning articles such as Articles \cite{zhang2016drug, zhang2018manifold}. If we name feature vectors of the drug of $d_i$ and $d_j$
+A common method of calculating similarity called Cosine Similarity is used in machine learning articles such as \cite{zhang2016drug, zhang2018manifold}. If we name feature vectors of the drug of $d_i$ and $d_j$
 as $x_i$ and $x_j$,Cosine Similarity between $x_i$ and $x_j$ is defined as follows:
 \begin{equation}
 	\begin{aligned}
@@ -355,7 +356,6 @@ as $x_i$ and $x_j$,Cosine Similarity between $x_i$ and $x_j$ is defined as follo
 \end{equation}
 Where $||.||_2$ is the Euclidean Norm and ${x_i . x_j}$ is inner product of two vectors.
 
-It was observed that the values of the feature matrices are discrete, and also the dimensions of the matrices are large. The chemical structure and the off-label side effect have 881 and 9149 dimensions, respectively. On the other hand, machine learning algorithms do not work properly with high-dimensional data and discrete data. As a result, they do not get good results on these kinds of data. Therefore, by exploiting the cosine similarity, that was described above, drug similarity matrices based on chemical structure and off-label side effects are calculated. These matrices are $S_{str}$ and $S_{se}$, respectively. The dimensions of these two matrices are $m \times m$, where $s_{i,j}$ is an element of similarity matrices that shows similarity value between drugs of $di$ and $d_j$. Each element of $S$ has a continuous value between zero and one.
 
 \subsubsection*{Integration drug similarity matrices}
 Similarity Network Fusion (SNF)\cite{wang2014similarity} is a new computational method for data integration.  Briefly, SNF combines many different types of features (such as chemical structure and off-label side effect, and more - clinical data, questionnaires, image data, etc.) for a given set of samples (e.g., drugs). SNF first constructs a sample similarity network for each of the data types and then iteratively integrates these networks using a novel network fusion method. Working in the sample network space allows SNF to avoid dealing with different scales, collection bias, and noise in different data types. Integrating data in a non-linear fashion allows SNF to take advantage of the common and complementary information in different data types. Figure \ref{SNF} is a good visualization of SNF processes  that has been used in our method structure.
@@ -368,11 +368,11 @@ Similarity Network Fusion (SNF)\cite{wang2014similarity} is a new computational 
 	\label{SNF}
 \end{figure}
 
-In this section, using the similarity network fusion method that has described above, similarity matrices of the chemical structure and the off-label side effect of drugs were integrated. The output of this integration is a new similarity matrix of $S_{snf}$ with dimensions of $568 \times 568$, and elements of $S_{snf}$ have a value between zero and one. To integrate the network similarity, the package of SNFPy is used, which is implemented in Python and is available at \cite{SNFPy2020}.
+In this section, similarity matrices of the chemical structure and the off-label side effect of drugs were integrated via SNF method. The output of this integration is a new similarity matrix, $S_{snf}$ has dimensions of $568 \times 568$, and elements of $S_{snf}$ have a value between 0 and 1. To integrate the network similarity, the package of SNFPy is used, which is implemented in Python and is available at \cite{SNFPy2020}.
 
 \subsubsection*{Input matrix format}
 
-At this stage, a matrix forms with 1139 columns and 322056 rows, which consists of the following columns:
+At this stage, a matrix forms with 1139 columns and 322056 rows. Figure \ref{BMatHeader} shows the matrix header which consists of the following columns:
 
 1) Drug pairs: Name of the drug i-th and the name of the drug j-th.
 
@@ -382,7 +382,6 @@ At this stage, a matrix forms with 1139 columns and 322056 rows, which consists 
 
 4) The similarity vector of j-th drug from the $S_{snf}$ matrix with 568 elements.
 
-Figure of \ref{BMatHeader} shows the header of matrix.
 
 \begin{figure}[!h]
 	\centering
@@ -391,11 +390,10 @@ Figure of \ref{BMatHeader} shows the header of matrix.
 	\label{BMatHeader}
 \end{figure}
 
-We have 568 drugs, and the interaction of each drug with itself is meaningless. On the other hand, the drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ have the same label, while the corresponding similarity vectors of drugs in the drug pairs have been displaced. So, these drug pairs are dual. Both of them in the data augment the training data, which increases the model's ability to have a better prediction. As a result, the resulting matrix has 322056 data samples or rows ($(568 \times 568) - 568 = 322056$). According to the explanations provided, a matrix with dimensions of $322056 \times 1139$ is formed to input into our model, which is called $B$.
-
+The data contains 568 drugs. Obviously, the interaction of a drug with itself is meaningless. On the other hand, the drug pairs of $(d_i, d_j)$ and $(d_j, d_i)$ have the same label, while the corresponding similarity vectors of drugs in the $B$ have been displaced, so these drug pairs are dual. The existence of both duals augments the training data, which increases the model's ability to have a better prediction. As a result, the matrix has 322056 data samples or rows ($(568 \times 568) - 568 = 322056$). According to the explanation, a matrix with dimensions of $322056 \times 1139$ is formed to input into our model, which is called the $B$ matrix.
 
 \subsection*{Devising of Recommender System}
-In the previous steps, data was prepared to input any learning machine, including deep learning machines. But before presenting the model and inputting the data into the machine, one important point must be considered. As mentioned before, in this approach and other approaches, the positive and negative data have a specific label. While the zero label does not mean that there is no interaction between a pair of drugs, it does indicate that no interaction has yet been found for this pair of drugs. In the following, we present a method for detecting pairs of non-interacting drugs. Then we use these pairs of drugs as zero-labeled data in the next training.
+In the previous steps, data was prepared to input any learning machine, including deep learning machines. But before presenting the model and inputting the data into the machine, one important point must be considered. The positive and negative data have a specific label while the zero label does not mean that there is no interaction between a pair of drugs, it does indicate that no interaction has yet been found for this pair of drugs. In the following, we present a method for detecting pairs of non-interacting drugs. Then we use these pairs of drugs as zero-labeled data in the next training.
 
 \subsection*{Assessment
 \label{K_foldCV}}
