@@ -87,7 +87,7 @@ adam = optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999)
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) ## Minist
 
 ### Load the model's saved weights.
-model.load_weights('CNN on triple DDI-Train on 42702_6_epoch.h5')
+model.load_weights('Weight/CNN on triple DDI-Train on 42702_6_epoch.h5')
 
 
 # In[4]:
